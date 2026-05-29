@@ -1,0 +1,6 @@
+[extends]
+from = "anthropic/claude-opus-4-8"
+omit = ["cost"]
+
+[fleetify]
+group = "via OpenRouter"
