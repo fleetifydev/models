@@ -1,0 +1,10 @@
+name = "xAI"
+env = ["XAI_API_KEY"]
+doc = "https://docs.x.ai/docs/models"
+api = "https://api.x.ai/v1"
+
+[fleetify]
+kind = "api"
+catalog_id = "xai"
+models_endpoint = "/models"
+supports_live = true
