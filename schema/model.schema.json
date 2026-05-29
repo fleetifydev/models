@@ -1,0 +1,60 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://models.fleetify.dev/schema/model.schema.json",
+  "title": "Model",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["name"],
+  "properties": {
+    "name": { "type": "string", "minLength": 1 },
+    "family": { "type": "string" },
+    "release_date": { "type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}$" },
+    "last_updated": { "type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}$" },
+    "knowledge": { "type": "string", "pattern": "^\\d{4}-\\d{2}$" },
+    "attachment": { "type": "boolean" },
+    "reasoning": { "type": "boolean" },
+    "tool_call": { "type": "boolean" },
+    "structured_output": { "type": "boolean" },
+    "temperature": { "type": "boolean" },
+    "open_weights": { "type": "boolean" },
+    "cost": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "input": { "type": "number", "minimum": 0 },
+        "output": { "type": "number", "minimum": 0 },
+        "cache_read": { "type": "number", "minimum": 0 },
+        "cache_write": { "type": "number", "minimum": 0 }
+      }
+    },
+    "limit": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "context": { "type": "integer", "minimum": 0 },
+        "output": { "type": "integer", "minimum": 0 }
+      }
+    },
+    "modalities": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "input": { "type": "array", "items": { "type": "string" } },
+        "output": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "fleetify": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "label": { "type": "string" },
+        "supports_effort": { "type": "boolean" },
+        "group": { "type": "string" },
+        "note": { "type": "string" },
+        "endpoint": { "type": "string" },
+        "hidden": { "type": "boolean" },
+        "aliases": { "type": "array", "items": { "type": "string" } }
+      }
+    }
+  }
+}

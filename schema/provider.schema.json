@@ -1,0 +1,24 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://models.fleetify.dev/schema/provider.schema.json",
+  "title": "Provider",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["name"],
+  "properties": {
+    "name": { "type": "string", "minLength": 1 },
+    "env": { "type": "array", "items": { "type": "string" } },
+    "doc": { "type": "string", "pattern": "^https?://" },
+    "api": { "type": "string", "pattern": "^https?://" },
+    "fleetify": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "kind": { "enum": ["api", "local_http", "cli"] },
+        "catalog_id": { "type": "string", "minLength": 1 },
+        "models_endpoint": { "type": "string" },
+        "supports_live": { "type": "boolean" }
+      }
+    }
+  }
+}
