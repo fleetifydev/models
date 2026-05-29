@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-05-29T22:37:36.381Z",
+  "commit": "9e26ded",
+  "providers": [
+    {
+      "id": "anthropic",
+      "name": "Anthropic",
+      "kind": "api",
+      "modelCount": 3
+    },
+    {
+      "id": "deepseek",
+      "name": "DeepSeek",
+      "kind": "api",
+      "modelCount": 2
+    },
+    {
+      "id": "google",
+      "name": "Google",
+      "kind": "api",
+      "modelCount": 2
+    },
+    {
+      "id": "mistral",
+      "name": "Mistral",
+      "kind": "api",
+      "modelCount": 2
+    },
+    {
+      "id": "nvidia-nim",
+      "name": "NVIDIA NIM",
+      "kind": "api",
+      "modelCount": 1
+    },
+    {
+      "id": "openai",
+      "name": "OpenAI",
+      "kind": "api",
+      "modelCount": 3
+    },
+    {
+      "id": "openrouter",
+      "name": "OpenRouter",
+      "kind": "api",
+      "modelCount": 1
+    },
+    {
+      "id": "perplexity",
+      "name": "Perplexity",
+      "kind": "api",
+      "modelCount": 3
+    },
+    {
+      "id": "xai",
+      "name": "xAI",
+      "kind": "api",
+      "modelCount": 2
+    }
+  ]
+}

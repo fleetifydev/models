@@ -1,0 +1,52 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-05-29T22:37:36.381Z",
+  "commit": "9e26ded",
+  "provider": {
+    "id": "openrouter",
+    "name": "OpenRouter",
+    "kind": "api",
+    "doc": "https://openrouter.ai/docs/models",
+    "env": [
+      "OPENROUTER_API_KEY"
+    ],
+    "api": "https://openrouter.ai/api/v1",
+    "models_endpoint": "/models",
+    "supports_live": true,
+    "models": [
+      {
+        "id": "anthropic/claude-opus-4-8",
+        "label": "Claude Opus 4.8",
+        "family": "claude-opus",
+        "context": 1000000,
+        "output_limit": 128000,
+        "reasoning": true,
+        "supports_effort": true,
+        "tool_call": true,
+        "attachment": true,
+        "structured_output": true,
+        "temperature": false,
+        "open_weights": false,
+        "modalities": {
+          "input": [
+            "text",
+            "image",
+            "pdf"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "cost": null,
+        "group": "via OpenRouter",
+        "note": null,
+        "endpoint": null,
+        "hidden": false,
+        "aliases": [],
+        "release_date": "2026-05-28",
+        "last_updated": "2026-05-28",
+        "knowledge": null
+      }
+    ]
+  }
+}

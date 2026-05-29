@@ -1,0 +1,93 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-05-29T22:37:36.381Z",
+  "commit": "9e26ded",
+  "provider": {
+    "id": "mistral",
+    "name": "Mistral",
+    "kind": "api",
+    "doc": "https://docs.mistral.ai/getting-started/models/models_overview/",
+    "env": [
+      "MISTRAL_API_KEY"
+    ],
+    "api": "https://api.mistral.ai/v1",
+    "models_endpoint": "/models",
+    "supports_live": true,
+    "models": [
+      {
+        "id": "codestral",
+        "label": "Codestral",
+        "family": "codestral",
+        "context": 256000,
+        "output_limit": 4096,
+        "reasoning": false,
+        "supports_effort": false,
+        "tool_call": true,
+        "attachment": false,
+        "structured_output": true,
+        "temperature": true,
+        "open_weights": true,
+        "modalities": {
+          "input": [
+            "text"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "cost": {
+          "input": 0.3,
+          "output": 0.9
+        },
+        "group": null,
+        "note": "Code",
+        "endpoint": null,
+        "hidden": false,
+        "aliases": [
+          "codestral-latest"
+        ],
+        "release_date": "2024-05-29",
+        "last_updated": "2025-01-04",
+        "knowledge": "2024-10"
+      },
+      {
+        "id": "mistral-large",
+        "label": "Mistral Large",
+        "family": "mistral-large",
+        "context": 262144,
+        "output_limit": 262144,
+        "reasoning": false,
+        "supports_effort": false,
+        "tool_call": true,
+        "attachment": true,
+        "structured_output": true,
+        "temperature": true,
+        "open_weights": true,
+        "modalities": {
+          "input": [
+            "text",
+            "image"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "cost": {
+          "input": 0.5,
+          "output": 1.5
+        },
+        "group": null,
+        "note": null,
+        "endpoint": null,
+        "hidden": false,
+        "aliases": [
+          "mistral-large-latest",
+          "mistral-large-2411"
+        ],
+        "release_date": "2024-11-01",
+        "last_updated": "2025-12-02",
+        "knowledge": "2024-11"
+      }
+    ]
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-05-29T22:37:36.381Z",
+  "commit": "9e26ded",
+  "provider": {
+    "id": "nvidia-nim",
+    "name": "NVIDIA NIM",
+    "kind": "api",
+    "doc": "https://docs.nvidia.com/nim/",
+    "env": [
+      "NVIDIA_API_KEY"
+    ],
+    "api": "https://integrate.api.nvidia.com/v1",
+    "models_endpoint": "/models",
+    "supports_live": true,
+    "models": [
+      {
+        "id": "meta/llama-4-maverick-17b-128e-instruct",
+        "label": "Llama 4 Maverick",
+        "family": "llama-4",
+        "context": 128000,
+        "output_limit": 4096,
+        "reasoning": false,
+        "supports_effort": false,
+        "tool_call": true,
+        "attachment": true,
+        "structured_output": true,
+        "temperature": true,
+        "open_weights": true,
+        "modalities": {
+          "input": [
+            "text",
+            "image"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "cost": {
+          "input": 0,
+          "output": 0
+        },
+        "group": null,
+        "note": null,
+        "endpoint": null,
+        "hidden": false,
+        "aliases": [],
+        "release_date": "2025-04-01",
+        "last_updated": "2025-04-01",
+        "knowledge": "2024-02"
+      }
+    ]
+  }
+}

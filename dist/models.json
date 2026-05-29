@@ -1,0 +1,826 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-05-29T22:37:36.381Z",
+  "commit": "9e26ded",
+  "providers": {
+    "anthropic": {
+      "id": "anthropic",
+      "name": "Anthropic",
+      "kind": "api",
+      "doc": "https://docs.anthropic.com/en/docs/about-claude/models",
+      "env": [
+        "ANTHROPIC_API_KEY"
+      ],
+      "api": "https://api.anthropic.com/v1",
+      "models_endpoint": "/models",
+      "supports_live": true,
+      "models": [
+        {
+          "id": "claude-haiku-4-5",
+          "label": "Claude Haiku 4.5",
+          "family": "claude-haiku",
+          "context": 200000,
+          "output_limit": 64000,
+          "reasoning": true,
+          "supports_effort": true,
+          "tool_call": true,
+          "attachment": true,
+          "structured_output": true,
+          "temperature": true,
+          "open_weights": false,
+          "modalities": {
+            "input": [
+              "text",
+              "image",
+              "pdf"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "cost": {
+            "input": 1,
+            "output": 5,
+            "cache_read": 0.1,
+            "cache_write": 1.25
+          },
+          "group": null,
+          "note": null,
+          "endpoint": null,
+          "hidden": false,
+          "aliases": [],
+          "release_date": "2025-10-15",
+          "last_updated": "2025-10-15",
+          "knowledge": "2025-02-28"
+        },
+        {
+          "id": "claude-opus-4-8",
+          "label": "Claude Opus 4.8",
+          "family": "claude-opus",
+          "context": 1000000,
+          "output_limit": 128000,
+          "reasoning": true,
+          "supports_effort": true,
+          "tool_call": true,
+          "attachment": true,
+          "structured_output": true,
+          "temperature": false,
+          "open_weights": false,
+          "modalities": {
+            "input": [
+              "text",
+              "image",
+              "pdf"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "cost": {
+            "input": 5,
+            "output": 25,
+            "cache_read": 0.5,
+            "cache_write": 6.25
+          },
+          "group": null,
+          "note": null,
+          "endpoint": null,
+          "hidden": false,
+          "aliases": [],
+          "release_date": "2026-05-28",
+          "last_updated": "2026-05-28",
+          "knowledge": null
+        },
+        {
+          "id": "claude-sonnet-4-6",
+          "label": "Claude Sonnet 4.6",
+          "family": "claude-sonnet",
+          "context": 1000000,
+          "output_limit": 64000,
+          "reasoning": true,
+          "supports_effort": true,
+          "tool_call": true,
+          "attachment": true,
+          "structured_output": true,
+          "temperature": true,
+          "open_weights": false,
+          "modalities": {
+            "input": [
+              "text",
+              "image",
+              "pdf"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "cost": {
+            "input": 3,
+            "output": 15,
+            "cache_read": 0.3,
+            "cache_write": 3.75
+          },
+          "group": null,
+          "note": null,
+          "endpoint": null,
+          "hidden": false,
+          "aliases": [],
+          "release_date": "2026-02-17",
+          "last_updated": "2026-03-13",
+          "knowledge": "2025-08-31"
+        }
+      ]
+    },
+    "deepseek": {
+      "id": "deepseek",
+      "name": "DeepSeek",
+      "kind": "api",
+      "doc": "https://api-docs.deepseek.com/quick_start/pricing",
+      "env": [
+        "DEEPSEEK_API_KEY"
+      ],
+      "api": "https://api.deepseek.com/v1",
+      "models_endpoint": "/models",
+      "supports_live": true,
+      "models": [
+        {
+          "id": "deepseek-chat",
+          "label": "DeepSeek Chat",
+          "family": "deepseek",
+          "context": 1000000,
+          "output_limit": 384000,
+          "reasoning": false,
+          "supports_effort": false,
+          "tool_call": true,
+          "attachment": true,
+          "structured_output": true,
+          "temperature": true,
+          "open_weights": true,
+          "modalities": {
+            "input": [
+              "text"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "cost": {
+            "input": 0.14,
+            "output": 0.28,
+            "cache_read": 0.028
+          },
+          "group": null,
+          "note": null,
+          "endpoint": null,
+          "hidden": false,
+          "aliases": [],
+          "release_date": "2025-12-01",
+          "last_updated": "2026-02-28",
+          "knowledge": "2025-09"
+        },
+        {
+          "id": "deepseek-reasoner",
+          "label": "DeepSeek Reasoner",
+          "family": "deepseek",
+          "context": 1000000,
+          "output_limit": 384000,
+          "reasoning": true,
+          "supports_effort": true,
+          "tool_call": true,
+          "attachment": true,
+          "structured_output": true,
+          "temperature": true,
+          "open_weights": true,
+          "modalities": {
+            "input": [
+              "text"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "cost": {
+            "input": 0.14,
+            "output": 0.28,
+            "cache_read": 0.028
+          },
+          "group": null,
+          "note": null,
+          "endpoint": null,
+          "hidden": false,
+          "aliases": [],
+          "release_date": "2025-12-01",
+          "last_updated": "2026-02-28",
+          "knowledge": "2025-09"
+        }
+      ]
+    },
+    "google": {
+      "id": "google",
+      "name": "Google",
+      "kind": "api",
+      "doc": "https://ai.google.dev/gemini-api/docs/models",
+      "env": [
+        "GEMINI_API_KEY",
+        "GOOGLE_API_KEY"
+      ],
+      "api": "https://generativelanguage.googleapis.com/v1beta",
+      "models_endpoint": "/models",
+      "supports_live": true,
+      "models": [
+        {
+          "id": "gemini-2.5-flash",
+          "label": "Gemini 2.5 Flash",
+          "family": "gemini-2.5",
+          "context": 1048576,
+          "output_limit": 65536,
+          "reasoning": true,
+          "supports_effort": true,
+          "tool_call": true,
+          "attachment": true,
+          "structured_output": true,
+          "temperature": true,
+          "open_weights": false,
+          "modalities": {
+            "input": [
+              "text",
+              "image",
+              "audio",
+              "video",
+              "pdf"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "cost": {
+            "input": 0.3,
+            "output": 2.5,
+            "cache_read": 0.03
+          },
+          "group": null,
+          "note": null,
+          "endpoint": null,
+          "hidden": false,
+          "aliases": [],
+          "release_date": "2025-03-20",
+          "last_updated": "2025-06-05",
+          "knowledge": "2025-01"
+        },
+        {
+          "id": "gemini-2.5-pro",
+          "label": "Gemini 2.5 Pro",
+          "family": "gemini-2.5",
+          "context": 1048576,
+          "output_limit": 65536,
+          "reasoning": true,
+          "supports_effort": true,
+          "tool_call": true,
+          "attachment": true,
+          "structured_output": true,
+          "temperature": true,
+          "open_weights": false,
+          "modalities": {
+            "input": [
+              "text",
+              "image",
+              "audio",
+              "video",
+              "pdf"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "cost": {
+            "input": 1.25,
+            "output": 10,
+            "cache_read": 0.125
+          },
+          "group": null,
+          "note": null,
+          "endpoint": null,
+          "hidden": false,
+          "aliases": [],
+          "release_date": "2025-03-20",
+          "last_updated": "2025-06-05",
+          "knowledge": "2025-01"
+        }
+      ]
+    },
+    "mistral": {
+      "id": "mistral",
+      "name": "Mistral",
+      "kind": "api",
+      "doc": "https://docs.mistral.ai/getting-started/models/models_overview/",
+      "env": [
+        "MISTRAL_API_KEY"
+      ],
+      "api": "https://api.mistral.ai/v1",
+      "models_endpoint": "/models",
+      "supports_live": true,
+      "models": [
+        {
+          "id": "codestral",
+          "label": "Codestral",
+          "family": "codestral",
+          "context": 256000,
+          "output_limit": 4096,
+          "reasoning": false,
+          "supports_effort": false,
+          "tool_call": true,
+          "attachment": false,
+          "structured_output": true,
+          "temperature": true,
+          "open_weights": true,
+          "modalities": {
+            "input": [
+              "text"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "cost": {
+            "input": 0.3,
+            "output": 0.9
+          },
+          "group": null,
+          "note": "Code",
+          "endpoint": null,
+          "hidden": false,
+          "aliases": [
+            "codestral-latest"
+          ],
+          "release_date": "2024-05-29",
+          "last_updated": "2025-01-04",
+          "knowledge": "2024-10"
+        },
+        {
+          "id": "mistral-large",
+          "label": "Mistral Large",
+          "family": "mistral-large",
+          "context": 262144,
+          "output_limit": 262144,
+          "reasoning": false,
+          "supports_effort": false,
+          "tool_call": true,
+          "attachment": true,
+          "structured_output": true,
+          "temperature": true,
+          "open_weights": true,
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "cost": {
+            "input": 0.5,
+            "output": 1.5
+          },
+          "group": null,
+          "note": null,
+          "endpoint": null,
+          "hidden": false,
+          "aliases": [
+            "mistral-large-latest",
+            "mistral-large-2411"
+          ],
+          "release_date": "2024-11-01",
+          "last_updated": "2025-12-02",
+          "knowledge": "2024-11"
+        }
+      ]
+    },
+    "nvidia-nim": {
+      "id": "nvidia-nim",
+      "name": "NVIDIA NIM",
+      "kind": "api",
+      "doc": "https://docs.nvidia.com/nim/",
+      "env": [
+        "NVIDIA_API_KEY"
+      ],
+      "api": "https://integrate.api.nvidia.com/v1",
+      "models_endpoint": "/models",
+      "supports_live": true,
+      "models": [
+        {
+          "id": "meta/llama-4-maverick-17b-128e-instruct",
+          "label": "Llama 4 Maverick",
+          "family": "llama-4",
+          "context": 128000,
+          "output_limit": 4096,
+          "reasoning": false,
+          "supports_effort": false,
+          "tool_call": true,
+          "attachment": true,
+          "structured_output": true,
+          "temperature": true,
+          "open_weights": true,
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "cost": {
+            "input": 0,
+            "output": 0
+          },
+          "group": null,
+          "note": null,
+          "endpoint": null,
+          "hidden": false,
+          "aliases": [],
+          "release_date": "2025-04-01",
+          "last_updated": "2025-04-01",
+          "knowledge": "2024-02"
+        }
+      ]
+    },
+    "openai": {
+      "id": "openai",
+      "name": "OpenAI",
+      "kind": "api",
+      "doc": "https://platform.openai.com/docs/models",
+      "env": [
+        "OPENAI_API_KEY"
+      ],
+      "api": "https://api.openai.com/v1",
+      "models_endpoint": "/models",
+      "supports_live": true,
+      "models": [
+        {
+          "id": "gpt-5-mini",
+          "label": "GPT-5 Mini",
+          "family": "gpt-5",
+          "context": 400000,
+          "output_limit": 128000,
+          "reasoning": true,
+          "supports_effort": true,
+          "tool_call": true,
+          "attachment": true,
+          "structured_output": true,
+          "temperature": false,
+          "open_weights": false,
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "cost": {
+            "input": 0.25,
+            "output": 2,
+            "cache_read": 0.025
+          },
+          "group": null,
+          "note": null,
+          "endpoint": null,
+          "hidden": false,
+          "aliases": [],
+          "release_date": "2025-08-07",
+          "last_updated": "2025-08-07",
+          "knowledge": "2024-05-30"
+        },
+        {
+          "id": "gpt-5.4",
+          "label": "GPT-5.4",
+          "family": "gpt-5",
+          "context": 1050000,
+          "output_limit": 128000,
+          "reasoning": true,
+          "supports_effort": true,
+          "tool_call": true,
+          "attachment": true,
+          "structured_output": true,
+          "temperature": false,
+          "open_weights": false,
+          "modalities": {
+            "input": [
+              "text",
+              "image",
+              "pdf"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "cost": {
+            "input": 2.5,
+            "output": 15,
+            "cache_read": 0.25
+          },
+          "group": null,
+          "note": null,
+          "endpoint": null,
+          "hidden": false,
+          "aliases": [],
+          "release_date": "2026-03-05",
+          "last_updated": "2026-03-05",
+          "knowledge": "2025-08-31"
+        },
+        {
+          "id": "gpt-5.5",
+          "label": "GPT-5.5",
+          "family": "gpt-5",
+          "context": 1050000,
+          "output_limit": 128000,
+          "reasoning": true,
+          "supports_effort": true,
+          "tool_call": true,
+          "attachment": true,
+          "structured_output": true,
+          "temperature": false,
+          "open_weights": false,
+          "modalities": {
+            "input": [
+              "text",
+              "image",
+              "pdf"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "cost": {
+            "input": 5,
+            "output": 30,
+            "cache_read": 0.5
+          },
+          "group": null,
+          "note": null,
+          "endpoint": null,
+          "hidden": false,
+          "aliases": [],
+          "release_date": "2026-04-23",
+          "last_updated": "2026-04-23",
+          "knowledge": "2025-12-01"
+        }
+      ]
+    },
+    "openrouter": {
+      "id": "openrouter",
+      "name": "OpenRouter",
+      "kind": "api",
+      "doc": "https://openrouter.ai/docs/models",
+      "env": [
+        "OPENROUTER_API_KEY"
+      ],
+      "api": "https://openrouter.ai/api/v1",
+      "models_endpoint": "/models",
+      "supports_live": true,
+      "models": [
+        {
+          "id": "anthropic/claude-opus-4-8",
+          "label": "Claude Opus 4.8",
+          "family": "claude-opus",
+          "context": 1000000,
+          "output_limit": 128000,
+          "reasoning": true,
+          "supports_effort": true,
+          "tool_call": true,
+          "attachment": true,
+          "structured_output": true,
+          "temperature": false,
+          "open_weights": false,
+          "modalities": {
+            "input": [
+              "text",
+              "image",
+              "pdf"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "cost": null,
+          "group": "via OpenRouter",
+          "note": null,
+          "endpoint": null,
+          "hidden": false,
+          "aliases": [],
+          "release_date": "2026-05-28",
+          "last_updated": "2026-05-28",
+          "knowledge": null
+        }
+      ]
+    },
+    "perplexity": {
+      "id": "perplexity",
+      "name": "Perplexity",
+      "kind": "api",
+      "doc": "https://docs.perplexity.ai/guides/model-cards",
+      "env": [
+        "PERPLEXITY_API_KEY"
+      ],
+      "api": "https://api.perplexity.ai",
+      "models_endpoint": null,
+      "supports_live": false,
+      "models": [
+        {
+          "id": "sonar",
+          "label": "Sonar",
+          "family": "sonar",
+          "context": 128000,
+          "output_limit": 4096,
+          "reasoning": false,
+          "supports_effort": false,
+          "tool_call": false,
+          "attachment": false,
+          "structured_output": false,
+          "temperature": true,
+          "open_weights": false,
+          "modalities": {
+            "input": [
+              "text"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "cost": {
+            "input": 1,
+            "output": 1
+          },
+          "group": null,
+          "note": "Search",
+          "endpoint": null,
+          "hidden": false,
+          "aliases": [],
+          "release_date": "2024-01-01",
+          "last_updated": "2025-09-01",
+          "knowledge": "2025-09-01"
+        },
+        {
+          "id": "sonar-pro",
+          "label": "Sonar Pro",
+          "family": "sonar",
+          "context": 200000,
+          "output_limit": 8192,
+          "reasoning": false,
+          "supports_effort": false,
+          "tool_call": false,
+          "attachment": true,
+          "structured_output": false,
+          "temperature": true,
+          "open_weights": false,
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "cost": {
+            "input": 3,
+            "output": 15
+          },
+          "group": null,
+          "note": "Search",
+          "endpoint": null,
+          "hidden": false,
+          "aliases": [],
+          "release_date": "2024-01-01",
+          "last_updated": "2025-09-01",
+          "knowledge": "2025-09-01"
+        },
+        {
+          "id": "sonar-reasoning-pro",
+          "label": "Sonar Reasoning Pro",
+          "family": "sonar",
+          "context": 128000,
+          "output_limit": 4096,
+          "reasoning": true,
+          "supports_effort": true,
+          "tool_call": false,
+          "attachment": true,
+          "structured_output": false,
+          "temperature": true,
+          "open_weights": false,
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "cost": {
+            "input": 2,
+            "output": 8
+          },
+          "group": null,
+          "note": "Search",
+          "endpoint": "/chat/completions",
+          "hidden": false,
+          "aliases": [],
+          "release_date": "2024-01-01",
+          "last_updated": "2025-09-01",
+          "knowledge": "2025-09-01"
+        }
+      ]
+    },
+    "xai": {
+      "id": "xai",
+      "name": "xAI",
+      "kind": "api",
+      "doc": "https://docs.x.ai/docs/models",
+      "env": [
+        "XAI_API_KEY"
+      ],
+      "api": "https://api.x.ai/v1",
+      "models_endpoint": "/models",
+      "supports_live": true,
+      "models": [
+        {
+          "id": "grok-4.20-0309-reasoning",
+          "label": "Grok 4.20 (Reasoning)",
+          "family": "grok-4",
+          "context": 2000000,
+          "output_limit": 30000,
+          "reasoning": true,
+          "supports_effort": true,
+          "tool_call": true,
+          "attachment": true,
+          "structured_output": true,
+          "temperature": true,
+          "open_weights": false,
+          "modalities": {
+            "input": [
+              "text",
+              "image",
+              "pdf"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "cost": {
+            "input": 1.25,
+            "output": 2.5,
+            "cache_read": 0.2
+          },
+          "group": null,
+          "note": null,
+          "endpoint": null,
+          "hidden": false,
+          "aliases": [],
+          "release_date": "2026-03-09",
+          "last_updated": "2026-03-09",
+          "knowledge": null
+        },
+        {
+          "id": "grok-4.3",
+          "label": "Grok 4.3",
+          "family": "grok-4",
+          "context": 1000000,
+          "output_limit": 30000,
+          "reasoning": true,
+          "supports_effort": true,
+          "tool_call": true,
+          "attachment": true,
+          "structured_output": true,
+          "temperature": true,
+          "open_weights": false,
+          "modalities": {
+            "input": [
+              "text",
+              "image",
+              "pdf"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "cost": {
+            "input": 1.25,
+            "output": 2.5,
+            "cache_read": 0.2
+          },
+          "group": null,
+          "note": null,
+          "endpoint": null,
+          "hidden": false,
+          "aliases": [],
+          "release_date": "2026-04-17",
+          "last_updated": "2026-04-17",
+          "knowledge": null
+        }
+      ]
+    }
+  }
+}

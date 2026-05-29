@@ -1,0 +1,123 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-05-29T22:37:36.381Z",
+  "commit": "9e26ded",
+  "provider": {
+    "id": "perplexity",
+    "name": "Perplexity",
+    "kind": "api",
+    "doc": "https://docs.perplexity.ai/guides/model-cards",
+    "env": [
+      "PERPLEXITY_API_KEY"
+    ],
+    "api": "https://api.perplexity.ai",
+    "models_endpoint": null,
+    "supports_live": false,
+    "models": [
+      {
+        "id": "sonar",
+        "label": "Sonar",
+        "family": "sonar",
+        "context": 128000,
+        "output_limit": 4096,
+        "reasoning": false,
+        "supports_effort": false,
+        "tool_call": false,
+        "attachment": false,
+        "structured_output": false,
+        "temperature": true,
+        "open_weights": false,
+        "modalities": {
+          "input": [
+            "text"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "cost": {
+          "input": 1,
+          "output": 1
+        },
+        "group": null,
+        "note": "Search",
+        "endpoint": null,
+        "hidden": false,
+        "aliases": [],
+        "release_date": "2024-01-01",
+        "last_updated": "2025-09-01",
+        "knowledge": "2025-09-01"
+      },
+      {
+        "id": "sonar-pro",
+        "label": "Sonar Pro",
+        "family": "sonar",
+        "context": 200000,
+        "output_limit": 8192,
+        "reasoning": false,
+        "supports_effort": false,
+        "tool_call": false,
+        "attachment": true,
+        "structured_output": false,
+        "temperature": true,
+        "open_weights": false,
+        "modalities": {
+          "input": [
+            "text",
+            "image"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "cost": {
+          "input": 3,
+          "output": 15
+        },
+        "group": null,
+        "note": "Search",
+        "endpoint": null,
+        "hidden": false,
+        "aliases": [],
+        "release_date": "2024-01-01",
+        "last_updated": "2025-09-01",
+        "knowledge": "2025-09-01"
+      },
+      {
+        "id": "sonar-reasoning-pro",
+        "label": "Sonar Reasoning Pro",
+        "family": "sonar",
+        "context": 128000,
+        "output_limit": 4096,
+        "reasoning": true,
+        "supports_effort": true,
+        "tool_call": false,
+        "attachment": true,
+        "structured_output": false,
+        "temperature": true,
+        "open_weights": false,
+        "modalities": {
+          "input": [
+            "text",
+            "image"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "cost": {
+          "input": 2,
+          "output": 8
+        },
+        "group": null,
+        "note": "Search",
+        "endpoint": "/chat/completions",
+        "hidden": false,
+        "aliases": [],
+        "release_date": "2024-01-01",
+        "last_updated": "2025-09-01",
+        "knowledge": "2025-09-01"
+      }
+    ]
+  }
+}
