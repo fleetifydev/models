@@ -49,7 +49,7 @@ Smaller fetches: `dist/index.json` (provider list) and
 1. Add/edit a `.toml` under `providers/<provider>/models/`. `name` is the only
    required field. Omit optional fields (TOML has no `null`).
 2. Run `bun run validate`.
-3. Open a PR. CI validates + builds; on merge, `dist/` is regenerated.
+3. Run `bun run build` to regenerate `dist/`, and commit it alongside your change. Open a PR.
 
 ### Mirrors (`[extends]`)
 
