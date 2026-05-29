@@ -1,7 +1,7 @@
-name = "Grok 4"
+name = "Grok 4.3"
 family = "grok-4"
-release_date = "2025-07-09"
-knowledge = "2025-04"
+release_date = "2026-04-17"
+last_updated = "2026-04-17"
 attachment = true
 reasoning = true
 tool_call = true
@@ -9,16 +9,16 @@ structured_output = true
 temperature = true
 
 [cost]
-input = 3.00
-output = 15.00
-cache_read = 0.75
+input = 1.25
+output = 2.50
+cache_read = 0.20
 
 [limit]
-context = 256000
-output = 64000
+context = 1000000
+output = 30000
 
 [modalities]
-input = ["text", "image"]
+input = ["text", "image", "pdf"]
 output = ["text"]
 
 [fleetify]

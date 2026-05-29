@@ -1,7 +1,8 @@
 name = "Claude Haiku 4.5"
 family = "claude-haiku"
-release_date = "2025-10-01"
-knowledge = "2025-02"
+release_date = "2025-10-15"
+last_updated = "2025-10-15"
+knowledge = "2025-02-28"
 attachment = true
 reasoning = true
 tool_call = true
@@ -19,7 +20,7 @@ context = 200000
 output = 64000
 
 [modalities]
-input = ["text", "image"]
+input = ["text", "image", "pdf"]
 output = ["text"]
 
 [fleetify]

@@ -10,7 +10,7 @@
     "family": { "type": "string" },
     "release_date": { "type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}$" },
     "last_updated": { "type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}$" },
-    "knowledge": { "type": "string", "pattern": "^\\d{4}-\\d{2}$" },
+    "knowledge": { "type": "string", "pattern": "^\\d{4}-\\d{2}(-\\d{2})?$" },
     "attachment": { "type": "boolean" },
     "reasoning": { "type": "boolean" },
     "tool_call": { "type": "boolean" },

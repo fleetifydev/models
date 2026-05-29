@@ -1,12 +1,12 @@
 name = "Claude Opus 4.8"
 family = "claude-opus"
-release_date = "2026-01-01"
-knowledge = "2025-08"
+release_date = "2026-05-28"
+last_updated = "2026-05-28"
 attachment = true
 reasoning = true
 tool_call = true
 structured_output = true
-temperature = true
+temperature = false
 
 [cost]
 input = 5.00
@@ -16,10 +16,10 @@ cache_write = 6.25
 
 [limit]
 context = 1000000
-output = 64000
+output = 128000
 
 [modalities]
-input = ["text", "image"]
+input = ["text", "image", "pdf"]
 output = ["text"]
 
 [fleetify]

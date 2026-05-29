@@ -1,7 +1,8 @@
 name = "Claude Sonnet 4.6"
 family = "claude-sonnet"
-release_date = "2025-12-01"
-knowledge = "2025-08"
+release_date = "2026-02-17"
+last_updated = "2026-03-13"
+knowledge = "2025-08-31"
 attachment = true
 reasoning = true
 tool_call = true
@@ -19,7 +20,7 @@ context = 1000000
 output = 64000
 
 [modalities]
-input = ["text", "image"]
+input = ["text", "image", "pdf"]
 output = ["text"]
 
 [fleetify]

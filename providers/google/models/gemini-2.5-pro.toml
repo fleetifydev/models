@@ -1,6 +1,7 @@
 name = "Gemini 2.5 Pro"
 family = "gemini-2.5"
-release_date = "2025-06-01"
+release_date = "2025-03-20"
+last_updated = "2025-06-05"
 knowledge = "2025-01"
 attachment = true
 reasoning = true
@@ -11,14 +12,14 @@ temperature = true
 [cost]
 input = 1.25
 output = 10.00
-cache_read = 0.31
+cache_read = 0.125
 
 [limit]
-context = 1000000
+context = 1048576
 output = 65536
 
 [modalities]
-input = ["text", "image", "audio", "video"]
+input = ["text", "image", "audio", "video", "pdf"]
 output = ["text"]
 
 [fleetify]

@@ -1,7 +1,7 @@
-name = "Grok 4 mini"
+name = "Grok 4.20 (Reasoning)"
 family = "grok-4"
-release_date = "2025-07-09"
-knowledge = "2025-04"
+release_date = "2026-03-09"
+last_updated = "2026-03-09"
 attachment = true
 reasoning = true
 tool_call = true
@@ -9,16 +9,16 @@ structured_output = true
 temperature = true
 
 [cost]
-input = 0.30
-output = 0.50
-cache_read = 0.075
+input = 1.25
+output = 2.50
+cache_read = 0.20
 
 [limit]
-context = 256000
-output = 64000
+context = 2000000
+output = 30000
 
 [modalities]
-input = ["text", "image"]
+input = ["text", "image", "pdf"]
 output = ["text"]
 
 [fleetify]
