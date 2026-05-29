@@ -1,0 +1,23 @@
+name = "Sonar Reasoning"
+family = "sonar"
+attachment = false
+reasoning = true
+tool_call = false
+temperature = true
+
+[cost]
+input = 1.00
+output = 5.00
+
+[limit]
+context = 128000
+output = 8000
+
+[modalities]
+input = ["text"]
+output = ["text"]
+
+[fleetify]
+supports_effort = true
+note = "Search"
+endpoint = "/chat/completions"

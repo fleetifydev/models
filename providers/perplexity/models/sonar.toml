@@ -1,0 +1,21 @@
+name = "Sonar"
+family = "sonar"
+attachment = false
+reasoning = false
+tool_call = false
+temperature = true
+
+[cost]
+input = 1.00
+output = 1.00
+
+[limit]
+context = 128000
+output = 8000
+
+[modalities]
+input = ["text"]
+output = ["text"]
+
+[fleetify]
+note = "Search"

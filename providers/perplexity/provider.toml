@@ -1,0 +1,9 @@
+name = "Perplexity"
+env = ["PERPLEXITY_API_KEY"]
+doc = "https://docs.perplexity.ai/guides/model-cards"
+api = "https://api.perplexity.ai"
+
+[fleetify]
+kind = "api"
+catalog_id = "perplexity"
+supports_live = false
