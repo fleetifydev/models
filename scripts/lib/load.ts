@@ -25,14 +25,14 @@ export function loadCatalog(providersDir: string): RawCatalog {
     if (!existsSync(providerTomlPath)) {
       throw new Error(`Missing provider.toml in ${providerDir}`);
     }
-    const data = parseToml(readFileSync(providerTomlPath, "utf8")) as ProviderToml;
+    const data = parseToml(readFileSync(providerTomlPath, "utf8")) as unknown as ProviderToml;
 
     const modelsRoot = join(providerDir, "models");
     const models: RawModelEntry[] = [];
     if (existsSync(modelsRoot)) {
       for (const file of walkToml(modelsRoot)) {
         const id = deriveId(file, modelsRoot);
-        const mdata = parseToml(readFileSync(file, "utf8")) as ModelToml;
+        const mdata = parseToml(readFileSync(file, "utf8")) as unknown as ModelToml;
         models.push({ id, providerId, data: mdata });
       }
     }

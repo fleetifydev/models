@@ -23,6 +23,12 @@ export function resolveExtends(
   if (!ext) return structuredClone(entry.data);
 
   const selfKey = `${entry.providerId}/${entry.id}`;
+  if (typeof ext.from !== "string" || ext.from.length === 0) {
+    throw new Error(`extends: ${selfKey} is missing a valid "from" (expected "<provider>/<model-id>")`);
+  }
+  if (ext.omit !== undefined && (!Array.isArray(ext.omit) || ext.omit.some((k) => typeof k !== "string"))) {
+    throw new Error(`extends: ${selfKey} "omit" must be an array of strings`);
+  }
   if (seen.has(selfKey)) throw new Error(`extends: cycle detected at "${selfKey}"`);
   seen.add(selfKey);
 

@@ -42,3 +42,43 @@ test("throws on a cycle", () => {
   const b: RawModelEntry = { id: "b", providerId: "p", data: { extends: { from: "p/a" } } };
   expect(() => resolveExtends(a, makeLookup([a, b]))).toThrow(/cycle/);
 });
+
+test("omit of a non-existent key is a no-op", () => {
+  const child: RawModelEntry = {
+    id: "acme/base",
+    providerId: "wrap",
+    data: { extends: { from: "acme/base", omit: ["nope"] } },
+  };
+  const merged = resolveExtends(child, makeLookup([base, child]));
+  expect(merged.name).toBe("Acme Base");
+  expect(merged.cost).toEqual({ input: 1, output: 2 }); // untouched
+});
+
+test("deepMerge replaces arrays rather than concatenating", () => {
+  const parent: RawModelEntry = {
+    id: "p",
+    providerId: "acme",
+    data: { name: "P", modalities: { input: ["text", "image"], output: ["text"] } },
+  };
+  const child: RawModelEntry = {
+    id: "c",
+    providerId: "acme",
+    data: { extends: { from: "acme/p" }, modalities: { input: ["text"], output: ["text"] } },
+  };
+  const merged = resolveExtends(child, makeLookup([parent, child]));
+  expect(merged.modalities).toEqual({ input: ["text"], output: ["text"] });
+});
+
+test("throws when from is missing", () => {
+  const child = { id: "x", providerId: "wrap", data: { extends: { omit: ["cost"] } } } as unknown as RawModelEntry;
+  expect(() => resolveExtends(child, makeLookup([child]))).toThrow(/missing a valid "from"/);
+});
+
+test("throws when omit is not an array of strings", () => {
+  const child = {
+    id: "x",
+    providerId: "wrap",
+    data: { extends: { from: "acme/base", omit: "cost" } },
+  } as unknown as RawModelEntry;
+  expect(() => resolveExtends(child, makeLookup([base, child]))).toThrow(/"omit" must be an array/);
+});

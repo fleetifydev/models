@@ -14,12 +14,16 @@ export function runPipeline(opts: PipelineOptions): PickerProvider[] {
   const catalog = loadCatalog(opts.providersDir);
   const validators = createValidators(opts.schemaDir);
 
+  const errors: string[] = [];
   const lookup = new Map<string, RawModelEntry>();
   for (const p of catalog.providers) {
-    for (const m of p.models) lookup.set(`${p.id}/${m.id}`, m);
+    for (const m of p.models) {
+      const key = `${p.id}/${m.id}`;
+      if (lookup.has(key)) errors.push(`[model ${key}] duplicate model id`);
+      lookup.set(key, m);
+    }
   }
 
-  const errors: string[] = [];
   const pickerProviders: PickerProvider[] = [];
 
   for (const p of catalog.providers) {
@@ -38,6 +42,12 @@ export function runPipeline(opts: PipelineOptions): PickerProvider[] {
       pickerModels.push(toPickerModel(m.id, resolved));
     }
     pickerProviders.push(toPickerProvider(p, pickerModels));
+  }
+
+  const seenProviderIds = new Set<string>();
+  for (const pp of pickerProviders) {
+    if (seenProviderIds.has(pp.id)) errors.push(`[provider ${pp.id}] duplicate provider id (check catalog_id)`);
+    seenProviderIds.add(pp.id);
   }
 
   if (errors.length) throw new Error(`Validation failed:\n${errors.map((e) => `  - ${e}`).join("\n")}`);
