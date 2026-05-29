@@ -1,0 +1,6 @@
+name = "Wrap"
+env = ["WRAP_API_KEY"]
+api = "https://api.wrap.test/v1"
+
+[fleetify]
+kind = "api"

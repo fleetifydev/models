@@ -1,0 +1,6 @@
+[extends]
+from = "acme/base"
+omit = ["cost"]
+
+[fleetify]
+group = "via Wrap"

@@ -1,0 +1,8 @@
+name = "Acme"
+env = ["ACME_API_KEY"]
+api = "https://api.acme.test/v1"
+doc = "https://acme.test/docs"
+
+[fleetify]
+kind = "api"
+supports_live = true
