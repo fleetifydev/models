@@ -1,0 +1,26 @@
+name = "DeepSeek-R1"
+family = "deepseek"
+release_date = "2025-01-20"
+knowledge = "2024-07"
+attachment = false
+reasoning = true
+tool_call = true
+structured_output = true
+temperature = false
+open_weights = true
+
+[cost]
+input = 0.55
+output = 2.19
+cache_read = 0.14
+
+[limit]
+context = 128000
+output = 64000
+
+[modalities]
+input = ["text"]
+output = ["text"]
+
+[fleetify]
+supports_effort = true

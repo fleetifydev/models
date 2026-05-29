@@ -1,0 +1,9 @@
+name = "DeepSeek"
+env = ["DEEPSEEK_API_KEY"]
+doc = "https://api-docs.deepseek.com/quick_start/pricing"
+api = "https://api.deepseek.com/v1"
+
+[fleetify]
+kind = "api"
+models_endpoint = "/models"
+supports_live = true
