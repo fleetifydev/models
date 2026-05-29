@@ -1,0 +1,10 @@
+name = "Google"
+env = ["GEMINI_API_KEY", "GOOGLE_API_KEY"]
+doc = "https://ai.google.dev/gemini-api/docs/models"
+api = "https://generativelanguage.googleapis.com/v1beta"
+
+[fleetify]
+kind = "api"
+catalog_id = "google"
+models_endpoint = "/models"
+supports_live = true
