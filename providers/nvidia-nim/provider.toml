@@ -1,0 +1,10 @@
+name = "NVIDIA NIM"
+env = ["NVIDIA_API_KEY"]
+doc = "https://docs.nvidia.com/nim/"
+api = "https://integrate.api.nvidia.com/v1"
+
+[fleetify]
+kind = "api"
+catalog_id = "nvidia-nim"
+models_endpoint = "/models"
+supports_live = true
