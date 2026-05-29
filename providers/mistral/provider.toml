@@ -1,0 +1,9 @@
+name = "Mistral"
+env = ["MISTRAL_API_KEY"]
+doc = "https://docs.mistral.ai/getting-started/models/models_overview/"
+api = "https://api.mistral.ai/v1"
+
+[fleetify]
+kind = "api"
+models_endpoint = "/models"
+supports_live = true

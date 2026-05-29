@@ -1,0 +1,26 @@
+name = "Codestral"
+family = "codestral"
+release_date = "2025-01-13"
+knowledge = "2024-06"
+attachment = false
+reasoning = false
+tool_call = true
+structured_output = true
+temperature = true
+open_weights = true
+
+[cost]
+input = 0.30
+output = 0.90
+
+[limit]
+context = 256000
+output = 16000
+
+[modalities]
+input = ["text"]
+output = ["text"]
+
+[fleetify]
+note = "Code"
+aliases = ["codestral-latest"]
