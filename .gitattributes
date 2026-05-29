@@ -1,0 +1,6 @@
+# Enforce LF line endings for all text files (consistent across Windows/Linux CI)
+* text=auto eol=lf
+
+# Generated / lockfile — collapse in GitHub diffs, still stored as LF
+dist/** linguist-generated=true
+bun.lock linguist-generated=true
