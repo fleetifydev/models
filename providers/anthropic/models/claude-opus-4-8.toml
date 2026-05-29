@@ -1,0 +1,26 @@
+name = "Claude Opus 4.8"
+family = "claude-opus"
+release_date = "2026-01-01"
+knowledge = "2025-08"
+attachment = true
+reasoning = true
+tool_call = true
+structured_output = true
+temperature = true
+
+[cost]
+input = 5.00
+output = 25.00
+cache_read = 0.50
+cache_write = 6.25
+
+[limit]
+context = 1000000
+output = 64000
+
+[modalities]
+input = ["text", "image"]
+output = ["text"]
+
+[fleetify]
+supports_effort = true
