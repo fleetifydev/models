@@ -1,0 +1,9 @@
+name = "OpenAI"
+env = ["OPENAI_API_KEY"]
+doc = "https://platform.openai.com/docs/models"
+api = "https://api.openai.com/v1"
+
+[fleetify]
+kind = "api"
+models_endpoint = "/models"
+supports_live = true
