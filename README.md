@@ -5,10 +5,6 @@ step compiles everything into `dist/models.json`, which the Fleetify app fetches
 at runtime to populate its provider model pickers — so new models appear without
 shipping an app release.
 
-Modeled on [models.dev](https://github.com/anomalyco/models.dev), **minus the
-website**: just the TOML configs, a small build-to-JSON step, and the generated
-artifact.
-
 ## Layout
 
 ```
