@@ -1,0 +1,4 @@
+name = "Auto"
+
+[fleetify]
+label = "Auto (Copilot picks)"

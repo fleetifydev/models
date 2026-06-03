@@ -1,0 +1,27 @@
+name = "Kimi K2.6"
+family = "kimi-k2.6"
+release_date = "2026-04-21"
+last_updated = "2026-04-21"
+knowledge = "2025-01"
+attachment = true
+reasoning = true
+tool_call = true
+structured_output = true
+temperature = true
+open_weights = true
+
+[cost]
+input = 0.684
+output = 3.42
+cache_read = 0.144
+
+[limit]
+context = 262144
+output = 262144
+
+[modalities]
+input = ["text", "image"]
+output = ["text"]
+
+[fleetify]
+group = "via OpenRouter"

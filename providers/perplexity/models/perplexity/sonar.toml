@@ -1,0 +1,27 @@
+name = "Sonar"
+family = "sonar"
+release_date = "2024-01-01"
+last_updated = "2025-09-01"
+knowledge = "2025-09-01"
+attachment = false
+reasoning = false
+tool_call = true
+structured_output = true
+temperature = true
+
+[cost]
+input = 0.25
+output = 2.50
+cache_read = 0.0625
+
+[limit]
+context = 128000
+output = 8192
+
+[modalities]
+input = ["text"]
+output = ["text"]
+
+[fleetify]
+group = "Agent API"
+endpoint = "/v1/agent"

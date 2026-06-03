@@ -1,0 +1,8 @@
+name = "Antigravity SDK"
+env = ["GEMINI_API_KEY"]
+doc = "https://antigravity.google"
+
+[fleetify]
+kind = "cli"
+catalog_id = "antigravity-sdk"
+supports_live = false

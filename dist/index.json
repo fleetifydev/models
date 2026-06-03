@@ -1,13 +1,43 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-05-29T22:37:36.381Z",
-  "commit": "9e26ded",
+  "generatedAt": "2026-06-03T23:02:02.603Z",
+  "commit": "0a41cb2",
   "providers": [
+    {
+      "id": "agy",
+      "name": "Antigravity CLI",
+      "kind": "cli",
+      "modelCount": 1
+    },
     {
       "id": "anthropic",
       "name": "Anthropic",
       "kind": "api",
       "modelCount": 3
+    },
+    {
+      "id": "antigravity-sdk",
+      "name": "Antigravity SDK",
+      "kind": "cli",
+      "modelCount": 7
+    },
+    {
+      "id": "claude",
+      "name": "Claude Code",
+      "kind": "cli",
+      "modelCount": 3
+    },
+    {
+      "id": "cloudflare-workers-ai",
+      "name": "Cloudflare Workers AI",
+      "kind": "api",
+      "modelCount": 18
+    },
+    {
+      "id": "codex",
+      "name": "Codex CLI",
+      "kind": "cli",
+      "modelCount": 6
     },
     {
       "id": "deepseek",
@@ -16,8 +46,32 @@
       "modelCount": 2
     },
     {
-      "id": "google",
+      "id": "gemini",
+      "name": "Gemini CLI",
+      "kind": "cli",
+      "modelCount": 3
+    },
+    {
+      "id": "github-copilot",
+      "name": "GitHub Copilot CLI",
+      "kind": "cli",
+      "modelCount": 23
+    },
+    {
+      "id": "gemini-api",
       "name": "Google",
+      "kind": "api",
+      "modelCount": 7
+    },
+    {
+      "id": "kimi",
+      "name": "Kimi Code CLI",
+      "kind": "cli",
+      "modelCount": 2
+    },
+    {
+      "id": "kimi-api",
+      "name": "Kimi (Moonshot)",
       "kind": "api",
       "modelCount": 2
     },
@@ -31,31 +85,31 @@
       "id": "nvidia-nim",
       "name": "NVIDIA NIM",
       "kind": "api",
-      "modelCount": 1
+      "modelCount": 10
     },
     {
       "id": "openai",
       "name": "OpenAI",
       "kind": "api",
-      "modelCount": 3
+      "modelCount": 7
     },
     {
       "id": "openrouter",
       "name": "OpenRouter",
       "kind": "api",
-      "modelCount": 1
+      "modelCount": 10
     },
     {
       "id": "perplexity",
       "name": "Perplexity",
       "kind": "api",
-      "modelCount": 3
+      "modelCount": 22
     },
     {
-      "id": "xai",
+      "id": "grok",
       "name": "xAI",
       "kind": "api",
-      "modelCount": 2
+      "modelCount": 3
     }
   ]
 }

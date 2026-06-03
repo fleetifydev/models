@@ -1,0 +1,5 @@
+[extends]
+from = "anthropic/claude-sonnet-4-6"
+
+[fleetify]
+label = "Sonnet 4.6"

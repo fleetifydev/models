@@ -5,6 +5,6 @@ api = "https://generativelanguage.googleapis.com/v1beta"
 
 [fleetify]
 kind = "api"
-catalog_id = "google"
+catalog_id = "gemini-api"
 models_endpoint = "/models"
 supports_live = true

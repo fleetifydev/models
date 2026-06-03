@@ -1,0 +1,10 @@
+name = "Kimi (Moonshot)"
+env = ["MOONSHOT_API_KEY"]
+doc = "https://platform.moonshot.ai/docs"
+api = "https://api.moonshot.ai/v1"
+
+[fleetify]
+kind = "api"
+catalog_id = "kimi-api"
+models_endpoint = "/models"
+supports_live = true

@@ -1,5 +1,4 @@
-name = "Llama 4 Maverick"
-family = "llama-4"
+name = "Llama 4 Maverick 17b 128e Instruct"
 release_date = "2025-04-01"
 last_updated = "2025-04-01"
 knowledge = "2024-02"

@@ -1,0 +1,22 @@
+name = "Granite 4.0 H Micro"
+family = "granite"
+release_date = "2025-10-07"
+last_updated = "2025-10-07"
+attachment = false
+reasoning = false
+tool_call = true
+structured_output = false
+temperature = true
+open_weights = true
+
+[cost]
+input = 0.017
+output = 0.112
+
+[limit]
+context = 131000
+output = 131000
+
+[modalities]
+input = ["text"]
+output = ["text"]

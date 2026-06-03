@@ -1,0 +1,7 @@
+name = "Kimi Code CLI"
+doc = "https://platform.moonshot.ai/docs"
+
+[fleetify]
+kind = "cli"
+catalog_id = "kimi"
+supports_live = false

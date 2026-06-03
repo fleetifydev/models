@@ -1,0 +1,130 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-06-03T23:02:02.603Z",
+  "commit": "0a41cb2",
+  "provider": {
+    "id": "grok",
+    "name": "xAI",
+    "kind": "api",
+    "doc": "https://docs.x.ai/docs/models",
+    "env": [
+      "XAI_API_KEY"
+    ],
+    "api": "https://api.x.ai/v1",
+    "models_endpoint": "/models",
+    "supports_live": true,
+    "models": [
+      {
+        "id": "grok-4.20-0309-non-reasoning",
+        "label": "Grok 4.20 (Non-Reasoning)",
+        "family": "grok",
+        "context": 2000000,
+        "output_limit": 30000,
+        "reasoning": false,
+        "supports_effort": false,
+        "tool_call": true,
+        "attachment": true,
+        "structured_output": true,
+        "temperature": true,
+        "open_weights": false,
+        "modalities": {
+          "input": [
+            "text",
+            "image",
+            "pdf"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "cost": {
+          "input": 1.25,
+          "output": 2.5,
+          "cache_read": 0.2
+        },
+        "group": null,
+        "note": null,
+        "endpoint": null,
+        "hidden": false,
+        "aliases": [],
+        "release_date": "2026-03-09",
+        "last_updated": "2026-03-09",
+        "knowledge": null
+      },
+      {
+        "id": "grok-4.20-0309-reasoning",
+        "label": "Grok 4.20 (Reasoning)",
+        "family": "grok",
+        "context": 2000000,
+        "output_limit": 30000,
+        "reasoning": true,
+        "supports_effort": true,
+        "tool_call": true,
+        "attachment": true,
+        "structured_output": true,
+        "temperature": true,
+        "open_weights": false,
+        "modalities": {
+          "input": [
+            "text",
+            "image",
+            "pdf"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "cost": {
+          "input": 1.25,
+          "output": 2.5,
+          "cache_read": 0.2
+        },
+        "group": null,
+        "note": null,
+        "endpoint": null,
+        "hidden": false,
+        "aliases": [],
+        "release_date": "2026-03-09",
+        "last_updated": "2026-03-09",
+        "knowledge": null
+      },
+      {
+        "id": "grok-4.3",
+        "label": "Grok 4.3",
+        "family": "grok",
+        "context": 1000000,
+        "output_limit": 30000,
+        "reasoning": true,
+        "supports_effort": true,
+        "tool_call": true,
+        "attachment": true,
+        "structured_output": true,
+        "temperature": true,
+        "open_weights": false,
+        "modalities": {
+          "input": [
+            "text",
+            "image",
+            "pdf"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "cost": {
+          "input": 1.25,
+          "output": 2.5,
+          "cache_read": 0.2
+        },
+        "group": null,
+        "note": null,
+        "endpoint": null,
+        "hidden": false,
+        "aliases": [],
+        "release_date": "2026-04-17",
+        "last_updated": "2026-04-17",
+        "knowledge": null
+      }
+    ]
+  }
+}

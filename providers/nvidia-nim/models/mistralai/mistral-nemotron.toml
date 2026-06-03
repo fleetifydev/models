@@ -1,0 +1,21 @@
+name = "mistral-nemotron"
+release_date = "2025-06-11"
+last_updated = "2025-06-12"
+attachment = false
+reasoning = false
+tool_call = true
+structured_output = true
+temperature = true
+open_weights = true
+
+[cost]
+input = 0.00
+output = 0.00
+
+[limit]
+context = 128000
+output = 8192
+
+[modalities]
+input = ["text"]
+output = ["text"]

@@ -1,0 +1,9 @@
+name = "Auto"
+family = "gemini"
+
+[limit]
+context = 1048576
+
+[fleetify]
+label = "Auto"
+note = "Server-pinned model (print mode)"

@@ -1,0 +1,22 @@
+name = "Gemma Sea Lion V4 27B It"
+family = "gemma"
+release_date = "2025-09-23"
+last_updated = "2025-09-23"
+attachment = false
+reasoning = false
+tool_call = false
+structured_output = false
+temperature = true
+open_weights = true
+
+[cost]
+input = 0.351
+output = 0.555
+
+[limit]
+context = 128000
+output = 128000
+
+[modalities]
+input = ["text"]
+output = ["text"]

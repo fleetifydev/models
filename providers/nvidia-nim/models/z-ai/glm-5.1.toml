@@ -1,0 +1,22 @@
+name = "GLM-5.1"
+family = "glm"
+release_date = "2026-03-27"
+last_updated = "2026-03-27"
+attachment = false
+reasoning = true
+tool_call = true
+structured_output = true
+temperature = true
+open_weights = true
+
+[cost]
+input = 0.00
+output = 0.00
+
+[limit]
+context = 131072
+output = 131072
+
+[modalities]
+input = ["text"]
+output = ["text"]

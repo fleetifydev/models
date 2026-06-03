@@ -1,0 +1,27 @@
+name = "Grok 4.1 Fast (Non-Reasoning)"
+family = "grok"
+release_date = "2025-11-19"
+last_updated = "2025-11-19"
+knowledge = "2025-07"
+attachment = true
+reasoning = false
+tool_call = true
+structured_output = true
+temperature = true
+
+[cost]
+input = 0.20
+output = 0.50
+cache_read = 0.05
+
+[limit]
+context = 2000000
+output = 30000
+
+[modalities]
+input = ["text", "image"]
+output = ["text"]
+
+[fleetify]
+group = "Agent API"
+endpoint = "/v1/agent"

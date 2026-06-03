@@ -1,0 +1,29 @@
+name = "Claude Sonnet 4.6"
+family = "claude-sonnet"
+release_date = "2026-02-17"
+last_updated = "2026-03-13"
+knowledge = "2025-08-31"
+attachment = true
+reasoning = true
+tool_call = true
+structured_output = true
+temperature = true
+
+[cost]
+input = 3.00
+output = 15.00
+cache_read = 0.30
+cache_write = 3.75
+
+[limit]
+context = 1000000
+output = 64000
+
+[modalities]
+input = ["text", "image", "pdf"]
+output = ["text"]
+
+[fleetify]
+label = "Claude Sonnet 4.6 (Thinking)"
+supports_effort = false
+note = "Reasoning"

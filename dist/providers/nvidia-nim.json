@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-05-29T22:37:36.381Z",
-  "commit": "9e26ded",
+  "generatedAt": "2026-06-03T23:02:02.603Z",
+  "commit": "0a41cb2",
   "provider": {
     "id": "nvidia-nim",
     "name": "NVIDIA NIM",
     "kind": "api",
-    "doc": "https://docs.nvidia.com/nim/",
+    "doc": "https://build.nvidia.com/models",
     "env": [
       "NVIDIA_API_KEY"
     ],
@@ -15,9 +15,79 @@
     "supports_live": true,
     "models": [
       {
+        "id": "deepseek-ai/deepseek-v4-flash",
+        "label": "DeepSeek V4 Flash",
+        "family": "deepseek-flash",
+        "context": 1048576,
+        "output_limit": 393216,
+        "reasoning": true,
+        "supports_effort": true,
+        "tool_call": true,
+        "attachment": false,
+        "structured_output": true,
+        "temperature": true,
+        "open_weights": true,
+        "modalities": {
+          "input": [
+            "text"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "cost": {
+          "input": 0.14,
+          "output": 0.28,
+          "cache_read": 0.0028
+        },
+        "group": null,
+        "note": null,
+        "endpoint": null,
+        "hidden": false,
+        "aliases": [],
+        "release_date": "2026-04-24",
+        "last_updated": "2026-04-24",
+        "knowledge": "2025-05"
+      },
+      {
+        "id": "deepseek-ai/deepseek-v4-pro",
+        "label": "DeepSeek V4 Pro",
+        "family": "deepseek-thinking",
+        "context": 1048576,
+        "output_limit": 393216,
+        "reasoning": true,
+        "supports_effort": true,
+        "tool_call": true,
+        "attachment": false,
+        "structured_output": true,
+        "temperature": true,
+        "open_weights": true,
+        "modalities": {
+          "input": [
+            "text"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "cost": {
+          "input": 0.435,
+          "output": 0.87,
+          "cache_read": 0.003625
+        },
+        "group": null,
+        "note": null,
+        "endpoint": null,
+        "hidden": false,
+        "aliases": [],
+        "release_date": "2026-04-24",
+        "last_updated": "2026-04-24",
+        "knowledge": "2025-05"
+      },
+      {
         "id": "meta/llama-4-maverick-17b-128e-instruct",
-        "label": "Llama 4 Maverick",
-        "family": "llama-4",
+        "label": "Llama 4 Maverick 17b 128e Instruct",
+        "family": null,
         "context": 128000,
         "output_limit": 4096,
         "reasoning": false,
@@ -48,6 +118,246 @@
         "release_date": "2025-04-01",
         "last_updated": "2025-04-01",
         "knowledge": "2024-02"
+      },
+      {
+        "id": "minimaxai/minimax-m2.7",
+        "label": "MiniMax-M2.7",
+        "family": "minimax",
+        "context": 204800,
+        "output_limit": 131072,
+        "reasoning": true,
+        "supports_effort": true,
+        "tool_call": true,
+        "attachment": false,
+        "structured_output": true,
+        "temperature": true,
+        "open_weights": true,
+        "modalities": {
+          "input": [
+            "text"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "cost": {
+          "input": 0,
+          "output": 0
+        },
+        "group": null,
+        "note": null,
+        "endpoint": null,
+        "hidden": false,
+        "aliases": [],
+        "release_date": "2026-03-18",
+        "last_updated": "2026-04-11",
+        "knowledge": null
+      },
+      {
+        "id": "mistralai/mistral-nemotron",
+        "label": "mistral-nemotron",
+        "family": null,
+        "context": 128000,
+        "output_limit": 8192,
+        "reasoning": false,
+        "supports_effort": false,
+        "tool_call": true,
+        "attachment": false,
+        "structured_output": true,
+        "temperature": true,
+        "open_weights": true,
+        "modalities": {
+          "input": [
+            "text"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "cost": {
+          "input": 0,
+          "output": 0
+        },
+        "group": null,
+        "note": null,
+        "endpoint": null,
+        "hidden": false,
+        "aliases": [],
+        "release_date": "2025-06-11",
+        "last_updated": "2025-06-12",
+        "knowledge": null
+      },
+      {
+        "id": "moonshotai/kimi-k2.6",
+        "label": "Kimi K2.6",
+        "family": "kimi-k2.6",
+        "context": 262144,
+        "output_limit": 262144,
+        "reasoning": true,
+        "supports_effort": true,
+        "tool_call": true,
+        "attachment": true,
+        "structured_output": true,
+        "temperature": true,
+        "open_weights": true,
+        "modalities": {
+          "input": [
+            "text",
+            "image",
+            "video"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "cost": {
+          "input": 0,
+          "output": 0
+        },
+        "group": null,
+        "note": null,
+        "endpoint": null,
+        "hidden": false,
+        "aliases": [],
+        "release_date": "2026-04-21",
+        "last_updated": "2026-04-21",
+        "knowledge": "2025-01"
+      },
+      {
+        "id": "nvidia/nemotron-3-super-120b-a12b",
+        "label": "Nemotron 3 Super",
+        "family": "nemotron",
+        "context": 262144,
+        "output_limit": 262144,
+        "reasoning": true,
+        "supports_effort": true,
+        "tool_call": true,
+        "attachment": false,
+        "structured_output": true,
+        "temperature": true,
+        "open_weights": true,
+        "modalities": {
+          "input": [
+            "text"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "cost": {
+          "input": 0.2,
+          "output": 0.8
+        },
+        "group": null,
+        "note": null,
+        "endpoint": null,
+        "hidden": false,
+        "aliases": [],
+        "release_date": "2026-03-11",
+        "last_updated": "2026-03-11",
+        "knowledge": "2024-04"
+      },
+      {
+        "id": "openai/gpt-oss-120b",
+        "label": "GPT-OSS-120B",
+        "family": "gpt-oss",
+        "context": 128000,
+        "output_limit": 8192,
+        "reasoning": true,
+        "supports_effort": true,
+        "tool_call": false,
+        "attachment": true,
+        "structured_output": false,
+        "temperature": true,
+        "open_weights": false,
+        "modalities": {
+          "input": [
+            "text"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "cost": {
+          "input": 0,
+          "output": 0
+        },
+        "group": null,
+        "note": null,
+        "endpoint": null,
+        "hidden": false,
+        "aliases": [],
+        "release_date": "2025-08-04",
+        "last_updated": "2025-08-14",
+        "knowledge": "2025-08"
+      },
+      {
+        "id": "openai/gpt-oss-20b",
+        "label": "GPT OSS 20B",
+        "family": "gpt-oss",
+        "context": 131072,
+        "output_limit": 32768,
+        "reasoning": true,
+        "supports_effort": false,
+        "tool_call": true,
+        "attachment": false,
+        "structured_output": true,
+        "temperature": true,
+        "open_weights": true,
+        "modalities": {
+          "input": [
+            "text"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "cost": {
+          "input": 0,
+          "output": 0
+        },
+        "group": null,
+        "note": null,
+        "endpoint": null,
+        "hidden": false,
+        "aliases": [],
+        "release_date": "2025-08-05",
+        "last_updated": "2025-08-05",
+        "knowledge": null
+      },
+      {
+        "id": "z-ai/glm-5.1",
+        "label": "GLM-5.1",
+        "family": "glm",
+        "context": 131072,
+        "output_limit": 131072,
+        "reasoning": true,
+        "supports_effort": true,
+        "tool_call": true,
+        "attachment": false,
+        "structured_output": true,
+        "temperature": true,
+        "open_weights": true,
+        "modalities": {
+          "input": [
+            "text"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "cost": {
+          "input": 0,
+          "output": 0
+        },
+        "group": null,
+        "note": null,
+        "endpoint": null,
+        "hidden": false,
+        "aliases": [],
+        "release_date": "2026-03-27",
+        "last_updated": "2026-03-27",
+        "knowledge": null
       }
     ]
   }

@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-05-29T22:37:36.381Z",
-  "commit": "9e26ded",
+  "generatedAt": "2026-06-03T23:02:02.603Z",
+  "commit": "0a41cb2",
   "provider": {
     "id": "openai",
     "name": "OpenAI",
@@ -15,9 +15,82 @@
     "supports_live": true,
     "models": [
       {
+        "id": "gpt-4.1",
+        "label": "GPT-4.1",
+        "family": "gpt",
+        "context": 1047576,
+        "output_limit": 32768,
+        "reasoning": false,
+        "supports_effort": false,
+        "tool_call": true,
+        "attachment": true,
+        "structured_output": true,
+        "temperature": true,
+        "open_weights": false,
+        "modalities": {
+          "input": [
+            "text",
+            "image",
+            "pdf"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "cost": {
+          "input": 2,
+          "output": 8,
+          "cache_read": 0.5
+        },
+        "group": null,
+        "note": null,
+        "endpoint": null,
+        "hidden": false,
+        "aliases": [],
+        "release_date": "2025-04-14",
+        "last_updated": "2025-04-14",
+        "knowledge": "2024-04"
+      },
+      {
+        "id": "gpt-5",
+        "label": "GPT-5",
+        "family": "gpt",
+        "context": 400000,
+        "output_limit": 128000,
+        "reasoning": true,
+        "supports_effort": true,
+        "tool_call": true,
+        "attachment": true,
+        "structured_output": true,
+        "temperature": false,
+        "open_weights": false,
+        "modalities": {
+          "input": [
+            "text",
+            "image"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "cost": {
+          "input": 1.25,
+          "output": 10,
+          "cache_read": 0.125
+        },
+        "group": null,
+        "note": null,
+        "endpoint": null,
+        "hidden": false,
+        "aliases": [],
+        "release_date": "2025-08-07",
+        "last_updated": "2025-08-07",
+        "knowledge": "2024-09-30"
+      },
+      {
         "id": "gpt-5-mini",
         "label": "GPT-5 Mini",
-        "family": "gpt-5",
+        "family": "gpt-mini",
         "context": 400000,
         "output_limit": 128000,
         "reasoning": true,
@@ -53,7 +126,7 @@
       {
         "id": "gpt-5.4",
         "label": "GPT-5.4",
-        "family": "gpt-5",
+        "family": "gpt",
         "context": 1050000,
         "output_limit": 128000,
         "reasoning": true,
@@ -88,9 +161,81 @@
         "knowledge": "2025-08-31"
       },
       {
+        "id": "gpt-5.4-mini",
+        "label": "GPT-5.4 mini",
+        "family": "gpt-mini",
+        "context": 400000,
+        "output_limit": 128000,
+        "reasoning": true,
+        "supports_effort": true,
+        "tool_call": true,
+        "attachment": true,
+        "structured_output": true,
+        "temperature": false,
+        "open_weights": false,
+        "modalities": {
+          "input": [
+            "text",
+            "image"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "cost": {
+          "input": 0.75,
+          "output": 4.5,
+          "cache_read": 0.075
+        },
+        "group": null,
+        "note": null,
+        "endpoint": null,
+        "hidden": false,
+        "aliases": [],
+        "release_date": "2026-03-17",
+        "last_updated": "2026-03-17",
+        "knowledge": "2025-08-31"
+      },
+      {
+        "id": "gpt-5.4-nano",
+        "label": "GPT-5.4 nano",
+        "family": "gpt-nano",
+        "context": 400000,
+        "output_limit": 128000,
+        "reasoning": true,
+        "supports_effort": true,
+        "tool_call": true,
+        "attachment": true,
+        "structured_output": true,
+        "temperature": false,
+        "open_weights": false,
+        "modalities": {
+          "input": [
+            "text",
+            "image"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "cost": {
+          "input": 0.2,
+          "output": 1.25,
+          "cache_read": 0.02
+        },
+        "group": null,
+        "note": null,
+        "endpoint": null,
+        "hidden": false,
+        "aliases": [],
+        "release_date": "2026-03-17",
+        "last_updated": "2026-03-17",
+        "knowledge": "2025-08-31"
+      },
+      {
         "id": "gpt-5.5",
         "label": "GPT-5.5",
-        "family": "gpt-5",
+        "family": "gpt",
         "context": 1050000,
         "output_limit": 128000,
         "reasoning": true,

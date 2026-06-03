@@ -1,0 +1,5 @@
+[extends]
+from = "kimi-api/kimi-k2.6"
+
+[fleetify]
+label = "Kimi K2.6"

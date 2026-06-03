@@ -1,6 +1,6 @@
 name = "Perplexity"
 env = ["PERPLEXITY_API_KEY"]
-doc = "https://docs.perplexity.ai/guides/model-cards"
+doc = "https://docs.perplexity.ai/getting-started/models"
 api = "https://api.perplexity.ai"
 
 [fleetify]
