@@ -1,6 +1,6 @@
 name = "NVIDIA NIM"
 env = ["NVIDIA_API_KEY"]
-doc = "https://docs.nvidia.com/nim/"
+doc = "https://build.nvidia.com/models"
 api = "https://integrate.api.nvidia.com/v1"
 
 [fleetify]

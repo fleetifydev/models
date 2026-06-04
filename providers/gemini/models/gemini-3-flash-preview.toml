@@ -1,0 +1,5 @@
+[extends]
+from = "google/gemini-3-flash-preview"
+
+[fleetify]
+label = "3 Flash"

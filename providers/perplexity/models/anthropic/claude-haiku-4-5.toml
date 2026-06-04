@@ -1,0 +1,27 @@
+name = "Claude Haiku 4.5"
+family = "claude-haiku"
+release_date = "2025-10-15"
+last_updated = "2025-10-15"
+knowledge = "2025-02-28"
+attachment = true
+reasoning = true
+tool_call = true
+structured_output = true
+temperature = true
+
+[cost]
+input = 1.00
+output = 5.00
+cache_read = 0.10
+
+[limit]
+context = 200000
+output = 64000
+
+[modalities]
+input = ["text", "image", "pdf"]
+output = ["text"]
+
+[fleetify]
+group = "Agent API"
+endpoint = "/v1/agent"

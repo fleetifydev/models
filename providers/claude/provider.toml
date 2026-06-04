@@ -1,0 +1,7 @@
+name = "Claude Code"
+doc = "https://docs.anthropic.com/en/docs/claude-code"
+
+[fleetify]
+kind = "cli"
+catalog_id = "claude"
+supports_live = false

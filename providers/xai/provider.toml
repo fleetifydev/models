@@ -5,6 +5,6 @@ api = "https://api.x.ai/v1"
 
 [fleetify]
 kind = "api"
-catalog_id = "xai"
+catalog_id = "grok"
 models_endpoint = "/models"
 supports_live = true

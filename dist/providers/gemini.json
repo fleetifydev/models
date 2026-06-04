@@ -1,0 +1,134 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-06-03T23:02:02.603Z",
+  "commit": "0a41cb2",
+  "provider": {
+    "id": "gemini",
+    "name": "Gemini CLI",
+    "kind": "cli",
+    "doc": "https://ai.google.dev/gemini-api/docs",
+    "env": [],
+    "api": null,
+    "models_endpoint": null,
+    "supports_live": false,
+    "models": [
+      {
+        "id": "gemini-3-flash-preview",
+        "label": "3 Flash",
+        "family": "gemini-flash",
+        "context": 1048576,
+        "output_limit": 65536,
+        "reasoning": true,
+        "supports_effort": true,
+        "tool_call": true,
+        "attachment": true,
+        "structured_output": true,
+        "temperature": true,
+        "open_weights": false,
+        "modalities": {
+          "input": [
+            "text",
+            "image",
+            "video",
+            "audio",
+            "pdf"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "cost": {
+          "input": 0.5,
+          "output": 3,
+          "cache_read": 0.05
+        },
+        "group": null,
+        "note": null,
+        "endpoint": null,
+        "hidden": false,
+        "aliases": [],
+        "release_date": "2025-12-17",
+        "last_updated": "2025-12-17",
+        "knowledge": "2025-01"
+      },
+      {
+        "id": "gemini-3.1-flash-lite-preview",
+        "label": "3.1 Lite",
+        "family": "gemini-flash-lite",
+        "context": 1048576,
+        "output_limit": 65536,
+        "reasoning": true,
+        "supports_effort": false,
+        "tool_call": true,
+        "attachment": true,
+        "structured_output": true,
+        "temperature": true,
+        "open_weights": false,
+        "modalities": {
+          "input": [
+            "text",
+            "image",
+            "video",
+            "audio",
+            "pdf"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "cost": {
+          "input": 0.25,
+          "output": 1.5,
+          "cache_read": 0.025
+        },
+        "group": null,
+        "note": null,
+        "endpoint": null,
+        "hidden": false,
+        "aliases": [],
+        "release_date": "2026-03-03",
+        "last_updated": "2026-03-03",
+        "knowledge": "2025-01"
+      },
+      {
+        "id": "gemini-3.1-pro-preview",
+        "label": "3.1 Pro",
+        "family": "gemini-pro",
+        "context": 1048576,
+        "output_limit": 65536,
+        "reasoning": true,
+        "supports_effort": true,
+        "tool_call": true,
+        "attachment": true,
+        "structured_output": true,
+        "temperature": true,
+        "open_weights": false,
+        "modalities": {
+          "input": [
+            "text",
+            "image",
+            "video",
+            "audio",
+            "pdf"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "cost": {
+          "input": 2,
+          "output": 12,
+          "cache_read": 0.2
+        },
+        "group": null,
+        "note": null,
+        "endpoint": null,
+        "hidden": false,
+        "aliases": [],
+        "release_date": "2026-02-19",
+        "last_updated": "2026-02-19",
+        "knowledge": "2025-01"
+      }
+    ]
+  }
+}

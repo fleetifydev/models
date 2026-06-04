@@ -1,0 +1,22 @@
+name = "Llama 3.1 8B Instruct fp8"
+family = "llama"
+release_date = "2024-07-25"
+last_updated = "2024-07-25"
+attachment = false
+reasoning = false
+tool_call = false
+structured_output = false
+temperature = true
+open_weights = true
+
+[cost]
+input = 0.152
+output = 0.287
+
+[limit]
+context = 32000
+output = 32000
+
+[modalities]
+input = ["text"]
+output = ["text"]

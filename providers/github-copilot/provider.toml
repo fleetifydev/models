@@ -1,0 +1,7 @@
+name = "GitHub Copilot CLI"
+doc = "https://docs.github.com/en/copilot/concepts/agents/about-copilot-cli"
+
+[fleetify]
+kind = "cli"
+catalog_id = "github-copilot"
+supports_live = true

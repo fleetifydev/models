@@ -1,5 +1,5 @@
 name = "Grok 4.20 (Reasoning)"
-family = "grok-4"
+family = "grok"
 release_date = "2026-03-09"
 last_updated = "2026-03-09"
 attachment = true
@@ -20,6 +20,3 @@ output = 30000
 [modalities]
 input = ["text", "image", "pdf"]
 output = ["text"]
-
-[fleetify]
-supports_effort = true

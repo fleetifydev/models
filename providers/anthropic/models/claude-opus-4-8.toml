@@ -21,6 +21,3 @@ output = 128000
 [modalities]
 input = ["text", "image", "pdf"]
 output = ["text"]
-
-[fleetify]
-supports_effort = true

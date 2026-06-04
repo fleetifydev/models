@@ -1,0 +1,131 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-06-03T23:02:02.603Z",
+  "commit": "0a41cb2",
+  "provider": {
+    "id": "claude",
+    "name": "Claude Code",
+    "kind": "cli",
+    "doc": "https://docs.anthropic.com/en/docs/claude-code",
+    "env": [],
+    "api": null,
+    "models_endpoint": null,
+    "supports_live": false,
+    "models": [
+      {
+        "id": "claude-haiku-4-5-20251001",
+        "label": "Haiku 4.5",
+        "family": "claude-haiku",
+        "context": 200000,
+        "output_limit": 64000,
+        "reasoning": true,
+        "supports_effort": true,
+        "tool_call": true,
+        "attachment": true,
+        "structured_output": true,
+        "temperature": true,
+        "open_weights": false,
+        "modalities": {
+          "input": [
+            "text",
+            "image",
+            "pdf"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "cost": {
+          "input": 1,
+          "output": 5,
+          "cache_read": 0.1,
+          "cache_write": 1.25
+        },
+        "group": null,
+        "note": null,
+        "endpoint": null,
+        "hidden": false,
+        "aliases": [],
+        "release_date": "2025-10-15",
+        "last_updated": "2025-10-15",
+        "knowledge": "2025-02-28"
+      },
+      {
+        "id": "claude-opus-4-8",
+        "label": "Opus 4.8",
+        "family": "claude-opus",
+        "context": 1000000,
+        "output_limit": 128000,
+        "reasoning": true,
+        "supports_effort": true,
+        "tool_call": true,
+        "attachment": true,
+        "structured_output": true,
+        "temperature": false,
+        "open_weights": false,
+        "modalities": {
+          "input": [
+            "text",
+            "image",
+            "pdf"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "cost": {
+          "input": 5,
+          "output": 25,
+          "cache_read": 0.5,
+          "cache_write": 6.25
+        },
+        "group": null,
+        "note": null,
+        "endpoint": null,
+        "hidden": false,
+        "aliases": [],
+        "release_date": "2026-05-28",
+        "last_updated": "2026-05-28",
+        "knowledge": null
+      },
+      {
+        "id": "claude-sonnet-4-6",
+        "label": "Sonnet 4.6",
+        "family": "claude-sonnet",
+        "context": 1000000,
+        "output_limit": 64000,
+        "reasoning": true,
+        "supports_effort": true,
+        "tool_call": true,
+        "attachment": true,
+        "structured_output": true,
+        "temperature": true,
+        "open_weights": false,
+        "modalities": {
+          "input": [
+            "text",
+            "image",
+            "pdf"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "cost": {
+          "input": 3,
+          "output": 15,
+          "cache_read": 0.3,
+          "cache_write": 3.75
+        },
+        "group": null,
+        "note": null,
+        "endpoint": null,
+        "hidden": false,
+        "aliases": [],
+        "release_date": "2026-02-17",
+        "last_updated": "2026-03-13",
+        "knowledge": "2025-08-31"
+      }
+    ]
+  }
+}

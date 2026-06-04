@@ -1,0 +1,7 @@
+name = "Codex CLI"
+doc = "https://developers.openai.com/codex/models"
+
+[fleetify]
+kind = "cli"
+catalog_id = "codex"
+supports_live = false

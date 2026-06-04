@@ -1,0 +1,7 @@
+name = "Antigravity CLI"
+doc = "https://antigravity.google"
+
+[fleetify]
+kind = "cli"
+catalog_id = "agy"
+supports_live = false

@@ -1,0 +1,22 @@
+name = "Gemma 4 26B A4B IT"
+family = "gemma"
+release_date = "2025-12-15"
+last_updated = "2025-12-15"
+attachment = true
+reasoning = true
+tool_call = true
+structured_output = true
+temperature = true
+open_weights = true
+
+[cost]
+input = 0.10
+output = 0.30
+
+[limit]
+context = 256000
+output = 16384
+
+[modalities]
+input = ["text", "image"]
+output = ["text"]

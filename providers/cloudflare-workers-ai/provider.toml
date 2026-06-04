@@ -1,0 +1,10 @@
+name = "Cloudflare Workers AI"
+env = ["CLOUDFLARE_API_TOKEN"]
+doc = "https://developers.cloudflare.com/workers-ai/models/"
+api = "https://api.cloudflare.com/client/v4/accounts/{account_id}/ai/v1"
+
+[fleetify]
+kind = "api"
+catalog_id = "cloudflare-workers-ai"
+models_endpoint = "/models"
+supports_live = true

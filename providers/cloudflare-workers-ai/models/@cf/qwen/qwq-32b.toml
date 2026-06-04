@@ -1,0 +1,22 @@
+name = "Qwq 32B"
+family = "qwen"
+release_date = "2025-03-05"
+last_updated = "2025-03-05"
+attachment = false
+reasoning = true
+tool_call = false
+structured_output = false
+temperature = true
+open_weights = true
+
+[cost]
+input = 0.66
+output = 1.00
+
+[limit]
+context = 24000
+output = 24000
+
+[modalities]
+input = ["text"]
+output = ["text"]

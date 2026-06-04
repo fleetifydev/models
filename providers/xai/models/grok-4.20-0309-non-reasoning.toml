@@ -1,0 +1,22 @@
+name = "Grok 4.20 (Non-Reasoning)"
+family = "grok"
+release_date = "2026-03-09"
+last_updated = "2026-03-09"
+attachment = true
+reasoning = false
+tool_call = true
+structured_output = true
+temperature = true
+
+[cost]
+input = 1.25
+output = 2.50
+cache_read = 0.20
+
+[limit]
+context = 2000000
+output = 30000
+
+[modalities]
+input = ["text", "image", "pdf"]
+output = ["text"]

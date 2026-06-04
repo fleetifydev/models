@@ -1,0 +1,7 @@
+name = "Gemini CLI"
+doc = "https://ai.google.dev/gemini-api/docs"
+
+[fleetify]
+kind = "cli"
+catalog_id = "gemini"
+supports_live = false

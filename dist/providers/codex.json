@@ -1,0 +1,237 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-06-03T23:02:02.603Z",
+  "commit": "0a41cb2",
+  "provider": {
+    "id": "codex",
+    "name": "Codex CLI",
+    "kind": "cli",
+    "doc": "https://developers.openai.com/codex/models",
+    "env": [],
+    "api": null,
+    "models_endpoint": null,
+    "supports_live": false,
+    "models": [
+      {
+        "id": "gpt-5.2",
+        "label": "GPT-5.2",
+        "family": "gpt",
+        "context": 400000,
+        "output_limit": 128000,
+        "reasoning": true,
+        "supports_effort": true,
+        "tool_call": true,
+        "attachment": true,
+        "structured_output": true,
+        "temperature": false,
+        "open_weights": false,
+        "modalities": {
+          "input": [
+            "text",
+            "image"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "cost": {
+          "input": 1.75,
+          "output": 14,
+          "cache_read": 0.175
+        },
+        "group": null,
+        "note": null,
+        "endpoint": null,
+        "hidden": false,
+        "aliases": [],
+        "release_date": "2025-12-11",
+        "last_updated": "2025-12-11",
+        "knowledge": "2025-08-31"
+      },
+      {
+        "id": "gpt-5.3-codex",
+        "label": "GPT-5.3 Codex",
+        "family": "gpt-codex",
+        "context": 400000,
+        "output_limit": 128000,
+        "reasoning": true,
+        "supports_effort": true,
+        "tool_call": true,
+        "attachment": true,
+        "structured_output": true,
+        "temperature": false,
+        "open_weights": false,
+        "modalities": {
+          "input": [
+            "text",
+            "image",
+            "pdf"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "cost": {
+          "input": 1.75,
+          "output": 14,
+          "cache_read": 0.175
+        },
+        "group": null,
+        "note": null,
+        "endpoint": null,
+        "hidden": false,
+        "aliases": [],
+        "release_date": "2026-02-05",
+        "last_updated": "2026-02-05",
+        "knowledge": "2025-08-31"
+      },
+      {
+        "id": "gpt-5.3-codex-spark",
+        "label": "GPT-5.3 Codex Spark",
+        "family": "gpt-codex-spark",
+        "context": 128000,
+        "output_limit": 32000,
+        "reasoning": true,
+        "supports_effort": true,
+        "tool_call": true,
+        "attachment": true,
+        "structured_output": true,
+        "temperature": false,
+        "open_weights": false,
+        "modalities": {
+          "input": [
+            "text",
+            "image",
+            "pdf"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "cost": {
+          "input": 1.75,
+          "output": 14,
+          "cache_read": 0.175
+        },
+        "group": null,
+        "note": null,
+        "endpoint": null,
+        "hidden": false,
+        "aliases": [],
+        "release_date": "2026-02-05",
+        "last_updated": "2026-02-05",
+        "knowledge": "2025-08-31"
+      },
+      {
+        "id": "gpt-5.4",
+        "label": "GPT-5.4",
+        "family": "gpt",
+        "context": 1050000,
+        "output_limit": 128000,
+        "reasoning": true,
+        "supports_effort": true,
+        "tool_call": true,
+        "attachment": true,
+        "structured_output": true,
+        "temperature": false,
+        "open_weights": false,
+        "modalities": {
+          "input": [
+            "text",
+            "image",
+            "pdf"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "cost": {
+          "input": 2.5,
+          "output": 15,
+          "cache_read": 0.25
+        },
+        "group": null,
+        "note": null,
+        "endpoint": null,
+        "hidden": false,
+        "aliases": [],
+        "release_date": "2026-03-05",
+        "last_updated": "2026-03-05",
+        "knowledge": "2025-08-31"
+      },
+      {
+        "id": "gpt-5.4-mini",
+        "label": "GPT-5.4 mini",
+        "family": "gpt-mini",
+        "context": 400000,
+        "output_limit": 128000,
+        "reasoning": true,
+        "supports_effort": true,
+        "tool_call": true,
+        "attachment": true,
+        "structured_output": true,
+        "temperature": false,
+        "open_weights": false,
+        "modalities": {
+          "input": [
+            "text",
+            "image"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "cost": {
+          "input": 0.75,
+          "output": 4.5,
+          "cache_read": 0.075
+        },
+        "group": null,
+        "note": null,
+        "endpoint": null,
+        "hidden": false,
+        "aliases": [],
+        "release_date": "2026-03-17",
+        "last_updated": "2026-03-17",
+        "knowledge": "2025-08-31"
+      },
+      {
+        "id": "gpt-5.5",
+        "label": "GPT-5.5",
+        "family": "gpt",
+        "context": 1050000,
+        "output_limit": 128000,
+        "reasoning": true,
+        "supports_effort": true,
+        "tool_call": true,
+        "attachment": true,
+        "structured_output": true,
+        "temperature": false,
+        "open_weights": false,
+        "modalities": {
+          "input": [
+            "text",
+            "image",
+            "pdf"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "cost": {
+          "input": 5,
+          "output": 30,
+          "cache_read": 0.5
+        },
+        "group": null,
+        "note": null,
+        "endpoint": null,
+        "hidden": false,
+        "aliases": [],
+        "release_date": "2026-04-23",
+        "last_updated": "2026-04-23",
+        "knowledge": "2025-12-01"
+      }
+    ]
+  }
+}

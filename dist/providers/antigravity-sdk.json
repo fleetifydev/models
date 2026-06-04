@@ -1,0 +1,285 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-06-03T23:02:02.603Z",
+  "commit": "0a41cb2",
+  "provider": {
+    "id": "antigravity-sdk",
+    "name": "Antigravity SDK",
+    "kind": "cli",
+    "doc": "https://antigravity.google",
+    "env": [
+      "GEMINI_API_KEY"
+    ],
+    "api": null,
+    "models_endpoint": null,
+    "supports_live": false,
+    "models": [
+      {
+        "id": "claude-opus-4-6-thinking",
+        "label": "Claude Opus 4.6 (Thinking)",
+        "family": "claude-opus",
+        "context": 1000000,
+        "output_limit": 128000,
+        "reasoning": true,
+        "supports_effort": false,
+        "tool_call": true,
+        "attachment": true,
+        "structured_output": true,
+        "temperature": true,
+        "open_weights": false,
+        "modalities": {
+          "input": [
+            "text",
+            "image",
+            "pdf"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "cost": {
+          "input": 5,
+          "output": 25,
+          "cache_read": 0.5,
+          "cache_write": 6.25
+        },
+        "group": null,
+        "note": "Reasoning",
+        "endpoint": null,
+        "hidden": false,
+        "aliases": [],
+        "release_date": "2026-02-05",
+        "last_updated": "2026-03-13",
+        "knowledge": "2025-05-31"
+      },
+      {
+        "id": "claude-sonnet-4-6-thinking",
+        "label": "Claude Sonnet 4.6 (Thinking)",
+        "family": "claude-sonnet",
+        "context": 1000000,
+        "output_limit": 64000,
+        "reasoning": true,
+        "supports_effort": false,
+        "tool_call": true,
+        "attachment": true,
+        "structured_output": true,
+        "temperature": true,
+        "open_weights": false,
+        "modalities": {
+          "input": [
+            "text",
+            "image",
+            "pdf"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "cost": {
+          "input": 3,
+          "output": 15,
+          "cache_read": 0.3,
+          "cache_write": 3.75
+        },
+        "group": null,
+        "note": "Reasoning",
+        "endpoint": null,
+        "hidden": false,
+        "aliases": [],
+        "release_date": "2026-02-17",
+        "last_updated": "2026-03-13",
+        "knowledge": "2025-08-31"
+      },
+      {
+        "id": "gemini-3.1-pro-high",
+        "label": "Gemini 3.1 Pro (High)",
+        "family": "gemini-pro",
+        "context": 1048576,
+        "output_limit": 65536,
+        "reasoning": true,
+        "supports_effort": false,
+        "tool_call": true,
+        "attachment": true,
+        "structured_output": true,
+        "temperature": true,
+        "open_weights": false,
+        "modalities": {
+          "input": [
+            "text",
+            "image",
+            "video",
+            "audio",
+            "pdf"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "cost": {
+          "input": 2,
+          "output": 12,
+          "cache_read": 0.2
+        },
+        "group": null,
+        "note": "Most capable",
+        "endpoint": null,
+        "hidden": false,
+        "aliases": [],
+        "release_date": "2026-02-19",
+        "last_updated": "2026-02-19",
+        "knowledge": "2025-01"
+      },
+      {
+        "id": "gemini-3.1-pro-low",
+        "label": "Gemini 3.1 Pro (Low)",
+        "family": "gemini-pro",
+        "context": 1048576,
+        "output_limit": 65536,
+        "reasoning": true,
+        "supports_effort": false,
+        "tool_call": true,
+        "attachment": true,
+        "structured_output": true,
+        "temperature": true,
+        "open_weights": false,
+        "modalities": {
+          "input": [
+            "text",
+            "image",
+            "video",
+            "audio",
+            "pdf"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "cost": {
+          "input": 2,
+          "output": 12,
+          "cache_read": 0.2
+        },
+        "group": null,
+        "note": null,
+        "endpoint": null,
+        "hidden": false,
+        "aliases": [],
+        "release_date": "2026-02-19",
+        "last_updated": "2026-02-19",
+        "knowledge": "2025-01"
+      },
+      {
+        "id": "gemini-3.5-flash-high",
+        "label": "Gemini 3.5 Flash (High)",
+        "family": "gemini-flash",
+        "context": 1048576,
+        "output_limit": 65536,
+        "reasoning": true,
+        "supports_effort": false,
+        "tool_call": true,
+        "attachment": true,
+        "structured_output": true,
+        "temperature": true,
+        "open_weights": false,
+        "modalities": {
+          "input": [
+            "text",
+            "image",
+            "video",
+            "audio",
+            "pdf"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "cost": {
+          "input": 1.5,
+          "output": 9,
+          "cache_read": 0.15
+        },
+        "group": null,
+        "note": null,
+        "endpoint": null,
+        "hidden": false,
+        "aliases": [],
+        "release_date": "2026-05-19",
+        "last_updated": "2026-05-19",
+        "knowledge": "2025-01"
+      },
+      {
+        "id": "gemini-3.5-flash-medium",
+        "label": "Gemini 3.5 Flash (Medium)",
+        "family": "gemini-flash",
+        "context": 1048576,
+        "output_limit": 65536,
+        "reasoning": true,
+        "supports_effort": false,
+        "tool_call": true,
+        "attachment": true,
+        "structured_output": true,
+        "temperature": true,
+        "open_weights": false,
+        "modalities": {
+          "input": [
+            "text",
+            "image",
+            "video",
+            "audio",
+            "pdf"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "cost": {
+          "input": 1.5,
+          "output": 9,
+          "cache_read": 0.15
+        },
+        "group": null,
+        "note": null,
+        "endpoint": null,
+        "hidden": false,
+        "aliases": [],
+        "release_date": "2026-05-19",
+        "last_updated": "2026-05-19",
+        "knowledge": "2025-01"
+      },
+      {
+        "id": "gpt-oss-120b-medium",
+        "label": "GPT-OSS 120B (Medium)",
+        "family": "gpt-oss",
+        "context": 128000,
+        "output_limit": 8192,
+        "reasoning": true,
+        "supports_effort": false,
+        "tool_call": false,
+        "attachment": true,
+        "structured_output": false,
+        "temperature": true,
+        "open_weights": false,
+        "modalities": {
+          "input": [
+            "text"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "cost": {
+          "input": 0,
+          "output": 0
+        },
+        "group": null,
+        "note": null,
+        "endpoint": null,
+        "hidden": false,
+        "aliases": [],
+        "release_date": "2025-08-04",
+        "last_updated": "2025-08-14",
+        "knowledge": "2025-08"
+      }
+    ]
+  }
+}
