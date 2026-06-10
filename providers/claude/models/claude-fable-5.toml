@@ -1,0 +1,5 @@
+[extends]
+from = "anthropic/claude-fable-5"
+
+[fleetify]
+label = "Fable 5"
