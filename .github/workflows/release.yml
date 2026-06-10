@@ -1,0 +1,30 @@
+name: release
+# Cut an immutable catalog version: push a tag `vX.Y.Z` at a commit whose
+# dist/ has already been rebuilt by publish.yml. jsDelivr serves
+# @vX.Y.Z/dist/* immutably (~1y cache, fresh on first fetch — no branch lag).
+on:
+  push:
+    tags: ['v*']
+
+permissions:
+  contents: read
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Pin the backend to this immutable catalog tag
+        env:
+          BACKEND_BASE_URL: ${{ secrets.BACKEND_BASE_URL }}
+          CATALOG_REFRESH_SECRET: ${{ secrets.CATALOG_REFRESH_SECRET }}
+          TAG: ${{ github.ref_name }}
+        run: |
+          set -euo pipefail
+          if [ -z "${BACKEND_BASE_URL:-}" ] || [ -z "${CATALOG_REFRESH_SECRET:-}" ]; then
+            echo "Release notify secrets unset — configure them (Task 6)." >&2
+            exit 1
+          fi
+          curl -fsS -X POST "$BACKEND_BASE_URL/api/internal/catalog/refresh" \
+            -H "Authorization: Bearer $CATALOG_REFRESH_SECRET" \
+            -H "Content-Type: application/json" \
+            -d "{\"tag\":\"${TAG}\"}"
