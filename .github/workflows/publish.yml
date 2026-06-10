@@ -35,3 +35,23 @@ jobs:
             git commit -m "chore: rebuild dist/ [skip ci]"
             git push
           fi
+      - name: Notify backend (purge @main + force refresh)
+        if: success()
+        env:
+          BACKEND_BASE_URL: ${{ secrets.BACKEND_BASE_URL }}
+          CATALOG_REFRESH_SECRET: ${{ secrets.CATALOG_REFRESH_SECRET }}
+        run: |
+          set -euo pipefail
+          if [ -z "${BACKEND_BASE_URL:-}" ] || [ -z "${CATALOG_REFRESH_SECRET:-}" ]; then
+            echo "Backend notify secrets unset — skipping (jsDelivr lag fallback applies)."
+            exit 0
+          fi
+          # Purge the exact file the backend reads, then give jsDelivr a moment
+          # to re-pull from GitHub before the force refresh hits it.
+          curl -fsS "https://purge.jsdelivr.net/gh/fleetifydev/models@main/dist/models.json" || true
+          sleep 5
+          # Tagless force refresh → backend re-pulls current @main, edge cache bypassed.
+          curl -fsS -X POST "$BACKEND_BASE_URL/api/internal/catalog/refresh" \
+            -H "Authorization: Bearer $CATALOG_REFRESH_SECRET" \
+            -H "Content-Type: application/json" \
+            -d '{}'
