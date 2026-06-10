@@ -19,19 +19,70 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          # Full history + tags so we can detect same-day CalVer collisions.
+          fetch-depth: 0
       - uses: oven-sh/setup-bun@v2
         with:
           bun-version: latest
       - run: bun install --frozen-lockfile
       - run: bun run build
       - name: Commit dist/
+        id: commit
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add dist/
           if git diff --staged --quiet; then
             echo "No dist changes."
+            echo "changed=false" >> "$GITHUB_OUTPUT"
           else
             git commit -m "chore: rebuild dist/ [skip ci]"
             git push
+            echo "changed=true" >> "$GITHUB_OUTPUT"
           fi
+      - name: Cut immutable CalVer tag
+        # Only when dist actually changed — every catalog change becomes a
+        # permanent, pinnable snapshot (vYYYY.MM.DD, +.N for same-day cuts).
+        if: steps.commit.outputs.changed == 'true'
+        id: tag
+        run: |
+          set -euo pipefail
+          BASE="v$(date -u +%Y.%m.%d)"
+          if git rev-parse -q --verify "refs/tags/$BASE" >/dev/null; then
+            n=1
+            while git rev-parse -q --verify "refs/tags/$BASE.$n" >/dev/null; do
+              n=$((n + 1))
+            done
+            TAG="$BASE.$n"
+          else
+            TAG="$BASE"
+          fi
+          git tag -a "$TAG" -m "Catalog snapshot $TAG"
+          git push origin "$TAG"
+          echo "tag=$TAG" >> "$GITHUB_OUTPUT"
+          echo "Cut immutable release $TAG"
+      - name: Notify backend (pin immutable tag + purge @main)
+        if: steps.commit.outputs.changed == 'true'
+        env:
+          BACKEND_BASE_URL: ${{ secrets.BACKEND_BASE_URL }}
+          CATALOG_REFRESH_SECRET: ${{ secrets.CATALOG_REFRESH_SECRET }}
+          TAG: ${{ steps.tag.outputs.tag }}
+        run: |
+          set -euo pipefail
+          if [ -z "${BACKEND_BASE_URL:-}" ] || [ -z "${CATALOG_REFRESH_SECRET:-}" ]; then
+            echo "Backend notify secrets unset — skipping (jsDelivr lag fallback applies)."
+            exit 0
+          fi
+          # Purge @main too, so branch-tracking consumers get the fresh file and
+          # jsDelivr re-pulls from GitHub before the refresh below lands.
+          curl -fsS "https://purge.jsdelivr.net/gh/fleetifydev/models@main/dist/models.json" || true
+          sleep 5
+          # Pin the tag we just cut. NOTE: that tag push used the default
+          # GITHUB_TOKEN, which by design does NOT trigger release.yml (GitHub
+          # blocks workflow-token pushes from starting new runs), so the auto
+          # path notifies here directly. release.yml stays for manual tags.
+          curl -fsS -X POST "$BACKEND_BASE_URL/api/internal/catalog/refresh" \
+            -H "Authorization: Bearer $CATALOG_REFRESH_SECRET" \
+            -H "Content-Type: application/json" \
+            -d "{\"tag\":\"${TAG}\"}"
