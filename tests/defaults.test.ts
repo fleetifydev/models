@@ -71,3 +71,12 @@ test("effort: absent → kind 'none' and supports_effort falls back to reasoning
   expect(m.effort).toEqual({ kind: "none" });
   expect(m.supports_effort).toBe(true);
 });
+
+test("effort: explicit supports_effort=false wins even with a levels descriptor", () => {
+  const m = toPickerModel("m", {
+    name: "M", reasoning: true,
+    fleetify: { supports_effort: false, effort: { kind: "levels", levels: ["low", "high"], default: "high" } },
+  });
+  expect(m.supports_effort).toBe(false);
+  expect(m.effort).toEqual({ kind: "levels", levels: ["low", "high"], default: "high" });
+});

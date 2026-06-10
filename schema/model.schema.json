@@ -65,7 +65,15 @@
             "min": { "type": "integer" },
             "max": { "type": "integer" },
             "can_disable": { "type": "boolean" }
-          }
+          },
+          "allOf": [
+            { "if": { "required": ["kind"], "properties": { "kind": { "enum": ["levels", "thinking_level"] } } },
+              "then": { "required": ["levels", "default"] } },
+            { "if": { "required": ["kind"], "properties": { "kind": { "const": "budget" } } },
+              "then": { "required": ["min", "max", "default", "can_disable"] } },
+            { "if": { "required": ["kind"], "properties": { "kind": { "const": "toggle" } } },
+              "then": { "required": ["default"] } }
+          ]
         }
       }
     }
