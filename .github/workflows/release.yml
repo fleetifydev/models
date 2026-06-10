@@ -1,7 +1,10 @@
 name: release
-# Cut an immutable catalog version: push a tag `vX.Y.Z` at a commit whose
-# dist/ has already been rebuilt by publish.yml. jsDelivr serves
-# @vX.Y.Z/dist/* immutably (~1y cache, fresh on first fetch — no branch lag).
+# Pin the backend to an immutable catalog tag. publish.yml ALREADY auto-cuts a
+# CalVer tag (vYYYY.MM.DD) and notifies on every dist change — but tags it
+# pushes with GITHUB_TOKEN can't trigger this workflow. So this exists for tags
+# pushed MANUALLY (a human `git push origin vX`), e.g. re-pinning a known-good
+# snapshot or a milestone. jsDelivr serves @<tag>/dist/* immutably (~1y cache,
+# fresh on first fetch — no branch lag).
 on:
   push:
     tags: ['v*']
