@@ -4,6 +4,7 @@ import type { ModelToml, PickerModel, PickerProvider, RawProviderEntry } from ".
 export function toPickerModel(id: string, m: ModelToml): PickerModel {
   const f = m.fleetify ?? {};
   const reasoning = m.reasoning ?? false;
+  const effort = f.effort ?? { kind: "none" as const };
   return {
     id,
     label: f.label ?? m.name ?? id,
@@ -11,7 +12,8 @@ export function toPickerModel(id: string, m: ModelToml): PickerModel {
     context: m.limit?.context ?? null,
     output_limit: m.limit?.output ?? null,
     reasoning,
-    supports_effort: f.supports_effort ?? reasoning,
+    supports_effort: f.supports_effort ?? (f.effort ? f.effort.kind !== "none" : reasoning),
+    effort,
     tool_call: m.tool_call ?? false,
     attachment: m.attachment ?? false,
     structured_output: m.structured_output ?? false,

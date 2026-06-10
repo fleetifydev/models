@@ -53,7 +53,20 @@
         "note": { "type": "string" },
         "endpoint": { "type": "string" },
         "hidden": { "type": "boolean" },
-        "aliases": { "type": "array", "items": { "type": "string" } }
+        "aliases": { "type": "array", "items": { "type": "string" } },
+        "effort": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["kind"],
+          "properties": {
+            "kind": { "enum": ["levels", "thinking_level", "budget", "toggle", "none"] },
+            "levels": { "type": "array", "items": { "type": "string" } },
+            "default": { "oneOf": [{ "type": "string" }, { "type": "number" }, { "type": "boolean" }] },
+            "min": { "type": "integer" },
+            "max": { "type": "integer" },
+            "can_disable": { "type": "boolean" }
+          }
+        }
       }
     }
   }

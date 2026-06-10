@@ -47,3 +47,27 @@ test("provider mapping applies kind default and catalog_id override", () => {
   expect(p.supports_live).toBe(false);
   expect(p.doc).toBeNull();
 });
+
+test("effort: explicit descriptor passes through and drives supports_effort", () => {
+  const m = toPickerModel("opus", {
+    name: "Opus", reasoning: true,
+    fleetify: { effort: { kind: "levels", levels: ["low", "high"], default: "high" } },
+  });
+  expect(m.effort).toEqual({ kind: "levels", levels: ["low", "high"], default: "high" });
+  expect(m.supports_effort).toBe(true);
+});
+
+test("effort: kind 'none' forces supports_effort false even when reasoning=true", () => {
+  const m = toPickerModel("haiku", {
+    name: "Haiku", reasoning: true,
+    fleetify: { effort: { kind: "none" } },
+  });
+  expect(m.effort).toEqual({ kind: "none" });
+  expect(m.supports_effort).toBe(false);
+});
+
+test("effort: absent → kind 'none' and supports_effort falls back to reasoning", () => {
+  const m = toPickerModel("x", { name: "X", reasoning: true });
+  expect(m.effort).toEqual({ kind: "none" });
+  expect(m.supports_effort).toBe(true);
+});
