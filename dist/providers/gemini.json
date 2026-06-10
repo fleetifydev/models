@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-06-10T09:04:56.472Z",
-  "commit": "9b98986",
+  "generatedAt": "2026-06-10T15:45:06.919Z",
+  "commit": "61cbb80",
   "provider": {
     "id": "gemini",
     "name": "Gemini CLI",
@@ -20,6 +20,14 @@
         "output_limit": 65536,
         "reasoning": true,
         "supports_effort": true,
+        "effort": {
+          "kind": "thinking_level",
+          "levels": [
+            "low",
+            "high"
+          ],
+          "default": "high"
+        },
         "tool_call": true,
         "attachment": true,
         "structured_output": true,
@@ -59,6 +67,9 @@
         "output_limit": 65536,
         "reasoning": true,
         "supports_effort": false,
+        "effort": {
+          "kind": "none"
+        },
         "tool_call": true,
         "attachment": true,
         "structured_output": true,
@@ -98,6 +109,14 @@
         "output_limit": 65536,
         "reasoning": true,
         "supports_effort": true,
+        "effort": {
+          "kind": "thinking_level",
+          "levels": [
+            "low",
+            "high"
+          ],
+          "default": "high"
+        },
         "tool_call": true,
         "attachment": true,
         "structured_output": true,

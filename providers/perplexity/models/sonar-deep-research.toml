@@ -23,3 +23,8 @@ output = ["text"]
 [fleetify]
 group = "Sonar API"
 note = "Research"
+
+[fleetify.effort]
+kind    = "levels"
+levels  = ["low", "medium", "high"]
+default = "medium"

@@ -22,5 +22,9 @@ output = 65536
 input = ["text", "image", "audio", "video", "pdf"]
 output = ["text"]
 
-[fleetify]
-supports_effort = false
+[fleetify.effort]
+kind        = "budget"
+min         = 0
+max         = 24576
+default     = -1
+can_disable = true

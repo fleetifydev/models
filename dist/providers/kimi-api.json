@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-06-10T09:04:56.472Z",
-  "commit": "9b98986",
+  "generatedAt": "2026-06-10T15:45:06.919Z",
+  "commit": "61cbb80",
   "provider": {
     "id": "kimi-api",
     "name": "Kimi (Moonshot)",
@@ -22,6 +22,9 @@
         "output_limit": 262144,
         "reasoning": true,
         "supports_effort": true,
+        "effort": {
+          "kind": "none"
+        },
         "tool_call": true,
         "attachment": false,
         "structured_output": true,
@@ -59,6 +62,9 @@
         "output_limit": 262144,
         "reasoning": true,
         "supports_effort": true,
+        "effort": {
+          "kind": "none"
+        },
         "tool_call": true,
         "attachment": true,
         "structured_output": true,

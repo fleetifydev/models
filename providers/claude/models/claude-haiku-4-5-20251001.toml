@@ -3,3 +3,6 @@ from = "anthropic/claude-haiku-4-5"
 
 [fleetify]
 label = "Haiku 4.5"
+
+[fleetify.effort]
+kind = "none"

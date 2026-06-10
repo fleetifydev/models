@@ -3,3 +3,8 @@ from = "anthropic/claude-fable-5"
 
 [fleetify]
 label = "Fable 5"
+
+[fleetify.effort]
+kind    = "levels"
+levels  = ["low", "medium", "high", "xhigh", "max"]
+default = "high"

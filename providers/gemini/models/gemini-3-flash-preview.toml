@@ -3,3 +3,8 @@ from = "google/gemini-3-flash-preview"
 
 [fleetify]
 label = "3 Flash"
+
+[fleetify.effort]
+kind    = "thinking_level"
+levels  = ["low", "high"]
+default = "high"

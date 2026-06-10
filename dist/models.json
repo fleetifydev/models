@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-06-10T09:04:56.472Z",
-  "commit": "9b98986",
+  "generatedAt": "2026-06-10T15:45:06.919Z",
+  "commit": "61cbb80",
   "providers": {
     "agy": {
       "id": "agy",
@@ -21,6 +21,9 @@
           "output_limit": null,
           "reasoning": false,
           "supports_effort": false,
+          "effort": {
+            "kind": "none"
+          },
           "tool_call": false,
           "attachment": false,
           "structured_output": false,
@@ -66,6 +69,9 @@
           "output_limit": 128000,
           "reasoning": true,
           "supports_effort": true,
+          "effort": {
+            "kind": "none"
+          },
           "tool_call": true,
           "attachment": true,
           "structured_output": true,
@@ -104,6 +110,9 @@
           "output_limit": 64000,
           "reasoning": true,
           "supports_effort": true,
+          "effort": {
+            "kind": "none"
+          },
           "tool_call": true,
           "attachment": true,
           "structured_output": true,
@@ -142,6 +151,9 @@
           "output_limit": 128000,
           "reasoning": true,
           "supports_effort": true,
+          "effort": {
+            "kind": "none"
+          },
           "tool_call": true,
           "attachment": true,
           "structured_output": true,
@@ -180,6 +192,9 @@
           "output_limit": 64000,
           "reasoning": true,
           "supports_effort": true,
+          "effort": {
+            "kind": "none"
+          },
           "tool_call": true,
           "attachment": true,
           "structured_output": true,
@@ -232,6 +247,9 @@
           "output_limit": 128000,
           "reasoning": true,
           "supports_effort": false,
+          "effort": {
+            "kind": "none"
+          },
           "tool_call": true,
           "attachment": true,
           "structured_output": true,
@@ -270,6 +288,9 @@
           "output_limit": 64000,
           "reasoning": true,
           "supports_effort": false,
+          "effort": {
+            "kind": "none"
+          },
           "tool_call": true,
           "attachment": true,
           "structured_output": true,
@@ -308,6 +329,9 @@
           "output_limit": 65536,
           "reasoning": true,
           "supports_effort": false,
+          "effort": {
+            "kind": "none"
+          },
           "tool_call": true,
           "attachment": true,
           "structured_output": true,
@@ -347,6 +371,9 @@
           "output_limit": 65536,
           "reasoning": true,
           "supports_effort": false,
+          "effort": {
+            "kind": "none"
+          },
           "tool_call": true,
           "attachment": true,
           "structured_output": true,
@@ -386,6 +413,9 @@
           "output_limit": 65536,
           "reasoning": true,
           "supports_effort": false,
+          "effort": {
+            "kind": "none"
+          },
           "tool_call": true,
           "attachment": true,
           "structured_output": true,
@@ -425,6 +455,9 @@
           "output_limit": 65536,
           "reasoning": true,
           "supports_effort": false,
+          "effort": {
+            "kind": "none"
+          },
           "tool_call": true,
           "attachment": true,
           "structured_output": true,
@@ -464,6 +497,9 @@
           "output_limit": 8192,
           "reasoning": true,
           "supports_effort": false,
+          "effort": {
+            "kind": "none"
+          },
           "tool_call": false,
           "attachment": true,
           "structured_output": false,
@@ -510,6 +546,17 @@
           "output_limit": 128000,
           "reasoning": true,
           "supports_effort": true,
+          "effort": {
+            "kind": "levels",
+            "levels": [
+              "low",
+              "medium",
+              "high",
+              "xhigh",
+              "max"
+            ],
+            "default": "high"
+          },
           "tool_call": true,
           "attachment": true,
           "structured_output": true,
@@ -547,7 +594,10 @@
           "context": 200000,
           "output_limit": 64000,
           "reasoning": true,
-          "supports_effort": true,
+          "supports_effort": false,
+          "effort": {
+            "kind": "none"
+          },
           "tool_call": true,
           "attachment": true,
           "structured_output": true,
@@ -586,6 +636,17 @@
           "output_limit": 128000,
           "reasoning": true,
           "supports_effort": true,
+          "effort": {
+            "kind": "levels",
+            "levels": [
+              "low",
+              "medium",
+              "high",
+              "xhigh",
+              "max"
+            ],
+            "default": "high"
+          },
           "tool_call": true,
           "attachment": true,
           "structured_output": true,
@@ -624,6 +685,16 @@
           "output_limit": 64000,
           "reasoning": true,
           "supports_effort": true,
+          "effort": {
+            "kind": "levels",
+            "levels": [
+              "low",
+              "medium",
+              "high",
+              "max"
+            ],
+            "default": "high"
+          },
           "tool_call": true,
           "attachment": true,
           "structured_output": true,
@@ -676,6 +747,9 @@
           "output_limit": 128000,
           "reasoning": false,
           "supports_effort": false,
+          "effort": {
+            "kind": "none"
+          },
           "tool_call": false,
           "attachment": false,
           "structured_output": false,
@@ -710,6 +784,9 @@
           "output_limit": 80000,
           "reasoning": true,
           "supports_effort": true,
+          "effort": {
+            "kind": "none"
+          },
           "tool_call": false,
           "attachment": false,
           "structured_output": false,
@@ -744,6 +821,9 @@
           "output_limit": 16384,
           "reasoning": true,
           "supports_effort": true,
+          "effort": {
+            "kind": "none"
+          },
           "tool_call": true,
           "attachment": true,
           "structured_output": true,
@@ -779,6 +859,9 @@
           "output_limit": 131000,
           "reasoning": false,
           "supports_effort": false,
+          "effort": {
+            "kind": "none"
+          },
           "tool_call": true,
           "attachment": false,
           "structured_output": false,
@@ -813,6 +896,9 @@
           "output_limit": 32000,
           "reasoning": false,
           "supports_effort": false,
+          "effort": {
+            "kind": "none"
+          },
           "tool_call": false,
           "attachment": false,
           "structured_output": false,
@@ -847,6 +933,9 @@
           "output_limit": 60000,
           "reasoning": false,
           "supports_effort": false,
+          "effort": {
+            "kind": "none"
+          },
           "tool_call": false,
           "attachment": false,
           "structured_output": false,
@@ -881,6 +970,9 @@
           "output_limit": 80000,
           "reasoning": false,
           "supports_effort": false,
+          "effort": {
+            "kind": "none"
+          },
           "tool_call": false,
           "attachment": false,
           "structured_output": false,
@@ -915,6 +1007,9 @@
           "output_limit": 24000,
           "reasoning": false,
           "supports_effort": false,
+          "effort": {
+            "kind": "none"
+          },
           "tool_call": true,
           "attachment": false,
           "structured_output": false,
@@ -949,6 +1044,9 @@
           "output_limit": 16384,
           "reasoning": false,
           "supports_effort": false,
+          "effort": {
+            "kind": "none"
+          },
           "tool_call": true,
           "attachment": true,
           "structured_output": false,
@@ -984,6 +1082,9 @@
           "output_limit": 128000,
           "reasoning": false,
           "supports_effort": false,
+          "effort": {
+            "kind": "none"
+          },
           "tool_call": true,
           "attachment": false,
           "structured_output": false,
@@ -1018,6 +1119,9 @@
           "output_limit": 256000,
           "reasoning": true,
           "supports_effort": true,
+          "effort": {
+            "kind": "none"
+          },
           "tool_call": true,
           "attachment": true,
           "structured_output": true,
@@ -1054,6 +1158,9 @@
           "output_limit": 256000,
           "reasoning": true,
           "supports_effort": true,
+          "effort": {
+            "kind": "none"
+          },
           "tool_call": true,
           "attachment": false,
           "structured_output": true,
@@ -1088,6 +1195,9 @@
           "output_limit": 16384,
           "reasoning": true,
           "supports_effort": true,
+          "effort": {
+            "kind": "none"
+          },
           "tool_call": true,
           "attachment": false,
           "structured_output": true,
@@ -1122,6 +1232,9 @@
           "output_limit": 16384,
           "reasoning": true,
           "supports_effort": true,
+          "effort": {
+            "kind": "none"
+          },
           "tool_call": true,
           "attachment": false,
           "structured_output": true,
@@ -1156,6 +1269,9 @@
           "output_limit": 32768,
           "reasoning": false,
           "supports_effort": false,
+          "effort": {
+            "kind": "none"
+          },
           "tool_call": false,
           "attachment": false,
           "structured_output": false,
@@ -1190,6 +1306,9 @@
           "output_limit": 32768,
           "reasoning": true,
           "supports_effort": true,
+          "effort": {
+            "kind": "none"
+          },
           "tool_call": true,
           "attachment": false,
           "structured_output": false,
@@ -1224,6 +1343,9 @@
           "output_limit": 24000,
           "reasoning": true,
           "supports_effort": true,
+          "effort": {
+            "kind": "none"
+          },
           "tool_call": false,
           "attachment": false,
           "structured_output": false,
@@ -1258,6 +1380,9 @@
           "output_limit": 131072,
           "reasoning": true,
           "supports_effort": true,
+          "effort": {
+            "kind": "none"
+          },
           "tool_call": true,
           "attachment": false,
           "structured_output": true,
@@ -1304,6 +1429,16 @@
           "output_limit": 128000,
           "reasoning": true,
           "supports_effort": true,
+          "effort": {
+            "kind": "levels",
+            "levels": [
+              "low",
+              "medium",
+              "high",
+              "xhigh"
+            ],
+            "default": "medium"
+          },
           "tool_call": true,
           "attachment": true,
           "structured_output": true,
@@ -1340,6 +1475,16 @@
           "output_limit": 128000,
           "reasoning": true,
           "supports_effort": true,
+          "effort": {
+            "kind": "levels",
+            "levels": [
+              "low",
+              "medium",
+              "high",
+              "xhigh"
+            ],
+            "default": "medium"
+          },
           "tool_call": true,
           "attachment": true,
           "structured_output": true,
@@ -1377,6 +1522,16 @@
           "output_limit": 32000,
           "reasoning": true,
           "supports_effort": true,
+          "effort": {
+            "kind": "levels",
+            "levels": [
+              "low",
+              "medium",
+              "high",
+              "xhigh"
+            ],
+            "default": "medium"
+          },
           "tool_call": true,
           "attachment": true,
           "structured_output": true,
@@ -1414,6 +1569,16 @@
           "output_limit": 128000,
           "reasoning": true,
           "supports_effort": true,
+          "effort": {
+            "kind": "levels",
+            "levels": [
+              "low",
+              "medium",
+              "high",
+              "xhigh"
+            ],
+            "default": "medium"
+          },
           "tool_call": true,
           "attachment": true,
           "structured_output": true,
@@ -1451,6 +1616,16 @@
           "output_limit": 128000,
           "reasoning": true,
           "supports_effort": true,
+          "effort": {
+            "kind": "levels",
+            "levels": [
+              "low",
+              "medium",
+              "high",
+              "xhigh"
+            ],
+            "default": "medium"
+          },
           "tool_call": true,
           "attachment": true,
           "structured_output": true,
@@ -1487,6 +1662,16 @@
           "output_limit": 128000,
           "reasoning": true,
           "supports_effort": true,
+          "effort": {
+            "kind": "levels",
+            "levels": [
+              "low",
+              "medium",
+              "high",
+              "xhigh"
+            ],
+            "default": "medium"
+          },
           "tool_call": true,
           "attachment": true,
           "structured_output": true,
@@ -1538,6 +1723,9 @@
           "output_limit": 384000,
           "reasoning": true,
           "supports_effort": true,
+          "effort": {
+            "kind": "none"
+          },
           "tool_call": true,
           "attachment": false,
           "structured_output": true,
@@ -1573,6 +1761,9 @@
           "output_limit": 384000,
           "reasoning": true,
           "supports_effort": true,
+          "effort": {
+            "kind": "none"
+          },
           "tool_call": true,
           "attachment": false,
           "structured_output": true,
@@ -1620,6 +1811,14 @@
           "output_limit": 65536,
           "reasoning": true,
           "supports_effort": true,
+          "effort": {
+            "kind": "thinking_level",
+            "levels": [
+              "low",
+              "high"
+            ],
+            "default": "high"
+          },
           "tool_call": true,
           "attachment": true,
           "structured_output": true,
@@ -1659,6 +1858,9 @@
           "output_limit": 65536,
           "reasoning": true,
           "supports_effort": false,
+          "effort": {
+            "kind": "none"
+          },
           "tool_call": true,
           "attachment": true,
           "structured_output": true,
@@ -1698,6 +1900,14 @@
           "output_limit": 65536,
           "reasoning": true,
           "supports_effort": true,
+          "effort": {
+            "kind": "thinking_level",
+            "levels": [
+              "low",
+              "high"
+            ],
+            "default": "high"
+          },
           "tool_call": true,
           "attachment": true,
           "structured_output": true,
@@ -1748,7 +1958,17 @@
           "context": null,
           "output_limit": null,
           "reasoning": false,
-          "supports_effort": false,
+          "supports_effort": true,
+          "effort": {
+            "kind": "levels",
+            "levels": [
+              "low",
+              "medium",
+              "high",
+              "xhigh"
+            ],
+            "default": "medium"
+          },
           "tool_call": false,
           "attachment": false,
           "structured_output": false,
@@ -1780,6 +2000,16 @@
           "output_limit": 64000,
           "reasoning": true,
           "supports_effort": true,
+          "effort": {
+            "kind": "levels",
+            "levels": [
+              "low",
+              "medium",
+              "high",
+              "xhigh"
+            ],
+            "default": "medium"
+          },
           "tool_call": true,
           "attachment": true,
           "structured_output": true,
@@ -1818,6 +2048,16 @@
           "output_limit": 32000,
           "reasoning": true,
           "supports_effort": true,
+          "effort": {
+            "kind": "levels",
+            "levels": [
+              "low",
+              "medium",
+              "high",
+              "xhigh"
+            ],
+            "default": "medium"
+          },
           "tool_call": true,
           "attachment": true,
           "structured_output": true,
@@ -1856,6 +2096,16 @@
           "output_limit": 32000,
           "reasoning": true,
           "supports_effort": true,
+          "effort": {
+            "kind": "levels",
+            "levels": [
+              "low",
+              "medium",
+              "high",
+              "xhigh"
+            ],
+            "default": "medium"
+          },
           "tool_call": true,
           "attachment": true,
           "structured_output": true,
@@ -1894,6 +2144,16 @@
           "output_limit": 32000,
           "reasoning": true,
           "supports_effort": true,
+          "effort": {
+            "kind": "levels",
+            "levels": [
+              "low",
+              "medium",
+              "high",
+              "xhigh"
+            ],
+            "default": "medium"
+          },
           "tool_call": true,
           "attachment": true,
           "structured_output": true,
@@ -1932,6 +2192,16 @@
           "output_limit": 64000,
           "reasoning": true,
           "supports_effort": true,
+          "effort": {
+            "kind": "levels",
+            "levels": [
+              "low",
+              "medium",
+              "high",
+              "xhigh"
+            ],
+            "default": "medium"
+          },
           "tool_call": true,
           "attachment": true,
           "structured_output": true,
@@ -1970,6 +2240,16 @@
           "output_limit": 16000,
           "reasoning": true,
           "supports_effort": true,
+          "effort": {
+            "kind": "levels",
+            "levels": [
+              "low",
+              "medium",
+              "high",
+              "xhigh"
+            ],
+            "default": "medium"
+          },
           "tool_call": true,
           "attachment": true,
           "structured_output": true,
@@ -2008,6 +2288,16 @@
           "output_limit": 32000,
           "reasoning": true,
           "supports_effort": true,
+          "effort": {
+            "kind": "levels",
+            "levels": [
+              "low",
+              "medium",
+              "high",
+              "xhigh"
+            ],
+            "default": "medium"
+          },
           "tool_call": true,
           "attachment": true,
           "structured_output": true,
@@ -2046,6 +2336,16 @@
           "output_limit": 32000,
           "reasoning": true,
           "supports_effort": true,
+          "effort": {
+            "kind": "levels",
+            "levels": [
+              "low",
+              "medium",
+              "high",
+              "xhigh"
+            ],
+            "default": "medium"
+          },
           "tool_call": true,
           "attachment": true,
           "structured_output": true,
@@ -2084,6 +2384,16 @@
           "output_limit": 64000,
           "reasoning": true,
           "supports_effort": true,
+          "effort": {
+            "kind": "levels",
+            "levels": [
+              "low",
+              "medium",
+              "high",
+              "xhigh"
+            ],
+            "default": "medium"
+          },
           "tool_call": true,
           "attachment": true,
           "structured_output": true,
@@ -2123,6 +2433,16 @@
           "output_limit": 64000,
           "reasoning": true,
           "supports_effort": true,
+          "effort": {
+            "kind": "levels",
+            "levels": [
+              "low",
+              "medium",
+              "high",
+              "xhigh"
+            ],
+            "default": "medium"
+          },
           "tool_call": true,
           "attachment": true,
           "structured_output": true,
@@ -2162,6 +2482,16 @@
           "output_limit": 64000,
           "reasoning": true,
           "supports_effort": true,
+          "effort": {
+            "kind": "levels",
+            "levels": [
+              "low",
+              "medium",
+              "high",
+              "xhigh"
+            ],
+            "default": "medium"
+          },
           "tool_call": true,
           "attachment": true,
           "structured_output": true,
@@ -2201,6 +2531,16 @@
           "output_limit": 64000,
           "reasoning": true,
           "supports_effort": true,
+          "effort": {
+            "kind": "levels",
+            "levels": [
+              "low",
+              "medium",
+              "high",
+              "xhigh"
+            ],
+            "default": "medium"
+          },
           "tool_call": true,
           "attachment": true,
           "structured_output": true,
@@ -2239,7 +2579,17 @@
           "context": 128000,
           "output_limit": 16384,
           "reasoning": false,
-          "supports_effort": false,
+          "supports_effort": true,
+          "effort": {
+            "kind": "levels",
+            "levels": [
+              "low",
+              "medium",
+              "high",
+              "xhigh"
+            ],
+            "default": "medium"
+          },
           "tool_call": true,
           "attachment": true,
           "structured_output": true,
@@ -2277,6 +2627,16 @@
           "output_limit": 64000,
           "reasoning": true,
           "supports_effort": true,
+          "effort": {
+            "kind": "levels",
+            "levels": [
+              "low",
+              "medium",
+              "high",
+              "xhigh"
+            ],
+            "default": "medium"
+          },
           "tool_call": true,
           "attachment": true,
           "structured_output": true,
@@ -2313,6 +2673,16 @@
           "output_limit": 128000,
           "reasoning": true,
           "supports_effort": true,
+          "effort": {
+            "kind": "levels",
+            "levels": [
+              "low",
+              "medium",
+              "high",
+              "xhigh"
+            ],
+            "default": "medium"
+          },
           "tool_call": true,
           "attachment": true,
           "structured_output": true,
@@ -2349,6 +2719,16 @@
           "output_limit": 128000,
           "reasoning": true,
           "supports_effort": true,
+          "effort": {
+            "kind": "levels",
+            "levels": [
+              "low",
+              "medium",
+              "high",
+              "xhigh"
+            ],
+            "default": "medium"
+          },
           "tool_call": true,
           "attachment": true,
           "structured_output": true,
@@ -2386,6 +2766,16 @@
           "output_limit": 128000,
           "reasoning": true,
           "supports_effort": true,
+          "effort": {
+            "kind": "levels",
+            "levels": [
+              "low",
+              "medium",
+              "high",
+              "xhigh"
+            ],
+            "default": "medium"
+          },
           "tool_call": true,
           "attachment": true,
           "structured_output": true,
@@ -2423,6 +2813,16 @@
           "output_limit": 128000,
           "reasoning": true,
           "supports_effort": true,
+          "effort": {
+            "kind": "levels",
+            "levels": [
+              "low",
+              "medium",
+              "high",
+              "xhigh"
+            ],
+            "default": "medium"
+          },
           "tool_call": true,
           "attachment": true,
           "structured_output": true,
@@ -2460,6 +2860,16 @@
           "output_limit": 128000,
           "reasoning": true,
           "supports_effort": true,
+          "effort": {
+            "kind": "levels",
+            "levels": [
+              "low",
+              "medium",
+              "high",
+              "xhigh"
+            ],
+            "default": "medium"
+          },
           "tool_call": true,
           "attachment": true,
           "structured_output": true,
@@ -2496,6 +2906,16 @@
           "output_limit": 128000,
           "reasoning": true,
           "supports_effort": true,
+          "effort": {
+            "kind": "levels",
+            "levels": [
+              "low",
+              "medium",
+              "high",
+              "xhigh"
+            ],
+            "default": "medium"
+          },
           "tool_call": true,
           "attachment": true,
           "structured_output": true,
@@ -2532,6 +2952,16 @@
           "output_limit": 128000,
           "reasoning": true,
           "supports_effort": true,
+          "effort": {
+            "kind": "levels",
+            "levels": [
+              "low",
+              "medium",
+              "high",
+              "xhigh"
+            ],
+            "default": "medium"
+          },
           "tool_call": true,
           "attachment": true,
           "structured_output": true,
@@ -2569,6 +2999,16 @@
           "output_limit": 128000,
           "reasoning": true,
           "supports_effort": true,
+          "effort": {
+            "kind": "levels",
+            "levels": [
+              "low",
+              "medium",
+              "high",
+              "xhigh"
+            ],
+            "default": "medium"
+          },
           "tool_call": true,
           "attachment": true,
           "structured_output": true,
@@ -2620,6 +3060,13 @@
           "output_limit": 65536,
           "reasoning": true,
           "supports_effort": true,
+          "effort": {
+            "kind": "budget",
+            "min": 0,
+            "max": 24576,
+            "default": -1,
+            "can_disable": true
+          },
           "tool_call": true,
           "attachment": true,
           "structured_output": true,
@@ -2658,7 +3105,14 @@
           "context": 1048576,
           "output_limit": 65536,
           "reasoning": true,
-          "supports_effort": false,
+          "supports_effort": true,
+          "effort": {
+            "kind": "budget",
+            "min": 0,
+            "max": 24576,
+            "default": -1,
+            "can_disable": true
+          },
           "tool_call": true,
           "attachment": true,
           "structured_output": true,
@@ -2698,6 +3152,13 @@
           "output_limit": 65536,
           "reasoning": true,
           "supports_effort": true,
+          "effort": {
+            "kind": "budget",
+            "min": 128,
+            "max": 32768,
+            "default": -1,
+            "can_disable": false
+          },
           "tool_call": true,
           "attachment": true,
           "structured_output": true,
@@ -2737,6 +3198,14 @@
           "output_limit": 65536,
           "reasoning": true,
           "supports_effort": true,
+          "effort": {
+            "kind": "thinking_level",
+            "levels": [
+              "low",
+              "high"
+            ],
+            "default": "high"
+          },
           "tool_call": true,
           "attachment": true,
           "structured_output": true,
@@ -2776,6 +3245,14 @@
           "output_limit": 65536,
           "reasoning": true,
           "supports_effort": true,
+          "effort": {
+            "kind": "thinking_level",
+            "levels": [
+              "low",
+              "high"
+            ],
+            "default": "high"
+          },
           "tool_call": true,
           "attachment": true,
           "structured_output": true,
@@ -2815,6 +3292,14 @@
           "output_limit": 65536,
           "reasoning": true,
           "supports_effort": true,
+          "effort": {
+            "kind": "thinking_level",
+            "levels": [
+              "low",
+              "high"
+            ],
+            "default": "high"
+          },
           "tool_call": true,
           "attachment": true,
           "structured_output": true,
@@ -2854,6 +3339,14 @@
           "output_limit": 65536,
           "reasoning": true,
           "supports_effort": true,
+          "effort": {
+            "kind": "thinking_level",
+            "levels": [
+              "low",
+              "high"
+            ],
+            "default": "high"
+          },
           "tool_call": true,
           "attachment": true,
           "structured_output": true,
@@ -2905,6 +3398,9 @@
           "output_limit": 262144,
           "reasoning": true,
           "supports_effort": true,
+          "effort": {
+            "kind": "none"
+          },
           "tool_call": true,
           "attachment": false,
           "structured_output": true,
@@ -2942,6 +3438,9 @@
           "output_limit": 262144,
           "reasoning": true,
           "supports_effort": true,
+          "effort": {
+            "kind": "none"
+          },
           "tool_call": true,
           "attachment": true,
           "structured_output": true,
@@ -2993,6 +3492,9 @@
           "output_limit": 262144,
           "reasoning": true,
           "supports_effort": true,
+          "effort": {
+            "kind": "none"
+          },
           "tool_call": true,
           "attachment": false,
           "structured_output": true,
@@ -3030,6 +3532,9 @@
           "output_limit": 262144,
           "reasoning": true,
           "supports_effort": true,
+          "effort": {
+            "kind": "none"
+          },
           "tool_call": true,
           "attachment": true,
           "structured_output": true,
@@ -3081,6 +3586,9 @@
           "output_limit": 4096,
           "reasoning": false,
           "supports_effort": false,
+          "effort": {
+            "kind": "none"
+          },
           "tool_call": true,
           "attachment": false,
           "structured_output": true,
@@ -3117,6 +3625,9 @@
           "output_limit": 262144,
           "reasoning": false,
           "supports_effort": false,
+          "effort": {
+            "kind": "none"
+          },
           "tool_call": true,
           "attachment": true,
           "structured_output": true,
@@ -3169,6 +3680,9 @@
           "output_limit": 393216,
           "reasoning": true,
           "supports_effort": true,
+          "effort": {
+            "kind": "none"
+          },
           "tool_call": true,
           "attachment": false,
           "structured_output": true,
@@ -3204,6 +3718,9 @@
           "output_limit": 393216,
           "reasoning": true,
           "supports_effort": true,
+          "effort": {
+            "kind": "none"
+          },
           "tool_call": true,
           "attachment": false,
           "structured_output": true,
@@ -3239,6 +3756,9 @@
           "output_limit": 4096,
           "reasoning": false,
           "supports_effort": false,
+          "effort": {
+            "kind": "none"
+          },
           "tool_call": true,
           "attachment": true,
           "structured_output": true,
@@ -3274,6 +3794,9 @@
           "output_limit": 131072,
           "reasoning": true,
           "supports_effort": true,
+          "effort": {
+            "kind": "none"
+          },
           "tool_call": true,
           "attachment": false,
           "structured_output": true,
@@ -3308,6 +3831,9 @@
           "output_limit": 8192,
           "reasoning": false,
           "supports_effort": false,
+          "effort": {
+            "kind": "none"
+          },
           "tool_call": true,
           "attachment": false,
           "structured_output": true,
@@ -3342,6 +3868,9 @@
           "output_limit": 262144,
           "reasoning": true,
           "supports_effort": true,
+          "effort": {
+            "kind": "none"
+          },
           "tool_call": true,
           "attachment": true,
           "structured_output": true,
@@ -3378,6 +3907,9 @@
           "output_limit": 262144,
           "reasoning": true,
           "supports_effort": true,
+          "effort": {
+            "kind": "none"
+          },
           "tool_call": true,
           "attachment": false,
           "structured_output": true,
@@ -3412,6 +3944,9 @@
           "output_limit": 8192,
           "reasoning": true,
           "supports_effort": true,
+          "effort": {
+            "kind": "none"
+          },
           "tool_call": false,
           "attachment": true,
           "structured_output": false,
@@ -3446,6 +3981,9 @@
           "output_limit": 32768,
           "reasoning": true,
           "supports_effort": false,
+          "effort": {
+            "kind": "none"
+          },
           "tool_call": true,
           "attachment": false,
           "structured_output": true,
@@ -3480,6 +4018,9 @@
           "output_limit": 131072,
           "reasoning": true,
           "supports_effort": true,
+          "effort": {
+            "kind": "none"
+          },
           "tool_call": true,
           "attachment": false,
           "structured_output": true,
@@ -3528,6 +4069,9 @@
           "output_limit": 32768,
           "reasoning": false,
           "supports_effort": false,
+          "effort": {
+            "kind": "none"
+          },
           "tool_call": true,
           "attachment": true,
           "structured_output": true,
@@ -3565,6 +4109,16 @@
           "output_limit": 128000,
           "reasoning": true,
           "supports_effort": true,
+          "effort": {
+            "kind": "levels",
+            "levels": [
+              "minimal",
+              "low",
+              "medium",
+              "high"
+            ],
+            "default": "medium"
+          },
           "tool_call": true,
           "attachment": true,
           "structured_output": true,
@@ -3601,6 +4155,16 @@
           "output_limit": 128000,
           "reasoning": true,
           "supports_effort": true,
+          "effort": {
+            "kind": "levels",
+            "levels": [
+              "minimal",
+              "low",
+              "medium",
+              "high"
+            ],
+            "default": "medium"
+          },
           "tool_call": true,
           "attachment": true,
           "structured_output": true,
@@ -3637,6 +4201,16 @@
           "output_limit": 128000,
           "reasoning": true,
           "supports_effort": true,
+          "effort": {
+            "kind": "levels",
+            "levels": [
+              "minimal",
+              "low",
+              "medium",
+              "high"
+            ],
+            "default": "medium"
+          },
           "tool_call": true,
           "attachment": true,
           "structured_output": true,
@@ -3674,6 +4248,16 @@
           "output_limit": 128000,
           "reasoning": true,
           "supports_effort": true,
+          "effort": {
+            "kind": "levels",
+            "levels": [
+              "minimal",
+              "low",
+              "medium",
+              "high"
+            ],
+            "default": "medium"
+          },
           "tool_call": true,
           "attachment": true,
           "structured_output": true,
@@ -3710,6 +4294,16 @@
           "output_limit": 128000,
           "reasoning": true,
           "supports_effort": true,
+          "effort": {
+            "kind": "levels",
+            "levels": [
+              "minimal",
+              "low",
+              "medium",
+              "high"
+            ],
+            "default": "medium"
+          },
           "tool_call": true,
           "attachment": true,
           "structured_output": true,
@@ -3746,6 +4340,16 @@
           "output_limit": 128000,
           "reasoning": true,
           "supports_effort": true,
+          "effort": {
+            "kind": "levels",
+            "levels": [
+              "minimal",
+              "low",
+              "medium",
+              "high"
+            ],
+            "default": "medium"
+          },
           "tool_call": true,
           "attachment": true,
           "structured_output": true,
@@ -3797,6 +4401,9 @@
           "output_limit": 128000,
           "reasoning": true,
           "supports_effort": true,
+          "effort": {
+            "kind": "none"
+          },
           "tool_call": true,
           "attachment": true,
           "structured_output": true,
@@ -3835,6 +4442,9 @@
           "output_limit": 128000,
           "reasoning": true,
           "supports_effort": true,
+          "effort": {
+            "kind": "none"
+          },
           "tool_call": true,
           "attachment": true,
           "structured_output": true,
@@ -3873,6 +4483,9 @@
           "output_limit": 384000,
           "reasoning": true,
           "supports_effort": true,
+          "effort": {
+            "kind": "none"
+          },
           "tool_call": true,
           "attachment": false,
           "structured_output": true,
@@ -3908,6 +4521,9 @@
           "output_limit": 65536,
           "reasoning": true,
           "supports_effort": true,
+          "effort": {
+            "kind": "none"
+          },
           "tool_call": true,
           "attachment": true,
           "structured_output": true,
@@ -3948,6 +4564,9 @@
           "output_limit": 65536,
           "reasoning": true,
           "supports_effort": true,
+          "effort": {
+            "kind": "none"
+          },
           "tool_call": true,
           "attachment": true,
           "structured_output": true,
@@ -3988,6 +4607,9 @@
           "output_limit": 262144,
           "reasoning": true,
           "supports_effort": true,
+          "effort": {
+            "kind": "none"
+          },
           "tool_call": true,
           "attachment": true,
           "structured_output": true,
@@ -4024,6 +4646,9 @@
           "output_limit": 128000,
           "reasoning": true,
           "supports_effort": true,
+          "effort": {
+            "kind": "none"
+          },
           "tool_call": true,
           "attachment": true,
           "structured_output": true,
@@ -4061,6 +4686,9 @@
           "output_limit": 128000,
           "reasoning": true,
           "supports_effort": true,
+          "effort": {
+            "kind": "none"
+          },
           "tool_call": true,
           "attachment": true,
           "structured_output": true,
@@ -4098,6 +4726,9 @@
           "output_limit": 1000000,
           "reasoning": true,
           "supports_effort": true,
+          "effort": {
+            "kind": "none"
+          },
           "tool_call": true,
           "attachment": true,
           "structured_output": true,
@@ -4134,6 +4765,9 @@
           "output_limit": 131072,
           "reasoning": true,
           "supports_effort": true,
+          "effort": {
+            "kind": "none"
+          },
           "tool_call": true,
           "attachment": false,
           "structured_output": true,
@@ -4183,6 +4817,9 @@
           "output_limit": 64000,
           "reasoning": true,
           "supports_effort": true,
+          "effort": {
+            "kind": "none"
+          },
           "tool_call": true,
           "attachment": true,
           "structured_output": true,
@@ -4220,6 +4857,9 @@
           "output_limit": 64000,
           "reasoning": true,
           "supports_effort": true,
+          "effort": {
+            "kind": "none"
+          },
           "tool_call": true,
           "attachment": true,
           "structured_output": true,
@@ -4257,6 +4897,9 @@
           "output_limit": 128000,
           "reasoning": true,
           "supports_effort": true,
+          "effort": {
+            "kind": "none"
+          },
           "tool_call": true,
           "attachment": true,
           "structured_output": true,
@@ -4294,6 +4937,9 @@
           "output_limit": 128000,
           "reasoning": true,
           "supports_effort": true,
+          "effort": {
+            "kind": "none"
+          },
           "tool_call": true,
           "attachment": true,
           "structured_output": true,
@@ -4331,6 +4977,9 @@
           "output_limit": 64000,
           "reasoning": true,
           "supports_effort": true,
+          "effort": {
+            "kind": "none"
+          },
           "tool_call": true,
           "attachment": true,
           "structured_output": true,
@@ -4368,6 +5017,9 @@
           "output_limit": 64000,
           "reasoning": true,
           "supports_effort": true,
+          "effort": {
+            "kind": "none"
+          },
           "tool_call": true,
           "attachment": true,
           "structured_output": true,
@@ -4405,6 +5057,9 @@
           "output_limit": 65536,
           "reasoning": true,
           "supports_effort": true,
+          "effort": {
+            "kind": "none"
+          },
           "tool_call": true,
           "attachment": true,
           "structured_output": true,
@@ -4444,6 +5099,9 @@
           "output_limit": 65536,
           "reasoning": true,
           "supports_effort": true,
+          "effort": {
+            "kind": "none"
+          },
           "tool_call": true,
           "attachment": true,
           "structured_output": true,
@@ -4483,6 +5141,9 @@
           "output_limit": 65536,
           "reasoning": true,
           "supports_effort": true,
+          "effort": {
+            "kind": "none"
+          },
           "tool_call": true,
           "attachment": true,
           "structured_output": true,
@@ -4522,6 +5183,9 @@
           "output_limit": 65536,
           "reasoning": true,
           "supports_effort": true,
+          "effort": {
+            "kind": "none"
+          },
           "tool_call": true,
           "attachment": true,
           "structured_output": true,
@@ -4561,6 +5225,9 @@
           "output_limit": 32000,
           "reasoning": true,
           "supports_effort": true,
+          "effort": {
+            "kind": "none"
+          },
           "tool_call": true,
           "attachment": false,
           "structured_output": true,
@@ -4595,6 +5262,9 @@
           "output_limit": 128000,
           "reasoning": true,
           "supports_effort": true,
+          "effort": {
+            "kind": "none"
+          },
           "tool_call": true,
           "attachment": true,
           "structured_output": true,
@@ -4631,6 +5301,9 @@
           "output_limit": 128000,
           "reasoning": true,
           "supports_effort": true,
+          "effort": {
+            "kind": "none"
+          },
           "tool_call": true,
           "attachment": true,
           "structured_output": true,
@@ -4667,6 +5340,9 @@
           "output_limit": 128000,
           "reasoning": true,
           "supports_effort": true,
+          "effort": {
+            "kind": "none"
+          },
           "tool_call": true,
           "attachment": true,
           "structured_output": true,
@@ -4703,6 +5379,9 @@
           "output_limit": 128000,
           "reasoning": true,
           "supports_effort": true,
+          "effort": {
+            "kind": "none"
+          },
           "tool_call": true,
           "attachment": true,
           "structured_output": true,
@@ -4739,6 +5418,9 @@
           "output_limit": 128000,
           "reasoning": true,
           "supports_effort": true,
+          "effort": {
+            "kind": "none"
+          },
           "tool_call": true,
           "attachment": true,
           "structured_output": true,
@@ -4776,6 +5458,9 @@
           "output_limit": 8192,
           "reasoning": false,
           "supports_effort": false,
+          "effort": {
+            "kind": "none"
+          },
           "tool_call": true,
           "attachment": false,
           "structured_output": true,
@@ -4811,6 +5496,9 @@
           "output_limit": 4096,
           "reasoning": false,
           "supports_effort": false,
+          "effort": {
+            "kind": "none"
+          },
           "tool_call": false,
           "attachment": false,
           "structured_output": false,
@@ -4845,6 +5533,15 @@
           "output_limit": 32768,
           "reasoning": true,
           "supports_effort": true,
+          "effort": {
+            "kind": "levels",
+            "levels": [
+              "low",
+              "medium",
+              "high"
+            ],
+            "default": "medium"
+          },
           "tool_call": false,
           "attachment": false,
           "structured_output": false,
@@ -4879,6 +5576,9 @@
           "output_limit": 8192,
           "reasoning": false,
           "supports_effort": false,
+          "effort": {
+            "kind": "none"
+          },
           "tool_call": false,
           "attachment": true,
           "structured_output": false,
@@ -4914,6 +5614,9 @@
           "output_limit": 4096,
           "reasoning": true,
           "supports_effort": true,
+          "effort": {
+            "kind": "none"
+          },
           "tool_call": false,
           "attachment": true,
           "structured_output": false,
@@ -4949,6 +5652,9 @@
           "output_limit": 30000,
           "reasoning": false,
           "supports_effort": false,
+          "effort": {
+            "kind": "none"
+          },
           "tool_call": true,
           "attachment": true,
           "structured_output": true,
@@ -4999,6 +5705,9 @@
           "output_limit": 30000,
           "reasoning": false,
           "supports_effort": false,
+          "effort": {
+            "kind": "none"
+          },
           "tool_call": true,
           "attachment": true,
           "structured_output": true,
@@ -5036,6 +5745,9 @@
           "output_limit": 30000,
           "reasoning": true,
           "supports_effort": true,
+          "effort": {
+            "kind": "none"
+          },
           "tool_call": true,
           "attachment": true,
           "structured_output": true,
@@ -5073,6 +5785,16 @@
           "output_limit": 30000,
           "reasoning": true,
           "supports_effort": true,
+          "effort": {
+            "kind": "levels",
+            "levels": [
+              "none",
+              "low",
+              "medium",
+              "high"
+            ],
+            "default": "low"
+          },
           "tool_call": true,
           "attachment": true,
           "structured_output": true,

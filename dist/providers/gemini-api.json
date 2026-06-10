@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-06-10T09:04:56.472Z",
-  "commit": "9b98986",
+  "generatedAt": "2026-06-10T15:45:06.919Z",
+  "commit": "61cbb80",
   "provider": {
     "id": "gemini-api",
     "name": "Google",
@@ -23,6 +23,13 @@
         "output_limit": 65536,
         "reasoning": true,
         "supports_effort": true,
+        "effort": {
+          "kind": "budget",
+          "min": 0,
+          "max": 24576,
+          "default": -1,
+          "can_disable": true
+        },
         "tool_call": true,
         "attachment": true,
         "structured_output": true,
@@ -61,7 +68,14 @@
         "context": 1048576,
         "output_limit": 65536,
         "reasoning": true,
-        "supports_effort": false,
+        "supports_effort": true,
+        "effort": {
+          "kind": "budget",
+          "min": 0,
+          "max": 24576,
+          "default": -1,
+          "can_disable": true
+        },
         "tool_call": true,
         "attachment": true,
         "structured_output": true,
@@ -101,6 +115,13 @@
         "output_limit": 65536,
         "reasoning": true,
         "supports_effort": true,
+        "effort": {
+          "kind": "budget",
+          "min": 128,
+          "max": 32768,
+          "default": -1,
+          "can_disable": false
+        },
         "tool_call": true,
         "attachment": true,
         "structured_output": true,
@@ -140,6 +161,14 @@
         "output_limit": 65536,
         "reasoning": true,
         "supports_effort": true,
+        "effort": {
+          "kind": "thinking_level",
+          "levels": [
+            "low",
+            "high"
+          ],
+          "default": "high"
+        },
         "tool_call": true,
         "attachment": true,
         "structured_output": true,
@@ -179,6 +208,14 @@
         "output_limit": 65536,
         "reasoning": true,
         "supports_effort": true,
+        "effort": {
+          "kind": "thinking_level",
+          "levels": [
+            "low",
+            "high"
+          ],
+          "default": "high"
+        },
         "tool_call": true,
         "attachment": true,
         "structured_output": true,
@@ -218,6 +255,14 @@
         "output_limit": 65536,
         "reasoning": true,
         "supports_effort": true,
+        "effort": {
+          "kind": "thinking_level",
+          "levels": [
+            "low",
+            "high"
+          ],
+          "default": "high"
+        },
         "tool_call": true,
         "attachment": true,
         "structured_output": true,
@@ -257,6 +302,14 @@
         "output_limit": 65536,
         "reasoning": true,
         "supports_effort": true,
+        "effort": {
+          "kind": "thinking_level",
+          "levels": [
+            "low",
+            "high"
+          ],
+          "default": "high"
+        },
         "tool_call": true,
         "attachment": true,
         "structured_output": true,

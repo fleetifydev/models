@@ -21,3 +21,10 @@ output = 65536
 [modalities]
 input = ["text", "image", "audio", "video", "pdf"]
 output = ["text"]
+
+[fleetify.effort]
+kind        = "budget"
+min         = 0
+max         = 24576
+default     = -1
+can_disable = true

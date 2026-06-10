@@ -22,3 +22,8 @@ output = 16000
 [modalities]
 input = ["text", "image", "pdf"]
 output = ["text"]
+
+[fleetify.effort]
+kind    = "levels"
+levels  = ["low", "medium", "high", "xhigh"]
+default = "medium"

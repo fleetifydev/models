@@ -3,3 +3,8 @@ from = "anthropic/claude-sonnet-4-6"
 
 [fleetify]
 label = "Sonnet 4.6"
+
+[fleetify.effort]
+kind    = "levels"
+levels  = ["low", "medium", "high", "max"]
+default = "high"

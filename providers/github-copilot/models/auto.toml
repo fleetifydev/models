@@ -2,3 +2,8 @@ name = "Auto"
 
 [fleetify]
 label = "Auto (Copilot picks)"
+
+[fleetify.effort]
+kind    = "levels"
+levels  = ["low", "medium", "high", "xhigh"]
+default = "medium"

@@ -31,6 +31,13 @@ export interface ModalitiesToml {
   output?: string[];
 }
 
+export type EffortCapability =
+  | { kind: "levels"; levels: string[]; default: string }
+  | { kind: "thinking_level"; levels: string[]; default: string }
+  | { kind: "budget"; min: number; max: number; default: number; can_disable: boolean }
+  | { kind: "toggle"; default: boolean }
+  | { kind: "none" };
+
 export interface FleetifyModelExtras {
   label?: string;
   supports_effort?: boolean;
@@ -39,6 +46,7 @@ export interface FleetifyModelExtras {
   endpoint?: string;
   hidden?: boolean;
   aliases?: string[];
+  effort?: EffortCapability;
 }
 
 export interface ExtendsToml {
@@ -91,6 +99,7 @@ export interface PickerModel {
   output_limit: number | null;
   reasoning: boolean;
   supports_effort: boolean;
+  effort: EffortCapability;
   tool_call: boolean;
   attachment: boolean;
   structured_output: boolean;
