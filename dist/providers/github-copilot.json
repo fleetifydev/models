@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-06-10T09:04:56.472Z",
-  "commit": "9b98986",
+  "generatedAt": "2026-06-10T14:09:30.652Z",
+  "commit": "fc4d801",
   "provider": {
     "id": "github-copilot",
     "name": "GitHub Copilot CLI",
@@ -20,6 +20,9 @@
         "output_limit": null,
         "reasoning": false,
         "supports_effort": false,
+        "effort": {
+          "kind": "none"
+        },
         "tool_call": false,
         "attachment": false,
         "structured_output": false,
@@ -51,6 +54,9 @@
         "output_limit": 64000,
         "reasoning": true,
         "supports_effort": true,
+        "effort": {
+          "kind": "none"
+        },
         "tool_call": true,
         "attachment": true,
         "structured_output": true,
@@ -89,6 +95,9 @@
         "output_limit": 32000,
         "reasoning": true,
         "supports_effort": true,
+        "effort": {
+          "kind": "none"
+        },
         "tool_call": true,
         "attachment": true,
         "structured_output": true,
@@ -127,6 +136,9 @@
         "output_limit": 32000,
         "reasoning": true,
         "supports_effort": true,
+        "effort": {
+          "kind": "none"
+        },
         "tool_call": true,
         "attachment": true,
         "structured_output": true,
@@ -165,6 +177,9 @@
         "output_limit": 32000,
         "reasoning": true,
         "supports_effort": true,
+        "effort": {
+          "kind": "none"
+        },
         "tool_call": true,
         "attachment": true,
         "structured_output": true,
@@ -203,6 +218,9 @@
         "output_limit": 64000,
         "reasoning": true,
         "supports_effort": true,
+        "effort": {
+          "kind": "none"
+        },
         "tool_call": true,
         "attachment": true,
         "structured_output": true,
@@ -241,6 +259,9 @@
         "output_limit": 16000,
         "reasoning": true,
         "supports_effort": true,
+        "effort": {
+          "kind": "none"
+        },
         "tool_call": true,
         "attachment": true,
         "structured_output": true,
@@ -279,6 +300,9 @@
         "output_limit": 32000,
         "reasoning": true,
         "supports_effort": true,
+        "effort": {
+          "kind": "none"
+        },
         "tool_call": true,
         "attachment": true,
         "structured_output": true,
@@ -317,6 +341,9 @@
         "output_limit": 32000,
         "reasoning": true,
         "supports_effort": true,
+        "effort": {
+          "kind": "none"
+        },
         "tool_call": true,
         "attachment": true,
         "structured_output": true,
@@ -355,6 +382,9 @@
         "output_limit": 64000,
         "reasoning": true,
         "supports_effort": true,
+        "effort": {
+          "kind": "none"
+        },
         "tool_call": true,
         "attachment": true,
         "structured_output": true,
@@ -394,6 +424,9 @@
         "output_limit": 64000,
         "reasoning": true,
         "supports_effort": true,
+        "effort": {
+          "kind": "none"
+        },
         "tool_call": true,
         "attachment": true,
         "structured_output": true,
@@ -433,6 +466,9 @@
         "output_limit": 64000,
         "reasoning": true,
         "supports_effort": true,
+        "effort": {
+          "kind": "none"
+        },
         "tool_call": true,
         "attachment": true,
         "structured_output": true,
@@ -472,6 +508,9 @@
         "output_limit": 64000,
         "reasoning": true,
         "supports_effort": true,
+        "effort": {
+          "kind": "none"
+        },
         "tool_call": true,
         "attachment": true,
         "structured_output": true,
@@ -511,6 +550,9 @@
         "output_limit": 16384,
         "reasoning": false,
         "supports_effort": false,
+        "effort": {
+          "kind": "none"
+        },
         "tool_call": true,
         "attachment": true,
         "structured_output": true,
@@ -548,6 +590,9 @@
         "output_limit": 64000,
         "reasoning": true,
         "supports_effort": true,
+        "effort": {
+          "kind": "none"
+        },
         "tool_call": true,
         "attachment": true,
         "structured_output": true,
@@ -584,6 +629,9 @@
         "output_limit": 128000,
         "reasoning": true,
         "supports_effort": true,
+        "effort": {
+          "kind": "none"
+        },
         "tool_call": true,
         "attachment": true,
         "structured_output": true,
@@ -620,6 +668,9 @@
         "output_limit": 128000,
         "reasoning": true,
         "supports_effort": true,
+        "effort": {
+          "kind": "none"
+        },
         "tool_call": true,
         "attachment": true,
         "structured_output": true,
@@ -657,6 +708,9 @@
         "output_limit": 128000,
         "reasoning": true,
         "supports_effort": true,
+        "effort": {
+          "kind": "none"
+        },
         "tool_call": true,
         "attachment": true,
         "structured_output": true,
@@ -694,6 +748,9 @@
         "output_limit": 128000,
         "reasoning": true,
         "supports_effort": true,
+        "effort": {
+          "kind": "none"
+        },
         "tool_call": true,
         "attachment": true,
         "structured_output": true,
@@ -731,6 +788,9 @@
         "output_limit": 128000,
         "reasoning": true,
         "supports_effort": true,
+        "effort": {
+          "kind": "none"
+        },
         "tool_call": true,
         "attachment": true,
         "structured_output": true,
@@ -767,6 +827,9 @@
         "output_limit": 128000,
         "reasoning": true,
         "supports_effort": true,
+        "effort": {
+          "kind": "none"
+        },
         "tool_call": true,
         "attachment": true,
         "structured_output": true,
@@ -803,6 +866,9 @@
         "output_limit": 128000,
         "reasoning": true,
         "supports_effort": true,
+        "effort": {
+          "kind": "none"
+        },
         "tool_call": true,
         "attachment": true,
         "structured_output": true,
@@ -840,6 +906,9 @@
         "output_limit": 128000,
         "reasoning": true,
         "supports_effort": true,
+        "effort": {
+          "kind": "none"
+        },
         "tool_call": true,
         "attachment": true,
         "structured_output": true,

@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-06-10T09:04:56.472Z",
-  "commit": "9b98986",
+  "generatedAt": "2026-06-10T14:09:30.652Z",
+  "commit": "fc4d801",
   "provider": {
     "id": "kimi",
     "name": "Kimi Code CLI",
@@ -20,6 +20,9 @@
         "output_limit": 262144,
         "reasoning": true,
         "supports_effort": true,
+        "effort": {
+          "kind": "none"
+        },
         "tool_call": true,
         "attachment": false,
         "structured_output": true,
@@ -57,6 +60,9 @@
         "output_limit": 262144,
         "reasoning": true,
         "supports_effort": true,
+        "effort": {
+          "kind": "none"
+        },
         "tool_call": true,
         "attachment": true,
         "structured_output": true,

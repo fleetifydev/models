@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-06-10T09:04:56.472Z",
-  "commit": "9b98986",
+  "generatedAt": "2026-06-10T14:09:30.652Z",
+  "commit": "fc4d801",
   "provider": {
     "id": "nvidia-nim",
     "name": "NVIDIA NIM",
@@ -22,6 +22,9 @@
         "output_limit": 393216,
         "reasoning": true,
         "supports_effort": true,
+        "effort": {
+          "kind": "none"
+        },
         "tool_call": true,
         "attachment": false,
         "structured_output": true,
@@ -57,6 +60,9 @@
         "output_limit": 393216,
         "reasoning": true,
         "supports_effort": true,
+        "effort": {
+          "kind": "none"
+        },
         "tool_call": true,
         "attachment": false,
         "structured_output": true,
@@ -92,6 +98,9 @@
         "output_limit": 4096,
         "reasoning": false,
         "supports_effort": false,
+        "effort": {
+          "kind": "none"
+        },
         "tool_call": true,
         "attachment": true,
         "structured_output": true,
@@ -127,6 +136,9 @@
         "output_limit": 131072,
         "reasoning": true,
         "supports_effort": true,
+        "effort": {
+          "kind": "none"
+        },
         "tool_call": true,
         "attachment": false,
         "structured_output": true,
@@ -161,6 +173,9 @@
         "output_limit": 8192,
         "reasoning": false,
         "supports_effort": false,
+        "effort": {
+          "kind": "none"
+        },
         "tool_call": true,
         "attachment": false,
         "structured_output": true,
@@ -195,6 +210,9 @@
         "output_limit": 262144,
         "reasoning": true,
         "supports_effort": true,
+        "effort": {
+          "kind": "none"
+        },
         "tool_call": true,
         "attachment": true,
         "structured_output": true,
@@ -231,6 +249,9 @@
         "output_limit": 262144,
         "reasoning": true,
         "supports_effort": true,
+        "effort": {
+          "kind": "none"
+        },
         "tool_call": true,
         "attachment": false,
         "structured_output": true,
@@ -265,6 +286,9 @@
         "output_limit": 8192,
         "reasoning": true,
         "supports_effort": true,
+        "effort": {
+          "kind": "none"
+        },
         "tool_call": false,
         "attachment": true,
         "structured_output": false,
@@ -299,6 +323,9 @@
         "output_limit": 32768,
         "reasoning": true,
         "supports_effort": false,
+        "effort": {
+          "kind": "none"
+        },
         "tool_call": true,
         "attachment": false,
         "structured_output": true,
@@ -333,6 +360,9 @@
         "output_limit": 131072,
         "reasoning": true,
         "supports_effort": true,
+        "effort": {
+          "kind": "none"
+        },
         "tool_call": true,
         "attachment": false,
         "structured_output": true,
