@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-06-10T14:09:30.652Z",
-  "commit": "fc4d801",
+  "generatedAt": "2026-06-10T15:45:06.919Z",
+  "commit": "61cbb80",
   "provider": {
     "id": "perplexity",
     "name": "Perplexity",
@@ -739,7 +739,13 @@
         "reasoning": true,
         "supports_effort": true,
         "effort": {
-          "kind": "none"
+          "kind": "levels",
+          "levels": [
+            "low",
+            "medium",
+            "high"
+          ],
+          "default": "medium"
         },
         "tool_call": false,
         "attachment": false,

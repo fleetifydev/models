@@ -3,3 +3,8 @@ from = "google/gemini-3.1-pro-preview"
 
 [fleetify]
 label = "3.1 Pro"
+
+[fleetify.effort]
+kind    = "thinking_level"
+levels  = ["low", "high"]
+default = "high"

@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-06-10T14:09:30.652Z",
-  "commit": "fc4d801",
+  "generatedAt": "2026-06-10T15:45:06.919Z",
+  "commit": "61cbb80",
   "provider": {
     "id": "github-copilot",
     "name": "GitHub Copilot CLI",
@@ -19,9 +19,16 @@
         "context": null,
         "output_limit": null,
         "reasoning": false,
-        "supports_effort": false,
+        "supports_effort": true,
         "effort": {
-          "kind": "none"
+          "kind": "levels",
+          "levels": [
+            "low",
+            "medium",
+            "high",
+            "xhigh"
+          ],
+          "default": "medium"
         },
         "tool_call": false,
         "attachment": false,
@@ -55,7 +62,14 @@
         "reasoning": true,
         "supports_effort": true,
         "effort": {
-          "kind": "none"
+          "kind": "levels",
+          "levels": [
+            "low",
+            "medium",
+            "high",
+            "xhigh"
+          ],
+          "default": "medium"
         },
         "tool_call": true,
         "attachment": true,
@@ -96,7 +110,14 @@
         "reasoning": true,
         "supports_effort": true,
         "effort": {
-          "kind": "none"
+          "kind": "levels",
+          "levels": [
+            "low",
+            "medium",
+            "high",
+            "xhigh"
+          ],
+          "default": "medium"
         },
         "tool_call": true,
         "attachment": true,
@@ -137,7 +158,14 @@
         "reasoning": true,
         "supports_effort": true,
         "effort": {
-          "kind": "none"
+          "kind": "levels",
+          "levels": [
+            "low",
+            "medium",
+            "high",
+            "xhigh"
+          ],
+          "default": "medium"
         },
         "tool_call": true,
         "attachment": true,
@@ -178,7 +206,14 @@
         "reasoning": true,
         "supports_effort": true,
         "effort": {
-          "kind": "none"
+          "kind": "levels",
+          "levels": [
+            "low",
+            "medium",
+            "high",
+            "xhigh"
+          ],
+          "default": "medium"
         },
         "tool_call": true,
         "attachment": true,
@@ -219,7 +254,14 @@
         "reasoning": true,
         "supports_effort": true,
         "effort": {
-          "kind": "none"
+          "kind": "levels",
+          "levels": [
+            "low",
+            "medium",
+            "high",
+            "xhigh"
+          ],
+          "default": "medium"
         },
         "tool_call": true,
         "attachment": true,
@@ -260,7 +302,14 @@
         "reasoning": true,
         "supports_effort": true,
         "effort": {
-          "kind": "none"
+          "kind": "levels",
+          "levels": [
+            "low",
+            "medium",
+            "high",
+            "xhigh"
+          ],
+          "default": "medium"
         },
         "tool_call": true,
         "attachment": true,
@@ -301,7 +350,14 @@
         "reasoning": true,
         "supports_effort": true,
         "effort": {
-          "kind": "none"
+          "kind": "levels",
+          "levels": [
+            "low",
+            "medium",
+            "high",
+            "xhigh"
+          ],
+          "default": "medium"
         },
         "tool_call": true,
         "attachment": true,
@@ -342,7 +398,14 @@
         "reasoning": true,
         "supports_effort": true,
         "effort": {
-          "kind": "none"
+          "kind": "levels",
+          "levels": [
+            "low",
+            "medium",
+            "high",
+            "xhigh"
+          ],
+          "default": "medium"
         },
         "tool_call": true,
         "attachment": true,
@@ -383,7 +446,14 @@
         "reasoning": true,
         "supports_effort": true,
         "effort": {
-          "kind": "none"
+          "kind": "levels",
+          "levels": [
+            "low",
+            "medium",
+            "high",
+            "xhigh"
+          ],
+          "default": "medium"
         },
         "tool_call": true,
         "attachment": true,
@@ -425,7 +495,14 @@
         "reasoning": true,
         "supports_effort": true,
         "effort": {
-          "kind": "none"
+          "kind": "levels",
+          "levels": [
+            "low",
+            "medium",
+            "high",
+            "xhigh"
+          ],
+          "default": "medium"
         },
         "tool_call": true,
         "attachment": true,
@@ -467,7 +544,14 @@
         "reasoning": true,
         "supports_effort": true,
         "effort": {
-          "kind": "none"
+          "kind": "levels",
+          "levels": [
+            "low",
+            "medium",
+            "high",
+            "xhigh"
+          ],
+          "default": "medium"
         },
         "tool_call": true,
         "attachment": true,
@@ -509,7 +593,14 @@
         "reasoning": true,
         "supports_effort": true,
         "effort": {
-          "kind": "none"
+          "kind": "levels",
+          "levels": [
+            "low",
+            "medium",
+            "high",
+            "xhigh"
+          ],
+          "default": "medium"
         },
         "tool_call": true,
         "attachment": true,
@@ -549,9 +640,16 @@
         "context": 128000,
         "output_limit": 16384,
         "reasoning": false,
-        "supports_effort": false,
+        "supports_effort": true,
         "effort": {
-          "kind": "none"
+          "kind": "levels",
+          "levels": [
+            "low",
+            "medium",
+            "high",
+            "xhigh"
+          ],
+          "default": "medium"
         },
         "tool_call": true,
         "attachment": true,
@@ -591,7 +689,14 @@
         "reasoning": true,
         "supports_effort": true,
         "effort": {
-          "kind": "none"
+          "kind": "levels",
+          "levels": [
+            "low",
+            "medium",
+            "high",
+            "xhigh"
+          ],
+          "default": "medium"
         },
         "tool_call": true,
         "attachment": true,
@@ -630,7 +735,14 @@
         "reasoning": true,
         "supports_effort": true,
         "effort": {
-          "kind": "none"
+          "kind": "levels",
+          "levels": [
+            "low",
+            "medium",
+            "high",
+            "xhigh"
+          ],
+          "default": "medium"
         },
         "tool_call": true,
         "attachment": true,
@@ -669,7 +781,14 @@
         "reasoning": true,
         "supports_effort": true,
         "effort": {
-          "kind": "none"
+          "kind": "levels",
+          "levels": [
+            "low",
+            "medium",
+            "high",
+            "xhigh"
+          ],
+          "default": "medium"
         },
         "tool_call": true,
         "attachment": true,
@@ -709,7 +828,14 @@
         "reasoning": true,
         "supports_effort": true,
         "effort": {
-          "kind": "none"
+          "kind": "levels",
+          "levels": [
+            "low",
+            "medium",
+            "high",
+            "xhigh"
+          ],
+          "default": "medium"
         },
         "tool_call": true,
         "attachment": true,
@@ -749,7 +875,14 @@
         "reasoning": true,
         "supports_effort": true,
         "effort": {
-          "kind": "none"
+          "kind": "levels",
+          "levels": [
+            "low",
+            "medium",
+            "high",
+            "xhigh"
+          ],
+          "default": "medium"
         },
         "tool_call": true,
         "attachment": true,
@@ -789,7 +922,14 @@
         "reasoning": true,
         "supports_effort": true,
         "effort": {
-          "kind": "none"
+          "kind": "levels",
+          "levels": [
+            "low",
+            "medium",
+            "high",
+            "xhigh"
+          ],
+          "default": "medium"
         },
         "tool_call": true,
         "attachment": true,
@@ -828,7 +968,14 @@
         "reasoning": true,
         "supports_effort": true,
         "effort": {
-          "kind": "none"
+          "kind": "levels",
+          "levels": [
+            "low",
+            "medium",
+            "high",
+            "xhigh"
+          ],
+          "default": "medium"
         },
         "tool_call": true,
         "attachment": true,
@@ -867,7 +1014,14 @@
         "reasoning": true,
         "supports_effort": true,
         "effort": {
-          "kind": "none"
+          "kind": "levels",
+          "levels": [
+            "low",
+            "medium",
+            "high",
+            "xhigh"
+          ],
+          "default": "medium"
         },
         "tool_call": true,
         "attachment": true,
@@ -907,7 +1061,14 @@
         "reasoning": true,
         "supports_effort": true,
         "effort": {
-          "kind": "none"
+          "kind": "levels",
+          "levels": [
+            "low",
+            "medium",
+            "high",
+            "xhigh"
+          ],
+          "default": "medium"
         },
         "tool_call": true,
         "attachment": true,

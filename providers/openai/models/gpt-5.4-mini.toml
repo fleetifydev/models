@@ -21,3 +21,8 @@ output = 128000
 [modalities]
 input = ["text", "image"]
 output = ["text"]
+
+[fleetify.effort]
+kind    = "levels"
+levels  = ["minimal", "low", "medium", "high"]
+default = "medium"
