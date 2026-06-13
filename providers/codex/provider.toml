@@ -3,5 +3,5 @@ doc = "https://developers.openai.com/codex/models"
 
 [fleetify]
 kind = "cli"
-catalog_id = "codex"
+catalog_id = "codex-cli"
 supports_live = false

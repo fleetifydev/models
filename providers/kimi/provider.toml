@@ -3,5 +3,5 @@ doc = "https://platform.moonshot.ai/docs"
 
 [fleetify]
 kind = "cli"
-catalog_id = "kimi"
+catalog_id = "kimi-code"
 supports_live = false

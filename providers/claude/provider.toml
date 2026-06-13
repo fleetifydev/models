@@ -3,5 +3,5 @@ doc = "https://docs.anthropic.com/en/docs/claude-code"
 
 [fleetify]
 kind = "cli"
-catalog_id = "claude"
+catalog_id = "claude-code"
 supports_live = false

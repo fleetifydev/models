@@ -1,10 +1,10 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-06-10T16:21:19.069Z",
-  "commit": "50cef13",
+  "generatedAt": "2026-06-13T14:27:14.955Z",
+  "commit": "9e4320e",
   "providers": {
-    "agy": {
-      "id": "agy",
+    "antigravity-cli": {
+      "id": "antigravity-cli",
       "name": "Antigravity CLI",
       "kind": "cli",
       "doc": "https://antigravity.google",
@@ -528,8 +528,8 @@
         }
       ]
     },
-    "claude": {
-      "id": "claude",
+    "claude-code": {
+      "id": "claude-code",
       "name": "Claude Code",
       "kind": "cli",
       "doc": "https://docs.anthropic.com/en/docs/claude-code",
@@ -1411,8 +1411,8 @@
         }
       ]
     },
-    "codex": {
-      "id": "codex",
+    "codex-cli": {
+      "id": "codex-cli",
       "name": "Codex CLI",
       "kind": "cli",
       "doc": "https://developers.openai.com/codex/models",
@@ -1793,8 +1793,8 @@
         }
       ]
     },
-    "gemini": {
-      "id": "gemini",
+    "gemini-cli": {
+      "id": "gemini-cli",
       "name": "Gemini CLI",
       "kind": "cli",
       "doc": "https://ai.google.dev/gemini-api/docs",
@@ -3380,8 +3380,8 @@
         }
       ]
     },
-    "kimi": {
-      "id": "kimi",
+    "kimi-code": {
+      "id": "kimi-code",
       "name": "Kimi Code CLI",
       "kind": "cli",
       "doc": "https://platform.moonshot.ai/docs",
