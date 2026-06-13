@@ -1,10 +1,10 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-06-10T16:21:19.069Z",
-  "commit": "50cef13",
+  "generatedAt": "2026-06-13T14:27:14.955Z",
+  "commit": "9e4320e",
   "providers": [
     {
-      "id": "agy",
+      "id": "antigravity-cli",
       "name": "Antigravity CLI",
       "kind": "cli",
       "modelCount": 1
@@ -22,7 +22,7 @@
       "modelCount": 7
     },
     {
-      "id": "claude",
+      "id": "claude-code",
       "name": "Claude Code",
       "kind": "cli",
       "modelCount": 4
@@ -34,7 +34,7 @@
       "modelCount": 18
     },
     {
-      "id": "codex",
+      "id": "codex-cli",
       "name": "Codex CLI",
       "kind": "cli",
       "modelCount": 6
@@ -46,7 +46,7 @@
       "modelCount": 2
     },
     {
-      "id": "gemini",
+      "id": "gemini-cli",
       "name": "Gemini CLI",
       "kind": "cli",
       "modelCount": 3
@@ -64,7 +64,7 @@
       "modelCount": 7
     },
     {
-      "id": "kimi",
+      "id": "kimi-code",
       "name": "Kimi Code CLI",
       "kind": "cli",
       "modelCount": 2

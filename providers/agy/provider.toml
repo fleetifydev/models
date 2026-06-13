@@ -3,5 +3,5 @@ doc = "https://antigravity.google"
 
 [fleetify]
 kind = "cli"
-catalog_id = "agy"
+catalog_id = "antigravity-cli"
 supports_live = false
