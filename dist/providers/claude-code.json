@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-06-13T14:27:14.955Z",
-  "commit": "9e4320e",
+  "generatedAt": "2026-06-13T20:01:38.819Z",
+  "commit": "5ac50e4",
   "provider": {
     "id": "claude-code",
     "name": "Claude Code",
@@ -12,55 +12,6 @@
     "models_endpoint": null,
     "supports_live": false,
     "models": [
-      {
-        "id": "claude-fable-5",
-        "label": "Fable 5",
-        "family": "claude-fable",
-        "context": 1000000,
-        "output_limit": 128000,
-        "reasoning": true,
-        "supports_effort": true,
-        "effort": {
-          "kind": "levels",
-          "levels": [
-            "low",
-            "medium",
-            "high",
-            "xhigh",
-            "max"
-          ],
-          "default": "high"
-        },
-        "tool_call": true,
-        "attachment": true,
-        "structured_output": true,
-        "temperature": false,
-        "open_weights": false,
-        "modalities": {
-          "input": [
-            "text",
-            "image",
-            "pdf"
-          ],
-          "output": [
-            "text"
-          ]
-        },
-        "cost": {
-          "input": 10,
-          "output": 50,
-          "cache_read": 1,
-          "cache_write": 12.5
-        },
-        "group": null,
-        "note": null,
-        "endpoint": null,
-        "hidden": false,
-        "aliases": [],
-        "release_date": "2026-06-09",
-        "last_updated": "2026-06-09",
-        "knowledge": null
-      },
       {
         "id": "claude-haiku-4-5-20251001",
         "label": "Haiku 4.5",

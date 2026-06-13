@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-06-13T14:27:14.955Z",
-  "commit": "9e4320e",
+  "generatedAt": "2026-06-13T20:01:38.819Z",
+  "commit": "5ac50e4",
   "providers": [
     {
       "id": "antigravity-cli",
@@ -25,7 +25,7 @@
       "id": "claude-code",
       "name": "Claude Code",
       "kind": "cli",
-      "modelCount": 4
+      "modelCount": 3
     },
     {
       "id": "cloudflare-workers-ai",
