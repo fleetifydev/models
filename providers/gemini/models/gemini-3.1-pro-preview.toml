@@ -2,6 +2,7 @@
 from = "google/gemini-3.1-pro-preview"
 
 [fleetify]
+default = true
 label = "3.1 Pro"
 
 [fleetify.effort]

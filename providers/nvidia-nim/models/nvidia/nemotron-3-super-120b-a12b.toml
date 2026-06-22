@@ -21,3 +21,6 @@ output = 262144
 [modalities]
 input = ["text"]
 output = ["text"]
+
+[fleetify]
+default = true

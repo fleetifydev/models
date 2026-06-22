@@ -2,6 +2,7 @@
 from = "anthropic/claude-opus-4-8"
 
 [fleetify]
+default = true
 label = "Opus 4.8"
 
 [fleetify.effort]
