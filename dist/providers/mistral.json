@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-06-13T20:10:07.086Z",
-  "commit": "cb7f231",
+  "generatedAt": "2026-06-22T16:17:08.367Z",
+  "commit": "a6efd06",
   "provider": {
     "id": "mistral",
     "name": "Mistral",
@@ -46,6 +46,7 @@
         "note": "Code",
         "endpoint": null,
         "hidden": false,
+        "default": false,
         "aliases": [
           "codestral-latest"
         ],
@@ -86,6 +87,7 @@
         "note": null,
         "endpoint": null,
         "hidden": false,
+        "default": true,
         "aliases": [
           "mistral-large-latest",
           "mistral-large-2411"

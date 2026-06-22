@@ -41,6 +41,12 @@ export function runPipeline(opts: PipelineOptions): PickerProvider[] {
       for (const e of validators.validateModel(resolved)) errors.push(`[model ${p.id}/${m.id}] ${e}`);
       pickerModels.push(toPickerModel(m.id, resolved));
     }
+
+    const defaults = pickerModels.filter((m) => m.default).map((m) => m.id);
+    if (defaults.length > 1) {
+      errors.push(`[provider ${p.id}] more than one default model (${defaults.join(", ")})`);
+    }
+
     pickerProviders.push(toPickerProvider(p, pickerModels));
   }
 

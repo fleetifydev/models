@@ -22,3 +22,6 @@ output = 262144
 [modalities]
 input = ["text", "image", "video"]
 output = ["text"]
+
+[fleetify]
+default = true

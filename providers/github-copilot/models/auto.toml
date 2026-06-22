@@ -1,6 +1,7 @@
 name = "Auto"
 
 [fleetify]
+default = true
 label = "Auto (Copilot picks)"
 
 [fleetify.effort]

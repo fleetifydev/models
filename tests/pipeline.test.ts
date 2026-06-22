@@ -1,4 +1,6 @@
 import { test, expect } from "bun:test";
+import { mkdtempSync, mkdirSync, writeFileSync, cpSync } from "node:fs";
+import { tmpdir } from "node:os";
 import { join } from "node:path";
 import { runPipeline } from "../scripts/lib/pipeline.ts";
 
@@ -22,4 +24,16 @@ test("produces providers + models with resolved extends and defaults", () => {
   expect(wrapModel.label).toBe("Acme Base"); // inherited name
   expect(wrapModel.cost).toBeNull(); // omitted
   expect(wrapModel.group).toBe("via Wrap");
+});
+
+test("rejects a provider with two default models", () => {
+  const dir = mkdtempSync(join(tmpdir(), "fm-"));
+  const prov = join(dir, "providers", "acme", "models");
+  mkdirSync(prov, { recursive: true });
+  writeFileSync(join(dir, "providers", "acme", "provider.toml"), 'name = "Acme"\n[fleetify]\nkind = "api"\n');
+  writeFileSync(join(prov, "a.toml"), 'name = "A"\n[fleetify]\ndefault = true\n');
+  writeFileSync(join(prov, "b.toml"), 'name = "B"\n[fleetify]\ndefault = true\n');
+  cpSync(join(import.meta.dir, "..", "schema"), join(dir, "schema"), { recursive: true });
+  expect(() => runPipeline({ providersDir: join(dir, "providers"), schemaDir: join(dir, "schema") }))
+    .toThrow(/more than one default model/);
 });
