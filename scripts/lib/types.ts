@@ -45,6 +45,7 @@ export interface FleetifyModelExtras {
   note?: string;
   endpoint?: string;
   hidden?: boolean;
+  default?: boolean;
   aliases?: string[];
   effort?: EffortCapability;
 }
@@ -111,6 +112,7 @@ export interface PickerModel {
   note: string | null;
   endpoint: string | null;
   hidden: boolean;
+  default: boolean;
   aliases: string[];
   release_date: string | null;
   last_updated: string | null;

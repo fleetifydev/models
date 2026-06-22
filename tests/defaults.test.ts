@@ -80,3 +80,11 @@ test("effort: explicit supports_effort=false wins even with a levels descriptor"
   expect(m.supports_effort).toBe(false);
   expect(m.effort).toEqual({ kind: "levels", levels: ["low", "high"], default: "high" });
 });
+
+test("default flag flows from [fleetify].default into the picker model", () => {
+  expect(toPickerModel("m", { name: "M", fleetify: { default: true } }).default).toBe(true);
+});
+
+test("default flag is false when omitted", () => {
+  expect(toPickerModel("m", { name: "M" }).default).toBe(false);
+});
