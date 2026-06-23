@@ -1,6 +1,7 @@
 name = "Auto"
 
 [fleetify]
+priority = 230
 default = true
 label = "Auto (Copilot picks)"
 

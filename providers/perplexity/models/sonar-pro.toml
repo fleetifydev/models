@@ -22,5 +22,6 @@ input = ["text", "image"]
 output = ["text"]
 
 [fleetify]
+priority = 220
 default = true
 group = "Sonar API"

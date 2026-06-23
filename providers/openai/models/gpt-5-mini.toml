@@ -22,6 +22,9 @@ output = 128000
 input = ["text", "image"]
 output = ["text"]
 
+[fleetify]
+priority = 30
+
 [fleetify.effort]
 kind    = "levels"
 levels  = ["minimal", "low", "medium", "high"]

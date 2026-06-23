@@ -23,4 +23,5 @@ input = ["text"]
 output = ["text"]
 
 [fleetify]
+priority = 100
 default = true

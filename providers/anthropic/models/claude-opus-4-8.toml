@@ -23,4 +23,5 @@ input = ["text", "image", "pdf"]
 output = ["text"]
 
 [fleetify]
+priority = 30
 default = true

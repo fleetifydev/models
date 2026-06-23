@@ -5,6 +5,7 @@ from = "anthropic/claude-sonnet-4-6"
 context = 200000
 
 [fleetify]
+priority = 30
 label = "Sonnet 4.6"
 
 [fleetify.effort]

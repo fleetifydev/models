@@ -2,5 +2,6 @@
 from = "kimi-api/kimi-k2.6"
 
 [fleetify]
+priority = 20
 default = true
 label = "Kimi K2.6"

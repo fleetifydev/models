@@ -22,5 +22,6 @@ input = ["text"]
 output = ["text"]
 
 [fleetify]
+priority = 10
 label = "GPT-OSS 120B (Medium)"
 supports_effort = false

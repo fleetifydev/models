@@ -22,6 +22,9 @@ output = 65536
 input = ["text", "image", "audio", "video", "pdf"]
 output = ["text"]
 
+[fleetify]
+priority = 30
+
 [fleetify.effort]
 kind        = "budget"
 min         = 128

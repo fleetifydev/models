@@ -23,5 +23,6 @@ input = ["text", "image", "pdf"]
 output = ["text"]
 
 [fleetify]
+priority = 100
 default = true
 group = "via OpenRouter"
