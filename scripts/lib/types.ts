@@ -45,6 +45,9 @@ export interface FleetifyModelExtras {
   note?: string;
   endpoint?: string;
   hidden?: boolean;
+  /** Master availability switch. Omitted ⇒ active. When false the model is
+   *  hidden from the picker, unselectable, and rejected at chat-send time. */
+  active?: boolean;
   default?: boolean;
   aliases?: string[];
   effort?: EffortCapability;
@@ -112,6 +115,7 @@ export interface PickerModel {
   note: string | null;
   endpoint: string | null;
   hidden: boolean;
+  active: boolean;
   default: boolean;
   aliases: string[];
   release_date: string | null;

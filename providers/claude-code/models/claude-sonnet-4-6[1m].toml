@@ -2,7 +2,7 @@
 from = "anthropic/claude-sonnet-4-6"
 
 [fleetify]
-label = "Sonnet 4.6"
+label = "Sonnet 4.6 (1M context)"
 
 [fleetify.effort]
 kind    = "levels"
