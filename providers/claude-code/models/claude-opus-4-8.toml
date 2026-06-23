@@ -1,0 +1,14 @@
+[extends]
+from = "anthropic/claude-opus-4-8"
+
+[limit]
+context = 200000
+
+[fleetify]
+default = true
+label = "Opus 4.8"
+
+[fleetify.effort]
+kind    = "levels"
+levels  = ["low", "medium", "high", "xhigh", "max"]
+default = "high"

@@ -53,6 +53,7 @@
         "note": { "type": "string" },
         "endpoint": { "type": "string" },
         "hidden": { "type": "boolean" },
+        "active": { "type": "boolean" },
         "default": { "type": "boolean" },
         "aliases": { "type": "array", "items": { "type": "string" } },
         "effort": {

@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-06-22T18:19:35.655Z",
-  "commit": "a0f057e",
+  "generatedAt": "2026-06-23T10:31:15.873Z",
+  "commit": "2421b58",
   "provider": {
     "id": "claude-code",
     "name": "Claude Code",
@@ -12,6 +12,57 @@
     "models_endpoint": null,
     "supports_live": false,
     "models": [
+      {
+        "id": "claude-fable-5",
+        "label": "Fable 5",
+        "family": "claude-fable",
+        "context": 1000000,
+        "output_limit": 128000,
+        "reasoning": true,
+        "supports_effort": true,
+        "effort": {
+          "kind": "levels",
+          "levels": [
+            "low",
+            "medium",
+            "high",
+            "xhigh",
+            "max"
+          ],
+          "default": "high"
+        },
+        "tool_call": true,
+        "attachment": true,
+        "structured_output": true,
+        "temperature": false,
+        "open_weights": false,
+        "modalities": {
+          "input": [
+            "text",
+            "image",
+            "pdf"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "cost": {
+          "input": 10,
+          "output": 50,
+          "cache_read": 1,
+          "cache_write": 12.5
+        },
+        "group": null,
+        "note": null,
+        "endpoint": null,
+        "hidden": false,
+        "active": true,
+        "default": false,
+        "aliases": [],
+        "release_date": "2026-06-09",
+        "last_updated": "2026-06-09",
+        "knowledge": null
+      },
       {
         "id": "claude-haiku-4-5-20251001",
         "label": "Haiku 4.5",
@@ -48,6 +99,7 @@
         "note": null,
         "endpoint": null,
         "hidden": false,
+        "active": true,
         "default": false,
         "aliases": [],
         "release_date": "2025-10-15",
@@ -57,6 +109,57 @@
       {
         "id": "claude-opus-4-8",
         "label": "Opus 4.8",
+        "family": "claude-opus",
+        "context": 200000,
+        "output_limit": 128000,
+        "reasoning": true,
+        "supports_effort": true,
+        "effort": {
+          "kind": "levels",
+          "levels": [
+            "low",
+            "medium",
+            "high",
+            "xhigh",
+            "max"
+          ],
+          "default": "high"
+        },
+        "tool_call": true,
+        "attachment": true,
+        "structured_output": true,
+        "temperature": false,
+        "open_weights": false,
+        "modalities": {
+          "input": [
+            "text",
+            "image",
+            "pdf"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "cost": {
+          "input": 5,
+          "output": 25,
+          "cache_read": 0.5,
+          "cache_write": 6.25
+        },
+        "group": null,
+        "note": null,
+        "endpoint": null,
+        "hidden": false,
+        "active": true,
+        "default": true,
+        "aliases": [],
+        "release_date": "2026-05-28",
+        "last_updated": "2026-05-28",
+        "knowledge": null
+      },
+      {
+        "id": "claude-opus-4-8[1m]",
+        "label": "Opus 4.8 (1M context)",
         "family": "claude-opus",
         "context": 1000000,
         "output_limit": 128000,
@@ -98,7 +201,8 @@
         "note": null,
         "endpoint": null,
         "hidden": false,
-        "default": true,
+        "active": true,
+        "default": false,
         "aliases": [],
         "release_date": "2026-05-28",
         "last_updated": "2026-05-28",
@@ -107,6 +211,56 @@
       {
         "id": "claude-sonnet-4-6",
         "label": "Sonnet 4.6",
+        "family": "claude-sonnet",
+        "context": 200000,
+        "output_limit": 64000,
+        "reasoning": true,
+        "supports_effort": true,
+        "effort": {
+          "kind": "levels",
+          "levels": [
+            "low",
+            "medium",
+            "high",
+            "max"
+          ],
+          "default": "high"
+        },
+        "tool_call": true,
+        "attachment": true,
+        "structured_output": true,
+        "temperature": true,
+        "open_weights": false,
+        "modalities": {
+          "input": [
+            "text",
+            "image",
+            "pdf"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "cost": {
+          "input": 3,
+          "output": 15,
+          "cache_read": 0.3,
+          "cache_write": 3.75
+        },
+        "group": null,
+        "note": null,
+        "endpoint": null,
+        "hidden": false,
+        "active": true,
+        "default": false,
+        "aliases": [],
+        "release_date": "2026-02-17",
+        "last_updated": "2026-03-13",
+        "knowledge": "2025-08-31"
+      },
+      {
+        "id": "claude-sonnet-4-6[1m]",
+        "label": "Sonnet 4.6 (1M context)",
         "family": "claude-sonnet",
         "context": 1000000,
         "output_limit": 64000,
@@ -147,6 +301,7 @@
         "note": null,
         "endpoint": null,
         "hidden": false,
+        "active": true,
         "default": false,
         "aliases": [],
         "release_date": "2026-02-17",

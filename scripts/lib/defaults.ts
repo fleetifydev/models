@@ -28,6 +28,7 @@ export function toPickerModel(id: string, m: ModelToml): PickerModel {
     note: f.note ?? null,
     endpoint: f.endpoint ?? null,
     hidden: f.hidden ?? false,
+    active: f.active ?? true,
     default: f.default ?? false,
     aliases: f.aliases ?? [],
     release_date: m.release_date ?? null,

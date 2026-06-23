@@ -1,19 +1,19 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-06-22T18:19:35.655Z",
-  "commit": "a0f057e",
+  "generatedAt": "2026-06-23T10:31:15.873Z",
+  "commit": "2421b58",
   "providers": [
-    {
-      "id": "antigravity-cli",
-      "name": "Antigravity CLI",
-      "kind": "cli",
-      "modelCount": 1
-    },
     {
       "id": "anthropic",
       "name": "Anthropic",
       "kind": "api",
       "modelCount": 4
+    },
+    {
+      "id": "antigravity-cli",
+      "name": "Antigravity CLI",
+      "kind": "cli",
+      "modelCount": 1
     },
     {
       "id": "antigravity-sdk",
@@ -25,7 +25,7 @@
       "id": "claude-code",
       "name": "Claude Code",
       "kind": "cli",
-      "modelCount": 3
+      "modelCount": 6
     },
     {
       "id": "cloudflare-workers-ai",
@@ -46,10 +46,10 @@
       "modelCount": 2
     },
     {
-      "id": "gemini-cli",
-      "name": "Gemini CLI",
-      "kind": "cli",
-      "modelCount": 3
+      "id": "gemini-api",
+      "name": "Google",
+      "kind": "api",
+      "modelCount": 7
     },
     {
       "id": "github-copilot",
@@ -58,21 +58,21 @@
       "modelCount": 23
     },
     {
-      "id": "gemini-api",
-      "name": "Google",
+      "id": "grok",
+      "name": "xAI",
       "kind": "api",
-      "modelCount": 7
-    },
-    {
-      "id": "kimi-code",
-      "name": "Kimi Code CLI",
-      "kind": "cli",
-      "modelCount": 2
+      "modelCount": 3
     },
     {
       "id": "kimi-api",
       "name": "Kimi (Moonshot)",
       "kind": "api",
+      "modelCount": 2
+    },
+    {
+      "id": "kimi-code",
+      "name": "Kimi Code CLI",
+      "kind": "cli",
       "modelCount": 2
     },
     {
@@ -104,12 +104,6 @@
       "name": "Perplexity",
       "kind": "api",
       "modelCount": 22
-    },
-    {
-      "id": "grok",
-      "name": "xAI",
-      "kind": "api",
-      "modelCount": 3
     }
   ]
 }
