@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-06-23T10:31:15.873Z",
-  "commit": "2421b58",
+  "generatedAt": "2026-06-23T13:37:23.043Z",
+  "commit": "cb56c64",
   "provider": {
     "id": "antigravity-cli",
     "name": "Antigravity CLI",
