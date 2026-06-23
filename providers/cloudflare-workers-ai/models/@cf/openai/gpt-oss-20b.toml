@@ -20,3 +20,6 @@ output = 16384
 [modalities]
 input = ["text"]
 output = ["text"]
+
+[fleetify]
+priority = 60

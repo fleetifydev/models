@@ -24,6 +24,7 @@ input = ["text", "image", "pdf"]
 output = ["text"]
 
 [fleetify]
+priority = 30
 label = "Claude Opus 4.6 (Thinking)"
 supports_effort = false
 note = "Reasoning"

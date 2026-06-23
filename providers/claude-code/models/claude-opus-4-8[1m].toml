@@ -2,6 +2,7 @@
 from = "anthropic/claude-opus-4-8"
 
 [fleetify]
+priority = 40
 label = "Opus 4.8 (1M context)"
 default = false
 

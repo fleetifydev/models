@@ -22,4 +22,5 @@ input = ["text"]
 output = ["text"]
 
 [fleetify]
+priority = 190
 group = "Sonar API"

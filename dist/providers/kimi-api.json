@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-06-23T16:40:39.664Z",
-  "commit": "82e7831",
+  "generatedAt": "2026-06-23T16:50:27.195Z",
+  "commit": "0204844",
   "provider": {
     "id": "kimi-api",
     "name": "Kimi (Moonshot)",
@@ -50,7 +50,7 @@
         "endpoint": null,
         "hidden": false,
         "active": true,
-        "priority": 0,
+        "priority": 10,
         "default": false,
         "aliases": [],
         "release_date": null,
@@ -93,7 +93,7 @@
         "endpoint": null,
         "hidden": false,
         "active": true,
-        "priority": 0,
+        "priority": 20,
         "default": true,
         "aliases": [],
         "release_date": "2026-04-21",

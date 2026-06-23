@@ -23,5 +23,6 @@ input = ["text", "image"]
 output = ["text"]
 
 [fleetify]
+priority = 20
 default = true
 aliases = ["mistral-large-latest", "mistral-large-2411"]

@@ -23,5 +23,6 @@ input = ["text"]
 output = ["text"]
 
 [fleetify]
+priority = 30
 group = "Agent API"
 endpoint = "/v1/agent"

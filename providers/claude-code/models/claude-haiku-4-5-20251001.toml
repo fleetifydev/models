@@ -2,6 +2,7 @@
 from = "anthropic/claude-haiku-4-5"
 
 [fleetify]
+priority = 10
 label = "Haiku 4.5"
 
 [fleetify.effort]

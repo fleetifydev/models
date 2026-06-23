@@ -23,5 +23,6 @@ input = ["text"]
 output = ["text"]
 
 [fleetify]
+priority = 10
 note = "Code"
 aliases = ["codestral-latest"]

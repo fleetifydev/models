@@ -23,6 +23,7 @@ input = ["text", "image", "video", "audio", "pdf"]
 output = ["text"]
 
 [fleetify]
+priority = 70
 default = true
 
 [fleetify.effort]

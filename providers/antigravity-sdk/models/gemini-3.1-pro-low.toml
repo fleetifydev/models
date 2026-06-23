@@ -23,5 +23,6 @@ input = ["text", "image", "video", "audio", "pdf"]
 output = ["text"]
 
 [fleetify]
+priority = 60
 label = "Gemini 3.1 Pro (Low)"
 supports_effort = false

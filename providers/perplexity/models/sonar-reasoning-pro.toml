@@ -22,5 +22,6 @@ input = ["text", "image"]
 output = ["text"]
 
 [fleetify]
+priority = 210
 group = "Sonar API"
 note = "Reasoning"

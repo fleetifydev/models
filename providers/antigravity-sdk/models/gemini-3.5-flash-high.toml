@@ -23,5 +23,6 @@ input = ["text", "image", "video", "audio", "pdf"]
 output = ["text"]
 
 [fleetify]
+priority = 50
 label = "Gemini 3.5 Flash (High)"
 supports_effort = false

@@ -20,3 +20,6 @@ output = 262144
 [modalities]
 input = ["text", "image", "video"]
 output = ["text"]
+
+[fleetify]
+priority = 10
