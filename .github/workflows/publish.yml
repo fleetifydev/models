@@ -75,14 +75,37 @@ jobs:
             exit 0
           fi
           # Purge @main too, so branch-tracking consumers get the fresh file and
-          # jsDelivr re-pulls from GitHub before the refresh below lands.
+          # jsDelivr re-pulls from GitHub.
           curl -fsS "https://purge.jsdelivr.net/gh/fleetifydev/models@main/dist/models.json" || true
-          sleep 5
+          # The backend force-refreshes by fetching the just-cut tag from jsDelivr,
+          # which must have pulled it from GitHub first. A brand-new tag is cold, so
+          # a bare `sleep 5` raced the cold pull and the backend timed out -> 502.
+          # Warm the tag and wait until jsDelivr actually serves it before notifying.
+          TAG_URL="https://cdn.jsdelivr.net/gh/fleetifydev/models@${TAG}/dist/models.json"
+          for i in $(seq 1 15); do
+            if curl -fsS -o /dev/null "$TAG_URL"; then
+              echo "jsDelivr is serving ${TAG} (attempt ${i})."
+              break
+            fi
+            echo "Waiting for jsDelivr to propagate ${TAG} (attempt ${i})..."
+            sleep 4
+          done
           # Pin the tag we just cut. NOTE: that tag push used the default
           # GITHUB_TOKEN, which by design does NOT trigger release.yml (GitHub
           # blocks workflow-token pushes from starting new runs), so the auto
           # path notifies here directly. release.yml stays for manual tags.
-          curl -fsS -X POST "$BACKEND_BASE_URL/api/internal/catalog/refresh" \
-            -H "Authorization: Bearer $CATALOG_REFRESH_SECRET" \
-            -H "Content-Type: application/json" \
-            -d "{\"tag\":\"${TAG}\"}"
+          # Retry for any residual cold-edge race; a failed notify is non-fatal -
+          # the backend's L2 TTL refresh still picks up the new tag.
+          for i in $(seq 1 5); do
+            if curl -fsS -X POST "$BACKEND_BASE_URL/api/internal/catalog/refresh" \
+              -H "Authorization: Bearer $CATALOG_REFRESH_SECRET" \
+              -H "Content-Type: application/json" \
+              -d "{\"tag\":\"${TAG}\"}"; then
+              echo "Backend pinned ${TAG}."
+              exit 0
+            fi
+            echo "Backend refresh attempt ${i} failed; retrying in 5s..."
+            sleep 5
+          done
+          echo "::warning::Backend catalog refresh did not succeed after retries; the L2 TTL refresh will still propagate ${TAG}."
+          exit 0
