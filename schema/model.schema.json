@@ -54,6 +54,7 @@
         "endpoint": { "type": "string" },
         "hidden": { "type": "boolean" },
         "active": { "type": "boolean" },
+        "priority": { "type": "integer" },
         "default": { "type": "boolean" },
         "aliases": { "type": "array", "items": { "type": "string" } },
         "effort": {

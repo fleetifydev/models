@@ -5,7 +5,10 @@ from = "anthropic/claude-opus-4-8"
 label = "Opus 4.8 (1M context)"
 default = false
 
+# `ultra_code` is an Opus-only top tier above `max` (maps to Claude max
+# reasoning in the backend bridge). Lives in the catalog so the picker renders
+# it data-driven rather than injecting it client-side.
 [fleetify.effort]
 kind    = "levels"
-levels  = ["low", "medium", "high", "xhigh", "max"]
+levels  = ["low", "medium", "high", "xhigh", "max", "ultra_code"]
 default = "high"

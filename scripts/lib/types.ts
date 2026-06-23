@@ -48,6 +48,9 @@ export interface FleetifyModelExtras {
   /** Master availability switch. Omitted ⇒ active. When false the model is
    *  hidden from the picker, unselectable, and rejected at chat-send time. */
   active?: boolean;
+  /** Model-picker sort weight. Higher floats the model toward the TOP of its
+   *  provider's list; ties keep authoring (catalog) order. Omitted ⇒ 0. */
+  priority?: number;
   default?: boolean;
   aliases?: string[];
   effort?: EffortCapability;
@@ -116,6 +119,8 @@ export interface PickerModel {
   endpoint: string | null;
   hidden: boolean;
   active: boolean;
+  /** Picker sort weight (higher = nearer the top). Default 0. */
+  priority: number;
   default: boolean;
   aliases: string[];
   release_date: string | null;

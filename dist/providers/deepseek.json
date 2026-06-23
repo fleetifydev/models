@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-06-23T13:37:23.043Z",
-  "commit": "cb56c64",
+  "generatedAt": "2026-06-23T16:03:12.814Z",
+  "commit": "8f711f3",
   "provider": {
     "id": "deepseek",
     "name": "DeepSeek",
@@ -48,6 +48,7 @@
         "endpoint": null,
         "hidden": false,
         "active": true,
+        "priority": 0,
         "default": false,
         "aliases": [],
         "release_date": "2026-04-24",
@@ -88,6 +89,7 @@
         "endpoint": null,
         "hidden": false,
         "active": true,
+        "priority": 0,
         "default": true,
         "aliases": [],
         "release_date": "2026-04-24",

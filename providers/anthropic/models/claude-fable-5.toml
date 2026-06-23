@@ -21,3 +21,7 @@ output = 128000
 [modalities]
 input = ["text", "image", "pdf"]
 output = ["text"]
+
+[fleetify]
+# Retired: shown disabled (not clickable) in the picker, rejected at send.
+active = false
