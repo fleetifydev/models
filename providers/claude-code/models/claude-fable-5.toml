@@ -3,8 +3,7 @@ from = "anthropic/claude-fable-5"
 
 [fleetify]
 label = "Fable 5"
-# Retired: shown disabled (not clickable) in the picker, rejected at send.
-active = false
+active = true
 
 [fleetify.effort]
 kind    = "levels"
