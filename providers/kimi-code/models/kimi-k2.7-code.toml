@@ -1,0 +1,6 @@
+[extends]
+from = "kimi-api/kimi-k2.7-code"
+
+[fleetify]
+priority = 25
+label = "Kimi K2.7 Code"

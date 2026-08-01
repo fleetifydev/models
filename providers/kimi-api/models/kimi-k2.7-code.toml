@@ -1,0 +1,24 @@
+name = "Kimi K2.7 Code"
+family = "kimi-k2.7"
+attachment = true
+reasoning = true
+tool_call = true
+structured_output = true
+temperature = true
+open_weights = true
+
+[cost]
+input = 0.95
+output = 4.00
+cache_read = 0.19
+
+[limit]
+context = 262144
+
+[modalities]
+input = ["text", "image", "video"]
+output = ["text"]
+
+[fleetify]
+priority = 25
+aliases = ["kimi-k2.7-code-highspeed"]

@@ -1,0 +1,29 @@
+name = "Claude Sonnet 5"
+family = "claude-sonnet"
+release_date = "2026-06-30"
+last_updated = "2026-06-30"
+knowledge = "2026-01"
+attachment = true
+reasoning = true
+tool_call = true
+structured_output = true
+temperature = false
+
+[cost]
+input = 3.00
+output = 15.00
+cache_read = 0.30
+
+[limit]
+context = 1000000
+output = 128000
+
+[modalities]
+input = ["text", "image", "pdf"]
+output = ["text"]
+
+[fleetify]
+priority = 155
+group = "Agent API"
+endpoint = "/v1/agent"
+note = "Introductory pricing of $2 / $10 per MTok applies through 2026-08-31."

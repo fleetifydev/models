@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-06-23T16:58:30.976Z",
-  "commit": "9c4d44e",
+  "generatedAt": "2026-08-01T11:56:41.652Z",
+  "commit": "2340bcf",
   "provider": {
     "id": "codex-cli",
     "name": "Codex CLI",
@@ -12,205 +12,6 @@
     "models_endpoint": null,
     "supports_live": false,
     "models": [
-      {
-        "id": "gpt-5.2",
-        "label": "GPT-5.2",
-        "family": "gpt",
-        "context": 400000,
-        "output_limit": 128000,
-        "reasoning": true,
-        "supports_effort": true,
-        "effort": {
-          "kind": "levels",
-          "levels": [
-            "low",
-            "medium",
-            "high",
-            "xhigh"
-          ],
-          "default": "medium"
-        },
-        "tool_call": true,
-        "attachment": true,
-        "structured_output": true,
-        "temperature": false,
-        "open_weights": false,
-        "modalities": {
-          "input": [
-            "text",
-            "image"
-          ],
-          "output": [
-            "text"
-          ]
-        },
-        "cost": {
-          "input": 1.75,
-          "output": 14,
-          "cache_read": 0.175
-        },
-        "group": null,
-        "note": null,
-        "endpoint": null,
-        "hidden": false,
-        "active": true,
-        "priority": 10,
-        "default": false,
-        "aliases": [],
-        "release_date": "2025-12-11",
-        "last_updated": "2025-12-11",
-        "knowledge": "2025-08-31"
-      },
-      {
-        "id": "gpt-5.3-codex",
-        "label": "GPT-5.3 Codex",
-        "family": "gpt-codex",
-        "context": 400000,
-        "output_limit": 128000,
-        "reasoning": true,
-        "supports_effort": true,
-        "effort": {
-          "kind": "levels",
-          "levels": [
-            "low",
-            "medium",
-            "high",
-            "xhigh"
-          ],
-          "default": "medium"
-        },
-        "tool_call": true,
-        "attachment": true,
-        "structured_output": true,
-        "temperature": false,
-        "open_weights": false,
-        "modalities": {
-          "input": [
-            "text",
-            "image",
-            "pdf"
-          ],
-          "output": [
-            "text"
-          ]
-        },
-        "cost": {
-          "input": 1.75,
-          "output": 14,
-          "cache_read": 0.175
-        },
-        "group": null,
-        "note": null,
-        "endpoint": null,
-        "hidden": false,
-        "active": true,
-        "priority": 60,
-        "default": true,
-        "aliases": [],
-        "release_date": "2026-02-05",
-        "last_updated": "2026-02-05",
-        "knowledge": "2025-08-31"
-      },
-      {
-        "id": "gpt-5.3-codex-spark",
-        "label": "GPT-5.3 Codex Spark",
-        "family": "gpt-codex-spark",
-        "context": 128000,
-        "output_limit": 32000,
-        "reasoning": true,
-        "supports_effort": true,
-        "effort": {
-          "kind": "levels",
-          "levels": [
-            "low",
-            "medium",
-            "high",
-            "xhigh"
-          ],
-          "default": "medium"
-        },
-        "tool_call": true,
-        "attachment": true,
-        "structured_output": true,
-        "temperature": false,
-        "open_weights": false,
-        "modalities": {
-          "input": [
-            "text",
-            "image",
-            "pdf"
-          ],
-          "output": [
-            "text"
-          ]
-        },
-        "cost": {
-          "input": 1.75,
-          "output": 14,
-          "cache_read": 0.175
-        },
-        "group": null,
-        "note": null,
-        "endpoint": null,
-        "hidden": false,
-        "active": true,
-        "priority": 30,
-        "default": false,
-        "aliases": [],
-        "release_date": "2026-02-05",
-        "last_updated": "2026-02-05",
-        "knowledge": "2025-08-31"
-      },
-      {
-        "id": "gpt-5.4",
-        "label": "GPT-5.4",
-        "family": "gpt",
-        "context": 400000,
-        "output_limit": 128000,
-        "reasoning": true,
-        "supports_effort": true,
-        "effort": {
-          "kind": "levels",
-          "levels": [
-            "low",
-            "medium",
-            "high",
-            "xhigh"
-          ],
-          "default": "medium"
-        },
-        "tool_call": true,
-        "attachment": true,
-        "structured_output": true,
-        "temperature": false,
-        "open_weights": false,
-        "modalities": {
-          "input": [
-            "text",
-            "image",
-            "pdf"
-          ],
-          "output": [
-            "text"
-          ]
-        },
-        "cost": {
-          "input": 2.5,
-          "output": 15,
-          "cache_read": 0.25
-        },
-        "group": null,
-        "note": null,
-        "endpoint": null,
-        "hidden": false,
-        "active": true,
-        "priority": 40,
-        "default": false,
-        "aliases": [],
-        "release_date": "2026-03-05",
-        "last_updated": "2026-06-22",
-        "knowledge": "2025-08-31"
-      },
       {
         "id": "gpt-5.4-mini",
         "label": "GPT-5.4 mini",
@@ -309,6 +110,164 @@
         "release_date": "2026-04-23",
         "last_updated": "2026-06-22",
         "knowledge": "2025-12-01"
+      },
+      {
+        "id": "gpt-5.6-luna",
+        "label": "GPT-5.6 Luna",
+        "family": "gpt",
+        "context": 1050000,
+        "output_limit": 128000,
+        "reasoning": true,
+        "supports_effort": true,
+        "effort": {
+          "kind": "levels",
+          "levels": [
+            "low",
+            "medium",
+            "high",
+            "xhigh",
+            "max",
+            "ultra"
+          ],
+          "default": "medium"
+        },
+        "tool_call": true,
+        "attachment": true,
+        "structured_output": true,
+        "temperature": false,
+        "open_weights": false,
+        "modalities": {
+          "input": [
+            "text",
+            "image",
+            "pdf"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "cost": {
+          "input": 0.2,
+          "output": 1.2,
+          "cache_read": 0.02
+        },
+        "group": null,
+        "note": null,
+        "endpoint": null,
+        "hidden": false,
+        "active": true,
+        "priority": 70,
+        "default": false,
+        "aliases": [],
+        "release_date": "2026-07-09",
+        "last_updated": "2026-07-09",
+        "knowledge": "2026-02-16"
+      },
+      {
+        "id": "gpt-5.6-sol",
+        "label": "GPT-5.6 Sol",
+        "family": "gpt",
+        "context": 1050000,
+        "output_limit": 128000,
+        "reasoning": true,
+        "supports_effort": true,
+        "effort": {
+          "kind": "levels",
+          "levels": [
+            "low",
+            "medium",
+            "high",
+            "xhigh",
+            "max",
+            "ultra"
+          ],
+          "default": "medium"
+        },
+        "tool_call": true,
+        "attachment": true,
+        "structured_output": true,
+        "temperature": false,
+        "open_weights": false,
+        "modalities": {
+          "input": [
+            "text",
+            "image",
+            "pdf"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "cost": {
+          "input": 5,
+          "output": 30,
+          "cache_read": 0.5
+        },
+        "group": null,
+        "note": null,
+        "endpoint": null,
+        "hidden": false,
+        "active": true,
+        "priority": 90,
+        "default": true,
+        "aliases": [
+          "gpt-5.6"
+        ],
+        "release_date": "2026-07-09",
+        "last_updated": "2026-07-09",
+        "knowledge": "2026-02-16"
+      },
+      {
+        "id": "gpt-5.6-terra",
+        "label": "GPT-5.6 Terra",
+        "family": "gpt",
+        "context": 1050000,
+        "output_limit": 128000,
+        "reasoning": true,
+        "supports_effort": true,
+        "effort": {
+          "kind": "levels",
+          "levels": [
+            "low",
+            "medium",
+            "high",
+            "xhigh",
+            "max",
+            "ultra"
+          ],
+          "default": "medium"
+        },
+        "tool_call": true,
+        "attachment": true,
+        "structured_output": true,
+        "temperature": false,
+        "open_weights": false,
+        "modalities": {
+          "input": [
+            "text",
+            "image",
+            "pdf"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "cost": {
+          "input": 2,
+          "output": 12,
+          "cache_read": 0.2
+        },
+        "group": null,
+        "note": null,
+        "endpoint": null,
+        "hidden": false,
+        "active": true,
+        "priority": 80,
+        "default": false,
+        "aliases": [],
+        "release_date": "2026-07-09",
+        "last_updated": "2026-07-09",
+        "knowledge": "2026-02-16"
       }
     ]
   }

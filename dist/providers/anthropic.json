@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-06-23T16:58:30.976Z",
-  "commit": "9c4d44e",
+  "generatedAt": "2026-08-01T11:56:41.652Z",
+  "commit": "2340bcf",
   "provider": {
     "id": "anthropic",
     "name": "Anthropic",
@@ -103,8 +103,8 @@
         "knowledge": "2025-02-28"
       },
       {
-        "id": "claude-opus-4-8",
-        "label": "Claude Opus 4.8",
+        "id": "claude-opus-5",
+        "label": "Claude Opus 5",
         "family": "claude-opus",
         "context": 1000000,
         "output_limit": 128000,
@@ -139,19 +139,19 @@
         "endpoint": null,
         "hidden": false,
         "active": true,
-        "priority": 30,
+        "priority": 50,
         "default": true,
         "aliases": [],
-        "release_date": "2026-05-28",
-        "last_updated": "2026-05-28",
-        "knowledge": null
+        "release_date": "2026-07-24",
+        "last_updated": "2026-07-24",
+        "knowledge": "2026-05"
       },
       {
-        "id": "claude-sonnet-4-6",
-        "label": "Claude Sonnet 4.6",
+        "id": "claude-sonnet-5",
+        "label": "Claude Sonnet 5",
         "family": "claude-sonnet",
         "context": 1000000,
-        "output_limit": 64000,
+        "output_limit": 128000,
         "reasoning": true,
         "supports_effort": true,
         "effort": {
@@ -160,7 +160,7 @@
         "tool_call": true,
         "attachment": true,
         "structured_output": true,
-        "temperature": true,
+        "temperature": false,
         "open_weights": false,
         "modalities": {
           "input": [
@@ -179,16 +179,16 @@
           "cache_write": 3.75
         },
         "group": null,
-        "note": null,
+        "note": "Introductory pricing of $2 / $10 per MTok applies through 2026-08-31.",
         "endpoint": null,
         "hidden": false,
         "active": true,
-        "priority": 20,
+        "priority": 40,
         "default": false,
         "aliases": [],
-        "release_date": "2026-02-17",
-        "last_updated": "2026-03-13",
-        "knowledge": "2025-08-31"
+        "release_date": "2026-06-30",
+        "last_updated": "2026-06-30",
+        "knowledge": "2026-01"
       }
     ]
   }

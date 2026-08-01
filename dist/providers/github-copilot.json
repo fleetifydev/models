@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-06-23T16:58:30.976Z",
-  "commit": "9c4d44e",
+  "generatedAt": "2026-08-01T11:56:41.652Z",
+  "commit": "2340bcf",
   "provider": {
     "id": "github-copilot",
     "name": "GitHub Copilot CLI",
@@ -312,11 +312,11 @@
         "knowledge": null
       },
       {
-        "id": "claude-sonnet-4",
-        "label": "Claude Sonnet 4",
-        "family": "claude-sonnet",
-        "context": 216000,
-        "output_limit": 16000,
+        "id": "claude-opus-5",
+        "label": "Claude Opus 5",
+        "family": "claude-opus",
+        "context": 200000,
+        "output_limit": 64000,
         "reasoning": true,
         "supports_effort": true,
         "effort": {
@@ -332,7 +332,7 @@
         "tool_call": true,
         "attachment": true,
         "structured_output": true,
-        "temperature": true,
+        "temperature": false,
         "open_weights": false,
         "modalities": {
           "input": [
@@ -345,22 +345,22 @@
           ]
         },
         "cost": {
-          "input": 3,
-          "output": 15,
-          "cache_read": 0.3,
-          "cache_write": 3.75
+          "input": 5,
+          "output": 25,
+          "cache_read": 0.5,
+          "cache_write": 6.25
         },
         "group": null,
         "note": null,
         "endpoint": null,
         "hidden": false,
         "active": true,
-        "priority": 160,
+        "priority": 226,
         "default": false,
         "aliases": [],
-        "release_date": "2025-05-22",
-        "last_updated": "2025-05-22",
-        "knowledge": "2025-03-31"
+        "release_date": "2026-07-24",
+        "last_updated": "2026-07-24",
+        "knowledge": "2026-05"
       },
       {
         "id": "claude-sonnet-4.5",
@@ -463,6 +463,57 @@
         "release_date": "2026-02-17",
         "last_updated": "2026-03-13",
         "knowledge": "2025-08-31"
+      },
+      {
+        "id": "claude-sonnet-5",
+        "label": "Claude Sonnet 5",
+        "family": "claude-sonnet",
+        "context": 200000,
+        "output_limit": 64000,
+        "reasoning": true,
+        "supports_effort": true,
+        "effort": {
+          "kind": "levels",
+          "levels": [
+            "low",
+            "medium",
+            "high",
+            "xhigh"
+          ],
+          "default": "medium"
+        },
+        "tool_call": true,
+        "attachment": true,
+        "structured_output": true,
+        "temperature": false,
+        "open_weights": false,
+        "modalities": {
+          "input": [
+            "text",
+            "image",
+            "pdf"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "cost": {
+          "input": 3,
+          "output": 15,
+          "cache_read": 0.3,
+          "cache_write": 3.75
+        },
+        "group": null,
+        "note": null,
+        "endpoint": null,
+        "hidden": false,
+        "active": true,
+        "priority": 224,
+        "default": false,
+        "aliases": [],
+        "release_date": "2026-06-30",
+        "last_updated": "2026-06-30",
+        "knowledge": "2026-01"
       },
       {
         "id": "gemini-2.5-pro",
@@ -671,6 +722,58 @@
         "release_date": "2026-05-19",
         "last_updated": "2026-05-19",
         "knowledge": "2025-01"
+      },
+      {
+        "id": "gemini-3.6-flash",
+        "label": "Gemini 3.6 Flash",
+        "family": "gemini-flash",
+        "context": 200000,
+        "output_limit": 64000,
+        "reasoning": true,
+        "supports_effort": true,
+        "effort": {
+          "kind": "levels",
+          "levels": [
+            "low",
+            "medium",
+            "high",
+            "xhigh"
+          ],
+          "default": "medium"
+        },
+        "tool_call": true,
+        "attachment": true,
+        "structured_output": true,
+        "temperature": true,
+        "open_weights": false,
+        "modalities": {
+          "input": [
+            "text",
+            "image",
+            "video",
+            "audio",
+            "pdf"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "cost": {
+          "input": 1.5,
+          "output": 7.5,
+          "cache_read": 0.15
+        },
+        "group": null,
+        "note": null,
+        "endpoint": null,
+        "hidden": false,
+        "active": true,
+        "priority": 105,
+        "default": false,
+        "aliases": [],
+        "release_date": "2026-07-21",
+        "last_updated": "2026-07-21",
+        "knowledge": "2026-03"
       },
       {
         "id": "gpt-4.1",
@@ -1117,6 +1220,156 @@
         "release_date": "2026-04-23",
         "last_updated": "2026-04-23",
         "knowledge": "2025-12-01"
+      },
+      {
+        "id": "gpt-5.6-luna",
+        "label": "GPT-5.6 Luna",
+        "family": "gpt",
+        "context": 400000,
+        "output_limit": 128000,
+        "reasoning": true,
+        "supports_effort": true,
+        "effort": {
+          "kind": "levels",
+          "levels": [
+            "low",
+            "medium",
+            "high",
+            "xhigh"
+          ],
+          "default": "medium"
+        },
+        "tool_call": true,
+        "attachment": true,
+        "structured_output": true,
+        "temperature": false,
+        "open_weights": false,
+        "modalities": {
+          "input": [
+            "text",
+            "image",
+            "pdf"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "cost": {
+          "input": 0.2,
+          "output": 1.2,
+          "cache_read": 0.02
+        },
+        "group": null,
+        "note": null,
+        "endpoint": null,
+        "hidden": false,
+        "active": true,
+        "priority": 152,
+        "default": false,
+        "aliases": [],
+        "release_date": "2026-07-09",
+        "last_updated": "2026-07-09",
+        "knowledge": "2026-02-16"
+      },
+      {
+        "id": "gpt-5.6-sol",
+        "label": "GPT-5.6 Sol",
+        "family": "gpt",
+        "context": 400000,
+        "output_limit": 128000,
+        "reasoning": true,
+        "supports_effort": true,
+        "effort": {
+          "kind": "levels",
+          "levels": [
+            "low",
+            "medium",
+            "high",
+            "xhigh"
+          ],
+          "default": "medium"
+        },
+        "tool_call": true,
+        "attachment": true,
+        "structured_output": true,
+        "temperature": false,
+        "open_weights": false,
+        "modalities": {
+          "input": [
+            "text",
+            "image",
+            "pdf"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "cost": {
+          "input": 5,
+          "output": 30,
+          "cache_read": 0.5
+        },
+        "group": null,
+        "note": null,
+        "endpoint": null,
+        "hidden": false,
+        "active": true,
+        "priority": 156,
+        "default": false,
+        "aliases": [],
+        "release_date": "2026-07-09",
+        "last_updated": "2026-07-09",
+        "knowledge": "2026-02-16"
+      },
+      {
+        "id": "gpt-5.6-terra",
+        "label": "GPT-5.6 Terra",
+        "family": "gpt",
+        "context": 400000,
+        "output_limit": 128000,
+        "reasoning": true,
+        "supports_effort": true,
+        "effort": {
+          "kind": "levels",
+          "levels": [
+            "low",
+            "medium",
+            "high",
+            "xhigh"
+          ],
+          "default": "medium"
+        },
+        "tool_call": true,
+        "attachment": true,
+        "structured_output": true,
+        "temperature": false,
+        "open_weights": false,
+        "modalities": {
+          "input": [
+            "text",
+            "image",
+            "pdf"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "cost": {
+          "input": 2,
+          "output": 12,
+          "cache_read": 0.2
+        },
+        "group": null,
+        "note": null,
+        "endpoint": null,
+        "hidden": false,
+        "active": true,
+        "priority": 154,
+        "default": false,
+        "aliases": [],
+        "release_date": "2026-07-09",
+        "last_updated": "2026-07-09",
+        "knowledge": "2026-02-16"
       },
       {
         "id": "raptor-mini",
