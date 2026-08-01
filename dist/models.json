@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-01T12:05:13.543Z",
-  "commit": "9b6163d",
+  "generatedAt": "2026-08-01T15:51:29.209Z",
+  "commit": "3db3a9d",
   "providers": {
     "anthropic": {
       "id": "anthropic",
@@ -51,7 +51,7 @@
           "note": null,
           "endpoint": null,
           "hidden": false,
-          "active": false,
+          "active": true,
           "priority": 0,
           "default": false,
           "aliases": [],
@@ -798,7 +798,7 @@
           "note": null,
           "endpoint": null,
           "hidden": false,
-          "active": false,
+          "active": true,
           "priority": 0,
           "default": false,
           "aliases": [],
