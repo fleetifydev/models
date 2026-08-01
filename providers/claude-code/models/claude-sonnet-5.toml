@@ -1,0 +1,13 @@
+[extends]
+from = "anthropic/claude-sonnet-5"
+
+[fleetify]
+priority = 60
+label = "Sonnet 5"
+# No `[1m]` twin: `sonnet[1m]` is a no-op once `sonnet` resolves to Sonnet 5,
+# which already has a native 1M context window.
+
+[fleetify.effort]
+kind    = "levels"
+levels  = ["low", "medium", "high", "xhigh", "max"]
+default = "high"

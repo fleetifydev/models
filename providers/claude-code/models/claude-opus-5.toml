@@ -1,13 +1,13 @@
 [extends]
-from = "anthropic/claude-opus-4-8"
+from = "anthropic/claude-opus-5"
 
 [limit]
 context = 200000
 
 [fleetify]
-priority = 50
+priority = 80
 default = true
-label = "Opus 4.8"
+label = "Opus 5"
 
 # `ultra_code` is an Opus-only top tier above `max` (maps to Claude max
 # reasoning in the backend bridge). Lives in the catalog so the picker renders

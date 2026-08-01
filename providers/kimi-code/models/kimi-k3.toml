@@ -1,0 +1,6 @@
+[extends]
+from = "kimi-api/kimi-k3"
+
+[fleetify]
+priority = 30
+label = "Kimi K3"

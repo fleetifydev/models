@@ -1,30 +1,29 @@
-name = "Claude Sonnet 4"
-family = "claude-sonnet"
-release_date = "2025-05-22"
-last_updated = "2025-05-22"
-knowledge = "2025-03-31"
+name = "GPT-5.6 Terra"
+family = "gpt"
+release_date = "2026-07-09"
+last_updated = "2026-07-09"
+knowledge = "2026-02-16"
 attachment = true
 reasoning = true
 tool_call = true
 structured_output = true
-temperature = true
+temperature = false
 
 [cost]
-input = 3.00
-output = 15.00
-cache_read = 0.30
-cache_write = 3.75
+input = 2.00
+output = 12.00
+cache_read = 0.20
 
 [limit]
-context = 216000
-output = 16000
+context = 400000
+output = 128000
 
 [modalities]
 input = ["text", "image", "pdf"]
 output = ["text"]
 
 [fleetify]
-priority = 160
+priority = 154
 
 [fleetify.effort]
 kind    = "levels"

@@ -1,0 +1,25 @@
+name = "Mistral Medium 3.5"
+family = "mistral-medium"
+release_date = "2026-04-28"
+last_updated = "2026-04-28"
+attachment = true
+reasoning = true
+tool_call = true
+structured_output = true
+temperature = true
+open_weights = true
+
+[cost]
+input = 1.50
+output = 7.50
+
+[limit]
+context = 262144
+
+[modalities]
+input = ["text", "image"]
+output = ["text"]
+
+[fleetify]
+priority = 30
+aliases = ["mistral-medium-latest", "mistral-medium-3-5-26-04"]

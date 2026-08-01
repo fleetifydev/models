@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-06-23T16:58:30.976Z",
-  "commit": "9c4d44e",
+  "generatedAt": "2026-08-01T11:56:41.652Z",
+  "commit": "2340bcf",
   "provider": {
     "id": "antigravity-sdk",
     "name": "Antigravity SDK",
@@ -238,6 +238,51 @@
         "knowledge": "2025-01"
       },
       {
+        "id": "gemini-3.5-flash-low",
+        "label": "Gemini 3.5 Flash (Low)",
+        "family": "gemini-flash",
+        "context": 1048576,
+        "output_limit": 65536,
+        "reasoning": true,
+        "supports_effort": false,
+        "effort": {
+          "kind": "none"
+        },
+        "tool_call": true,
+        "attachment": true,
+        "structured_output": true,
+        "temperature": true,
+        "open_weights": false,
+        "modalities": {
+          "input": [
+            "text",
+            "image",
+            "video",
+            "audio",
+            "pdf"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "cost": {
+          "input": 1.5,
+          "output": 9,
+          "cache_read": 0.15
+        },
+        "group": null,
+        "note": null,
+        "endpoint": null,
+        "hidden": false,
+        "active": true,
+        "priority": 35,
+        "default": false,
+        "aliases": [],
+        "release_date": "2026-05-19",
+        "last_updated": "2026-05-19",
+        "knowledge": "2025-01"
+      },
+      {
         "id": "gemini-3.5-flash-medium",
         "label": "Gemini 3.5 Flash (Medium)",
         "family": "gemini-flash",
@@ -281,6 +326,141 @@
         "release_date": "2026-05-19",
         "last_updated": "2026-05-19",
         "knowledge": "2025-01"
+      },
+      {
+        "id": "gemini-3.6-flash-high",
+        "label": "Gemini 3.6 Flash (High)",
+        "family": "gemini-flash",
+        "context": 1048576,
+        "output_limit": 65536,
+        "reasoning": true,
+        "supports_effort": false,
+        "effort": {
+          "kind": "none"
+        },
+        "tool_call": true,
+        "attachment": true,
+        "structured_output": true,
+        "temperature": true,
+        "open_weights": false,
+        "modalities": {
+          "input": [
+            "text",
+            "image",
+            "video",
+            "audio",
+            "pdf"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "cost": {
+          "input": 1.5,
+          "output": 7.5,
+          "cache_read": 0.15
+        },
+        "group": null,
+        "note": null,
+        "endpoint": null,
+        "hidden": false,
+        "active": true,
+        "priority": 100,
+        "default": false,
+        "aliases": [],
+        "release_date": "2026-07-21",
+        "last_updated": "2026-07-21",
+        "knowledge": "2026-03"
+      },
+      {
+        "id": "gemini-3.6-flash-low",
+        "label": "Gemini 3.6 Flash (Low)",
+        "family": "gemini-flash",
+        "context": 1048576,
+        "output_limit": 65536,
+        "reasoning": true,
+        "supports_effort": false,
+        "effort": {
+          "kind": "none"
+        },
+        "tool_call": true,
+        "attachment": true,
+        "structured_output": true,
+        "temperature": true,
+        "open_weights": false,
+        "modalities": {
+          "input": [
+            "text",
+            "image",
+            "video",
+            "audio",
+            "pdf"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "cost": {
+          "input": 1.5,
+          "output": 7.5,
+          "cache_read": 0.15
+        },
+        "group": null,
+        "note": null,
+        "endpoint": null,
+        "hidden": false,
+        "active": true,
+        "priority": 80,
+        "default": false,
+        "aliases": [],
+        "release_date": "2026-07-21",
+        "last_updated": "2026-07-21",
+        "knowledge": "2026-03"
+      },
+      {
+        "id": "gemini-3.6-flash-medium",
+        "label": "Gemini 3.6 Flash (Medium)",
+        "family": "gemini-flash",
+        "context": 1048576,
+        "output_limit": 65536,
+        "reasoning": true,
+        "supports_effort": false,
+        "effort": {
+          "kind": "none"
+        },
+        "tool_call": true,
+        "attachment": true,
+        "structured_output": true,
+        "temperature": true,
+        "open_weights": false,
+        "modalities": {
+          "input": [
+            "text",
+            "image",
+            "video",
+            "audio",
+            "pdf"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "cost": {
+          "input": 1.5,
+          "output": 7.5,
+          "cache_read": 0.15
+        },
+        "group": null,
+        "note": null,
+        "endpoint": null,
+        "hidden": false,
+        "active": true,
+        "priority": 90,
+        "default": false,
+        "aliases": [],
+        "release_date": "2026-07-21",
+        "last_updated": "2026-07-21",
+        "knowledge": "2026-03"
       },
       {
         "id": "gpt-oss-120b-medium",

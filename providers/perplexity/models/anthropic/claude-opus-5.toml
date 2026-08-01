@@ -1,0 +1,28 @@
+name = "Claude Opus 5"
+family = "claude-opus"
+release_date = "2026-07-24"
+last_updated = "2026-07-24"
+knowledge = "2026-05"
+attachment = true
+reasoning = true
+tool_call = true
+structured_output = true
+temperature = false
+
+[cost]
+input = 5.00
+output = 25.00
+cache_read = 0.50
+
+[limit]
+context = 1000000
+output = 128000
+
+[modalities]
+input = ["text", "image", "pdf"]
+output = ["text"]
+
+[fleetify]
+priority = 188
+group = "Agent API"
+endpoint = "/v1/agent"

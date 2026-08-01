@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-06-23T16:58:30.976Z",
-  "commit": "9c4d44e",
+  "generatedAt": "2026-08-01T11:56:41.652Z",
+  "commit": "2340bcf",
   "provider": {
     "id": "grok",
     "name": "xAI",
@@ -148,6 +148,55 @@
         "aliases": [],
         "release_date": "2026-04-17",
         "last_updated": "2026-04-17",
+        "knowledge": null
+      },
+      {
+        "id": "grok-4.5",
+        "label": "Grok 4.5",
+        "family": "grok",
+        "context": 500000,
+        "output_limit": 30000,
+        "reasoning": true,
+        "supports_effort": true,
+        "effort": {
+          "kind": "levels",
+          "levels": [
+            "none",
+            "low",
+            "medium",
+            "high"
+          ],
+          "default": "low"
+        },
+        "tool_call": true,
+        "attachment": true,
+        "structured_output": true,
+        "temperature": true,
+        "open_weights": false,
+        "modalities": {
+          "input": [
+            "text",
+            "image"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "cost": {
+          "input": 2,
+          "output": 6,
+          "cache_read": 0.3
+        },
+        "group": null,
+        "note": "Input/output pricing doubles for prompts at or above 200k tokens.",
+        "endpoint": null,
+        "hidden": false,
+        "active": true,
+        "priority": 40,
+        "default": false,
+        "aliases": [],
+        "release_date": "2026-07-09",
+        "last_updated": "2026-07-09",
         "knowledge": null
       }
     ]

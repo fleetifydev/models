@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-06-23T16:58:30.976Z",
-  "commit": "9c4d44e",
+  "generatedAt": "2026-08-01T11:56:41.652Z",
+  "commit": "2340bcf",
   "provider": {
     "id": "perplexity",
     "name": "Perplexity",
@@ -187,6 +187,92 @@
         "knowledge": "2026-01-31"
       },
       {
+        "id": "anthropic/claude-opus-4-8",
+        "label": "Claude Opus 4.8",
+        "family": "claude-opus",
+        "context": 1000000,
+        "output_limit": 128000,
+        "reasoning": true,
+        "supports_effort": true,
+        "effort": {
+          "kind": "none"
+        },
+        "tool_call": true,
+        "attachment": true,
+        "structured_output": true,
+        "temperature": false,
+        "open_weights": false,
+        "modalities": {
+          "input": [
+            "text",
+            "image",
+            "pdf"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "cost": {
+          "input": 5,
+          "output": 25,
+          "cache_read": 0.5
+        },
+        "group": "Agent API",
+        "note": null,
+        "endpoint": "/v1/agent",
+        "hidden": false,
+        "active": true,
+        "priority": 185,
+        "default": false,
+        "aliases": [],
+        "release_date": "2026-05-28",
+        "last_updated": "2026-05-28",
+        "knowledge": "2026-01"
+      },
+      {
+        "id": "anthropic/claude-opus-5",
+        "label": "Claude Opus 5",
+        "family": "claude-opus",
+        "context": 1000000,
+        "output_limit": 128000,
+        "reasoning": true,
+        "supports_effort": true,
+        "effort": {
+          "kind": "none"
+        },
+        "tool_call": true,
+        "attachment": true,
+        "structured_output": true,
+        "temperature": false,
+        "open_weights": false,
+        "modalities": {
+          "input": [
+            "text",
+            "image",
+            "pdf"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "cost": {
+          "input": 5,
+          "output": 25,
+          "cache_read": 0.5
+        },
+        "group": "Agent API",
+        "note": null,
+        "endpoint": "/v1/agent",
+        "hidden": false,
+        "active": true,
+        "priority": 188,
+        "default": false,
+        "aliases": [],
+        "release_date": "2026-07-24",
+        "last_updated": "2026-07-24",
+        "knowledge": "2026-05"
+      },
+      {
         "id": "anthropic/claude-sonnet-4-5",
         "label": "Claude Sonnet 4.5",
         "family": "claude-sonnet",
@@ -271,6 +357,49 @@
         "release_date": "2026-02-17",
         "last_updated": "2026-02-17",
         "knowledge": "2025-08-31"
+      },
+      {
+        "id": "anthropic/claude-sonnet-5",
+        "label": "Claude Sonnet 5",
+        "family": "claude-sonnet",
+        "context": 1000000,
+        "output_limit": 128000,
+        "reasoning": true,
+        "supports_effort": true,
+        "effort": {
+          "kind": "none"
+        },
+        "tool_call": true,
+        "attachment": true,
+        "structured_output": true,
+        "temperature": false,
+        "open_weights": false,
+        "modalities": {
+          "input": [
+            "text",
+            "image",
+            "pdf"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "cost": {
+          "input": 3,
+          "output": 15,
+          "cache_read": 0.3
+        },
+        "group": "Agent API",
+        "note": "Introductory pricing of $2 / $10 per MTok applies through 2026-08-31.",
+        "endpoint": "/v1/agent",
+        "hidden": false,
+        "active": true,
+        "priority": 155,
+        "default": false,
+        "aliases": [],
+        "release_date": "2026-06-30",
+        "last_updated": "2026-06-30",
+        "knowledge": "2026-01"
       },
       {
         "id": "google/gemini-2.5-flash",
@@ -450,6 +579,51 @@
         "aliases": [],
         "release_date": "2026-02-19",
         "last_updated": "2026-02-19",
+        "knowledge": "2025-01"
+      },
+      {
+        "id": "google/gemini-3.5-flash",
+        "label": "Gemini 3.5 Flash",
+        "family": "gemini-flash",
+        "context": 1048576,
+        "output_limit": 65536,
+        "reasoning": true,
+        "supports_effort": true,
+        "effort": {
+          "kind": "none"
+        },
+        "tool_call": true,
+        "attachment": true,
+        "structured_output": true,
+        "temperature": true,
+        "open_weights": false,
+        "modalities": {
+          "input": [
+            "text",
+            "image",
+            "video",
+            "audio",
+            "pdf"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "cost": {
+          "input": 1.5,
+          "output": 9,
+          "cache_read": 0.15
+        },
+        "group": "Agent API",
+        "note": null,
+        "endpoint": "/v1/agent",
+        "hidden": false,
+        "active": true,
+        "priority": 65,
+        "default": false,
+        "aliases": [],
+        "release_date": "2026-05-19",
+        "last_updated": "2026-05-19",
         "knowledge": "2025-01"
       },
       {
@@ -704,6 +878,135 @@
         "knowledge": "2025-12-01"
       },
       {
+        "id": "openai/gpt-5.6-luna",
+        "label": "GPT-5.6 Luna",
+        "family": "gpt",
+        "context": 1050000,
+        "output_limit": 128000,
+        "reasoning": true,
+        "supports_effort": true,
+        "effort": {
+          "kind": "none"
+        },
+        "tool_call": true,
+        "attachment": true,
+        "structured_output": true,
+        "temperature": false,
+        "open_weights": false,
+        "modalities": {
+          "input": [
+            "text",
+            "image",
+            "pdf"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "cost": {
+          "input": 0.2,
+          "output": 1.2,
+          "cache_read": 0.02
+        },
+        "group": "Agent API",
+        "note": null,
+        "endpoint": "/v1/agent",
+        "hidden": false,
+        "active": true,
+        "priority": 122,
+        "default": false,
+        "aliases": [],
+        "release_date": "2026-07-09",
+        "last_updated": "2026-07-09",
+        "knowledge": "2026-02-16"
+      },
+      {
+        "id": "openai/gpt-5.6-sol",
+        "label": "GPT-5.6 Sol",
+        "family": "gpt",
+        "context": 1050000,
+        "output_limit": 128000,
+        "reasoning": true,
+        "supports_effort": true,
+        "effort": {
+          "kind": "none"
+        },
+        "tool_call": true,
+        "attachment": true,
+        "structured_output": true,
+        "temperature": false,
+        "open_weights": false,
+        "modalities": {
+          "input": [
+            "text",
+            "image",
+            "pdf"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "cost": {
+          "input": 5,
+          "output": 30,
+          "cache_read": 0.5
+        },
+        "group": "Agent API",
+        "note": null,
+        "endpoint": "/v1/agent",
+        "hidden": false,
+        "active": true,
+        "priority": 126,
+        "default": false,
+        "aliases": [],
+        "release_date": "2026-07-09",
+        "last_updated": "2026-07-09",
+        "knowledge": "2026-02-16"
+      },
+      {
+        "id": "openai/gpt-5.6-terra",
+        "label": "GPT-5.6 Terra",
+        "family": "gpt",
+        "context": 1050000,
+        "output_limit": 128000,
+        "reasoning": true,
+        "supports_effort": true,
+        "effort": {
+          "kind": "none"
+        },
+        "tool_call": true,
+        "attachment": true,
+        "structured_output": true,
+        "temperature": false,
+        "open_weights": false,
+        "modalities": {
+          "input": [
+            "text",
+            "image",
+            "pdf"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "cost": {
+          "input": 2,
+          "output": 12,
+          "cache_read": 0.2
+        },
+        "group": "Agent API",
+        "note": null,
+        "endpoint": "/v1/agent",
+        "hidden": false,
+        "active": true,
+        "priority": 124,
+        "default": false,
+        "aliases": [],
+        "release_date": "2026-07-09",
+        "last_updated": "2026-07-09",
+        "knowledge": "2026-02-16"
+      },
+      {
         "id": "perplexity/sonar",
         "label": "Sonar",
         "family": "sonar",
@@ -953,6 +1256,48 @@
         "release_date": "2025-11-19",
         "last_updated": "2025-11-19",
         "knowledge": "2025-07"
+      },
+      {
+        "id": "xai/grok-4.5",
+        "label": "Grok 4.5",
+        "family": "grok",
+        "context": 500000,
+        "output_limit": 30000,
+        "reasoning": true,
+        "supports_effort": true,
+        "effort": {
+          "kind": "none"
+        },
+        "tool_call": true,
+        "attachment": true,
+        "structured_output": true,
+        "temperature": true,
+        "open_weights": false,
+        "modalities": {
+          "input": [
+            "text",
+            "image"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "cost": {
+          "input": 2,
+          "output": 6,
+          "cache_read": 0.3
+        },
+        "group": "Agent API",
+        "note": null,
+        "endpoint": "/v1/agent",
+        "hidden": false,
+        "active": true,
+        "priority": 25,
+        "default": false,
+        "aliases": [],
+        "release_date": "2026-07-09",
+        "last_updated": "2026-07-09",
+        "knowledge": null
       }
     ]
   }
