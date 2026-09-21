@@ -1,0 +1,37 @@
+name = "GPT-6 Astra"
+family = "gpt"
+release_date = "2026-09-03"
+last_updated = "2026-09-03"
+knowledge = "2026-04-30"
+attachment = true
+reasoning = true
+tool_call = true
+structured_output = true
+temperature = false
+
+[cost]
+input = 10.00
+output = 50.00
+cache_read = 1.00
+cache_write = 12.50
+
+[limit]
+context = 1050000
+output = 128000
+
+[modalities]
+input = ["text", "image"]
+output = ["text"]
+
+# Runs in the Codex CLI (`codex -m gpt-6-astra`) but not in Codex cloud, so
+# GPT-5.6 Sol stays the default.
+[fleetify]
+priority = 85
+note = "Most capable"
+
+# Astra has no `none` effort. `ultra` is Codex's top tier: max reasoning plus
+# automatic task delegation.
+[fleetify.effort]
+kind    = "levels"
+levels  = ["low", "medium", "high", "xhigh", "max", "ultra"]
+default = "medium"
