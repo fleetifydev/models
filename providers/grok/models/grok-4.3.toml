@@ -18,14 +18,15 @@ context = 1000000
 output = 30000
 
 [modalities]
-input = ["text", "image", "pdf"]
+input = ["text", "image"]
 output = ["text"]
 
 [fleetify]
 priority = 30
 default = true
+aliases = ["grok-4.3-latest"]
 
 [fleetify.effort]
 kind    = "levels"
-levels  = ["none", "low", "medium", "high"]
+levels  = ["none", "low", "medium", "high", "xhigh"]
 default = "low"
