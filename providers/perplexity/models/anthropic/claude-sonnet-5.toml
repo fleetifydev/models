@@ -10,9 +10,9 @@ structured_output = true
 temperature = false
 
 [cost]
-input = 3.00
-output = 15.00
-cache_read = 0.30
+input = 2.00
+output = 10.00
+cache_read = 0.20
 
 [limit]
 context = 1000000
@@ -26,4 +26,3 @@ output = ["text"]
 priority = 155
 group = "Agent API"
 endpoint = "/v1/agent"
-note = "Introductory pricing of $2 / $10 per MTok applies through 2026-08-31."
