@@ -1,0 +1,27 @@
+name = "GLM 5.3"
+family = "glm"
+release_date = "2026-08-18"
+last_updated = "2026-08-18"
+attachment = false
+reasoning = true
+tool_call = true
+structured_output = true
+temperature = true
+open_weights = true
+
+[cost]
+input = 0.91
+output = 2.86
+cache_read = 0.169
+
+[limit]
+context = 1310720
+output = 131072
+
+[modalities]
+input = ["text"]
+output = ["text"]
+
+[fleetify]
+priority = 15
+group = "via OpenRouter"
