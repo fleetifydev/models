@@ -1,13 +1,13 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-01T15:53:14.483Z",
-  "commit": "4f94308",
+  "generatedAt": "2026-09-21T11:46:14.774Z",
+  "commit": "28896da",
   "providers": [
     {
       "id": "anthropic",
       "name": "Anthropic",
       "kind": "api",
-      "modelCount": 4
+      "modelCount": 5
     },
     {
       "id": "antigravity-cli",
@@ -19,19 +19,19 @@
       "id": "antigravity-sdk",
       "name": "Antigravity SDK",
       "kind": "cli",
-      "modelCount": 11
+      "modelCount": 14
     },
     {
       "id": "claude-code",
       "name": "Claude Code",
       "kind": "cli",
-      "modelCount": 5
+      "modelCount": 6
     },
     {
       "id": "cloudflare-workers-ai",
       "name": "Cloudflare Workers AI",
       "kind": "api",
-      "modelCount": 19
+      "modelCount": 24
     },
     {
       "id": "codex-cli",
@@ -49,19 +49,19 @@
       "id": "gemini-api",
       "name": "Google",
       "kind": "api",
-      "modelCount": 9
+      "modelCount": 11
     },
     {
       "id": "github-copilot",
       "name": "GitHub Copilot CLI",
       "kind": "cli",
-      "modelCount": 28
+      "modelCount": 24
     },
     {
       "id": "grok",
       "name": "xAI",
       "kind": "api",
-      "modelCount": 4
+      "modelCount": 6
     },
     {
       "id": "kimi-api",
@@ -73,19 +73,19 @@
       "id": "kimi-code",
       "name": "Kimi Code CLI",
       "kind": "cli",
-      "modelCount": 4
+      "modelCount": 3
     },
     {
       "id": "mistral",
       "name": "Mistral",
       "kind": "api",
-      "modelCount": 4
+      "modelCount": 5
     },
     {
       "id": "nvidia-nim",
       "name": "NVIDIA NIM",
       "kind": "api",
-      "modelCount": 10
+      "modelCount": 9
     },
     {
       "id": "openai",
@@ -97,13 +97,13 @@
       "id": "openrouter",
       "name": "OpenRouter",
       "kind": "api",
-      "modelCount": 16
+      "modelCount": 22
     },
     {
       "id": "perplexity",
       "name": "Perplexity",
       "kind": "api",
-      "modelCount": 30
+      "modelCount": 33
     }
   ]
 }

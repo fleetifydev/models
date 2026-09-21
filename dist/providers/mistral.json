@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-01T15:53:14.483Z",
-  "commit": "4f94308",
+  "generatedAt": "2026-09-21T11:46:14.774Z",
+  "commit": "28896da",
   "provider": {
     "id": "mistral",
     "name": "Mistral",
@@ -18,7 +18,7 @@
         "id": "codestral",
         "label": "Codestral",
         "family": "codestral",
-        "context": 256000,
+        "context": 131072,
         "output_limit": 4096,
         "reasoning": false,
         "supports_effort": false,
@@ -29,7 +29,7 @@
         "attachment": false,
         "structured_output": true,
         "temperature": true,
-        "open_weights": true,
+        "open_weights": false,
         "modalities": {
           "input": [
             "text"
@@ -40,7 +40,8 @@
         },
         "cost": {
           "input": 0.3,
-          "output": 0.9
+          "output": 0.9,
+          "cache_read": 0.03
         },
         "group": null,
         "note": "Code",
@@ -50,15 +51,16 @@
         "priority": 10,
         "default": false,
         "aliases": [
-          "codestral-latest"
+          "codestral-latest",
+          "codestral-2508"
         ],
-        "release_date": "2024-05-29",
-        "last_updated": "2025-01-04",
-        "knowledge": "2024-10"
+        "release_date": "2025-07-30",
+        "last_updated": "2025-07-30",
+        "knowledge": null
       },
       {
         "id": "mistral-large",
-        "label": "Mistral Large",
+        "label": "Mistral Large 3",
         "family": "mistral-large",
         "context": 262144,
         "output_limit": 262144,
@@ -83,7 +85,8 @@
         },
         "cost": {
           "input": 0.5,
-          "output": 1.5
+          "output": 1.5,
+          "cache_read": 0.05
         },
         "group": null,
         "note": null,
@@ -94,11 +97,11 @@
         "default": true,
         "aliases": [
           "mistral-large-latest",
-          "mistral-large-2411"
+          "mistral-large-2512"
         ],
-        "release_date": "2024-11-01",
+        "release_date": "2025-12-02",
         "last_updated": "2025-12-02",
-        "knowledge": "2024-11"
+        "knowledge": null
       },
       {
         "id": "mistral-medium",
@@ -109,7 +112,16 @@
         "reasoning": true,
         "supports_effort": true,
         "effort": {
-          "kind": "none"
+          "kind": "levels",
+          "levels": [
+            "none",
+            "minimal",
+            "low",
+            "medium",
+            "high",
+            "xhigh"
+          ],
+          "default": "high"
         },
         "tool_call": true,
         "attachment": true,
@@ -127,7 +139,8 @@
         },
         "cost": {
           "input": 1.5,
-          "output": 7.5
+          "output": 7.5,
+          "cache_read": 0.15
         },
         "group": null,
         "note": null,
@@ -138,7 +151,8 @@
         "default": false,
         "aliases": [
           "mistral-medium-latest",
-          "mistral-medium-3-5-26-04"
+          "mistral-medium-3-5",
+          "mistral-medium-3"
         ],
         "release_date": "2026-04-28",
         "last_updated": "2026-04-28",
@@ -152,6 +166,60 @@
         "output_limit": null,
         "reasoning": true,
         "supports_effort": true,
+        "effort": {
+          "kind": "levels",
+          "levels": [
+            "none",
+            "minimal",
+            "low",
+            "medium",
+            "high",
+            "xhigh"
+          ],
+          "default": "high"
+        },
+        "tool_call": true,
+        "attachment": true,
+        "structured_output": true,
+        "temperature": true,
+        "open_weights": true,
+        "modalities": {
+          "input": [
+            "text",
+            "image"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "cost": {
+          "input": 0.15,
+          "output": 0.6,
+          "cache_read": 0.015
+        },
+        "group": null,
+        "note": null,
+        "endpoint": null,
+        "hidden": false,
+        "active": true,
+        "priority": 15,
+        "default": false,
+        "aliases": [
+          "mistral-small-latest",
+          "mistral-small-2603"
+        ],
+        "release_date": "2026-03-16",
+        "last_updated": "2026-03-16",
+        "knowledge": null
+      },
+      {
+        "id": "zai-glm-5-3",
+        "label": "GLM 5.3",
+        "family": "glm",
+        "context": 1048576,
+        "output_limit": 131072,
+        "reasoning": true,
+        "supports_effort": false,
         "effort": {
           "kind": "none"
         },
@@ -169,22 +237,23 @@
           ]
         },
         "cost": {
-          "input": 0.15,
-          "output": 0.6
+          "input": 1.4,
+          "output": 4.4,
+          "cache_read": 0.14
         },
         "group": null,
-        "note": null,
+        "note": "Code",
         "endpoint": null,
         "hidden": false,
         "active": true,
-        "priority": 15,
+        "priority": 25,
         "default": false,
         "aliases": [
-          "mistral-small-latest",
-          "mistral-small-2603"
+          "zai-glm-5",
+          "zai-glm-latest"
         ],
-        "release_date": "2026-03-16",
-        "last_updated": "2026-03-16",
+        "release_date": "2026-09-15",
+        "last_updated": "2026-09-15",
         "knowledge": null
       }
     ]

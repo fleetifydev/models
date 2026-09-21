@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-01T15:53:14.483Z",
-  "commit": "4f94308",
+  "generatedAt": "2026-09-21T11:46:14.774Z",
+  "commit": "28896da",
   "provider": {
     "id": "kimi-code",
     "name": "Kimi Code CLI",
@@ -12,49 +12,6 @@
     "models_endpoint": null,
     "supports_live": false,
     "models": [
-      {
-        "id": "kimi-k2.5",
-        "label": "Kimi K2.5",
-        "family": "kimi-k2.5",
-        "context": 262144,
-        "output_limit": 262144,
-        "reasoning": true,
-        "supports_effort": true,
-        "effort": {
-          "kind": "none"
-        },
-        "tool_call": true,
-        "attachment": false,
-        "structured_output": true,
-        "temperature": false,
-        "open_weights": true,
-        "modalities": {
-          "input": [
-            "text",
-            "image",
-            "video"
-          ],
-          "output": [
-            "text"
-          ]
-        },
-        "cost": {
-          "input": 0.6,
-          "output": 3,
-          "cache_read": 0.1
-        },
-        "group": null,
-        "note": null,
-        "endpoint": null,
-        "hidden": false,
-        "active": true,
-        "priority": 10,
-        "default": false,
-        "aliases": [],
-        "release_date": null,
-        "last_updated": null,
-        "knowledge": "2025-01"
-      },
       {
         "id": "kimi-k2.6",
         "label": "Kimi K2.6",
@@ -69,7 +26,7 @@
         "tool_call": true,
         "attachment": true,
         "structured_output": true,
-        "temperature": true,
+        "temperature": false,
         "open_weights": true,
         "modalities": {
           "input": [
@@ -112,7 +69,7 @@
         "tool_call": true,
         "attachment": true,
         "structured_output": true,
-        "temperature": true,
+        "temperature": false,
         "open_weights": true,
         "modalities": {
           "input": [
@@ -136,11 +93,9 @@
         "active": true,
         "priority": 25,
         "default": false,
-        "aliases": [
-          "kimi-k2.7-code-highspeed"
-        ],
-        "release_date": null,
-        "last_updated": null,
+        "aliases": [],
+        "release_date": "2026-06-12",
+        "last_updated": "2026-06-12",
         "knowledge": null
       },
       {
@@ -148,7 +103,7 @@
         "label": "Kimi K3",
         "family": "kimi-k3",
         "context": 1048576,
-        "output_limit": null,
+        "output_limit": 1048576,
         "reasoning": true,
         "supports_effort": true,
         "effort": {
@@ -163,7 +118,7 @@
         "tool_call": true,
         "attachment": true,
         "structured_output": true,
-        "temperature": true,
+        "temperature": false,
         "open_weights": true,
         "modalities": {
           "input": [

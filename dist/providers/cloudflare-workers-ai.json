@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-01T15:53:14.483Z",
-  "commit": "4f94308",
+  "generatedAt": "2026-09-21T11:46:14.774Z",
+  "commit": "28896da",
   "provider": {
     "id": "cloudflare-workers-ai",
     "name": "Cloudflare Workers AI",
@@ -92,6 +92,88 @@
         "aliases": [],
         "release_date": "2025-01-22",
         "last_updated": "2025-01-22",
+        "knowledge": null
+      },
+      {
+        "id": "@cf/deepseek-ai/deepseek-v4-flash-0731",
+        "label": "DeepSeek V4 Flash",
+        "family": "deepseek-flash",
+        "context": 1048576,
+        "output_limit": null,
+        "reasoning": true,
+        "supports_effort": true,
+        "effort": {
+          "kind": "none"
+        },
+        "tool_call": true,
+        "attachment": false,
+        "structured_output": false,
+        "temperature": true,
+        "open_weights": true,
+        "modalities": {
+          "input": [
+            "text"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "cost": {
+          "input": 0.44,
+          "output": 1.32,
+          "cache_read": 0.014
+        },
+        "group": null,
+        "note": "Requires the Workers Paid plan.",
+        "endpoint": null,
+        "hidden": false,
+        "active": true,
+        "priority": 154,
+        "default": false,
+        "aliases": [],
+        "release_date": "2026-04-24",
+        "last_updated": "2026-07-31",
+        "knowledge": null
+      },
+      {
+        "id": "@cf/deepseek-ai/deepseek-v4-pro-0813",
+        "label": "DeepSeek V4 Pro",
+        "family": "deepseek-thinking",
+        "context": 1048576,
+        "output_limit": null,
+        "reasoning": true,
+        "supports_effort": true,
+        "effort": {
+          "kind": "none"
+        },
+        "tool_call": true,
+        "attachment": false,
+        "structured_output": false,
+        "temperature": true,
+        "open_weights": true,
+        "modalities": {
+          "input": [
+            "text"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "cost": {
+          "input": 1.32,
+          "output": 3.96,
+          "cache_read": 0.044
+        },
+        "group": null,
+        "note": "Requires the Workers Paid plan.",
+        "endpoint": null,
+        "hidden": false,
+        "active": true,
+        "priority": 174,
+        "default": false,
+        "aliases": [],
+        "release_date": "2026-04-24",
+        "last_updated": "2026-08-13",
         "knowledge": null
       },
       {
@@ -447,7 +529,7 @@
           "cache_read": 0.16
         },
         "group": null,
-        "note": null,
+        "note": "Requires the Workers Paid plan.",
         "endpoint": null,
         "hidden": false,
         "active": true,
@@ -489,15 +571,15 @@
           "cache_read": 0.19
         },
         "group": null,
-        "note": null,
+        "note": "Requires the Workers Paid plan.",
         "endpoint": null,
         "hidden": false,
         "active": true,
         "priority": 145,
         "default": false,
         "aliases": [],
-        "release_date": null,
-        "last_updated": null,
+        "release_date": "2026-06-12",
+        "last_updated": "2026-06-12",
         "knowledge": null
       },
       {
@@ -701,6 +783,48 @@
         "knowledge": null
       },
       {
+        "id": "@cf/qwen/qwen3.8-27b",
+        "label": "Qwen 3.8 27B",
+        "family": "qwen",
+        "context": 262144,
+        "output_limit": null,
+        "reasoning": true,
+        "supports_effort": true,
+        "effort": {
+          "kind": "none"
+        },
+        "tool_call": true,
+        "attachment": true,
+        "structured_output": false,
+        "temperature": true,
+        "open_weights": false,
+        "modalities": {
+          "input": [
+            "text",
+            "image"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "cost": {
+          "input": 0.45,
+          "output": 3.2,
+          "cache_read": 0.05
+        },
+        "group": null,
+        "note": null,
+        "endpoint": null,
+        "hidden": false,
+        "active": true,
+        "priority": 152,
+        "default": false,
+        "aliases": [],
+        "release_date": "2026-08-14",
+        "last_updated": "2026-08-17",
+        "knowledge": null
+      },
+      {
         "id": "@cf/qwen/qwq-32b",
         "label": "Qwq 32B",
         "family": "qwen",
@@ -765,7 +889,7 @@
           ]
         },
         "cost": {
-          "input": 0.0605,
+          "input": 0.06,
           "output": 0.4
         },
         "group": null,
@@ -779,6 +903,89 @@
         "release_date": "2026-01-19",
         "last_updated": "2026-01-19",
         "knowledge": "2025-04"
+      },
+      {
+        "id": "@cf/zai-org/glm-5.3",
+        "label": "GLM 5.3",
+        "family": "glm",
+        "context": 1310720,
+        "output_limit": null,
+        "reasoning": true,
+        "supports_effort": true,
+        "effort": {
+          "kind": "none"
+        },
+        "tool_call": true,
+        "attachment": false,
+        "structured_output": false,
+        "temperature": true,
+        "open_weights": true,
+        "modalities": {
+          "input": [
+            "text"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "cost": {
+          "input": 1.4,
+          "output": 4.4,
+          "cache_read": 0.26
+        },
+        "group": null,
+        "note": "Requires the Workers Paid plan.",
+        "endpoint": null,
+        "hidden": false,
+        "active": true,
+        "priority": 176,
+        "default": false,
+        "aliases": [],
+        "release_date": "2026-08-18",
+        "last_updated": "2026-08-28",
+        "knowledge": null
+      },
+      {
+        "id": "@cf/zai-org/glm-5.3-flash",
+        "label": "GLM 5.3 Flash",
+        "family": "glm-flash",
+        "context": 1310720,
+        "output_limit": null,
+        "reasoning": true,
+        "supports_effort": true,
+        "effort": {
+          "kind": "none"
+        },
+        "tool_call": true,
+        "attachment": true,
+        "structured_output": false,
+        "temperature": true,
+        "open_weights": true,
+        "modalities": {
+          "input": [
+            "text",
+            "image"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "cost": {
+          "input": 0.15,
+          "output": 0.5,
+          "cache_read": 0.03
+        },
+        "group": null,
+        "note": "Requires the Workers Paid plan.",
+        "endpoint": null,
+        "hidden": false,
+        "active": true,
+        "priority": 156,
+        "default": false,
+        "aliases": [],
+        "release_date": "2026-08-25",
+        "last_updated": "2026-08-26",
+        "knowledge": null
       }
     ]
   }

@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-01T15:53:14.483Z",
-  "commit": "4f94308",
+  "generatedAt": "2026-09-21T11:46:14.774Z",
+  "commit": "28896da",
   "provider": {
     "id": "codex-cli",
     "name": "Codex CLI",
@@ -13,59 +13,10 @@
     "supports_live": false,
     "models": [
       {
-        "id": "gpt-5.4-mini",
-        "label": "GPT-5.4 mini",
-        "family": "gpt-mini",
-        "context": 400000,
-        "output_limit": 128000,
-        "reasoning": true,
-        "supports_effort": true,
-        "effort": {
-          "kind": "levels",
-          "levels": [
-            "low",
-            "medium",
-            "high",
-            "xhigh"
-          ],
-          "default": "medium"
-        },
-        "tool_call": true,
-        "attachment": true,
-        "structured_output": true,
-        "temperature": false,
-        "open_weights": false,
-        "modalities": {
-          "input": [
-            "text",
-            "image"
-          ],
-          "output": [
-            "text"
-          ]
-        },
-        "cost": {
-          "input": 0.75,
-          "output": 4.5,
-          "cache_read": 0.075
-        },
-        "group": null,
-        "note": null,
-        "endpoint": null,
-        "hidden": false,
-        "active": true,
-        "priority": 20,
-        "default": false,
-        "aliases": [],
-        "release_date": "2026-03-17",
-        "last_updated": "2026-03-17",
-        "knowledge": "2025-08-31"
-      },
-      {
         "id": "gpt-5.5",
         "label": "GPT-5.5",
         "family": "gpt",
-        "context": 400000,
+        "context": 1050000,
         "output_limit": 128000,
         "reasoning": true,
         "supports_effort": true,
@@ -199,12 +150,12 @@
           ]
         },
         "cost": {
-          "input": 5,
-          "output": 30,
-          "cache_read": 0.5
+          "input": 4,
+          "output": 20,
+          "cache_read": 0.4
         },
         "group": null,
-        "note": null,
+        "note": "Promotional pricing, guaranteed through 2026-11-21 (was $5 / $30).",
         "endpoint": null,
         "hidden": false,
         "active": true,
@@ -214,7 +165,7 @@
           "gpt-5.6"
         ],
         "release_date": "2026-07-09",
-        "last_updated": "2026-07-09",
+        "last_updated": "2026-08-21",
         "knowledge": "2026-02-16"
       },
       {
@@ -268,6 +219,58 @@
         "release_date": "2026-07-09",
         "last_updated": "2026-07-09",
         "knowledge": "2026-02-16"
+      },
+      {
+        "id": "gpt-6-astra",
+        "label": "GPT-6 Astra",
+        "family": "gpt",
+        "context": 1050000,
+        "output_limit": 128000,
+        "reasoning": true,
+        "supports_effort": true,
+        "effort": {
+          "kind": "levels",
+          "levels": [
+            "low",
+            "medium",
+            "high",
+            "xhigh",
+            "max",
+            "ultra"
+          ],
+          "default": "medium"
+        },
+        "tool_call": true,
+        "attachment": true,
+        "structured_output": true,
+        "temperature": false,
+        "open_weights": false,
+        "modalities": {
+          "input": [
+            "text",
+            "image"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "cost": {
+          "input": 10,
+          "output": 50,
+          "cache_read": 1,
+          "cache_write": 12.5
+        },
+        "group": null,
+        "note": "Most capable",
+        "endpoint": null,
+        "hidden": false,
+        "active": true,
+        "priority": 85,
+        "default": false,
+        "aliases": [],
+        "release_date": "2026-09-03",
+        "last_updated": "2026-09-03",
+        "knowledge": "2026-04-30"
       }
     ]
   }

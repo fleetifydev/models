@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-01T15:53:14.483Z",
-  "commit": "4f94308",
+  "generatedAt": "2026-09-21T11:46:14.774Z",
+  "commit": "28896da",
   "provider": {
     "id": "anthropic",
     "name": "Anthropic",
@@ -56,7 +56,51 @@
         "aliases": [],
         "release_date": "2026-06-09",
         "last_updated": "2026-06-09",
-        "knowledge": null
+        "knowledge": "2026-01"
+      },
+      {
+        "id": "claude-fable-5-1",
+        "label": "Claude Fable 5.1",
+        "family": "claude-fable",
+        "context": 1000000,
+        "output_limit": 128000,
+        "reasoning": true,
+        "supports_effort": true,
+        "effort": {
+          "kind": "none"
+        },
+        "tool_call": true,
+        "attachment": true,
+        "structured_output": true,
+        "temperature": false,
+        "open_weights": false,
+        "modalities": {
+          "input": [
+            "text",
+            "image",
+            "pdf"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "cost": {
+          "input": 10,
+          "output": 50,
+          "cache_read": 0.25,
+          "cache_write": 12.5
+        },
+        "group": null,
+        "note": null,
+        "endpoint": null,
+        "hidden": false,
+        "active": true,
+        "priority": 45,
+        "default": false,
+        "aliases": [],
+        "release_date": "2026-09-01",
+        "last_updated": "2026-09-01",
+        "knowledge": "2026-06"
       },
       {
         "id": "claude-haiku-4-5",
@@ -173,13 +217,13 @@
           ]
         },
         "cost": {
-          "input": 3,
-          "output": 15,
-          "cache_read": 0.3,
-          "cache_write": 3.75
+          "input": 2,
+          "output": 10,
+          "cache_read": 0.2,
+          "cache_write": 2.5
         },
         "group": null,
-        "note": "Introductory pricing of $2 / $10 per MTok applies through 2026-08-31.",
+        "note": null,
         "endpoint": null,
         "hidden": false,
         "active": true,
