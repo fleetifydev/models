@@ -2,6 +2,7 @@ name = "Claude Fable 5"
 family = "claude-fable"
 release_date = "2026-06-09"
 last_updated = "2026-06-09"
+knowledge = "2026-01"
 attachment = true
 reasoning = true
 tool_call = true
