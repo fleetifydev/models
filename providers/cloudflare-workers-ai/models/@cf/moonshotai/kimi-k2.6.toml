@@ -25,3 +25,4 @@ output = ["text"]
 
 [fleetify]
 priority = 140
+note = "Requires the Workers Paid plan."
