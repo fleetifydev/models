@@ -1,0 +1,25 @@
+name = "GLM 5.3 Flash"
+family = "glm-flash"
+release_date = "2026-08-25"
+last_updated = "2026-08-26"
+attachment = true
+reasoning = true
+tool_call = true
+temperature = true
+open_weights = true
+
+[cost]
+input = 0.15
+output = 0.50
+cache_read = 0.03
+
+[limit]
+context = 1310720
+
+[modalities]
+input = ["text", "image"]
+output = ["text"]
+
+[fleetify]
+priority = 156
+note = "Requires the Workers Paid plan."
