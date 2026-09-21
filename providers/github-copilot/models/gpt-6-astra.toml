@@ -1,0 +1,32 @@
+name = "GPT-6 Astra"
+family = "gpt"
+release_date = "2026-09-03"
+last_updated = "2026-09-03"
+knowledge = "2026-04-30"
+attachment = true
+reasoning = true
+tool_call = true
+structured_output = true
+temperature = false
+
+[cost]
+input = 10.00
+output = 50.00
+cache_read = 1.00
+cache_write = 12.50
+
+[limit]
+context = 400000
+output = 128000
+
+[modalities]
+input = ["text", "image"]
+output = ["text"]
+
+[fleetify]
+priority = 158
+
+[fleetify.effort]
+kind    = "levels"
+levels  = ["low", "medium", "high", "xhigh"]
+default = "medium"

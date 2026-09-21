@@ -1,0 +1,31 @@
+name = "Grok 4.6"
+family = "grok"
+release_date = "2026-08-12"
+last_updated = "2026-08-12"
+knowledge = "2026-02-01"
+attachment = true
+reasoning = true
+tool_call = true
+structured_output = true
+temperature = true
+
+[cost]
+input = 2.00
+output = 6.00
+cache_read = 0.50
+
+# GitHub publishes no Copilot-specific window for Grok 4.6; this is xAI's.
+[limit]
+context = 500000
+
+[modalities]
+input = ["text", "image"]
+output = ["text"]
+
+[fleetify]
+priority = 109
+
+[fleetify.effort]
+kind    = "levels"
+levels  = ["low", "medium", "high", "xhigh"]
+default = "medium"

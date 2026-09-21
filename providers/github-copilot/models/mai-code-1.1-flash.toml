@@ -1,0 +1,16 @@
+name = "MAI-Code-1.1-Flash"
+family = "mai-code"
+release_date = "2026-08-11"
+last_updated = "2026-08-11"
+tool_call = true
+
+# Microsoft's fast coding model and GitHub's suggested replacement for Raptor
+# mini. GitHub publishes pricing only; limits and capabilities are left unset.
+[cost]
+input = 0.20
+output = 1.20
+cache_read = 0.02
+
+[fleetify]
+priority = 12
+note = "Code"

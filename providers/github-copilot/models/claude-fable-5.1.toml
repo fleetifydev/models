@@ -1,0 +1,32 @@
+name = "Claude Fable 5.1"
+family = "claude-fable"
+release_date = "2026-09-01"
+last_updated = "2026-09-01"
+knowledge = "2026-06"
+attachment = true
+reasoning = true
+tool_call = true
+structured_output = true
+temperature = false
+
+[cost]
+input = 10.00
+output = 50.00
+cache_read = 0.25
+cache_write = 12.50
+
+[limit]
+context = 200000
+output = 64000
+
+[modalities]
+input = ["text", "image", "pdf"]
+output = ["text"]
+
+[fleetify]
+priority = 228
+
+[fleetify.effort]
+kind    = "levels"
+levels  = ["low", "medium", "high", "xhigh"]
+default = "medium"
