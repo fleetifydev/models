@@ -1,0 +1,31 @@
+name = "Kimi K3"
+family = "kimi-k3"
+release_date = "2026-07-16"
+last_updated = "2026-07-16"
+attachment = true
+reasoning = true
+tool_call = true
+structured_output = true
+temperature = true
+open_weights = true
+
+[cost]
+input = 0.00
+output = 0.00
+
+[limit]
+context = 1048576
+output = 65536
+
+[modalities]
+input = ["text", "image"]
+output = ["text"]
+
+[fleetify]
+priority = 98
+
+# NIM caps `max_tokens` at 65,536 for K3. It always reasons; effort picks the depth.
+[fleetify.effort]
+kind    = "levels"
+levels  = ["low", "high", "max"]
+default = "high"
