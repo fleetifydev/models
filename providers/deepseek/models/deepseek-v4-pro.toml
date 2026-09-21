@@ -1,7 +1,7 @@
 name = "DeepSeek V4 Pro"
 family = "deepseek-thinking"
 release_date = "2026-04-24"
-last_updated = "2026-04-24"
+last_updated = "2026-08-13"
 knowledge = "2025-05"
 attachment = false
 reasoning = true
@@ -10,10 +10,11 @@ structured_output = true
 temperature = true
 open_weights = true
 
+# Peak-hour list price, in effect since the 0813 GA snapshot.
 [cost]
-input = 0.435
-output = 0.87
-cache_read = 0.003625
+input = 1.32
+output = 3.96
+cache_read = 0.044
 
 [limit]
 context = 1000000
@@ -25,4 +26,10 @@ output = ["text"]
 
 [fleetify]
 priority = 20
-default = true
+note = "Peak-hour pricing. Rates halve off-peak (outside 01:00-04:00 and 06:00-10:00 UTC, Mon-Fri)."
+
+# Thinking is on by default; `reasoning_effort` selects the depth.
+[fleetify.effort]
+kind    = "levels"
+levels  = ["low", "high", "max"]
+default = "high"
