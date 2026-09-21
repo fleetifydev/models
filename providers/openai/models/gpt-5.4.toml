@@ -27,5 +27,5 @@ priority = 60
 
 [fleetify.effort]
 kind    = "levels"
-levels  = ["minimal", "low", "medium", "high"]
+levels  = ["none", "low", "medium", "high", "xhigh"]
 default = "medium"

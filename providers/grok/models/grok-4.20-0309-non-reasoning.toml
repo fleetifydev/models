@@ -14,11 +14,11 @@ output = 2.50
 cache_read = 0.20
 
 [limit]
-context = 2000000
+context = 1000000
 output = 30000
 
 [modalities]
-input = ["text", "image", "pdf"]
+input = ["text", "image"]
 output = ["text"]
 
 [fleetify]

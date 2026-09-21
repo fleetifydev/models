@@ -12,6 +12,7 @@ open_weights = true
 [cost]
 input = 1.50
 output = 7.50
+cache_read = 0.15
 
 [limit]
 context = 262144
@@ -22,4 +23,11 @@ output = ["text"]
 
 [fleetify]
 priority = 30
-aliases = ["mistral-medium-latest", "mistral-medium-3-5-26-04"]
+aliases = ["mistral-medium-latest", "mistral-medium-3-5", "mistral-medium-3"]
+
+# `reasoning_effort` is documented for this model; Mistral recommends `high`
+# for agentic and code work. The API default is not documented.
+[fleetify.effort]
+kind    = "levels"
+levels  = ["none", "minimal", "low", "medium", "high", "xhigh"]
+default = "high"

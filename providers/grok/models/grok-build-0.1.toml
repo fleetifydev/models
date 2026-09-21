@@ -1,0 +1,31 @@
+name = "Grok Build 0.1"
+family = "grok-build"
+release_date = "2026-05-19"
+last_updated = "2026-05-19"
+attachment = true
+reasoning = true
+tool_call = true
+structured_output = true
+temperature = true
+
+[cost]
+input = 1.00
+output = 2.00
+cache_read = 0.20
+
+[limit]
+context = 256000
+
+[modalities]
+input = ["text", "image"]
+output = ["text"]
+
+# xAI's coding model; the retired `grok-code-fast-1` slugs redirect here.
+[fleetify]
+priority = 35
+note = "Code"
+aliases = ["grok-code-fast-1", "grok-code-fast", "grok-code-fast-1-0825"]
+
+# Reasons internally but exposes no `reasoning_effort` control.
+[fleetify.effort]
+kind = "none"

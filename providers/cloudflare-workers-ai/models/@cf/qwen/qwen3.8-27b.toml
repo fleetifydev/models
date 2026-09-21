@@ -1,0 +1,23 @@
+name = "Qwen 3.8 27B"
+family = "qwen"
+release_date = "2026-08-14"
+last_updated = "2026-08-17"
+attachment = true
+reasoning = true
+tool_call = true
+temperature = true
+
+[cost]
+input = 0.45
+output = 3.20
+cache_read = 0.05
+
+[limit]
+context = 262144
+
+[modalities]
+input = ["text", "image"]
+output = ["text"]
+
+[fleetify]
+priority = 152

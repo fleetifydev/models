@@ -1,0 +1,38 @@
+name = "DeepSeek V4.1 Flash"
+family = "deepseek-flash"
+release_date = "2026-09-10"
+last_updated = "2026-09-10"
+attachment = true
+reasoning = true
+tool_call = true
+structured_output = true
+temperature = true
+open_weights = true
+
+# Peak-hour list price; see the note below.
+[cost]
+input = 0.30
+output = 1.20
+cache_read = 0.006
+
+[limit]
+context = 1000000
+output = 384000
+
+[modalities]
+input = ["text", "image"]
+output = ["text"]
+
+# `deepseek-flash` is the canonical id since V4.1. The V4 Flash models were
+# retired on 2026-09-10; their slugs still resolve here and bill at this rate.
+[fleetify]
+priority = 30
+default = true
+note = "Peak-hour pricing. Rates halve off-peak (outside 01:00-04:00 and 06:00-10:00 UTC, Mon-Fri)."
+aliases = ["deepseek-v4-flash", "deepseek-v4-flash-vision-exp"]
+
+# Thinking is on by default; `reasoning_effort` selects the depth.
+[fleetify.effort]
+kind    = "levels"
+levels  = ["low", "high", "max"]
+default = "high"

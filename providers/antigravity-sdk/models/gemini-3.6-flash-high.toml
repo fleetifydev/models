@@ -10,9 +10,9 @@ structured_output = true
 temperature = true
 
 [cost]
-input = 1.50
-output = 7.50
-cache_read = 0.15
+input = 0.75
+output = 3.75
+cache_read = 0.075
 
 [limit]
 context = 1048576
@@ -26,3 +26,4 @@ output = ["text"]
 priority = 100
 label = "Gemini 3.6 Flash (High)"
 supports_effort = false
+note = "Introductory pricing through 2026-12-31; $1.50 / $7.50 per MTok from 2027-01-01."

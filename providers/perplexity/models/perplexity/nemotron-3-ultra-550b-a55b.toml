@@ -1,0 +1,15 @@
+name = "Nemotron 3 Ultra"
+family = "nemotron"
+tool_call = true
+open_weights = true
+
+# Perplexity publishes pricing only for this model; limits are left unset.
+[cost]
+input = 0.25
+output = 2.50
+cache_read = 0.25
+
+[fleetify]
+priority = 31
+group = "Agent API"
+endpoint = "/v1/agent"

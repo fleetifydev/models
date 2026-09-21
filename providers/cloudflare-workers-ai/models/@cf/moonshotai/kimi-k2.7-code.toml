@@ -1,5 +1,7 @@
 name = "Kimi K2.7 Code"
 family = "kimi"
+release_date = "2026-06-12"
+last_updated = "2026-06-12"
 attachment = true
 reasoning = true
 tool_call = true
@@ -21,3 +23,4 @@ output = ["text"]
 
 [fleetify]
 priority = 145
+note = "Requires the Workers Paid plan."

@@ -1,0 +1,34 @@
+name = "GLM 5.3"
+family = "glm"
+release_date = "2026-09-15"
+last_updated = "2026-09-15"
+attachment = false
+reasoning = true
+tool_call = true
+structured_output = true
+temperature = true
+open_weights = true
+
+[cost]
+input = 1.40
+output = 4.40
+cache_read = 0.14
+
+[limit]
+context = 1048576
+output = 131072
+
+[modalities]
+input = ["text"]
+output = ["text"]
+
+# Z.ai's open-weights coding model, hosted unmodified by Mistral (public
+# preview). Pinned id; `zai-glm-latest` also resolves here.
+[fleetify]
+priority = 25
+note = "Code"
+aliases = ["zai-glm-5", "zai-glm-latest"]
+
+# Mistral documents no reasoning-effort control for this model.
+[fleetify.effort]
+kind = "none"

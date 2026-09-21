@@ -1,7 +1,7 @@
 name = "Grok 4.5"
 family = "grok"
-release_date = "2026-07-09"
-last_updated = "2026-07-09"
+release_date = "2026-07-08"
+last_updated = "2026-07-08"
 attachment = true
 reasoning = true
 tool_call = true
@@ -24,8 +24,10 @@ output = ["text"]
 [fleetify]
 priority = 40
 note = "Input/output pricing doubles for prompts at or above 200k tokens."
+aliases = ["grok-4.5-latest"]
 
+# Grok 4.5 always reasons: `none` is not an accepted effort.
 [fleetify.effort]
 kind    = "levels"
-levels  = ["none", "low", "medium", "high"]
-default = "low"
+levels  = ["low", "medium", "high", "xhigh"]
+default = "high"

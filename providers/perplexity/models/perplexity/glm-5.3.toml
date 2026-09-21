@@ -1,0 +1,28 @@
+name = "GLM 5.3"
+family = "glm"
+release_date = "2026-08-18"
+last_updated = "2026-08-18"
+attachment = false
+reasoning = true
+tool_call = true
+structured_output = true
+temperature = true
+open_weights = true
+
+[cost]
+input = 1.40
+output = 4.40
+cache_read = 0.26
+
+[limit]
+context = 1048576
+output = 131072
+
+[modalities]
+input = ["text"]
+output = ["text"]
+
+[fleetify]
+priority = 33
+group = "Agent API"
+endpoint = "/v1/agent"

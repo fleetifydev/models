@@ -1,0 +1,28 @@
+name = "Claude Fable 5.1"
+family = "claude-fable"
+release_date = "2026-09-01"
+last_updated = "2026-09-01"
+knowledge = "2026-06"
+attachment = true
+reasoning = true
+tool_call = true
+structured_output = true
+temperature = false
+
+# Cache reads on Fable 5.1 bill at 0.025x base input, not the usual 0.1x.
+[cost]
+input = 10.00
+output = 50.00
+cache_read = 0.25
+cache_write = 12.50
+
+[limit]
+context = 1000000
+output = 128000
+
+[modalities]
+input = ["text", "image", "pdf"]
+output = ["text"]
+
+[fleetify]
+priority = 45

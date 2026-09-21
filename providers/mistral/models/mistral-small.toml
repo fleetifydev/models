@@ -2,7 +2,7 @@ name = "Mistral Small 4"
 family = "mistral-small"
 release_date = "2026-03-16"
 last_updated = "2026-03-16"
-attachment = false
+attachment = true
 reasoning = true
 tool_call = true
 structured_output = true
@@ -12,14 +12,22 @@ open_weights = true
 [cost]
 input = 0.15
 output = 0.60
+cache_read = 0.015
 
 [limit]
 context = 262144
 
 [modalities]
-input = ["text"]
+input = ["text", "image"]
 output = ["text"]
 
 [fleetify]
 priority = 15
 aliases = ["mistral-small-latest", "mistral-small-2603"]
+
+# `reasoning_effort` is documented for this model; Mistral recommends `high`
+# for agentic and code work. The API default is not documented.
+[fleetify.effort]
+kind    = "levels"
+levels  = ["none", "minimal", "low", "medium", "high", "xhigh"]
+default = "high"
