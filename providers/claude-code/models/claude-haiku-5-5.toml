@@ -1,0 +1,13 @@
+[extends]
+from = "anthropic/claude-haiku-5-5"
+
+# The `haiku` alias resolves here from Claude Code v2.1.293 on. No `[1m]`
+# twin: Haiku 5.5 runs with its native 1M window on every plan.
+[fleetify]
+priority = 12
+label = "Haiku 5.5"
+
+[fleetify.effort]
+kind    = "levels"
+levels  = ["low", "medium", "high", "xhigh", "max"]
+default = "medium"

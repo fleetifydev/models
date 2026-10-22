@@ -1,0 +1,29 @@
+name = "Gemini 4 Argon"
+family = "gemini-argon"
+release_date = "2026-10-13"
+last_updated = "2026-10-13"
+knowledge = "2026-03"
+attachment = true
+reasoning = true
+tool_call = true
+structured_output = true
+temperature = false
+
+[cost]
+input = 2.00
+output = 10.00
+cache_read = 0.10
+cache_write = 0.1875
+
+[limit]
+context = 1048576
+output = 65536
+
+[modalities]
+input = ["audio", "pdf", "image", "text", "video"]
+output = ["text"]
+
+[fleetify]
+priority = 65
+group = "via OpenRouter"
+note = "Introductory pricing through 2026-11-30; $4.00 / $20.00 per MTok from 2026-12-01."

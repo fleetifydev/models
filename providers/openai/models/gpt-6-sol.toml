@@ -1,0 +1,32 @@
+name = "GPT-6 Sol"
+family = "gpt"
+release_date = "2026-09-22"
+last_updated = "2026-09-22"
+knowledge = "2026-04-20"
+attachment = true
+reasoning = true
+tool_call = true
+structured_output = true
+temperature = false
+
+[cost]
+input = 2.00
+output = 10.00
+cache_read = 0.20
+cache_write = 2.50
+
+[limit]
+context = 1050000
+output = 128000
+
+[modalities]
+input = ["text", "image"]
+output = ["text"]
+
+[fleetify]
+priority = 120
+
+[fleetify.effort]
+kind    = "levels"
+levels  = ["none", "low", "medium", "high", "xhigh", "max"]
+default = "medium"

@@ -1,0 +1,35 @@
+name = "Mistral Large 4"
+family = "mistral-large"
+release_date = "2026-10-06"
+last_updated = "2026-10-06"
+attachment = true
+reasoning = true
+tool_call = true
+structured_output = true
+temperature = true
+
+[cost]
+input = 1.36
+output = 4.18
+cache_read = 0.14
+
+[limit]
+context = 1048576
+
+[modalities]
+input = ["text", "image"]
+output = ["text"]
+
+# Public preview. Pinned id; `mistral-large-4` also resolves here, while
+# `mistral-large-latest` still points at Large 3. Mistral has announced but not
+# yet published the weights, so `open_weights` is left unset.
+[fleetify]
+priority = 35
+aliases = ["mistral-large-4"]
+
+# Mistral documents only `none` and `high` for this model's `reasoning_effort`.
+# The API default is not documented.
+[fleetify.effort]
+kind    = "levels"
+levels  = ["none", "high"]
+default = "high"

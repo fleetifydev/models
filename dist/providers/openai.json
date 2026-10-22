@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-21T11:56:04.634Z",
-  "commit": "9fdac01",
+  "generatedAt": "2026-10-22T11:53:45.849Z",
+  "commit": "8876531",
   "provider": {
     "id": "openai",
     "name": "OpenAI",
@@ -514,6 +514,110 @@
         "release_date": "2026-07-09",
         "last_updated": "2026-07-09",
         "knowledge": "2026-02-16"
+      },
+      {
+        "id": "gpt-6-luna",
+        "label": "GPT-6 Luna",
+        "family": "gpt",
+        "context": 1050000,
+        "output_limit": 128000,
+        "reasoning": true,
+        "supports_effort": true,
+        "effort": {
+          "kind": "levels",
+          "levels": [
+            "none",
+            "low",
+            "medium",
+            "high",
+            "xhigh",
+            "max"
+          ],
+          "default": "medium"
+        },
+        "tool_call": true,
+        "attachment": true,
+        "structured_output": true,
+        "temperature": false,
+        "open_weights": false,
+        "modalities": {
+          "input": [
+            "text",
+            "image"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "cost": {
+          "input": 0.1,
+          "output": 0.5,
+          "cache_read": 0.01,
+          "cache_write": 0.125
+        },
+        "group": null,
+        "note": null,
+        "endpoint": null,
+        "hidden": false,
+        "active": true,
+        "priority": 110,
+        "default": false,
+        "aliases": [],
+        "release_date": "2026-09-22",
+        "last_updated": "2026-09-22",
+        "knowledge": "2026-05-18"
+      },
+      {
+        "id": "gpt-6-sol",
+        "label": "GPT-6 Sol",
+        "family": "gpt",
+        "context": 1050000,
+        "output_limit": 128000,
+        "reasoning": true,
+        "supports_effort": true,
+        "effort": {
+          "kind": "levels",
+          "levels": [
+            "none",
+            "low",
+            "medium",
+            "high",
+            "xhigh",
+            "max"
+          ],
+          "default": "medium"
+        },
+        "tool_call": true,
+        "attachment": true,
+        "structured_output": true,
+        "temperature": false,
+        "open_weights": false,
+        "modalities": {
+          "input": [
+            "text",
+            "image"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "cost": {
+          "input": 2,
+          "output": 10,
+          "cache_read": 0.2,
+          "cache_write": 2.5
+        },
+        "group": null,
+        "note": null,
+        "endpoint": null,
+        "hidden": false,
+        "active": true,
+        "priority": 120,
+        "default": false,
+        "aliases": [],
+        "release_date": "2026-09-22",
+        "last_updated": "2026-09-22",
+        "knowledge": "2026-04-20"
       }
     ]
   }

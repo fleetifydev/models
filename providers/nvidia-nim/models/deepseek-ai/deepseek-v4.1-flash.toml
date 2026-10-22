@@ -1,0 +1,25 @@
+name = "DeepSeek V4.1 Flash"
+family = "deepseek-flash"
+release_date = "2026-09-10"
+last_updated = "2026-09-18"
+attachment = true
+reasoning = true
+temperature = true
+open_weights = true
+
+[cost]
+input = 0.00
+output = 0.00
+
+# Context covers input plus output; NIM accepts `max_tokens` up to the full window.
+[limit]
+context = 1048576
+
+[modalities]
+input = ["text", "image"]
+output = ["text"]
+
+# NIM's hosted request schema for this model documents no `tools` or
+# `response_format`, so `tool_call` and `structured_output` are left unset.
+[fleetify]
+priority = 92

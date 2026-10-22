@@ -1,0 +1,23 @@
+name = "Nemotron 3.5 Super"
+family = "nemotron"
+tool_call = true
+open_weights = true
+
+[cost]
+input = 0.20
+output = 0.50
+cache_read = 0.04
+
+[limit]
+context = 1048576
+output = 131072
+
+[modalities]
+input = ["text"]
+output = ["text"]
+
+# Replaced Nemotron 3 Ultra in Perplexity's model list on 2026-10-15.
+[fleetify]
+priority = 32
+group = "Agent API"
+endpoint = "/v1/agent"

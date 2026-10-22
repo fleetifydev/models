@@ -1,0 +1,28 @@
+name = "GPT-6 Luna"
+family = "gpt"
+release_date = "2026-09-22"
+last_updated = "2026-09-22"
+knowledge = "2026-05-18"
+attachment = true
+reasoning = true
+tool_call = true
+structured_output = true
+temperature = false
+
+[cost]
+input = 0.10
+output = 0.50
+cache_read = 0.01
+cache_write = 0.125
+
+[limit]
+context = 1050000
+output = 128000
+
+[modalities]
+input = ["pdf", "image", "text"]
+output = ["text"]
+
+[fleetify]
+priority = 82
+group = "via OpenRouter"

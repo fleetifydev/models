@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-21T11:56:04.634Z",
-  "commit": "9fdac01",
+  "generatedAt": "2026-10-22T11:53:45.849Z",
+  "commit": "8876531",
   "provider": {
     "id": "nvidia-nim",
     "name": "NVIDIA NIM",
@@ -14,6 +14,47 @@
     "models_endpoint": "/models",
     "supports_live": true,
     "models": [
+      {
+        "id": "deepseek-ai/deepseek-v4.1-flash",
+        "label": "DeepSeek V4.1 Flash",
+        "family": "deepseek-flash",
+        "context": 1048576,
+        "output_limit": null,
+        "reasoning": true,
+        "supports_effort": true,
+        "effort": {
+          "kind": "none"
+        },
+        "tool_call": false,
+        "attachment": true,
+        "structured_output": false,
+        "temperature": true,
+        "open_weights": true,
+        "modalities": {
+          "input": [
+            "text",
+            "image"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "cost": {
+          "input": 0,
+          "output": 0
+        },
+        "group": null,
+        "note": null,
+        "endpoint": null,
+        "hidden": false,
+        "active": true,
+        "priority": 92,
+        "default": false,
+        "aliases": [],
+        "release_date": "2026-09-10",
+        "last_updated": "2026-09-18",
+        "knowledge": null
+      },
       {
         "id": "mistralai/mistral-nemotron",
         "label": "mistral-nemotron",
@@ -264,6 +305,54 @@
         "knowledge": null
       },
       {
+        "id": "nvidia/nemotron-3.5-super-vl-120b-a12b",
+        "label": "Nemotron 3.5 Super VL",
+        "family": "nemotron",
+        "context": 1048576,
+        "output_limit": 131072,
+        "reasoning": true,
+        "supports_effort": true,
+        "effort": {
+          "kind": "levels",
+          "levels": [
+            "none",
+            "low",
+            "high"
+          ],
+          "default": "high"
+        },
+        "tool_call": true,
+        "attachment": true,
+        "structured_output": true,
+        "temperature": true,
+        "open_weights": true,
+        "modalities": {
+          "input": [
+            "text",
+            "image",
+            "video"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "cost": {
+          "input": 0,
+          "output": 0
+        },
+        "group": null,
+        "note": null,
+        "endpoint": null,
+        "hidden": false,
+        "active": true,
+        "priority": 99,
+        "default": false,
+        "aliases": [],
+        "release_date": "2026-10-15",
+        "last_updated": "2026-10-15",
+        "knowledge": null
+      },
+      {
         "id": "openai/gpt-oss-20b",
         "label": "GPT OSS 20B",
         "family": "gpt-oss",
@@ -301,6 +390,47 @@
         "aliases": [],
         "release_date": "2025-08-05",
         "last_updated": "2025-08-05",
+        "knowledge": null
+      },
+      {
+        "id": "stepfun-ai/step-5-preview",
+        "label": "Step 5 Preview",
+        "family": "step",
+        "context": 1048576,
+        "output_limit": null,
+        "reasoning": true,
+        "supports_effort": false,
+        "effort": {
+          "kind": "none"
+        },
+        "tool_call": true,
+        "attachment": true,
+        "structured_output": false,
+        "temperature": true,
+        "open_weights": true,
+        "modalities": {
+          "input": [
+            "text",
+            "image"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "cost": {
+          "input": 0,
+          "output": 0
+        },
+        "group": null,
+        "note": null,
+        "endpoint": null,
+        "hidden": false,
+        "active": true,
+        "priority": 90,
+        "default": false,
+        "aliases": [],
+        "release_date": "2026-10-14",
+        "last_updated": "2026-10-14",
         "knowledge": null
       },
       {

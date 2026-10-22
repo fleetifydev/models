@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-21T11:56:04.634Z",
-  "commit": "9fdac01",
+  "generatedAt": "2026-10-22T11:53:45.849Z",
+  "commit": "8876531",
   "provider": {
     "id": "antigravity-sdk",
     "name": "Antigravity SDK",
@@ -595,6 +595,141 @@
         "aliases": [],
         "release_date": "2026-09-02",
         "last_updated": "2026-09-02",
+        "knowledge": "2026-03"
+      },
+      {
+        "id": "gemini-4-argon-high",
+        "label": "Gemini 4 Argon (High)",
+        "family": "gemini-argon",
+        "context": 1048576,
+        "output_limit": 65536,
+        "reasoning": true,
+        "supports_effort": false,
+        "effort": {
+          "kind": "none"
+        },
+        "tool_call": true,
+        "attachment": true,
+        "structured_output": true,
+        "temperature": false,
+        "open_weights": false,
+        "modalities": {
+          "input": [
+            "text",
+            "image",
+            "video",
+            "audio",
+            "pdf"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "cost": {
+          "input": 2,
+          "output": 10,
+          "cache_read": 0.1
+        },
+        "group": null,
+        "note": "Introductory pricing through 2026-11-30; $4.00 / $20.00 per MTok from 2026-12-01.",
+        "endpoint": null,
+        "hidden": false,
+        "active": true,
+        "priority": 190,
+        "default": false,
+        "aliases": [],
+        "release_date": "2026-10-13",
+        "last_updated": "2026-10-13",
+        "knowledge": "2026-03"
+      },
+      {
+        "id": "gemini-4-argon-low",
+        "label": "Gemini 4 Argon (Low)",
+        "family": "gemini-argon",
+        "context": 1048576,
+        "output_limit": 65536,
+        "reasoning": true,
+        "supports_effort": false,
+        "effort": {
+          "kind": "none"
+        },
+        "tool_call": true,
+        "attachment": true,
+        "structured_output": true,
+        "temperature": false,
+        "open_weights": false,
+        "modalities": {
+          "input": [
+            "text",
+            "image",
+            "video",
+            "audio",
+            "pdf"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "cost": {
+          "input": 2,
+          "output": 10,
+          "cache_read": 0.1
+        },
+        "group": null,
+        "note": "Introductory pricing through 2026-11-30; $4.00 / $20.00 per MTok from 2026-12-01.",
+        "endpoint": null,
+        "hidden": false,
+        "active": true,
+        "priority": 170,
+        "default": false,
+        "aliases": [],
+        "release_date": "2026-10-13",
+        "last_updated": "2026-10-13",
+        "knowledge": "2026-03"
+      },
+      {
+        "id": "gemini-4-argon-medium",
+        "label": "Gemini 4 Argon (Medium)",
+        "family": "gemini-argon",
+        "context": 1048576,
+        "output_limit": 65536,
+        "reasoning": true,
+        "supports_effort": false,
+        "effort": {
+          "kind": "none"
+        },
+        "tool_call": true,
+        "attachment": true,
+        "structured_output": true,
+        "temperature": false,
+        "open_weights": false,
+        "modalities": {
+          "input": [
+            "text",
+            "image",
+            "video",
+            "audio",
+            "pdf"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "cost": {
+          "input": 2,
+          "output": 10,
+          "cache_read": 0.1
+        },
+        "group": null,
+        "note": "Introductory pricing through 2026-11-30; $4.00 / $20.00 per MTok from 2026-12-01.",
+        "endpoint": null,
+        "hidden": false,
+        "active": true,
+        "priority": 180,
+        "default": false,
+        "aliases": [],
+        "release_date": "2026-10-13",
+        "last_updated": "2026-10-13",
         "knowledge": "2026-03"
       },
       {

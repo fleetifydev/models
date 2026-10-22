@@ -25,4 +25,3 @@ output = ["text"]
 
 [fleetify]
 priority = 50
-default = true

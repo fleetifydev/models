@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-21T11:56:04.634Z",
-  "commit": "9fdac01",
+  "generatedAt": "2026-10-22T11:53:45.849Z",
+  "commit": "8876531",
   "provider": {
     "id": "mistral",
     "name": "Mistral",
@@ -101,6 +101,55 @@
         ],
         "release_date": "2025-12-02",
         "last_updated": "2025-12-02",
+        "knowledge": null
+      },
+      {
+        "id": "mistral-large-4-0",
+        "label": "Mistral Large 4",
+        "family": "mistral-large",
+        "context": 1048576,
+        "output_limit": null,
+        "reasoning": true,
+        "supports_effort": true,
+        "effort": {
+          "kind": "levels",
+          "levels": [
+            "none",
+            "high"
+          ],
+          "default": "high"
+        },
+        "tool_call": true,
+        "attachment": true,
+        "structured_output": true,
+        "temperature": true,
+        "open_weights": false,
+        "modalities": {
+          "input": [
+            "text",
+            "image"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "cost": {
+          "input": 1.36,
+          "output": 4.18,
+          "cache_read": 0.14
+        },
+        "group": null,
+        "note": null,
+        "endpoint": null,
+        "hidden": false,
+        "active": true,
+        "priority": 35,
+        "default": false,
+        "aliases": [
+          "mistral-large-4"
+        ],
+        "release_date": "2026-10-06",
+        "last_updated": "2026-10-06",
         "knowledge": null
       },
       {

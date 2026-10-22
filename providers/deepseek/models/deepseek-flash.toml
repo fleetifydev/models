@@ -1,7 +1,7 @@
 name = "DeepSeek V4.1 Flash"
 family = "deepseek-flash"
 release_date = "2026-09-10"
-last_updated = "2026-09-10"
+last_updated = "2026-10-17"
 attachment = true
 reasoning = true
 tool_call = true

@@ -1,0 +1,31 @@
+name = "DeepSeek V4.1 Flash"
+family = "deepseek-flash"
+release_date = "2026-09-10"
+last_updated = "2026-10-17"
+attachment = true
+reasoning = true
+tool_call = true
+structured_output = true
+temperature = true
+open_weights = true
+
+[cost]
+input = 0.30
+output = 1.20
+cache_read = 0.006
+
+[limit]
+context = 1048576
+
+[modalities]
+input = ["text", "image"]
+output = ["text"]
+
+[fleetify]
+priority = 158
+note = "Requires the Workers Paid plan."
+
+[fleetify.effort]
+kind    = "levels"
+levels  = ["none", "low", "high", "max"]
+default = "high"

@@ -6,7 +6,6 @@ context = 200000
 
 [fleetify]
 priority = 80
-default = true
 label = "Opus 5"
 
 # `ultra_code` is an Opus-only top tier above `max` (maps to Claude max
