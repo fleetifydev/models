@@ -1,0 +1,25 @@
+name = "GLM 5.3 FlashX"
+family = "glm-flash"
+release_date = "2026-09-18"
+last_updated = "2026-09-18"
+attachment = true
+reasoning = true
+tool_call = true
+temperature = true
+
+[cost]
+input = 0.37
+output = 1.25
+cache_read = 0.09
+
+[limit]
+context = 1048576
+output = 131072
+
+[modalities]
+input = ["text", "image", "video"]
+output = ["text"]
+
+[fleetify]
+priority = 13
+group = "via OpenRouter"

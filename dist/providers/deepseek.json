@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-21T11:56:04.634Z",
-  "commit": "9fdac01",
+  "generatedAt": "2026-10-22T11:53:45.849Z",
+  "commit": "8876531",
   "provider": {
     "id": "deepseek",
     "name": "DeepSeek",
@@ -62,7 +62,7 @@
           "deepseek-v4-flash-vision-exp"
         ],
         "release_date": "2026-09-10",
-        "last_updated": "2026-09-10",
+        "last_updated": "2026-10-17",
         "knowledge": null
       },
       {

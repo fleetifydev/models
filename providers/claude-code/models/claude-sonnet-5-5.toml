@@ -1,0 +1,14 @@
+[extends]
+from = "anthropic/claude-sonnet-5-5"
+
+# The `sonnet` alias resolves here from Claude Code v2.1.284 on. No `[1m]`
+# twin: Sonnet 5.5 runs with its native 1M window.
+[fleetify]
+priority = 62
+label = "Sonnet 5.5"
+
+# Claude Code defaults Sonnet 5.5 to `medium` (the API default is `high`).
+[fleetify.effort]
+kind    = "levels"
+levels  = ["low", "medium", "high", "xhigh", "max"]
+default = "medium"

@@ -1,0 +1,30 @@
+name = "DeepSeek V4.1 Flash 1017"
+family = "deepseek-flash"
+release_date = "2026-10-17"
+last_updated = "2026-10-17"
+attachment = true
+reasoning = true
+tool_call = true
+structured_output = true
+temperature = true
+open_weights = true
+
+# DeepSeek's own endpoint; the undated `deepseek-v4.1-flash` slug is now served
+# only by third-party hosts.
+[cost]
+input = 0.15
+output = 0.60
+cache_read = 0.003
+
+[limit]
+context = 1048576
+output = 393216
+
+[modalities]
+input = ["text", "image"]
+output = ["text"]
+
+[fleetify]
+priority = 37
+group = "via OpenRouter"
+note = "Off-peak pricing. Rates double during peak hours (01:00-04:00 and 06:00-10:00 UTC, Mon-Fri)."

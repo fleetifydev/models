@@ -1,0 +1,16 @@
+[extends]
+from = "anthropic/claude-opus-5-5"
+
+# The `opus` alias and the `default` model resolve here from Claude Code
+# v2.1.280 on. No `[1m]` twin: Opus 5.5 runs with its native 1M window.
+[fleetify]
+priority = 90
+default = true
+label = "Opus 5.5"
+
+# `ultra_code` is an Opus-only top tier above `max` (maps to Claude max
+# reasoning in the backend bridge). Claude Code defaults Opus 5.5 to `medium`.
+[fleetify.effort]
+kind    = "levels"
+levels  = ["low", "medium", "high", "xhigh", "max", "ultra_code"]
+default = "medium"

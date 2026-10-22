@@ -1,0 +1,32 @@
+name = "GPT-6 Luna"
+family = "gpt"
+release_date = "2026-09-22"
+last_updated = "2026-09-22"
+knowledge = "2026-05-18"
+attachment = true
+reasoning = true
+tool_call = true
+structured_output = true
+temperature = false
+
+[cost]
+input = 0.10
+output = 0.50
+cache_read = 0.01
+
+[limit]
+context = 1050000
+output = 128000
+
+[modalities]
+input = ["text", "image"]
+output = ["text"]
+
+[fleetify]
+priority = 95
+
+# Codex offers no `ultra` tier for GPT-6 Luna.
+[fleetify.effort]
+kind    = "levels"
+levels  = ["low", "medium", "high", "xhigh", "max"]
+default = "medium"

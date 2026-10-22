@@ -1,0 +1,16 @@
+name = "DeepSeek V4 Pro"
+family = "deepseek-thinking"
+reasoning = true
+tool_call = true
+open_weights = true
+
+# Perplexity publishes pricing only for this model; limits are left unset.
+[cost]
+input = 1.32
+output = 3.96
+cache_read = 0.044
+
+[fleetify]
+priority = 34
+group = "Agent API"
+endpoint = "/v1/agent"

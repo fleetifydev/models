@@ -24,9 +24,9 @@ input = ["text", "image"]
 output = ["text"]
 
 # Runs in the Codex CLI (`codex -m gpt-6-astra`) but not in Codex cloud, so
-# GPT-5.6 Sol stays the default.
+# it is not the default.
 [fleetify]
-priority = 85
+priority = 110
 note = "Most capable"
 
 # Astra has no `none` effort. `ultra` is Codex's top tier: max reasoning plus

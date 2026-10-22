@@ -1,0 +1,15 @@
+name = "GLM 5.3 Flash"
+family = "glm-flash"
+tool_call = true
+open_weights = true
+
+# Perplexity publishes pricing only for this model; limits are left unset.
+[cost]
+input = 0.15
+output = 0.50
+cache_read = 0.03
+
+[fleetify]
+priority = 30
+group = "Agent API"
+endpoint = "/v1/agent"

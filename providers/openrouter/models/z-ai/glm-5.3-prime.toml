@@ -1,0 +1,25 @@
+name = "GLM 5.3 Prime"
+family = "glm"
+release_date = "2026-09-23"
+last_updated = "2026-09-23"
+attachment = false
+reasoning = true
+tool_call = true
+temperature = true
+
+[cost]
+input = 2.80
+output = 8.80
+cache_read = 0.56
+
+[limit]
+context = 1000000
+output = 131072
+
+[modalities]
+input = ["text"]
+output = ["text"]
+
+[fleetify]
+priority = 17
+group = "via OpenRouter"

@@ -1,0 +1,28 @@
+name = "Claude Sonnet 5.5"
+family = "claude-sonnet"
+release_date = "2026-09-28"
+last_updated = "2026-10-07"
+knowledge = "2026-06"
+attachment = true
+reasoning = true
+tool_call = true
+structured_output = true
+temperature = false
+
+# Cache reads on Sonnet 5.5 bill at 0.05x base input (cut from $0.20 on 2026-10-07).
+[cost]
+input = 2.00
+output = 10.00
+cache_read = 0.10
+cache_write = 2.50
+
+[limit]
+context = 1000000
+output = 128000
+
+[modalities]
+input = ["text", "image", "pdf"]
+output = ["text"]
+
+[fleetify]
+priority = 42

@@ -1,0 +1,28 @@
+name = "Step 5 Preview"
+family = "step"
+release_date = "2026-10-14"
+last_updated = "2026-10-14"
+attachment = true
+reasoning = true
+tool_call = true
+temperature = true
+open_weights = true
+
+[cost]
+input = 0.00
+output = 0.00
+
+# Context covers input plus output; NIM accepts `max_tokens` up to the full window.
+[limit]
+context = 1048576
+
+[modalities]
+input = ["text", "image"]
+output = ["text"]
+
+[fleetify]
+priority = 90
+
+# Step 5 always reasons and exposes no effort control.
+[fleetify.effort]
+kind = "none"
