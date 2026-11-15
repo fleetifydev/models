@@ -1,0 +1,31 @@
+name = "DeepSeek V4.1 Flash 1017"
+family = "deepseek-flash"
+release_date = "2026-10-28"
+last_updated = "2026-10-28"
+attachment = true
+reasoning = true
+tool_call = true
+structured_output = true
+temperature = true
+open_weights = true
+
+[cost]
+input = 0.30
+output = 1.20
+cache_read = 0.007
+
+[limit]
+context = 1048576
+output = 131072
+
+[modalities]
+input = ["text", "image"]
+output = ["text"]
+
+# DeepSeek's open-weights model, hosted unmodified by Mistral (public preview).
+[fleetify]
+priority = 24
+
+# Mistral documents no reasoning-effort control for this model.
+[fleetify.effort]
+kind = "none"

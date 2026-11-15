@@ -1,0 +1,14 @@
+[extends]
+from = "kimi-api/kimi-k3.1-pro"
+
+# Listed as `kimi-k3.1-pro` with a Moonshot platform key; Kimi Code
+# subscriptions name it `k3.1-pro`.
+[fleetify]
+priority = 35
+label = "Kimi K3.1 Pro"
+
+# Kimi Code defaults K3.1 Pro to `high` (the API default is `max`).
+[fleetify.effort]
+kind    = "levels"
+levels  = ["low", "high", "max"]
+default = "high"

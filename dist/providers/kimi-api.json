@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-22T12:06:32.621Z",
-  "commit": "22aa21e",
+  "generatedAt": "2026-11-15T11:55:30.110Z",
+  "commit": "090e7d0",
   "provider": {
     "id": "kimi-api",
     "name": "Kimi (Moonshot)",
@@ -190,6 +190,106 @@
         "aliases": [],
         "release_date": "2026-07-16",
         "last_updated": "2026-07-16",
+        "knowledge": null
+      },
+      {
+        "id": "kimi-k3.1-pro",
+        "label": "Kimi K3.1 Pro",
+        "family": "kimi-k3.1",
+        "context": 1048576,
+        "output_limit": 1048576,
+        "reasoning": true,
+        "supports_effort": true,
+        "effort": {
+          "kind": "levels",
+          "levels": [
+            "low",
+            "high",
+            "max"
+          ],
+          "default": "max"
+        },
+        "tool_call": true,
+        "attachment": true,
+        "structured_output": true,
+        "temperature": false,
+        "open_weights": true,
+        "modalities": {
+          "input": [
+            "text",
+            "image",
+            "video"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "cost": {
+          "input": 2,
+          "output": 10,
+          "cache_read": 0.2,
+          "cache_write": 2
+        },
+        "group": null,
+        "note": null,
+        "endpoint": null,
+        "hidden": false,
+        "active": true,
+        "priority": 35,
+        "default": false,
+        "aliases": [],
+        "release_date": "2026-10-23",
+        "last_updated": "2026-10-23",
+        "knowledge": null
+      },
+      {
+        "id": "kimi-k3.1-pro-highspeed",
+        "label": "Kimi K3.1 Pro Highspeed",
+        "family": "kimi-k3.1",
+        "context": 1048576,
+        "output_limit": 1048576,
+        "reasoning": true,
+        "supports_effort": true,
+        "effort": {
+          "kind": "levels",
+          "levels": [
+            "low",
+            "high",
+            "max"
+          ],
+          "default": "max"
+        },
+        "tool_call": true,
+        "attachment": true,
+        "structured_output": true,
+        "temperature": false,
+        "open_weights": true,
+        "modalities": {
+          "input": [
+            "text",
+            "image",
+            "video"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "cost": {
+          "input": 4,
+          "output": 20,
+          "cache_read": 0.2,
+          "cache_write": 4
+        },
+        "group": null,
+        "note": null,
+        "endpoint": null,
+        "hidden": false,
+        "active": true,
+        "priority": 33,
+        "default": false,
+        "aliases": [],
+        "release_date": "2026-10-23",
+        "last_updated": "2026-10-23",
         "knowledge": null
       }
     ]

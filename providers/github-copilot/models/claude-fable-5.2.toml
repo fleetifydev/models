@@ -1,0 +1,36 @@
+name = "Claude Fable 5.2"
+family = "claude-fable"
+release_date = "2026-11-09"
+last_updated = "2026-11-09"
+knowledge = "2026-06"
+attachment = true
+reasoning = true
+tool_call = true
+structured_output = true
+temperature = false
+
+[cost]
+input = 8.00
+output = 40.00
+cache_read = 0.20
+cache_write = 10.00
+
+# Copilot's default window; the CLI also offers a 1M option. GitHub has not
+# published the CLI id: this one follows the other Copilot Claude ids.
+[limit]
+context = 200000
+output = 64000
+
+[modalities]
+input = ["text", "image", "pdf"]
+output = ["text"]
+
+# Pro+ and above; an organization admin must enable the Fable 5.2 policy,
+# which is off by default.
+[fleetify]
+priority = 229
+
+[fleetify.effort]
+kind    = "levels"
+levels  = ["low", "medium", "high", "xhigh", "max"]
+default = "medium"
