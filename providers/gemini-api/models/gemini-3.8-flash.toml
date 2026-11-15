@@ -22,9 +22,11 @@ output = 65536
 input = ["text", "image", "video", "audio", "pdf"]
 output = ["text"]
 
+# Google routes requests for the deprecated `gemini-3.7-flash` here.
 [fleetify]
 priority = 100
 note = "Introductory pricing through 2026-12-31; $1.50 / $7.50 per MTok from 2027-01-01."
+aliases = ["gemini-3.7-flash"]
 
 # `minimal` is rejected on 3.8 Flash; thinking defaults to medium.
 [fleetify.effort]

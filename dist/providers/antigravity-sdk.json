@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-15T12:06:26.526Z",
-  "commit": "6dbcbe2",
+  "generatedAt": "2026-11-15T12:14:54.250Z",
+  "commit": "765ca56",
   "provider": {
     "id": "antigravity-sdk",
     "name": "Antigravity SDK",
@@ -14,94 +14,6 @@
     "models_endpoint": null,
     "supports_live": false,
     "models": [
-      {
-        "id": "claude-opus-4-6-thinking",
-        "label": "Claude Opus 4.6 (Thinking)",
-        "family": "claude-opus",
-        "context": 1000000,
-        "output_limit": 128000,
-        "reasoning": true,
-        "supports_effort": false,
-        "effort": {
-          "kind": "none"
-        },
-        "tool_call": true,
-        "attachment": true,
-        "structured_output": true,
-        "temperature": true,
-        "open_weights": false,
-        "modalities": {
-          "input": [
-            "text",
-            "image",
-            "pdf"
-          ],
-          "output": [
-            "text"
-          ]
-        },
-        "cost": {
-          "input": 5,
-          "output": 25,
-          "cache_read": 0.5,
-          "cache_write": 6.25
-        },
-        "group": null,
-        "note": "Reasoning",
-        "endpoint": null,
-        "hidden": false,
-        "active": true,
-        "priority": 30,
-        "default": false,
-        "aliases": [],
-        "release_date": "2026-02-05",
-        "last_updated": "2026-03-13",
-        "knowledge": "2025-05-31"
-      },
-      {
-        "id": "claude-sonnet-4-6-thinking",
-        "label": "Claude Sonnet 4.6 (Thinking)",
-        "family": "claude-sonnet",
-        "context": 1000000,
-        "output_limit": 64000,
-        "reasoning": true,
-        "supports_effort": false,
-        "effort": {
-          "kind": "none"
-        },
-        "tool_call": true,
-        "attachment": true,
-        "structured_output": true,
-        "temperature": true,
-        "open_weights": false,
-        "modalities": {
-          "input": [
-            "text",
-            "image",
-            "pdf"
-          ],
-          "output": [
-            "text"
-          ]
-        },
-        "cost": {
-          "input": 3,
-          "output": 15,
-          "cache_read": 0.3,
-          "cache_write": 3.75
-        },
-        "group": null,
-        "note": "Reasoning",
-        "endpoint": null,
-        "hidden": false,
-        "active": true,
-        "priority": 20,
-        "default": false,
-        "aliases": [],
-        "release_date": "2026-02-17",
-        "last_updated": "2026-03-13",
-        "knowledge": "2025-08-31"
-      },
       {
         "id": "gemini-3.1-pro-high",
         "label": "Gemini 3.1 Pro (High)",
@@ -136,12 +48,12 @@
           "cache_read": 0.2
         },
         "group": null,
-        "note": "Most capable",
+        "note": null,
         "endpoint": null,
         "hidden": false,
         "active": true,
         "priority": 70,
-        "default": true,
+        "default": false,
         "aliases": [],
         "release_date": "2026-02-19",
         "last_updated": "2026-02-19",
@@ -906,7 +818,7 @@
         "hidden": false,
         "active": true,
         "priority": 220,
-        "default": false,
+        "default": true,
         "aliases": [],
         "release_date": "2026-11-12",
         "last_updated": "2026-11-12",
@@ -1046,46 +958,6 @@
         "release_date": "2026-11-12",
         "last_updated": "2026-11-12",
         "knowledge": "2026-03"
-      },
-      {
-        "id": "gpt-oss-120b-medium",
-        "label": "GPT-OSS 120B (Medium)",
-        "family": "gpt-oss",
-        "context": 131072,
-        "output_limit": 8192,
-        "reasoning": true,
-        "supports_effort": false,
-        "effort": {
-          "kind": "none"
-        },
-        "tool_call": false,
-        "attachment": true,
-        "structured_output": false,
-        "temperature": true,
-        "open_weights": false,
-        "modalities": {
-          "input": [
-            "text"
-          ],
-          "output": [
-            "text"
-          ]
-        },
-        "cost": {
-          "input": 0,
-          "output": 0
-        },
-        "group": null,
-        "note": null,
-        "endpoint": null,
-        "hidden": false,
-        "active": true,
-        "priority": 10,
-        "default": false,
-        "aliases": [],
-        "release_date": "2025-08-04",
-        "last_updated": "2026-06-22",
-        "knowledge": "2025-08"
       }
     ]
   }

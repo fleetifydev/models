@@ -25,8 +25,8 @@ output = ["text"]
 [fleetify]
 priority = 70
 
-# `ultra` is Codex's top tier: max reasoning plus automatic task delegation.
+# Codex offers no `ultra` tier for GPT-5.6 Luna.
 [fleetify.effort]
 kind    = "levels"
-levels  = ["low", "medium", "high", "xhigh", "max", "ultra"]
+levels  = ["low", "medium", "high", "xhigh", "max"]
 default = "medium"

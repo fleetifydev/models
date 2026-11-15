@@ -2,7 +2,8 @@
 from = "kimi-api/kimi-k3.1-pro"
 
 # Listed as `kimi-k3.1-pro` with a Moonshot platform key; Kimi Code
-# subscriptions name it `k3.1-pro`.
+# subscriptions name it `k3.1-pro`. The default, inherited from kimi-api:
+# Kimi Code no longer lists plain K2.6.
 [fleetify]
 priority = 35
 label = "Kimi K3.1 Pro"

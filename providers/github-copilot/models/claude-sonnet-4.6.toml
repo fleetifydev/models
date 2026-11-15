@@ -23,8 +23,10 @@ output = 32000
 input = ["text", "image", "pdf"]
 output = ["text"]
 
+# Retired on 2026-09-01 except for individual subscribers on annual plans.
 [fleetify]
 priority = 180
+note = "Individual annual plans only."
 
 [fleetify.effort]
 kind    = "levels"
