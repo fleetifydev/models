@@ -1,0 +1,34 @@
+name = "Mistral Large 4"
+family = "mistral-large"
+release_date = "2026-10-06"
+last_updated = "2026-10-29"
+attachment = true
+reasoning = true
+tool_call = true
+temperature = true
+open_weights = true
+
+[cost]
+input = 0.00
+output = 0.00
+
+# NIM serves a 262,144-token window (Mistral's own API offers 1M). Context
+# covers input plus output; NIM accepts `max_tokens` up to the full window.
+[limit]
+context = 262144
+
+[modalities]
+input = ["text", "image"]
+output = ["text"]
+
+# The open-weights release (2026-10-29). NIM's hosted request schema documents
+# `tools` but no `response_format`, so `structured_output` is left unset.
+[fleetify]
+priority = 97
+
+# NIM accepts only `none` and `high`; a request that omits `reasoning_effort`
+# is served as `none`.
+[fleetify.effort]
+kind    = "levels"
+levels  = ["none", "high"]
+default = "high"

@@ -1,0 +1,35 @@
+name = "Gemini 4 Hydrogen"
+family = "gemini-hydrogen"
+release_date = "2026-11-12"
+last_updated = "2026-11-12"
+knowledge = "2026-03"
+attachment = true
+reasoning = true
+tool_call = true
+structured_output = true
+temperature = false
+
+[cost]
+input = 1.50
+output = 7.50
+cache_read = 0.075
+
+# GitHub publishes no Copilot-specific window for Gemini 4 Hydrogen; this is
+# Google's. GitHub has not published the CLI id either: this one follows the
+# other Copilot Gemini ids, which match Google's API ids.
+[limit]
+context = 1048576
+output = 65536
+
+[modalities]
+input = ["text", "image", "video", "audio", "pdf"]
+output = ["text"]
+
+[fleetify]
+priority = 112
+
+# Google's thinking levels for Hydrogen, which defaults to `high`.
+[fleetify.effort]
+kind    = "levels"
+levels  = ["low", "medium", "high", "xhigh"]
+default = "high"

@@ -1,0 +1,33 @@
+name = "GPT-6.1 Terra"
+family = "gpt"
+release_date = "2026-10-26"
+last_updated = "2026-10-26"
+knowledge = "2026-06-01"
+attachment = true
+reasoning = true
+tool_call = true
+structured_output = true
+temperature = false
+
+[cost]
+input = 1.00
+output = 5.00
+cache_read = 0.05
+cache_write = 1.25
+
+# Copilot's default window; the CLI also offers a 1M option.
+[limit]
+context = 400000
+output = 128000
+
+[modalities]
+input = ["text", "image"]
+output = ["text"]
+
+[fleetify]
+priority = 155
+
+[fleetify.effort]
+kind    = "levels"
+levels  = ["low", "medium", "high", "xhigh"]
+default = "medium"

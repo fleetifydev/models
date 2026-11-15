@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-22T12:06:32.621Z",
-  "commit": "22aa21e",
+  "generatedAt": "2026-11-15T11:55:30.110Z",
+  "commit": "090e7d0",
   "providers": {
     "anthropic": {
       "id": "anthropic",
@@ -101,6 +101,50 @@
           "aliases": [],
           "release_date": "2026-09-01",
           "last_updated": "2026-09-01",
+          "knowledge": "2026-06"
+        },
+        {
+          "id": "claude-fable-5-2",
+          "label": "Claude Fable 5.2",
+          "family": "claude-fable",
+          "context": 1000000,
+          "output_limit": 128000,
+          "reasoning": true,
+          "supports_effort": true,
+          "effort": {
+            "kind": "none"
+          },
+          "tool_call": true,
+          "attachment": true,
+          "structured_output": true,
+          "temperature": false,
+          "open_weights": false,
+          "modalities": {
+            "input": [
+              "text",
+              "image",
+              "pdf"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "cost": {
+            "input": 8,
+            "output": 40,
+            "cache_read": 0.2,
+            "cache_write": 10
+          },
+          "group": null,
+          "note": null,
+          "endpoint": null,
+          "hidden": false,
+          "active": true,
+          "priority": 47,
+          "default": false,
+          "aliases": [],
+          "release_date": "2026-11-09",
+          "last_updated": "2026-11-09",
           "knowledge": "2026-06"
         },
         {
@@ -1149,6 +1193,321 @@
           "knowledge": "2026-03"
         },
         {
+          "id": "gemini-4-carbon-high",
+          "label": "Gemini 4 Carbon (High)",
+          "family": "gemini-carbon",
+          "context": 1048576,
+          "output_limit": 65536,
+          "reasoning": true,
+          "supports_effort": false,
+          "effort": {
+            "kind": "none"
+          },
+          "tool_call": true,
+          "attachment": true,
+          "structured_output": true,
+          "temperature": false,
+          "open_weights": false,
+          "modalities": {
+            "input": [
+              "text",
+              "image",
+              "video",
+              "audio",
+              "pdf"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "cost": {
+            "input": 2,
+            "output": 10,
+            "cache_read": 0.1
+          },
+          "group": null,
+          "note": "Introductory pricing through 2026-11-30; $4.00 / $20.00 per MTok from 2026-12-01.",
+          "endpoint": null,
+          "hidden": false,
+          "active": true,
+          "priority": 260,
+          "default": false,
+          "aliases": [],
+          "release_date": "2026-11-10",
+          "last_updated": "2026-11-10",
+          "knowledge": "2026-03"
+        },
+        {
+          "id": "gemini-4-carbon-low",
+          "label": "Gemini 4 Carbon (Low)",
+          "family": "gemini-carbon",
+          "context": 1048576,
+          "output_limit": 65536,
+          "reasoning": true,
+          "supports_effort": false,
+          "effort": {
+            "kind": "none"
+          },
+          "tool_call": true,
+          "attachment": true,
+          "structured_output": true,
+          "temperature": false,
+          "open_weights": false,
+          "modalities": {
+            "input": [
+              "text",
+              "image",
+              "video",
+              "audio",
+              "pdf"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "cost": {
+            "input": 2,
+            "output": 10,
+            "cache_read": 0.1
+          },
+          "group": null,
+          "note": "Introductory pricing through 2026-11-30; $4.00 / $20.00 per MTok from 2026-12-01.",
+          "endpoint": null,
+          "hidden": false,
+          "active": true,
+          "priority": 240,
+          "default": false,
+          "aliases": [],
+          "release_date": "2026-11-10",
+          "last_updated": "2026-11-10",
+          "knowledge": "2026-03"
+        },
+        {
+          "id": "gemini-4-carbon-medium",
+          "label": "Gemini 4 Carbon (Medium)",
+          "family": "gemini-carbon",
+          "context": 1048576,
+          "output_limit": 65536,
+          "reasoning": true,
+          "supports_effort": false,
+          "effort": {
+            "kind": "none"
+          },
+          "tool_call": true,
+          "attachment": true,
+          "structured_output": true,
+          "temperature": false,
+          "open_weights": false,
+          "modalities": {
+            "input": [
+              "text",
+              "image",
+              "video",
+              "audio",
+              "pdf"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "cost": {
+            "input": 2,
+            "output": 10,
+            "cache_read": 0.1
+          },
+          "group": null,
+          "note": "Introductory pricing through 2026-11-30; $4.00 / $20.00 per MTok from 2026-12-01.",
+          "endpoint": null,
+          "hidden": false,
+          "active": true,
+          "priority": 250,
+          "default": false,
+          "aliases": [],
+          "release_date": "2026-11-10",
+          "last_updated": "2026-11-10",
+          "knowledge": "2026-03"
+        },
+        {
+          "id": "gemini-4-hydrogen-high",
+          "label": "Gemini 4 Hydrogen (High)",
+          "family": "gemini-hydrogen",
+          "context": 1048576,
+          "output_limit": 65536,
+          "reasoning": true,
+          "supports_effort": false,
+          "effort": {
+            "kind": "none"
+          },
+          "tool_call": true,
+          "attachment": true,
+          "structured_output": true,
+          "temperature": false,
+          "open_weights": false,
+          "modalities": {
+            "input": [
+              "text",
+              "image",
+              "video",
+              "audio",
+              "pdf"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "cost": {
+            "input": 1.5,
+            "output": 7.5,
+            "cache_read": 0.075
+          },
+          "group": null,
+          "note": null,
+          "endpoint": null,
+          "hidden": false,
+          "active": true,
+          "priority": 220,
+          "default": false,
+          "aliases": [],
+          "release_date": "2026-11-12",
+          "last_updated": "2026-11-12",
+          "knowledge": "2026-03"
+        },
+        {
+          "id": "gemini-4-hydrogen-low",
+          "label": "Gemini 4 Hydrogen (Low)",
+          "family": "gemini-hydrogen",
+          "context": 1048576,
+          "output_limit": 65536,
+          "reasoning": true,
+          "supports_effort": false,
+          "effort": {
+            "kind": "none"
+          },
+          "tool_call": true,
+          "attachment": true,
+          "structured_output": true,
+          "temperature": false,
+          "open_weights": false,
+          "modalities": {
+            "input": [
+              "text",
+              "image",
+              "video",
+              "audio",
+              "pdf"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "cost": {
+            "input": 1.5,
+            "output": 7.5,
+            "cache_read": 0.075
+          },
+          "group": null,
+          "note": null,
+          "endpoint": null,
+          "hidden": false,
+          "active": true,
+          "priority": 200,
+          "default": false,
+          "aliases": [],
+          "release_date": "2026-11-12",
+          "last_updated": "2026-11-12",
+          "knowledge": "2026-03"
+        },
+        {
+          "id": "gemini-4-hydrogen-medium",
+          "label": "Gemini 4 Hydrogen (Medium)",
+          "family": "gemini-hydrogen",
+          "context": 1048576,
+          "output_limit": 65536,
+          "reasoning": true,
+          "supports_effort": false,
+          "effort": {
+            "kind": "none"
+          },
+          "tool_call": true,
+          "attachment": true,
+          "structured_output": true,
+          "temperature": false,
+          "open_weights": false,
+          "modalities": {
+            "input": [
+              "text",
+              "image",
+              "video",
+              "audio",
+              "pdf"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "cost": {
+            "input": 1.5,
+            "output": 7.5,
+            "cache_read": 0.075
+          },
+          "group": null,
+          "note": null,
+          "endpoint": null,
+          "hidden": false,
+          "active": true,
+          "priority": 210,
+          "default": false,
+          "aliases": [],
+          "release_date": "2026-11-12",
+          "last_updated": "2026-11-12",
+          "knowledge": "2026-03"
+        },
+        {
+          "id": "gemini-4-hydrogen-xhigh",
+          "label": "Gemini 4 Hydrogen (XHigh)",
+          "family": "gemini-hydrogen",
+          "context": 1048576,
+          "output_limit": 65536,
+          "reasoning": true,
+          "supports_effort": false,
+          "effort": {
+            "kind": "none"
+          },
+          "tool_call": true,
+          "attachment": true,
+          "structured_output": true,
+          "temperature": false,
+          "open_weights": false,
+          "modalities": {
+            "input": [
+              "text",
+              "image",
+              "video",
+              "audio",
+              "pdf"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "cost": {
+            "input": 1.5,
+            "output": 7.5,
+            "cache_read": 0.075
+          },
+          "group": null,
+          "note": null,
+          "endpoint": null,
+          "hidden": false,
+          "active": true,
+          "priority": 230,
+          "default": false,
+          "aliases": [],
+          "release_date": "2026-11-12",
+          "last_updated": "2026-11-12",
+          "knowledge": "2026-03"
+        },
+        {
           "id": "gpt-oss-120b-medium",
           "label": "GPT-OSS 120B (Medium)",
           "family": "gpt-oss",
@@ -1302,6 +1661,58 @@
           "aliases": [],
           "release_date": "2026-09-01",
           "last_updated": "2026-09-01",
+          "knowledge": "2026-06"
+        },
+        {
+          "id": "claude-fable-5-2",
+          "label": "Fable 5.2",
+          "family": "claude-fable",
+          "context": 1000000,
+          "output_limit": 128000,
+          "reasoning": true,
+          "supports_effort": true,
+          "effort": {
+            "kind": "levels",
+            "levels": [
+              "low",
+              "medium",
+              "high",
+              "xhigh",
+              "max"
+            ],
+            "default": "medium"
+          },
+          "tool_call": true,
+          "attachment": true,
+          "structured_output": true,
+          "temperature": false,
+          "open_weights": false,
+          "modalities": {
+            "input": [
+              "text",
+              "image",
+              "pdf"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "cost": {
+            "input": 8,
+            "output": 40,
+            "cache_read": 0.2,
+            "cache_write": 10
+          },
+          "group": null,
+          "note": null,
+          "endpoint": null,
+          "hidden": false,
+          "active": true,
+          "priority": 67,
+          "default": false,
+          "aliases": [],
+          "release_date": "2026-11-09",
+          "last_updated": "2026-11-09",
           "knowledge": "2026-06"
         },
         {
@@ -2577,6 +2988,57 @@
           "knowledge": null
         },
         {
+          "id": "@cf/thinkingmachines/inkling-2-small",
+          "label": "Inkling 2 Small",
+          "family": "inkling",
+          "context": 1048576,
+          "output_limit": null,
+          "reasoning": true,
+          "supports_effort": true,
+          "effort": {
+            "kind": "levels",
+            "levels": [
+              "none",
+              "minimal",
+              "low",
+              "medium",
+              "high",
+              "max"
+            ],
+            "default": "high"
+          },
+          "tool_call": true,
+          "attachment": true,
+          "structured_output": true,
+          "temperature": true,
+          "open_weights": true,
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "cost": {
+            "input": 0.3,
+            "output": 1,
+            "cache_read": 0.1
+          },
+          "group": null,
+          "note": "Requires the Workers Paid plan.",
+          "endpoint": null,
+          "hidden": false,
+          "active": true,
+          "priority": 165,
+          "default": false,
+          "aliases": [],
+          "release_date": "2026-11-05",
+          "last_updated": "2026-11-12",
+          "knowledge": null
+        },
+        {
           "id": "@cf/zai-org/glm-4.7-flash",
           "label": "GLM-4.7-Flash",
           "family": "glm-flash",
@@ -3122,6 +3584,57 @@
           "release_date": "2026-09-29",
           "last_updated": "2026-09-29",
           "knowledge": "2026-04-30"
+        },
+        {
+          "id": "gpt-6.1-terra",
+          "label": "GPT-6.1 Terra",
+          "family": "gpt",
+          "context": 1050000,
+          "output_limit": 128000,
+          "reasoning": true,
+          "supports_effort": true,
+          "effort": {
+            "kind": "levels",
+            "levels": [
+              "low",
+              "medium",
+              "high",
+              "xhigh",
+              "max",
+              "ultra"
+            ],
+            "default": "low"
+          },
+          "tool_call": true,
+          "attachment": true,
+          "structured_output": true,
+          "temperature": false,
+          "open_weights": false,
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "cost": {
+            "input": 1,
+            "output": 5,
+            "cache_read": 0.05
+          },
+          "group": null,
+          "note": null,
+          "endpoint": null,
+          "hidden": false,
+          "active": true,
+          "priority": 85,
+          "default": false,
+          "aliases": [],
+          "release_date": "2026-10-26",
+          "last_updated": "2026-10-26",
+          "knowledge": "2026-06-01"
         }
       ]
     },
@@ -3849,6 +4362,109 @@
           "release_date": "2026-10-13",
           "last_updated": "2026-10-13",
           "knowledge": "2026-03"
+        },
+        {
+          "id": "gemini-4-carbon",
+          "label": "Gemini 4 Carbon",
+          "family": "gemini-carbon",
+          "context": 1048576,
+          "output_limit": 65536,
+          "reasoning": true,
+          "supports_effort": true,
+          "effort": {
+            "kind": "thinking_level",
+            "levels": [
+              "low",
+              "medium",
+              "high"
+            ],
+            "default": "medium"
+          },
+          "tool_call": true,
+          "attachment": true,
+          "structured_output": true,
+          "temperature": false,
+          "open_weights": false,
+          "modalities": {
+            "input": [
+              "text",
+              "image",
+              "video",
+              "audio",
+              "pdf"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "cost": {
+            "input": 2,
+            "output": 10,
+            "cache_read": 0.1
+          },
+          "group": null,
+          "note": "Introductory pricing through 2026-11-30; $4.00 / $20.00 per MTok from 2026-12-01.",
+          "endpoint": null,
+          "hidden": false,
+          "active": true,
+          "priority": 130,
+          "default": false,
+          "aliases": [],
+          "release_date": "2026-11-10",
+          "last_updated": "2026-11-10",
+          "knowledge": "2026-03"
+        },
+        {
+          "id": "gemini-4-hydrogen",
+          "label": "Gemini 4 Hydrogen",
+          "family": "gemini-hydrogen",
+          "context": 1048576,
+          "output_limit": 65536,
+          "reasoning": true,
+          "supports_effort": true,
+          "effort": {
+            "kind": "thinking_level",
+            "levels": [
+              "low",
+              "medium",
+              "high",
+              "xhigh"
+            ],
+            "default": "high"
+          },
+          "tool_call": true,
+          "attachment": true,
+          "structured_output": true,
+          "temperature": false,
+          "open_weights": false,
+          "modalities": {
+            "input": [
+              "text",
+              "image",
+              "video",
+              "audio",
+              "pdf"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "cost": {
+            "input": 1.5,
+            "output": 7.5,
+            "cache_read": 0.075
+          },
+          "group": null,
+          "note": null,
+          "endpoint": null,
+          "hidden": false,
+          "active": true,
+          "priority": 120,
+          "default": false,
+          "aliases": [],
+          "release_date": "2026-11-12",
+          "last_updated": "2026-11-12",
+          "knowledge": "2026-03"
         }
       ]
     },
@@ -3899,7 +4515,7 @@
           "endpoint": null,
           "hidden": false,
           "active": true,
-          "priority": 230,
+          "priority": 231,
           "default": true,
           "aliases": [],
           "release_date": null,
@@ -4006,6 +4622,58 @@
           "aliases": [],
           "release_date": "2026-09-01",
           "last_updated": "2026-09-01",
+          "knowledge": "2026-06"
+        },
+        {
+          "id": "claude-fable-5.2",
+          "label": "Claude Fable 5.2",
+          "family": "claude-fable",
+          "context": 200000,
+          "output_limit": 64000,
+          "reasoning": true,
+          "supports_effort": true,
+          "effort": {
+            "kind": "levels",
+            "levels": [
+              "low",
+              "medium",
+              "high",
+              "xhigh",
+              "max"
+            ],
+            "default": "medium"
+          },
+          "tool_call": true,
+          "attachment": true,
+          "structured_output": true,
+          "temperature": false,
+          "open_weights": false,
+          "modalities": {
+            "input": [
+              "text",
+              "image",
+              "pdf"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "cost": {
+            "input": 8,
+            "output": 40,
+            "cache_read": 0.2,
+            "cache_write": 10
+          },
+          "group": null,
+          "note": null,
+          "endpoint": null,
+          "hidden": false,
+          "active": true,
+          "priority": 229,
+          "default": false,
+          "aliases": [],
+          "release_date": "2026-11-09",
+          "last_updated": "2026-11-09",
           "knowledge": "2026-06"
         },
         {
@@ -4309,7 +4977,7 @@
           "endpoint": null,
           "hidden": false,
           "active": true,
-          "priority": 229,
+          "priority": 230,
           "default": false,
           "aliases": [],
           "release_date": "2026-09-22",
@@ -4675,6 +5343,109 @@
           "aliases": [],
           "release_date": "2026-10-13",
           "last_updated": "2026-10-13",
+          "knowledge": "2026-03"
+        },
+        {
+          "id": "gemini-4-carbon",
+          "label": "Gemini 4 Carbon",
+          "family": "gemini-carbon",
+          "context": 1048576,
+          "output_limit": 65536,
+          "reasoning": true,
+          "supports_effort": true,
+          "effort": {
+            "kind": "levels",
+            "levels": [
+              "low",
+              "medium",
+              "high"
+            ],
+            "default": "medium"
+          },
+          "tool_call": true,
+          "attachment": true,
+          "structured_output": true,
+          "temperature": false,
+          "open_weights": false,
+          "modalities": {
+            "input": [
+              "text",
+              "image",
+              "video",
+              "audio",
+              "pdf"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "cost": {
+            "input": 2,
+            "output": 10,
+            "cache_read": 0.1
+          },
+          "group": null,
+          "note": "Introductory pricing through 2026-11-30; $4.00 / $20.00 per MTok from 2026-12-01.",
+          "endpoint": null,
+          "hidden": false,
+          "active": true,
+          "priority": 113,
+          "default": false,
+          "aliases": [],
+          "release_date": "2026-11-10",
+          "last_updated": "2026-11-10",
+          "knowledge": "2026-03"
+        },
+        {
+          "id": "gemini-4-hydrogen",
+          "label": "Gemini 4 Hydrogen",
+          "family": "gemini-hydrogen",
+          "context": 1048576,
+          "output_limit": 65536,
+          "reasoning": true,
+          "supports_effort": true,
+          "effort": {
+            "kind": "levels",
+            "levels": [
+              "low",
+              "medium",
+              "high",
+              "xhigh"
+            ],
+            "default": "high"
+          },
+          "tool_call": true,
+          "attachment": true,
+          "structured_output": true,
+          "temperature": false,
+          "open_weights": false,
+          "modalities": {
+            "input": [
+              "text",
+              "image",
+              "video",
+              "audio",
+              "pdf"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "cost": {
+            "input": 1.5,
+            "output": 7.5,
+            "cache_read": 0.075
+          },
+          "group": null,
+          "note": null,
+          "endpoint": null,
+          "hidden": false,
+          "active": true,
+          "priority": 112,
+          "default": false,
+          "aliases": [],
+          "release_date": "2026-11-12",
+          "last_updated": "2026-11-12",
           "knowledge": "2026-03"
         },
         {
@@ -5068,7 +5839,7 @@
           "endpoint": null,
           "hidden": false,
           "active": true,
-          "priority": 154,
+          "priority": 153,
           "default": false,
           "aliases": [],
           "release_date": "2026-07-09",
@@ -5168,7 +5939,7 @@
           "endpoint": null,
           "hidden": false,
           "active": true,
-          "priority": 155,
+          "priority": 154,
           "default": false,
           "aliases": [],
           "release_date": "2026-09-22",
@@ -5274,6 +6045,56 @@
           "release_date": "2026-09-29",
           "last_updated": "2026-09-29",
           "knowledge": "2026-04-30"
+        },
+        {
+          "id": "gpt-6.1-terra",
+          "label": "GPT-6.1 Terra",
+          "family": "gpt",
+          "context": 400000,
+          "output_limit": 128000,
+          "reasoning": true,
+          "supports_effort": true,
+          "effort": {
+            "kind": "levels",
+            "levels": [
+              "low",
+              "medium",
+              "high",
+              "xhigh"
+            ],
+            "default": "medium"
+          },
+          "tool_call": true,
+          "attachment": true,
+          "structured_output": true,
+          "temperature": false,
+          "open_weights": false,
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "cost": {
+            "input": 1,
+            "output": 5,
+            "cache_read": 0.05,
+            "cache_write": 1.25
+          },
+          "group": null,
+          "note": null,
+          "endpoint": null,
+          "hidden": false,
+          "active": true,
+          "priority": 155,
+          "default": false,
+          "aliases": [],
+          "release_date": "2026-10-26",
+          "last_updated": "2026-10-26",
+          "knowledge": "2026-06-01"
         },
         {
           "id": "grok-4.6",
@@ -6000,6 +6821,106 @@
           "release_date": "2026-07-16",
           "last_updated": "2026-07-16",
           "knowledge": null
+        },
+        {
+          "id": "kimi-k3.1-pro",
+          "label": "Kimi K3.1 Pro",
+          "family": "kimi-k3.1",
+          "context": 1048576,
+          "output_limit": 1048576,
+          "reasoning": true,
+          "supports_effort": true,
+          "effort": {
+            "kind": "levels",
+            "levels": [
+              "low",
+              "high",
+              "max"
+            ],
+            "default": "max"
+          },
+          "tool_call": true,
+          "attachment": true,
+          "structured_output": true,
+          "temperature": false,
+          "open_weights": true,
+          "modalities": {
+            "input": [
+              "text",
+              "image",
+              "video"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "cost": {
+            "input": 2,
+            "output": 10,
+            "cache_read": 0.2,
+            "cache_write": 2
+          },
+          "group": null,
+          "note": null,
+          "endpoint": null,
+          "hidden": false,
+          "active": true,
+          "priority": 35,
+          "default": false,
+          "aliases": [],
+          "release_date": "2026-10-23",
+          "last_updated": "2026-10-23",
+          "knowledge": null
+        },
+        {
+          "id": "kimi-k3.1-pro-highspeed",
+          "label": "Kimi K3.1 Pro Highspeed",
+          "family": "kimi-k3.1",
+          "context": 1048576,
+          "output_limit": 1048576,
+          "reasoning": true,
+          "supports_effort": true,
+          "effort": {
+            "kind": "levels",
+            "levels": [
+              "low",
+              "high",
+              "max"
+            ],
+            "default": "max"
+          },
+          "tool_call": true,
+          "attachment": true,
+          "structured_output": true,
+          "temperature": false,
+          "open_weights": true,
+          "modalities": {
+            "input": [
+              "text",
+              "image",
+              "video"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "cost": {
+            "input": 4,
+            "output": 20,
+            "cache_read": 0.2,
+            "cache_write": 4
+          },
+          "group": null,
+          "note": null,
+          "endpoint": null,
+          "hidden": false,
+          "active": true,
+          "priority": 33,
+          "default": false,
+          "aliases": [],
+          "release_date": "2026-10-23",
+          "last_updated": "2026-10-23",
+          "knowledge": null
         }
       ]
     },
@@ -6147,6 +7068,56 @@
           "release_date": "2026-07-16",
           "last_updated": "2026-07-16",
           "knowledge": null
+        },
+        {
+          "id": "kimi-k3.1-pro",
+          "label": "Kimi K3.1 Pro",
+          "family": "kimi-k3.1",
+          "context": 1048576,
+          "output_limit": 1048576,
+          "reasoning": true,
+          "supports_effort": true,
+          "effort": {
+            "kind": "levels",
+            "levels": [
+              "low",
+              "high",
+              "max"
+            ],
+            "default": "high"
+          },
+          "tool_call": true,
+          "attachment": true,
+          "structured_output": true,
+          "temperature": false,
+          "open_weights": true,
+          "modalities": {
+            "input": [
+              "text",
+              "image",
+              "video"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "cost": {
+            "input": 2,
+            "output": 10,
+            "cache_read": 0.2,
+            "cache_write": 2
+          },
+          "group": null,
+          "note": null,
+          "endpoint": null,
+          "hidden": false,
+          "active": true,
+          "priority": 35,
+          "default": false,
+          "aliases": [],
+          "release_date": "2026-10-23",
+          "last_updated": "2026-10-23",
+          "knowledge": null
         }
       ]
     },
@@ -6204,6 +7175,48 @@
           ],
           "release_date": "2025-07-30",
           "last_updated": "2025-07-30",
+          "knowledge": null
+        },
+        {
+          "id": "deepseek-v4-1-flash-1017",
+          "label": "DeepSeek V4.1 Flash 1017",
+          "family": "deepseek-flash",
+          "context": 1048576,
+          "output_limit": 131072,
+          "reasoning": true,
+          "supports_effort": false,
+          "effort": {
+            "kind": "none"
+          },
+          "tool_call": true,
+          "attachment": true,
+          "structured_output": true,
+          "temperature": true,
+          "open_weights": true,
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "cost": {
+            "input": 0.3,
+            "output": 1.2,
+            "cache_read": 0.007
+          },
+          "group": null,
+          "note": null,
+          "endpoint": null,
+          "hidden": false,
+          "active": true,
+          "priority": 24,
+          "default": false,
+          "aliases": [],
+          "release_date": "2026-10-28",
+          "last_updated": "2026-10-28",
           "knowledge": null
         },
         {
@@ -6452,6 +7465,54 @@
           "release_date": "2026-09-15",
           "last_updated": "2026-09-15",
           "knowledge": null
+        },
+        {
+          "id": "zai-glm-5-3-flash",
+          "label": "GLM 5.3 Flash",
+          "family": "glm-flash",
+          "context": 1048576,
+          "output_limit": 131072,
+          "reasoning": true,
+          "supports_effort": true,
+          "effort": {
+            "kind": "levels",
+            "levels": [
+              "low",
+              "high",
+              "max"
+            ],
+            "default": "high"
+          },
+          "tool_call": true,
+          "attachment": true,
+          "structured_output": true,
+          "temperature": true,
+          "open_weights": true,
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "cost": {
+            "input": 0.15,
+            "output": 0.5,
+            "cache_read": 0.03
+          },
+          "group": null,
+          "note": null,
+          "endpoint": null,
+          "hidden": false,
+          "active": true,
+          "priority": 22,
+          "default": false,
+          "aliases": [],
+          "release_date": "2026-10-22",
+          "last_updated": "2026-10-22",
+          "knowledge": null
         }
       ]
     },
@@ -6506,6 +7567,94 @@
           "aliases": [],
           "release_date": "2026-09-10",
           "last_updated": "2026-09-18",
+          "knowledge": null
+        },
+        {
+          "id": "minimaxai/minimax-m3.1-flash",
+          "label": "MiniMax M3.1 Flash",
+          "family": "minimax",
+          "context": 262144,
+          "output_limit": 65536,
+          "reasoning": true,
+          "supports_effort": false,
+          "effort": {
+            "kind": "none"
+          },
+          "tool_call": true,
+          "attachment": true,
+          "structured_output": false,
+          "temperature": true,
+          "open_weights": true,
+          "modalities": {
+            "input": [
+              "text",
+              "image",
+              "video"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "cost": {
+            "input": 0,
+            "output": 0
+          },
+          "group": null,
+          "note": null,
+          "endpoint": null,
+          "hidden": false,
+          "active": true,
+          "priority": 91,
+          "default": false,
+          "aliases": [],
+          "release_date": "2026-10-19",
+          "last_updated": "2026-10-20",
+          "knowledge": null
+        },
+        {
+          "id": "mistralai/mistral-large-4-1t-a52b",
+          "label": "Mistral Large 4",
+          "family": "mistral-large",
+          "context": 262144,
+          "output_limit": null,
+          "reasoning": true,
+          "supports_effort": true,
+          "effort": {
+            "kind": "levels",
+            "levels": [
+              "none",
+              "high"
+            ],
+            "default": "high"
+          },
+          "tool_call": true,
+          "attachment": true,
+          "structured_output": false,
+          "temperature": true,
+          "open_weights": true,
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "cost": {
+            "input": 0,
+            "output": 0
+          },
+          "group": null,
+          "note": null,
+          "endpoint": null,
+          "hidden": false,
+          "active": true,
+          "priority": 97,
+          "default": false,
+          "aliases": [],
+          "release_date": "2026-10-06",
+          "last_updated": "2026-10-29",
           "knowledge": null
         },
         {
@@ -7645,6 +8794,50 @@
           "knowledge": "2026-06"
         },
         {
+          "id": "anthropic/claude-fable-5.2",
+          "label": "Claude Fable 5.2",
+          "family": "claude-fable",
+          "context": 1000000,
+          "output_limit": 128000,
+          "reasoning": true,
+          "supports_effort": true,
+          "effort": {
+            "kind": "none"
+          },
+          "tool_call": true,
+          "attachment": true,
+          "structured_output": true,
+          "temperature": false,
+          "open_weights": false,
+          "modalities": {
+            "input": [
+              "text",
+              "image",
+              "pdf"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "cost": {
+            "input": 8,
+            "output": 40,
+            "cache_read": 0.2,
+            "cache_write": 10
+          },
+          "group": "via OpenRouter",
+          "note": null,
+          "endpoint": null,
+          "hidden": false,
+          "active": true,
+          "priority": 109,
+          "default": false,
+          "aliases": [],
+          "release_date": "2026-11-09",
+          "last_updated": "2026-11-09",
+          "knowledge": "2026-06"
+        },
+        {
           "id": "anthropic/claude-haiku-5.5",
           "label": "Claude Haiku 5.5",
           "family": "claude-haiku",
@@ -8306,6 +9499,98 @@
           "knowledge": "2026-03"
         },
         {
+          "id": "google/gemini-4-carbon",
+          "label": "Gemini 4 Carbon",
+          "family": "gemini-carbon",
+          "context": 1048576,
+          "output_limit": 65536,
+          "reasoning": true,
+          "supports_effort": true,
+          "effort": {
+            "kind": "none"
+          },
+          "tool_call": true,
+          "attachment": true,
+          "structured_output": true,
+          "temperature": false,
+          "open_weights": false,
+          "modalities": {
+            "input": [
+              "audio",
+              "pdf",
+              "image",
+              "text",
+              "video"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "cost": {
+            "input": 2,
+            "output": 10,
+            "cache_read": 0.1,
+            "cache_write": 0.1875
+          },
+          "group": "via OpenRouter",
+          "note": "Introductory pricing through 2026-11-30; $4.00 / $20.00 per MTok from 2026-12-01.",
+          "endpoint": null,
+          "hidden": false,
+          "active": true,
+          "priority": 69,
+          "default": false,
+          "aliases": [],
+          "release_date": "2026-11-10",
+          "last_updated": "2026-11-10",
+          "knowledge": "2026-03"
+        },
+        {
+          "id": "google/gemini-4-hydrogen",
+          "label": "Gemini 4 Hydrogen",
+          "family": "gemini-hydrogen",
+          "context": 1048576,
+          "output_limit": 65536,
+          "reasoning": true,
+          "supports_effort": true,
+          "effort": {
+            "kind": "none"
+          },
+          "tool_call": true,
+          "attachment": true,
+          "structured_output": true,
+          "temperature": false,
+          "open_weights": false,
+          "modalities": {
+            "input": [
+              "audio",
+              "pdf",
+              "image",
+              "text",
+              "video"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "cost": {
+            "input": 1.5,
+            "output": 7.5,
+            "cache_read": 0.075,
+            "cache_write": 0.0833
+          },
+          "group": "via OpenRouter",
+          "note": null,
+          "endpoint": null,
+          "hidden": false,
+          "active": true,
+          "priority": 67,
+          "default": false,
+          "aliases": [],
+          "release_date": "2026-11-12",
+          "last_updated": "2026-11-12",
+          "knowledge": "2026-03"
+        },
+        {
           "id": "moonshotai/kimi-k2.6",
           "label": "Kimi K2.6",
           "family": "kimi-k2.6",
@@ -8388,6 +9673,49 @@
           "aliases": [],
           "release_date": "2026-07-16",
           "last_updated": "2026-07-16",
+          "knowledge": null
+        },
+        {
+          "id": "moonshotai/kimi-k3.1-pro",
+          "label": "Kimi K3.1 Pro",
+          "family": "kimi-k3.1",
+          "context": 1048576,
+          "output_limit": null,
+          "reasoning": true,
+          "supports_effort": true,
+          "effort": {
+            "kind": "none"
+          },
+          "tool_call": true,
+          "attachment": true,
+          "structured_output": true,
+          "temperature": true,
+          "open_weights": true,
+          "modalities": {
+            "input": [
+              "text",
+              "image",
+              "video"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "cost": {
+            "input": 2,
+            "output": 10,
+            "cache_read": 0.2
+          },
+          "group": "via OpenRouter",
+          "note": null,
+          "endpoint": null,
+          "hidden": false,
+          "active": true,
+          "priority": 27,
+          "default": false,
+          "aliases": [],
+          "release_date": "2026-10-23",
+          "last_updated": "2026-10-23",
           "knowledge": null
         },
         {
@@ -8694,6 +10022,50 @@
           "release_date": "2026-09-29",
           "last_updated": "2026-09-29",
           "knowledge": "2026-04-30"
+        },
+        {
+          "id": "openai/gpt-6.1-terra",
+          "label": "GPT-6.1 Terra",
+          "family": "gpt",
+          "context": 1050000,
+          "output_limit": 128000,
+          "reasoning": true,
+          "supports_effort": true,
+          "effort": {
+            "kind": "none"
+          },
+          "tool_call": true,
+          "attachment": true,
+          "structured_output": true,
+          "temperature": false,
+          "open_weights": false,
+          "modalities": {
+            "input": [
+              "pdf",
+              "image",
+              "text"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "cost": {
+            "input": 1,
+            "output": 5,
+            "cache_read": 0.05,
+            "cache_write": 1.25
+          },
+          "group": "via OpenRouter",
+          "note": null,
+          "endpoint": null,
+          "hidden": false,
+          "active": true,
+          "priority": 84,
+          "default": false,
+          "aliases": [],
+          "release_date": "2026-10-26",
+          "last_updated": "2026-10-26",
+          "knowledge": "2026-06-01"
         },
         {
           "id": "x-ai/grok-4.3",
@@ -9081,7 +10453,7 @@
           "endpoint": "/v1/agent",
           "hidden": false,
           "active": true,
-          "priority": 186,
+          "priority": 185,
           "default": false,
           "aliases": [],
           "release_date": "2026-06-09",
@@ -9124,11 +10496,54 @@
           "endpoint": "/v1/agent",
           "hidden": false,
           "active": true,
-          "priority": 187,
+          "priority": 186,
           "default": false,
           "aliases": [],
           "release_date": "2026-09-01",
           "last_updated": "2026-09-01",
+          "knowledge": "2026-06"
+        },
+        {
+          "id": "anthropic/claude-fable-5-2",
+          "label": "Claude Fable 5.2",
+          "family": "claude-fable",
+          "context": 1000000,
+          "output_limit": 128000,
+          "reasoning": true,
+          "supports_effort": true,
+          "effort": {
+            "kind": "none"
+          },
+          "tool_call": true,
+          "attachment": true,
+          "structured_output": true,
+          "temperature": false,
+          "open_weights": false,
+          "modalities": {
+            "input": [
+              "text",
+              "image",
+              "pdf"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "cost": {
+            "input": 8,
+            "output": 40,
+            "cache_read": 0.2
+          },
+          "group": "Agent API",
+          "note": "Requires non-zero-data-retention model access from Perplexity.",
+          "endpoint": "/v1/agent",
+          "hidden": false,
+          "active": true,
+          "priority": 187,
+          "default": false,
+          "aliases": [],
+          "release_date": "2026-11-09",
+          "last_updated": "2026-11-09",
           "knowledge": "2026-06"
         },
         {
@@ -9382,7 +10797,7 @@
           "endpoint": "/v1/agent",
           "hidden": false,
           "active": true,
-          "priority": 185,
+          "priority": 184,
           "default": false,
           "aliases": [],
           "release_date": "2026-05-28",
@@ -9865,7 +11280,7 @@
           "endpoint": "/v1/agent",
           "hidden": false,
           "active": true,
-          "priority": 78,
+          "priority": 76,
           "default": false,
           "aliases": [],
           "release_date": "2026-09-02",
@@ -9910,11 +11325,101 @@
           "endpoint": "/v1/agent",
           "hidden": false,
           "active": true,
-          "priority": 79,
+          "priority": 77,
           "default": false,
           "aliases": [],
           "release_date": "2026-10-13",
           "last_updated": "2026-10-13",
+          "knowledge": "2026-03"
+        },
+        {
+          "id": "google/gemini-4-carbon",
+          "label": "Gemini 4 Carbon",
+          "family": "gemini-carbon",
+          "context": 1048576,
+          "output_limit": 65536,
+          "reasoning": true,
+          "supports_effort": true,
+          "effort": {
+            "kind": "none"
+          },
+          "tool_call": true,
+          "attachment": true,
+          "structured_output": true,
+          "temperature": false,
+          "open_weights": false,
+          "modalities": {
+            "input": [
+              "text",
+              "image",
+              "video",
+              "audio",
+              "pdf"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "cost": {
+            "input": 2,
+            "output": 10,
+            "cache_read": 0.1
+          },
+          "group": "Agent API",
+          "note": "Introductory pricing through 2026-11-30; $4.00 / $20.00 per MTok from 2026-12-01.",
+          "endpoint": "/v1/agent",
+          "hidden": false,
+          "active": true,
+          "priority": 79,
+          "default": false,
+          "aliases": [],
+          "release_date": "2026-11-10",
+          "last_updated": "2026-11-10",
+          "knowledge": "2026-03"
+        },
+        {
+          "id": "google/gemini-4-hydrogen",
+          "label": "Gemini 4 Hydrogen",
+          "family": "gemini-hydrogen",
+          "context": 1048576,
+          "output_limit": 65536,
+          "reasoning": true,
+          "supports_effort": true,
+          "effort": {
+            "kind": "none"
+          },
+          "tool_call": true,
+          "attachment": true,
+          "structured_output": true,
+          "temperature": false,
+          "open_weights": false,
+          "modalities": {
+            "input": [
+              "text",
+              "image",
+              "video",
+              "audio",
+              "pdf"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "cost": {
+            "input": 1.5,
+            "output": 7.5,
+            "cache_read": 0.075
+          },
+          "group": "Agent API",
+          "note": null,
+          "endpoint": "/v1/agent",
+          "hidden": false,
+          "active": true,
+          "priority": 78,
+          "default": false,
+          "aliases": [],
+          "release_date": "2026-11-12",
+          "last_updated": "2026-11-12",
           "knowledge": "2026-03"
         },
         {

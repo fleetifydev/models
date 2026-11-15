@@ -1,0 +1,15 @@
+[extends]
+from = "anthropic/claude-fable-5-2"
+
+# The `fable` alias resolves here from Claude Code v2.1.321 on (from that
+# version `best` follows `opus`). No `[1m]` twin: Fable models run with their
+# native 1M window.
+[fleetify]
+priority = 67
+label = "Fable 5.2"
+
+# Claude Code defaults Fable 5.2 to `medium` (the API default is `high`).
+[fleetify.effort]
+kind    = "levels"
+levels  = ["low", "medium", "high", "xhigh", "max"]
+default = "medium"

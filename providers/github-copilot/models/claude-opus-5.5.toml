@@ -24,7 +24,7 @@ input = ["text", "image", "pdf"]
 output = ["text"]
 
 [fleetify]
-priority = 229
+priority = 230
 
 [fleetify.effort]
 kind    = "levels"

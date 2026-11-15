@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-22T12:06:32.621Z",
-  "commit": "22aa21e",
+  "generatedAt": "2026-11-15T11:55:30.110Z",
+  "commit": "090e7d0",
   "provider": {
     "id": "antigravity-sdk",
     "name": "Antigravity SDK",
@@ -730,6 +730,321 @@
         "aliases": [],
         "release_date": "2026-10-13",
         "last_updated": "2026-10-13",
+        "knowledge": "2026-03"
+      },
+      {
+        "id": "gemini-4-carbon-high",
+        "label": "Gemini 4 Carbon (High)",
+        "family": "gemini-carbon",
+        "context": 1048576,
+        "output_limit": 65536,
+        "reasoning": true,
+        "supports_effort": false,
+        "effort": {
+          "kind": "none"
+        },
+        "tool_call": true,
+        "attachment": true,
+        "structured_output": true,
+        "temperature": false,
+        "open_weights": false,
+        "modalities": {
+          "input": [
+            "text",
+            "image",
+            "video",
+            "audio",
+            "pdf"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "cost": {
+          "input": 2,
+          "output": 10,
+          "cache_read": 0.1
+        },
+        "group": null,
+        "note": "Introductory pricing through 2026-11-30; $4.00 / $20.00 per MTok from 2026-12-01.",
+        "endpoint": null,
+        "hidden": false,
+        "active": true,
+        "priority": 260,
+        "default": false,
+        "aliases": [],
+        "release_date": "2026-11-10",
+        "last_updated": "2026-11-10",
+        "knowledge": "2026-03"
+      },
+      {
+        "id": "gemini-4-carbon-low",
+        "label": "Gemini 4 Carbon (Low)",
+        "family": "gemini-carbon",
+        "context": 1048576,
+        "output_limit": 65536,
+        "reasoning": true,
+        "supports_effort": false,
+        "effort": {
+          "kind": "none"
+        },
+        "tool_call": true,
+        "attachment": true,
+        "structured_output": true,
+        "temperature": false,
+        "open_weights": false,
+        "modalities": {
+          "input": [
+            "text",
+            "image",
+            "video",
+            "audio",
+            "pdf"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "cost": {
+          "input": 2,
+          "output": 10,
+          "cache_read": 0.1
+        },
+        "group": null,
+        "note": "Introductory pricing through 2026-11-30; $4.00 / $20.00 per MTok from 2026-12-01.",
+        "endpoint": null,
+        "hidden": false,
+        "active": true,
+        "priority": 240,
+        "default": false,
+        "aliases": [],
+        "release_date": "2026-11-10",
+        "last_updated": "2026-11-10",
+        "knowledge": "2026-03"
+      },
+      {
+        "id": "gemini-4-carbon-medium",
+        "label": "Gemini 4 Carbon (Medium)",
+        "family": "gemini-carbon",
+        "context": 1048576,
+        "output_limit": 65536,
+        "reasoning": true,
+        "supports_effort": false,
+        "effort": {
+          "kind": "none"
+        },
+        "tool_call": true,
+        "attachment": true,
+        "structured_output": true,
+        "temperature": false,
+        "open_weights": false,
+        "modalities": {
+          "input": [
+            "text",
+            "image",
+            "video",
+            "audio",
+            "pdf"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "cost": {
+          "input": 2,
+          "output": 10,
+          "cache_read": 0.1
+        },
+        "group": null,
+        "note": "Introductory pricing through 2026-11-30; $4.00 / $20.00 per MTok from 2026-12-01.",
+        "endpoint": null,
+        "hidden": false,
+        "active": true,
+        "priority": 250,
+        "default": false,
+        "aliases": [],
+        "release_date": "2026-11-10",
+        "last_updated": "2026-11-10",
+        "knowledge": "2026-03"
+      },
+      {
+        "id": "gemini-4-hydrogen-high",
+        "label": "Gemini 4 Hydrogen (High)",
+        "family": "gemini-hydrogen",
+        "context": 1048576,
+        "output_limit": 65536,
+        "reasoning": true,
+        "supports_effort": false,
+        "effort": {
+          "kind": "none"
+        },
+        "tool_call": true,
+        "attachment": true,
+        "structured_output": true,
+        "temperature": false,
+        "open_weights": false,
+        "modalities": {
+          "input": [
+            "text",
+            "image",
+            "video",
+            "audio",
+            "pdf"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "cost": {
+          "input": 1.5,
+          "output": 7.5,
+          "cache_read": 0.075
+        },
+        "group": null,
+        "note": null,
+        "endpoint": null,
+        "hidden": false,
+        "active": true,
+        "priority": 220,
+        "default": false,
+        "aliases": [],
+        "release_date": "2026-11-12",
+        "last_updated": "2026-11-12",
+        "knowledge": "2026-03"
+      },
+      {
+        "id": "gemini-4-hydrogen-low",
+        "label": "Gemini 4 Hydrogen (Low)",
+        "family": "gemini-hydrogen",
+        "context": 1048576,
+        "output_limit": 65536,
+        "reasoning": true,
+        "supports_effort": false,
+        "effort": {
+          "kind": "none"
+        },
+        "tool_call": true,
+        "attachment": true,
+        "structured_output": true,
+        "temperature": false,
+        "open_weights": false,
+        "modalities": {
+          "input": [
+            "text",
+            "image",
+            "video",
+            "audio",
+            "pdf"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "cost": {
+          "input": 1.5,
+          "output": 7.5,
+          "cache_read": 0.075
+        },
+        "group": null,
+        "note": null,
+        "endpoint": null,
+        "hidden": false,
+        "active": true,
+        "priority": 200,
+        "default": false,
+        "aliases": [],
+        "release_date": "2026-11-12",
+        "last_updated": "2026-11-12",
+        "knowledge": "2026-03"
+      },
+      {
+        "id": "gemini-4-hydrogen-medium",
+        "label": "Gemini 4 Hydrogen (Medium)",
+        "family": "gemini-hydrogen",
+        "context": 1048576,
+        "output_limit": 65536,
+        "reasoning": true,
+        "supports_effort": false,
+        "effort": {
+          "kind": "none"
+        },
+        "tool_call": true,
+        "attachment": true,
+        "structured_output": true,
+        "temperature": false,
+        "open_weights": false,
+        "modalities": {
+          "input": [
+            "text",
+            "image",
+            "video",
+            "audio",
+            "pdf"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "cost": {
+          "input": 1.5,
+          "output": 7.5,
+          "cache_read": 0.075
+        },
+        "group": null,
+        "note": null,
+        "endpoint": null,
+        "hidden": false,
+        "active": true,
+        "priority": 210,
+        "default": false,
+        "aliases": [],
+        "release_date": "2026-11-12",
+        "last_updated": "2026-11-12",
+        "knowledge": "2026-03"
+      },
+      {
+        "id": "gemini-4-hydrogen-xhigh",
+        "label": "Gemini 4 Hydrogen (XHigh)",
+        "family": "gemini-hydrogen",
+        "context": 1048576,
+        "output_limit": 65536,
+        "reasoning": true,
+        "supports_effort": false,
+        "effort": {
+          "kind": "none"
+        },
+        "tool_call": true,
+        "attachment": true,
+        "structured_output": true,
+        "temperature": false,
+        "open_weights": false,
+        "modalities": {
+          "input": [
+            "text",
+            "image",
+            "video",
+            "audio",
+            "pdf"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "cost": {
+          "input": 1.5,
+          "output": 7.5,
+          "cache_read": 0.075
+        },
+        "group": null,
+        "note": null,
+        "endpoint": null,
+        "hidden": false,
+        "active": true,
+        "priority": 230,
+        "default": false,
+        "aliases": [],
+        "release_date": "2026-11-12",
+        "last_updated": "2026-11-12",
         "knowledge": "2026-03"
       },
       {

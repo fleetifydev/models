@@ -1,0 +1,36 @@
+name = "GPT-6.1 Terra"
+family = "gpt"
+release_date = "2026-10-26"
+last_updated = "2026-10-26"
+knowledge = "2026-06-01"
+attachment = true
+reasoning = true
+tool_call = true
+structured_output = true
+temperature = false
+
+[cost]
+input = 1.00
+output = 5.00
+cache_read = 0.05
+
+[limit]
+context = 1050000
+output = 128000
+
+[modalities]
+input = ["text", "image"]
+output = ["text"]
+
+# Bundled from Codex CLI 0.165.0; Codex lists it right after GPT-5.6 Sol. Held
+# back from the `openai` provider: like GPT-6.1 Sol, its tool calling requires
+# the Responses API.
+[fleetify]
+priority = 85
+
+# No `none` effort; Codex defaults GPT-6.1 Terra to `low`. `ultra` is Codex's
+# top tier: max reasoning plus automatic task delegation.
+[fleetify.effort]
+kind    = "levels"
+levels  = ["low", "medium", "high", "xhigh", "max", "ultra"]
+default = "low"

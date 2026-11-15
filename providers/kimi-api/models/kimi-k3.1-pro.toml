@@ -1,0 +1,35 @@
+name = "Kimi K3.1 Pro"
+family = "kimi-k3.1"
+release_date = "2026-10-23"
+last_updated = "2026-10-23"
+attachment = true
+reasoning = true
+tool_call = true
+structured_output = true
+temperature = false
+open_weights = true
+
+# `cache_write` is the 5-minute TTL rate; 1-hour writes bill at $4.00.
+[cost]
+input = 2.00
+output = 10.00
+cache_read = 0.20
+cache_write = 2.00
+
+[limit]
+context = 1048576
+output = 1048576
+
+[modalities]
+input = ["text", "image", "video"]
+output = ["text"]
+
+[fleetify]
+priority = 35
+
+# K3.1 Pro always reasons; `reasoning_effort` selects the depth and the API
+# defaults to `max`.
+[fleetify.effort]
+kind    = "levels"
+levels  = ["low", "high", "max"]
+default = "max"

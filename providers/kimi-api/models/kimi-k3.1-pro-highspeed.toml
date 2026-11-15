@@ -1,0 +1,35 @@
+name = "Kimi K3.1 Pro Highspeed"
+family = "kimi-k3.1"
+release_date = "2026-10-23"
+last_updated = "2026-10-23"
+attachment = true
+reasoning = true
+tool_call = true
+structured_output = true
+temperature = false
+open_weights = true
+
+# Same model as `kimi-k3.1-pro` served about 2-3x faster, at twice the price.
+# Moonshot bills cache reads at the base model's rate. `cache_write` is the
+# 5-minute TTL rate; 1-hour writes bill at $8.00.
+[cost]
+input = 4.00
+output = 20.00
+cache_read = 0.20
+cache_write = 4.00
+
+[limit]
+context = 1048576
+output = 1048576
+
+[modalities]
+input = ["text", "image", "video"]
+output = ["text"]
+
+[fleetify]
+priority = 33
+
+[fleetify.effort]
+kind    = "levels"
+levels  = ["low", "high", "max"]
+default = "max"

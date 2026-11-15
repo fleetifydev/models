@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-22T12:06:32.621Z",
-  "commit": "22aa21e",
+  "generatedAt": "2026-11-15T11:55:30.110Z",
+  "commit": "090e7d0",
   "provider": {
     "id": "github-copilot",
     "name": "GitHub Copilot CLI",
@@ -49,7 +49,7 @@
         "endpoint": null,
         "hidden": false,
         "active": true,
-        "priority": 230,
+        "priority": 231,
         "default": true,
         "aliases": [],
         "release_date": null,
@@ -156,6 +156,58 @@
         "aliases": [],
         "release_date": "2026-09-01",
         "last_updated": "2026-09-01",
+        "knowledge": "2026-06"
+      },
+      {
+        "id": "claude-fable-5.2",
+        "label": "Claude Fable 5.2",
+        "family": "claude-fable",
+        "context": 200000,
+        "output_limit": 64000,
+        "reasoning": true,
+        "supports_effort": true,
+        "effort": {
+          "kind": "levels",
+          "levels": [
+            "low",
+            "medium",
+            "high",
+            "xhigh",
+            "max"
+          ],
+          "default": "medium"
+        },
+        "tool_call": true,
+        "attachment": true,
+        "structured_output": true,
+        "temperature": false,
+        "open_weights": false,
+        "modalities": {
+          "input": [
+            "text",
+            "image",
+            "pdf"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "cost": {
+          "input": 8,
+          "output": 40,
+          "cache_read": 0.2,
+          "cache_write": 10
+        },
+        "group": null,
+        "note": null,
+        "endpoint": null,
+        "hidden": false,
+        "active": true,
+        "priority": 229,
+        "default": false,
+        "aliases": [],
+        "release_date": "2026-11-09",
+        "last_updated": "2026-11-09",
         "knowledge": "2026-06"
       },
       {
@@ -459,7 +511,7 @@
         "endpoint": null,
         "hidden": false,
         "active": true,
-        "priority": 229,
+        "priority": 230,
         "default": false,
         "aliases": [],
         "release_date": "2026-09-22",
@@ -825,6 +877,109 @@
         "aliases": [],
         "release_date": "2026-10-13",
         "last_updated": "2026-10-13",
+        "knowledge": "2026-03"
+      },
+      {
+        "id": "gemini-4-carbon",
+        "label": "Gemini 4 Carbon",
+        "family": "gemini-carbon",
+        "context": 1048576,
+        "output_limit": 65536,
+        "reasoning": true,
+        "supports_effort": true,
+        "effort": {
+          "kind": "levels",
+          "levels": [
+            "low",
+            "medium",
+            "high"
+          ],
+          "default": "medium"
+        },
+        "tool_call": true,
+        "attachment": true,
+        "structured_output": true,
+        "temperature": false,
+        "open_weights": false,
+        "modalities": {
+          "input": [
+            "text",
+            "image",
+            "video",
+            "audio",
+            "pdf"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "cost": {
+          "input": 2,
+          "output": 10,
+          "cache_read": 0.1
+        },
+        "group": null,
+        "note": "Introductory pricing through 2026-11-30; $4.00 / $20.00 per MTok from 2026-12-01.",
+        "endpoint": null,
+        "hidden": false,
+        "active": true,
+        "priority": 113,
+        "default": false,
+        "aliases": [],
+        "release_date": "2026-11-10",
+        "last_updated": "2026-11-10",
+        "knowledge": "2026-03"
+      },
+      {
+        "id": "gemini-4-hydrogen",
+        "label": "Gemini 4 Hydrogen",
+        "family": "gemini-hydrogen",
+        "context": 1048576,
+        "output_limit": 65536,
+        "reasoning": true,
+        "supports_effort": true,
+        "effort": {
+          "kind": "levels",
+          "levels": [
+            "low",
+            "medium",
+            "high",
+            "xhigh"
+          ],
+          "default": "high"
+        },
+        "tool_call": true,
+        "attachment": true,
+        "structured_output": true,
+        "temperature": false,
+        "open_weights": false,
+        "modalities": {
+          "input": [
+            "text",
+            "image",
+            "video",
+            "audio",
+            "pdf"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "cost": {
+          "input": 1.5,
+          "output": 7.5,
+          "cache_read": 0.075
+        },
+        "group": null,
+        "note": null,
+        "endpoint": null,
+        "hidden": false,
+        "active": true,
+        "priority": 112,
+        "default": false,
+        "aliases": [],
+        "release_date": "2026-11-12",
+        "last_updated": "2026-11-12",
         "knowledge": "2026-03"
       },
       {
@@ -1218,7 +1373,7 @@
         "endpoint": null,
         "hidden": false,
         "active": true,
-        "priority": 154,
+        "priority": 153,
         "default": false,
         "aliases": [],
         "release_date": "2026-07-09",
@@ -1318,7 +1473,7 @@
         "endpoint": null,
         "hidden": false,
         "active": true,
-        "priority": 155,
+        "priority": 154,
         "default": false,
         "aliases": [],
         "release_date": "2026-09-22",
@@ -1424,6 +1579,56 @@
         "release_date": "2026-09-29",
         "last_updated": "2026-09-29",
         "knowledge": "2026-04-30"
+      },
+      {
+        "id": "gpt-6.1-terra",
+        "label": "GPT-6.1 Terra",
+        "family": "gpt",
+        "context": 400000,
+        "output_limit": 128000,
+        "reasoning": true,
+        "supports_effort": true,
+        "effort": {
+          "kind": "levels",
+          "levels": [
+            "low",
+            "medium",
+            "high",
+            "xhigh"
+          ],
+          "default": "medium"
+        },
+        "tool_call": true,
+        "attachment": true,
+        "structured_output": true,
+        "temperature": false,
+        "open_weights": false,
+        "modalities": {
+          "input": [
+            "text",
+            "image"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "cost": {
+          "input": 1,
+          "output": 5,
+          "cache_read": 0.05,
+          "cache_write": 1.25
+        },
+        "group": null,
+        "note": null,
+        "endpoint": null,
+        "hidden": false,
+        "active": true,
+        "priority": 155,
+        "default": false,
+        "aliases": [],
+        "release_date": "2026-10-26",
+        "last_updated": "2026-10-26",
+        "knowledge": "2026-06-01"
       },
       {
         "id": "grok-4.6",

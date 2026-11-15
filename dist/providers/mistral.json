@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-22T12:06:32.621Z",
-  "commit": "22aa21e",
+  "generatedAt": "2026-11-15T11:55:30.110Z",
+  "commit": "090e7d0",
   "provider": {
     "id": "mistral",
     "name": "Mistral",
@@ -56,6 +56,48 @@
         ],
         "release_date": "2025-07-30",
         "last_updated": "2025-07-30",
+        "knowledge": null
+      },
+      {
+        "id": "deepseek-v4-1-flash-1017",
+        "label": "DeepSeek V4.1 Flash 1017",
+        "family": "deepseek-flash",
+        "context": 1048576,
+        "output_limit": 131072,
+        "reasoning": true,
+        "supports_effort": false,
+        "effort": {
+          "kind": "none"
+        },
+        "tool_call": true,
+        "attachment": true,
+        "structured_output": true,
+        "temperature": true,
+        "open_weights": true,
+        "modalities": {
+          "input": [
+            "text",
+            "image"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "cost": {
+          "input": 0.3,
+          "output": 1.2,
+          "cache_read": 0.007
+        },
+        "group": null,
+        "note": null,
+        "endpoint": null,
+        "hidden": false,
+        "active": true,
+        "priority": 24,
+        "default": false,
+        "aliases": [],
+        "release_date": "2026-10-28",
+        "last_updated": "2026-10-28",
         "knowledge": null
       },
       {
@@ -303,6 +345,54 @@
         ],
         "release_date": "2026-09-15",
         "last_updated": "2026-09-15",
+        "knowledge": null
+      },
+      {
+        "id": "zai-glm-5-3-flash",
+        "label": "GLM 5.3 Flash",
+        "family": "glm-flash",
+        "context": 1048576,
+        "output_limit": 131072,
+        "reasoning": true,
+        "supports_effort": true,
+        "effort": {
+          "kind": "levels",
+          "levels": [
+            "low",
+            "high",
+            "max"
+          ],
+          "default": "high"
+        },
+        "tool_call": true,
+        "attachment": true,
+        "structured_output": true,
+        "temperature": true,
+        "open_weights": true,
+        "modalities": {
+          "input": [
+            "text",
+            "image"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "cost": {
+          "input": 0.15,
+          "output": 0.5,
+          "cache_read": 0.03
+        },
+        "group": null,
+        "note": null,
+        "endpoint": null,
+        "hidden": false,
+        "active": true,
+        "priority": 22,
+        "default": false,
+        "aliases": [],
+        "release_date": "2026-10-22",
+        "last_updated": "2026-10-22",
         "knowledge": null
       }
     ]

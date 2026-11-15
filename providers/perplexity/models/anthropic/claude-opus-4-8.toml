@@ -23,6 +23,6 @@ input = ["text", "image", "pdf"]
 output = ["text"]
 
 [fleetify]
-priority = 185
+priority = 184
 group = "Agent API"
 endpoint = "/v1/agent"

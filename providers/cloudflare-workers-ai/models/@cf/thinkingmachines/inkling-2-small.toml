@@ -1,0 +1,33 @@
+name = "Inkling 2 Small"
+family = "inkling"
+release_date = "2026-11-05"
+last_updated = "2026-11-12"
+attachment = true
+reasoning = true
+tool_call = true
+structured_output = true
+temperature = true
+open_weights = true
+
+[cost]
+input = 0.30
+output = 1.00
+cache_read = 0.10
+
+# Cloudflare publishes no output cap, so `output` is left unset.
+[limit]
+context = 1048576
+
+[modalities]
+input = ["text", "image"]
+output = ["text"]
+
+[fleetify]
+priority = 165
+note = "Requires the Workers Paid plan."
+
+# Cloudflare also accepts `auto` (= `high`) and `xhigh` (= `max`) as aliases.
+[fleetify.effort]
+kind    = "levels"
+levels  = ["none", "minimal", "low", "medium", "high", "max"]
+default = "high"
