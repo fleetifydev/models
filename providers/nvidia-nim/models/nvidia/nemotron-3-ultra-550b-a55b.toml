@@ -20,5 +20,8 @@ context = 1048576
 input = ["text"]
 output = ["text"]
 
+# Default since `nemotron-3-super-120b-a12b` was deprecated on 2026-10-19:
+# NVIDIA's own flagship, and GA (Nemotron 3.5 Super VL is early access).
 [fleetify]
-priority = 94
+priority = 100
+default = true

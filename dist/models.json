@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-15T12:06:26.526Z",
-  "commit": "6dbcbe2",
+  "generatedAt": "2026-11-15T12:14:54.250Z",
+  "commit": "765ca56",
   "providers": {
     "anthropic": {
       "id": "anthropic",
@@ -475,94 +475,6 @@
       "supports_live": false,
       "models": [
         {
-          "id": "claude-opus-4-6-thinking",
-          "label": "Claude Opus 4.6 (Thinking)",
-          "family": "claude-opus",
-          "context": 1000000,
-          "output_limit": 128000,
-          "reasoning": true,
-          "supports_effort": false,
-          "effort": {
-            "kind": "none"
-          },
-          "tool_call": true,
-          "attachment": true,
-          "structured_output": true,
-          "temperature": true,
-          "open_weights": false,
-          "modalities": {
-            "input": [
-              "text",
-              "image",
-              "pdf"
-            ],
-            "output": [
-              "text"
-            ]
-          },
-          "cost": {
-            "input": 5,
-            "output": 25,
-            "cache_read": 0.5,
-            "cache_write": 6.25
-          },
-          "group": null,
-          "note": "Reasoning",
-          "endpoint": null,
-          "hidden": false,
-          "active": true,
-          "priority": 30,
-          "default": false,
-          "aliases": [],
-          "release_date": "2026-02-05",
-          "last_updated": "2026-03-13",
-          "knowledge": "2025-05-31"
-        },
-        {
-          "id": "claude-sonnet-4-6-thinking",
-          "label": "Claude Sonnet 4.6 (Thinking)",
-          "family": "claude-sonnet",
-          "context": 1000000,
-          "output_limit": 64000,
-          "reasoning": true,
-          "supports_effort": false,
-          "effort": {
-            "kind": "none"
-          },
-          "tool_call": true,
-          "attachment": true,
-          "structured_output": true,
-          "temperature": true,
-          "open_weights": false,
-          "modalities": {
-            "input": [
-              "text",
-              "image",
-              "pdf"
-            ],
-            "output": [
-              "text"
-            ]
-          },
-          "cost": {
-            "input": 3,
-            "output": 15,
-            "cache_read": 0.3,
-            "cache_write": 3.75
-          },
-          "group": null,
-          "note": "Reasoning",
-          "endpoint": null,
-          "hidden": false,
-          "active": true,
-          "priority": 20,
-          "default": false,
-          "aliases": [],
-          "release_date": "2026-02-17",
-          "last_updated": "2026-03-13",
-          "knowledge": "2025-08-31"
-        },
-        {
           "id": "gemini-3.1-pro-high",
           "label": "Gemini 3.1 Pro (High)",
           "family": "gemini-pro",
@@ -596,12 +508,12 @@
             "cache_read": 0.2
           },
           "group": null,
-          "note": "Most capable",
+          "note": null,
           "endpoint": null,
           "hidden": false,
           "active": true,
           "priority": 70,
-          "default": true,
+          "default": false,
           "aliases": [],
           "release_date": "2026-02-19",
           "last_updated": "2026-02-19",
@@ -1366,7 +1278,7 @@
           "hidden": false,
           "active": true,
           "priority": 220,
-          "default": false,
+          "default": true,
           "aliases": [],
           "release_date": "2026-11-12",
           "last_updated": "2026-11-12",
@@ -1506,46 +1418,6 @@
           "release_date": "2026-11-12",
           "last_updated": "2026-11-12",
           "knowledge": "2026-03"
-        },
-        {
-          "id": "gpt-oss-120b-medium",
-          "label": "GPT-OSS 120B (Medium)",
-          "family": "gpt-oss",
-          "context": 131072,
-          "output_limit": 8192,
-          "reasoning": true,
-          "supports_effort": false,
-          "effort": {
-            "kind": "none"
-          },
-          "tool_call": false,
-          "attachment": true,
-          "structured_output": false,
-          "temperature": true,
-          "open_weights": false,
-          "modalities": {
-            "input": [
-              "text"
-            ],
-            "output": [
-              "text"
-            ]
-          },
-          "cost": {
-            "input": 0,
-            "output": 0
-          },
-          "group": null,
-          "note": null,
-          "endpoint": null,
-          "hidden": false,
-          "active": true,
-          "priority": 10,
-          "default": false,
-          "aliases": [],
-          "release_date": "2025-08-04",
-          "last_updated": "2026-06-22",
-          "knowledge": "2025-08"
         }
       ]
     },
@@ -2129,128 +2001,6 @@
           "knowledge": null
         },
         {
-          "id": "@cf/deepseek-ai/deepseek-r1-distill-qwen-32b",
-          "label": "Deepseek R1 Distill Qwen 32B",
-          "family": "deepseek",
-          "context": 80000,
-          "output_limit": 80000,
-          "reasoning": true,
-          "supports_effort": true,
-          "effort": {
-            "kind": "none"
-          },
-          "tool_call": false,
-          "attachment": false,
-          "structured_output": false,
-          "temperature": true,
-          "open_weights": true,
-          "modalities": {
-            "input": [
-              "text"
-            ],
-            "output": [
-              "text"
-            ]
-          },
-          "cost": {
-            "input": 0.497,
-            "output": 4.881
-          },
-          "group": null,
-          "note": null,
-          "endpoint": null,
-          "hidden": false,
-          "active": true,
-          "priority": 70,
-          "default": false,
-          "aliases": [],
-          "release_date": "2025-01-22",
-          "last_updated": "2025-01-22",
-          "knowledge": null
-        },
-        {
-          "id": "@cf/deepseek-ai/deepseek-v4-flash-0731",
-          "label": "DeepSeek V4 Flash",
-          "family": "deepseek-flash",
-          "context": 1048576,
-          "output_limit": null,
-          "reasoning": true,
-          "supports_effort": true,
-          "effort": {
-            "kind": "none"
-          },
-          "tool_call": true,
-          "attachment": false,
-          "structured_output": false,
-          "temperature": true,
-          "open_weights": true,
-          "modalities": {
-            "input": [
-              "text"
-            ],
-            "output": [
-              "text"
-            ]
-          },
-          "cost": {
-            "input": 0.44,
-            "output": 1.32,
-            "cache_read": 0.014
-          },
-          "group": null,
-          "note": "Requires the Workers Paid plan.",
-          "endpoint": null,
-          "hidden": false,
-          "active": true,
-          "priority": 154,
-          "default": false,
-          "aliases": [],
-          "release_date": "2026-04-24",
-          "last_updated": "2026-07-31",
-          "knowledge": null
-        },
-        {
-          "id": "@cf/deepseek-ai/deepseek-v4-pro-0813",
-          "label": "DeepSeek V4 Pro",
-          "family": "deepseek-thinking",
-          "context": 1048576,
-          "output_limit": null,
-          "reasoning": true,
-          "supports_effort": true,
-          "effort": {
-            "kind": "none"
-          },
-          "tool_call": true,
-          "attachment": false,
-          "structured_output": false,
-          "temperature": true,
-          "open_weights": true,
-          "modalities": {
-            "input": [
-              "text"
-            ],
-            "output": [
-              "text"
-            ]
-          },
-          "cost": {
-            "input": 1.32,
-            "output": 3.96,
-            "cache_read": 0.044
-          },
-          "group": null,
-          "note": "Requires the Workers Paid plan.",
-          "endpoint": null,
-          "hidden": false,
-          "active": true,
-          "priority": 174,
-          "default": false,
-          "aliases": [],
-          "release_date": "2026-04-24",
-          "last_updated": "2026-08-13",
-          "knowledge": null
-        },
-        {
           "id": "@cf/deepseek-ai/deepseek-v4.1-flash-1017",
           "label": "DeepSeek V4.1 Flash",
           "family": "deepseek-flash",
@@ -2381,126 +2131,6 @@
           "knowledge": null
         },
         {
-          "id": "@cf/meta/llama-3.1-8b-instruct-fp8",
-          "label": "Llama 3.1 8B Instruct fp8",
-          "family": "llama",
-          "context": 32000,
-          "output_limit": 32000,
-          "reasoning": false,
-          "supports_effort": false,
-          "effort": {
-            "kind": "none"
-          },
-          "tool_call": false,
-          "attachment": false,
-          "structured_output": false,
-          "temperature": true,
-          "open_weights": true,
-          "modalities": {
-            "input": [
-              "text"
-            ],
-            "output": [
-              "text"
-            ]
-          },
-          "cost": {
-            "input": 0.152,
-            "output": 0.287
-          },
-          "group": null,
-          "note": null,
-          "endpoint": null,
-          "hidden": false,
-          "active": true,
-          "priority": 10,
-          "default": false,
-          "aliases": [],
-          "release_date": "2024-07-25",
-          "last_updated": "2024-07-25",
-          "knowledge": null
-        },
-        {
-          "id": "@cf/meta/llama-3.2-1b-instruct",
-          "label": "Llama 3.2 1B Instruct",
-          "family": "llama",
-          "context": 60000,
-          "output_limit": 60000,
-          "reasoning": false,
-          "supports_effort": false,
-          "effort": {
-            "kind": "none"
-          },
-          "tool_call": false,
-          "attachment": false,
-          "structured_output": false,
-          "temperature": true,
-          "open_weights": true,
-          "modalities": {
-            "input": [
-              "text"
-            ],
-            "output": [
-              "text"
-            ]
-          },
-          "cost": {
-            "input": 0.027,
-            "output": 0.201
-          },
-          "group": null,
-          "note": null,
-          "endpoint": null,
-          "hidden": false,
-          "active": true,
-          "priority": 20,
-          "default": false,
-          "aliases": [],
-          "release_date": "2024-09-25",
-          "last_updated": "2024-09-25",
-          "knowledge": null
-        },
-        {
-          "id": "@cf/meta/llama-3.2-3b-instruct",
-          "label": "Llama 3.2 3B Instruct",
-          "family": "llama",
-          "context": 80000,
-          "output_limit": 80000,
-          "reasoning": false,
-          "supports_effort": false,
-          "effort": {
-            "kind": "none"
-          },
-          "tool_call": false,
-          "attachment": false,
-          "structured_output": false,
-          "temperature": true,
-          "open_weights": true,
-          "modalities": {
-            "input": [
-              "text"
-            ],
-            "output": [
-              "text"
-            ]
-          },
-          "cost": {
-            "input": 0.0509,
-            "output": 0.335
-          },
-          "group": null,
-          "note": null,
-          "endpoint": null,
-          "hidden": false,
-          "active": true,
-          "priority": 30,
-          "default": false,
-          "aliases": [],
-          "release_date": "2024-09-25",
-          "last_updated": "2024-09-25",
-          "knowledge": null
-        },
-        {
           "id": "@cf/meta/llama-3.3-70b-instruct-fp8-fast",
           "label": "Llama 3.3 70B Instruct fp8 Fast",
           "family": "llama",
@@ -2619,130 +2249,6 @@
           "aliases": [],
           "release_date": "2025-03-18",
           "last_updated": "2025-03-18",
-          "knowledge": null
-        },
-        {
-          "id": "@cf/moonshotai/kimi-k2.6",
-          "label": "Kimi K2.6",
-          "family": "kimi",
-          "context": 262144,
-          "output_limit": 256000,
-          "reasoning": true,
-          "supports_effort": true,
-          "effort": {
-            "kind": "none"
-          },
-          "tool_call": true,
-          "attachment": true,
-          "structured_output": true,
-          "temperature": true,
-          "open_weights": true,
-          "modalities": {
-            "input": [
-              "text",
-              "image"
-            ],
-            "output": [
-              "text"
-            ]
-          },
-          "cost": {
-            "input": 0.95,
-            "output": 4,
-            "cache_read": 0.16
-          },
-          "group": null,
-          "note": "Requires the Workers Paid plan.",
-          "endpoint": null,
-          "hidden": false,
-          "active": true,
-          "priority": 140,
-          "default": false,
-          "aliases": [],
-          "release_date": "2026-04-20",
-          "last_updated": "2026-04-20",
-          "knowledge": "2025-01"
-        },
-        {
-          "id": "@cf/moonshotai/kimi-k2.7-code",
-          "label": "Kimi K2.7 Code",
-          "family": "kimi",
-          "context": 262144,
-          "output_limit": null,
-          "reasoning": true,
-          "supports_effort": true,
-          "effort": {
-            "kind": "none"
-          },
-          "tool_call": true,
-          "attachment": true,
-          "structured_output": true,
-          "temperature": true,
-          "open_weights": true,
-          "modalities": {
-            "input": [
-              "text",
-              "image"
-            ],
-            "output": [
-              "text"
-            ]
-          },
-          "cost": {
-            "input": 0.95,
-            "output": 4,
-            "cache_read": 0.19
-          },
-          "group": null,
-          "note": "Requires the Workers Paid plan.",
-          "endpoint": null,
-          "hidden": false,
-          "active": true,
-          "priority": 145,
-          "default": false,
-          "aliases": [],
-          "release_date": "2026-06-12",
-          "last_updated": "2026-06-12",
-          "knowledge": null
-        },
-        {
-          "id": "@cf/nvidia/nemotron-3-120b-a12b",
-          "label": "Nemotron 3 Super 120B",
-          "family": "nemotron",
-          "context": 256000,
-          "output_limit": 256000,
-          "reasoning": true,
-          "supports_effort": true,
-          "effort": {
-            "kind": "none"
-          },
-          "tool_call": true,
-          "attachment": false,
-          "structured_output": true,
-          "temperature": true,
-          "open_weights": true,
-          "modalities": {
-            "input": [
-              "text"
-            ],
-            "output": [
-              "text"
-            ]
-          },
-          "cost": {
-            "input": 0.5,
-            "output": 1.5
-          },
-          "group": null,
-          "note": null,
-          "endpoint": null,
-          "hidden": false,
-          "active": true,
-          "priority": 160,
-          "default": false,
-          "aliases": [],
-          "release_date": "2026-03-11",
-          "last_updated": "2026-03-11",
           "knowledge": null
         },
         {
@@ -2866,46 +2372,6 @@
           "knowledge": null
         },
         {
-          "id": "@cf/qwen/qwen3-30b-a3b-fp8",
-          "label": "Qwen3 30B A3b fp8",
-          "family": "qwen",
-          "context": 32768,
-          "output_limit": 32768,
-          "reasoning": true,
-          "supports_effort": true,
-          "effort": {
-            "kind": "none"
-          },
-          "tool_call": true,
-          "attachment": false,
-          "structured_output": false,
-          "temperature": true,
-          "open_weights": true,
-          "modalities": {
-            "input": [
-              "text"
-            ],
-            "output": [
-              "text"
-            ]
-          },
-          "cost": {
-            "input": 0.0509,
-            "output": 0.335
-          },
-          "group": null,
-          "note": null,
-          "endpoint": null,
-          "hidden": false,
-          "active": true,
-          "priority": 100,
-          "default": false,
-          "aliases": [],
-          "release_date": "2025-04-30",
-          "last_updated": "2025-04-30",
-          "knowledge": null
-        },
-        {
           "id": "@cf/qwen/qwen3.8-27b",
           "label": "Qwen 3.8 27B",
           "family": "qwen",
@@ -2945,46 +2411,6 @@
           "aliases": [],
           "release_date": "2026-08-14",
           "last_updated": "2026-08-17",
-          "knowledge": null
-        },
-        {
-          "id": "@cf/qwen/qwq-32b",
-          "label": "Qwq 32B",
-          "family": "qwen",
-          "context": 24000,
-          "output_limit": 24000,
-          "reasoning": true,
-          "supports_effort": true,
-          "effort": {
-            "kind": "none"
-          },
-          "tool_call": false,
-          "attachment": false,
-          "structured_output": false,
-          "temperature": true,
-          "open_weights": true,
-          "modalities": {
-            "input": [
-              "text"
-            ],
-            "output": [
-              "text"
-            ]
-          },
-          "cost": {
-            "input": 0.66,
-            "output": 1
-          },
-          "group": null,
-          "note": null,
-          "endpoint": null,
-          "hidden": false,
-          "active": true,
-          "priority": 80,
-          "default": false,
-          "aliases": [],
-          "release_date": "2025-03-05",
-          "last_updated": "2025-03-05",
           "knowledge": null
         },
         {
@@ -3118,48 +2544,6 @@
           "release_date": "2026-08-18",
           "last_updated": "2026-08-28",
           "knowledge": null
-        },
-        {
-          "id": "@cf/zai-org/glm-5.3-flash",
-          "label": "GLM 5.3 Flash",
-          "family": "glm-flash",
-          "context": 1310720,
-          "output_limit": null,
-          "reasoning": true,
-          "supports_effort": true,
-          "effort": {
-            "kind": "none"
-          },
-          "tool_call": true,
-          "attachment": true,
-          "structured_output": false,
-          "temperature": true,
-          "open_weights": true,
-          "modalities": {
-            "input": [
-              "text",
-              "image"
-            ],
-            "output": [
-              "text"
-            ]
-          },
-          "cost": {
-            "input": 0.15,
-            "output": 0.5,
-            "cache_read": 0.03
-          },
-          "group": null,
-          "note": "Requires the Workers Paid plan.",
-          "endpoint": null,
-          "hidden": false,
-          "active": true,
-          "priority": 156,
-          "default": false,
-          "aliases": [],
-          "release_date": "2026-08-25",
-          "last_updated": "2026-08-26",
-          "knowledge": null
         }
       ]
     },
@@ -3238,8 +2622,7 @@
               "medium",
               "high",
               "xhigh",
-              "max",
-              "ultra"
+              "max"
             ],
             "default": "medium"
           },
@@ -4061,56 +3444,6 @@
           "knowledge": "2025-01"
         },
         {
-          "id": "gemini-3.5-flash",
-          "label": "Gemini 3.5 Flash",
-          "family": "gemini-flash",
-          "context": 1048576,
-          "output_limit": 65536,
-          "reasoning": true,
-          "supports_effort": true,
-          "effort": {
-            "kind": "thinking_level",
-            "levels": [
-              "low",
-              "high"
-            ],
-            "default": "high"
-          },
-          "tool_call": true,
-          "attachment": true,
-          "structured_output": true,
-          "temperature": true,
-          "open_weights": false,
-          "modalities": {
-            "input": [
-              "text",
-              "image",
-              "video",
-              "audio",
-              "pdf"
-            ],
-            "output": [
-              "text"
-            ]
-          },
-          "cost": {
-            "input": 1.5,
-            "output": 9,
-            "cache_read": 0.15
-          },
-          "group": null,
-          "note": null,
-          "endpoint": null,
-          "hidden": false,
-          "active": true,
-          "priority": 60,
-          "default": false,
-          "aliases": [],
-          "release_date": "2026-05-19",
-          "last_updated": "2026-05-19",
-          "knowledge": "2025-01"
-        },
-        {
           "id": "gemini-3.5-flash-lite",
           "label": "Gemini 3.5 Flash Lite",
           "family": "gemini-flash-lite",
@@ -4205,60 +3538,11 @@
           "active": true,
           "priority": 80,
           "default": false,
-          "aliases": [],
+          "aliases": [
+            "gemini-3.5-flash"
+          ],
           "release_date": "2026-07-21",
           "last_updated": "2026-07-21",
-          "knowledge": "2026-03"
-        },
-        {
-          "id": "gemini-3.7-flash",
-          "label": "Gemini 3.7 Flash",
-          "family": "gemini-flash",
-          "context": 1048576,
-          "output_limit": 65536,
-          "reasoning": true,
-          "supports_effort": true,
-          "effort": {
-            "kind": "thinking_level",
-            "levels": [
-              "low",
-              "medium",
-              "high"
-            ],
-            "default": "medium"
-          },
-          "tool_call": true,
-          "attachment": true,
-          "structured_output": true,
-          "temperature": true,
-          "open_weights": false,
-          "modalities": {
-            "input": [
-              "text",
-              "image",
-              "video",
-              "audio",
-              "pdf"
-            ],
-            "output": [
-              "text"
-            ]
-          },
-          "cost": {
-            "input": 0.75,
-            "output": 3.75,
-            "cache_read": 0.075
-          },
-          "group": null,
-          "note": "Introductory pricing through 2026-12-31; $1.50 / $7.50 per MTok from 2027-01-01.",
-          "endpoint": null,
-          "hidden": false,
-          "active": true,
-          "priority": 90,
-          "default": false,
-          "aliases": [],
-          "release_date": "2026-08-13",
-          "last_updated": "2026-08-13",
           "knowledge": "2026-03"
         },
         {
@@ -4307,7 +3591,9 @@
           "active": true,
           "priority": 100,
           "default": false,
-          "aliases": [],
+          "aliases": [
+            "gemini-3.7-flash"
+          ],
           "release_date": "2026-09-02",
           "last_updated": "2026-09-02",
           "knowledge": "2026-03"
@@ -4780,57 +4066,6 @@
           "knowledge": "2026-06"
         },
         {
-          "id": "claude-opus-4.7",
-          "label": "Claude Opus 4.7",
-          "family": "claude-opus",
-          "context": 200000,
-          "output_limit": 32000,
-          "reasoning": true,
-          "supports_effort": true,
-          "effort": {
-            "kind": "levels",
-            "levels": [
-              "low",
-              "medium",
-              "high",
-              "xhigh"
-            ],
-            "default": "medium"
-          },
-          "tool_call": true,
-          "attachment": true,
-          "structured_output": true,
-          "temperature": false,
-          "open_weights": false,
-          "modalities": {
-            "input": [
-              "text",
-              "image",
-              "pdf"
-            ],
-            "output": [
-              "text"
-            ]
-          },
-          "cost": {
-            "input": 5,
-            "output": 25,
-            "cache_read": 0.5,
-            "cache_write": 6.25
-          },
-          "group": null,
-          "note": null,
-          "endpoint": null,
-          "hidden": false,
-          "active": true,
-          "priority": 210,
-          "default": false,
-          "aliases": [],
-          "release_date": "2026-04-16",
-          "last_updated": "2026-04-16",
-          "knowledge": "2026-01-31"
-        },
-        {
           "id": "claude-opus-4.8",
           "label": "Claude Opus 4.8",
           "family": "claude-opus",
@@ -4870,7 +4105,7 @@
             "cache_write": 6.25
           },
           "group": null,
-          "note": null,
+          "note": "Individual annual plans only from 2026-11-16.",
           "endpoint": null,
           "hidden": false,
           "active": true,
@@ -4880,57 +4115,6 @@
           "release_date": "2026-05-28",
           "last_updated": "2026-05-28",
           "knowledge": null
-        },
-        {
-          "id": "claude-opus-5",
-          "label": "Claude Opus 5",
-          "family": "claude-opus",
-          "context": 200000,
-          "output_limit": 64000,
-          "reasoning": true,
-          "supports_effort": true,
-          "effort": {
-            "kind": "levels",
-            "levels": [
-              "low",
-              "medium",
-              "high",
-              "xhigh"
-            ],
-            "default": "medium"
-          },
-          "tool_call": true,
-          "attachment": true,
-          "structured_output": true,
-          "temperature": false,
-          "open_weights": false,
-          "modalities": {
-            "input": [
-              "text",
-              "image",
-              "pdf"
-            ],
-            "output": [
-              "text"
-            ]
-          },
-          "cost": {
-            "input": 5,
-            "output": 25,
-            "cache_read": 0.5,
-            "cache_write": 6.25
-          },
-          "group": null,
-          "note": null,
-          "endpoint": null,
-          "hidden": false,
-          "active": true,
-          "priority": 226,
-          "default": false,
-          "aliases": [],
-          "release_date": "2026-07-24",
-          "last_updated": "2026-07-24",
-          "knowledge": "2026-05"
         },
         {
           "id": "claude-opus-5.5",
@@ -5024,7 +4208,7 @@
             "cache_write": 3.75
           },
           "group": null,
-          "note": null,
+          "note": "Individual annual plans only.",
           "endpoint": null,
           "hidden": false,
           "active": true,
@@ -5137,110 +4321,6 @@
           "release_date": "2026-09-28",
           "last_updated": "2026-10-07",
           "knowledge": "2026-06"
-        },
-        {
-          "id": "gemini-3.5-flash",
-          "label": "Gemini 3.5 Flash",
-          "family": "gemini-flash",
-          "context": 200000,
-          "output_limit": 64000,
-          "reasoning": true,
-          "supports_effort": true,
-          "effort": {
-            "kind": "levels",
-            "levels": [
-              "low",
-              "medium",
-              "high",
-              "xhigh"
-            ],
-            "default": "medium"
-          },
-          "tool_call": true,
-          "attachment": true,
-          "structured_output": true,
-          "temperature": true,
-          "open_weights": false,
-          "modalities": {
-            "input": [
-              "text",
-              "image",
-              "video",
-              "audio",
-              "pdf"
-            ],
-            "output": [
-              "text"
-            ]
-          },
-          "cost": {
-            "input": 1.5,
-            "output": 9,
-            "cache_read": 0.15
-          },
-          "group": null,
-          "note": null,
-          "endpoint": null,
-          "hidden": false,
-          "active": true,
-          "priority": 100,
-          "default": false,
-          "aliases": [],
-          "release_date": "2026-05-19",
-          "last_updated": "2026-05-19",
-          "knowledge": "2025-01"
-        },
-        {
-          "id": "gemini-3.6-flash",
-          "label": "Gemini 3.6 Flash",
-          "family": "gemini-flash",
-          "context": 200000,
-          "output_limit": 64000,
-          "reasoning": true,
-          "supports_effort": true,
-          "effort": {
-            "kind": "levels",
-            "levels": [
-              "low",
-              "medium",
-              "high",
-              "xhigh"
-            ],
-            "default": "medium"
-          },
-          "tool_call": true,
-          "attachment": true,
-          "structured_output": true,
-          "temperature": true,
-          "open_weights": false,
-          "modalities": {
-            "input": [
-              "text",
-              "image",
-              "video",
-              "audio",
-              "pdf"
-            ],
-            "output": [
-              "text"
-            ]
-          },
-          "cost": {
-            "input": 0.75,
-            "output": 3.75,
-            "cache_read": 0.075
-          },
-          "group": null,
-          "note": null,
-          "endpoint": null,
-          "hidden": false,
-          "active": true,
-          "priority": 105,
-          "default": false,
-          "aliases": [],
-          "release_date": "2026-07-21",
-          "last_updated": "2026-07-21",
-          "knowledge": "2026-03"
         },
         {
           "id": "gemini-3.8-flash",
@@ -5449,55 +4529,6 @@
           "knowledge": "2026-03"
         },
         {
-          "id": "gpt-5-mini",
-          "label": "GPT-5 Mini",
-          "family": "gpt-mini",
-          "context": 264000,
-          "output_limit": 64000,
-          "reasoning": true,
-          "supports_effort": true,
-          "effort": {
-            "kind": "levels",
-            "levels": [
-              "low",
-              "medium",
-              "high",
-              "xhigh"
-            ],
-            "default": "medium"
-          },
-          "tool_call": true,
-          "attachment": true,
-          "structured_output": true,
-          "temperature": false,
-          "open_weights": false,
-          "modalities": {
-            "input": [
-              "text",
-              "image"
-            ],
-            "output": [
-              "text"
-            ]
-          },
-          "cost": {
-            "input": 0.25,
-            "output": 2,
-            "cache_read": 0.025
-          },
-          "group": null,
-          "note": null,
-          "endpoint": null,
-          "hidden": false,
-          "active": true,
-          "priority": 30,
-          "default": false,
-          "aliases": [],
-          "release_date": "2025-08-07",
-          "last_updated": "2025-08-07",
-          "knowledge": "2024-05-30"
-        },
-        {
           "id": "gpt-5.3-codex",
           "label": "GPT-5.3 Codex",
           "family": "gpt-codex",
@@ -5546,155 +4577,6 @@
           "release_date": "2026-02-05",
           "last_updated": "2026-02-05",
           "knowledge": "2025-08-31"
-        },
-        {
-          "id": "gpt-5.4",
-          "label": "GPT-5.4",
-          "family": "gpt",
-          "context": 400000,
-          "output_limit": 128000,
-          "reasoning": true,
-          "supports_effort": true,
-          "effort": {
-            "kind": "levels",
-            "levels": [
-              "low",
-              "medium",
-              "high",
-              "xhigh"
-            ],
-            "default": "medium"
-          },
-          "tool_call": true,
-          "attachment": true,
-          "structured_output": true,
-          "temperature": false,
-          "open_weights": false,
-          "modalities": {
-            "input": [
-              "text",
-              "image",
-              "pdf"
-            ],
-            "output": [
-              "text"
-            ]
-          },
-          "cost": {
-            "input": 2.5,
-            "output": 15,
-            "cache_read": 0.25
-          },
-          "group": null,
-          "note": null,
-          "endpoint": null,
-          "hidden": false,
-          "active": true,
-          "priority": 140,
-          "default": false,
-          "aliases": [],
-          "release_date": "2026-03-05",
-          "last_updated": "2026-03-05",
-          "knowledge": "2025-08-31"
-        },
-        {
-          "id": "gpt-5.4-mini",
-          "label": "GPT-5.4 mini",
-          "family": "gpt-mini",
-          "context": 400000,
-          "output_limit": 128000,
-          "reasoning": true,
-          "supports_effort": true,
-          "effort": {
-            "kind": "levels",
-            "levels": [
-              "low",
-              "medium",
-              "high",
-              "xhigh"
-            ],
-            "default": "medium"
-          },
-          "tool_call": true,
-          "attachment": true,
-          "structured_output": true,
-          "temperature": false,
-          "open_weights": false,
-          "modalities": {
-            "input": [
-              "text",
-              "image"
-            ],
-            "output": [
-              "text"
-            ]
-          },
-          "cost": {
-            "input": 0.75,
-            "output": 4.5,
-            "cache_read": 0.075
-          },
-          "group": null,
-          "note": null,
-          "endpoint": null,
-          "hidden": false,
-          "active": true,
-          "priority": 50,
-          "default": false,
-          "aliases": [],
-          "release_date": "2026-03-17",
-          "last_updated": "2026-03-17",
-          "knowledge": "2025-08-31"
-        },
-        {
-          "id": "gpt-5.5",
-          "label": "GPT-5.5",
-          "family": "gpt",
-          "context": 400000,
-          "output_limit": 128000,
-          "reasoning": true,
-          "supports_effort": true,
-          "effort": {
-            "kind": "levels",
-            "levels": [
-              "low",
-              "medium",
-              "high",
-              "xhigh"
-            ],
-            "default": "medium"
-          },
-          "tool_call": true,
-          "attachment": true,
-          "structured_output": true,
-          "temperature": false,
-          "open_weights": false,
-          "modalities": {
-            "input": [
-              "text",
-              "image",
-              "pdf"
-            ],
-            "output": [
-              "text"
-            ]
-          },
-          "cost": {
-            "input": 5,
-            "output": 30,
-            "cache_read": 0.5
-          },
-          "group": null,
-          "note": null,
-          "endpoint": null,
-          "hidden": false,
-          "active": true,
-          "priority": 150,
-          "default": false,
-          "aliases": [],
-          "release_date": "2026-04-23",
-          "last_updated": "2026-04-23",
-          "knowledge": "2025-12-01"
         },
         {
           "id": "gpt-5.6-luna",
@@ -5790,56 +4672,6 @@
           "hidden": false,
           "active": true,
           "priority": 156,
-          "default": false,
-          "aliases": [],
-          "release_date": "2026-07-09",
-          "last_updated": "2026-07-09",
-          "knowledge": "2026-02-16"
-        },
-        {
-          "id": "gpt-5.6-terra",
-          "label": "GPT-5.6 Terra",
-          "family": "gpt",
-          "context": 400000,
-          "output_limit": 128000,
-          "reasoning": true,
-          "supports_effort": true,
-          "effort": {
-            "kind": "levels",
-            "levels": [
-              "low",
-              "medium",
-              "high",
-              "xhigh"
-            ],
-            "default": "medium"
-          },
-          "tool_call": true,
-          "attachment": true,
-          "structured_output": true,
-          "temperature": false,
-          "open_weights": false,
-          "modalities": {
-            "input": [
-              "text",
-              "image",
-              "pdf"
-            ],
-            "output": [
-              "text"
-            ]
-          },
-          "cost": {
-            "input": 2,
-            "output": 12,
-            "cache_read": 0.2
-          },
-          "group": null,
-          "note": null,
-          "endpoint": null,
-          "hidden": false,
-          "active": true,
-          "priority": 153,
           "default": false,
           "aliases": [],
           "release_date": "2026-07-09",
@@ -6681,7 +5513,7 @@
           "hidden": false,
           "active": true,
           "priority": 20,
-          "default": true,
+          "default": false,
           "aliases": [],
           "release_date": "2026-04-21",
           "last_updated": "2026-04-21",
@@ -6866,7 +5698,7 @@
           "hidden": false,
           "active": true,
           "priority": 35,
-          "default": false,
+          "default": true,
           "aliases": [],
           "release_date": "2026-10-23",
           "last_updated": "2026-10-23",
@@ -6971,7 +5803,7 @@
           "hidden": false,
           "active": true,
           "priority": 20,
-          "default": true,
+          "default": false,
           "aliases": [],
           "release_date": "2026-04-21",
           "last_updated": "2026-04-21",
@@ -7113,7 +5945,7 @@
           "hidden": false,
           "active": true,
           "priority": 35,
-          "default": false,
+          "default": true,
           "aliases": [],
           "release_date": "2026-10-23",
           "last_updated": "2026-10-23",
@@ -7257,7 +6089,6 @@
           "priority": 20,
           "default": true,
           "aliases": [
-            "mistral-large-latest",
             "mistral-large-2512"
           ],
           "release_date": "2025-12-02",
@@ -7275,7 +6106,8 @@
           "effort": {
             "kind": "levels",
             "levels": [
-              "none",
+              "low",
+              "medium",
               "high"
             ],
             "default": "high"
@@ -7284,7 +6116,7 @@
           "attachment": true,
           "structured_output": true,
           "temperature": true,
-          "open_weights": false,
+          "open_weights": true,
           "modalities": {
             "input": [
               "text",
@@ -7295,9 +6127,9 @@
             ]
           },
           "cost": {
-            "input": 1.36,
-            "output": 4.18,
-            "cache_read": 0.14
+            "input": 0.7,
+            "output": 2.1,
+            "cache_read": 0.07
           },
           "group": null,
           "note": null,
@@ -7307,10 +6139,11 @@
           "priority": 35,
           "default": false,
           "aliases": [
-            "mistral-large-4"
+            "mistral-large-4",
+            "mistral-large-latest"
           ],
           "release_date": "2026-10-06",
-          "last_updated": "2026-10-06",
+          "last_updated": "2026-11-05",
           "knowledge": null
         },
         {
@@ -7658,46 +6491,6 @@
           "knowledge": null
         },
         {
-          "id": "mistralai/mistral-nemotron",
-          "label": "mistral-nemotron",
-          "family": null,
-          "context": 128000,
-          "output_limit": 8192,
-          "reasoning": false,
-          "supports_effort": false,
-          "effort": {
-            "kind": "none"
-          },
-          "tool_call": true,
-          "attachment": false,
-          "structured_output": true,
-          "temperature": true,
-          "open_weights": true,
-          "modalities": {
-            "input": [
-              "text"
-            ],
-            "output": [
-              "text"
-            ]
-          },
-          "cost": {
-            "input": 0,
-            "output": 0
-          },
-          "group": null,
-          "note": null,
-          "endpoint": null,
-          "hidden": false,
-          "active": true,
-          "priority": 10,
-          "default": false,
-          "aliases": [],
-          "release_date": "2025-06-11",
-          "last_updated": "2025-06-12",
-          "knowledge": null
-        },
-        {
           "id": "moonshotai/kimi-k2.6",
           "label": "Kimi K2.6",
           "family": "kimi-k2.6",
@@ -7740,93 +6533,6 @@
           "knowledge": "2025-01"
         },
         {
-          "id": "moonshotai/kimi-k3",
-          "label": "Kimi K3",
-          "family": "kimi-k3",
-          "context": 1048576,
-          "output_limit": 65536,
-          "reasoning": true,
-          "supports_effort": true,
-          "effort": {
-            "kind": "levels",
-            "levels": [
-              "low",
-              "high",
-              "max"
-            ],
-            "default": "high"
-          },
-          "tool_call": true,
-          "attachment": true,
-          "structured_output": true,
-          "temperature": true,
-          "open_weights": true,
-          "modalities": {
-            "input": [
-              "text",
-              "image"
-            ],
-            "output": [
-              "text"
-            ]
-          },
-          "cost": {
-            "input": 0,
-            "output": 0
-          },
-          "group": null,
-          "note": null,
-          "endpoint": null,
-          "hidden": false,
-          "active": true,
-          "priority": 98,
-          "default": false,
-          "aliases": [],
-          "release_date": "2026-07-16",
-          "last_updated": "2026-07-16",
-          "knowledge": null
-        },
-        {
-          "id": "nvidia/nemotron-3-super-120b-a12b",
-          "label": "Nemotron 3 Super",
-          "family": "nemotron",
-          "context": 1048576,
-          "output_limit": 262144,
-          "reasoning": true,
-          "supports_effort": true,
-          "effort": {
-            "kind": "none"
-          },
-          "tool_call": true,
-          "attachment": false,
-          "structured_output": true,
-          "temperature": true,
-          "open_weights": true,
-          "modalities": {
-            "input": [
-              "text"
-            ],
-            "output": [
-              "text"
-            ]
-          },
-          "cost": {
-            "input": 0.2,
-            "output": 0.8
-          },
-          "group": null,
-          "note": null,
-          "endpoint": null,
-          "hidden": false,
-          "active": true,
-          "priority": 100,
-          "default": true,
-          "aliases": [],
-          "release_date": "2026-03-11",
-          "last_updated": "2026-03-11",
-          "knowledge": "2024-04"
-        },
-        {
           "id": "nvidia/nemotron-3-ultra-550b-a55b",
           "label": "Nemotron 3 Ultra",
           "family": "nemotron",
@@ -7859,8 +6565,8 @@
           "endpoint": null,
           "hidden": false,
           "active": true,
-          "priority": 94,
-          "default": false,
+          "priority": 100,
+          "default": true,
           "aliases": [],
           "release_date": "2026-06-04",
           "last_updated": "2026-06-04",
@@ -8033,46 +6739,6 @@
           "aliases": [],
           "release_date": "2026-10-14",
           "last_updated": "2026-10-14",
-          "knowledge": null
-        },
-        {
-          "id": "z-ai/glm-5.3",
-          "label": "GLM 5.3",
-          "family": "glm",
-          "context": 1048576,
-          "output_limit": null,
-          "reasoning": true,
-          "supports_effort": true,
-          "effort": {
-            "kind": "none"
-          },
-          "tool_call": true,
-          "attachment": false,
-          "structured_output": true,
-          "temperature": true,
-          "open_weights": true,
-          "modalities": {
-            "input": [
-              "text"
-            ],
-            "output": [
-              "text"
-            ]
-          },
-          "cost": {
-            "input": 0,
-            "output": 0
-          },
-          "group": null,
-          "note": null,
-          "endpoint": null,
-          "hidden": false,
-          "active": true,
-          "priority": 96,
-          "default": false,
-          "aliases": [],
-          "release_date": "2026-08-18",
-          "last_updated": "2026-08-18",
           "knowledge": null
         },
         {
@@ -10418,92 +9084,6 @@
       "supports_live": false,
       "models": [
         {
-          "id": "anthropic/claude-fable-5",
-          "label": "Claude Fable 5",
-          "family": "claude-fable",
-          "context": 1000000,
-          "output_limit": 128000,
-          "reasoning": true,
-          "supports_effort": true,
-          "effort": {
-            "kind": "none"
-          },
-          "tool_call": true,
-          "attachment": true,
-          "structured_output": true,
-          "temperature": false,
-          "open_weights": false,
-          "modalities": {
-            "input": [
-              "text",
-              "image",
-              "pdf"
-            ],
-            "output": [
-              "text"
-            ]
-          },
-          "cost": {
-            "input": 10,
-            "output": 50,
-            "cache_read": 1
-          },
-          "group": "Agent API",
-          "note": null,
-          "endpoint": "/v1/agent",
-          "hidden": false,
-          "active": true,
-          "priority": 185,
-          "default": false,
-          "aliases": [],
-          "release_date": "2026-06-09",
-          "last_updated": "2026-06-09",
-          "knowledge": "2026-01"
-        },
-        {
-          "id": "anthropic/claude-fable-5-1",
-          "label": "Claude Fable 5.1",
-          "family": "claude-fable",
-          "context": 1000000,
-          "output_limit": 128000,
-          "reasoning": true,
-          "supports_effort": true,
-          "effort": {
-            "kind": "none"
-          },
-          "tool_call": true,
-          "attachment": true,
-          "structured_output": true,
-          "temperature": false,
-          "open_weights": false,
-          "modalities": {
-            "input": [
-              "text",
-              "image",
-              "pdf"
-            ],
-            "output": [
-              "text"
-            ]
-          },
-          "cost": {
-            "input": 10,
-            "output": 50,
-            "cache_read": 0.25
-          },
-          "group": "Agent API",
-          "note": null,
-          "endpoint": "/v1/agent",
-          "hidden": false,
-          "active": true,
-          "priority": 186,
-          "default": false,
-          "aliases": [],
-          "release_date": "2026-09-01",
-          "last_updated": "2026-09-01",
-          "knowledge": "2026-06"
-        },
-        {
           "id": "anthropic/claude-fable-5-2",
           "label": "Claude Fable 5.2",
           "family": "claude-fable",
@@ -10545,49 +9125,6 @@
           "release_date": "2026-11-09",
           "last_updated": "2026-11-09",
           "knowledge": "2026-06"
-        },
-        {
-          "id": "anthropic/claude-haiku-4-5",
-          "label": "Claude Haiku 4.5",
-          "family": "claude-haiku",
-          "context": 200000,
-          "output_limit": 64000,
-          "reasoning": true,
-          "supports_effort": true,
-          "effort": {
-            "kind": "none"
-          },
-          "tool_call": true,
-          "attachment": true,
-          "structured_output": true,
-          "temperature": true,
-          "open_weights": false,
-          "modalities": {
-            "input": [
-              "text",
-              "image",
-              "pdf"
-            ],
-            "output": [
-              "text"
-            ]
-          },
-          "cost": {
-            "input": 1,
-            "output": 5,
-            "cache_read": 0.1
-          },
-          "group": "Agent API",
-          "note": null,
-          "endpoint": "/v1/agent",
-          "hidden": false,
-          "active": true,
-          "priority": 130,
-          "default": false,
-          "aliases": [],
-          "release_date": "2025-10-15",
-          "last_updated": "2025-10-15",
-          "knowledge": "2025-02-28"
         },
         {
           "id": "anthropic/claude-haiku-5-5",
@@ -10633,221 +9170,6 @@
           "knowledge": "2026-06"
         },
         {
-          "id": "anthropic/claude-opus-4-5",
-          "label": "Claude Opus 4.5",
-          "family": "claude-opus",
-          "context": 200000,
-          "output_limit": 64000,
-          "reasoning": true,
-          "supports_effort": true,
-          "effort": {
-            "kind": "none"
-          },
-          "tool_call": true,
-          "attachment": true,
-          "structured_output": true,
-          "temperature": true,
-          "open_weights": false,
-          "modalities": {
-            "input": [
-              "text",
-              "image",
-              "pdf"
-            ],
-            "output": [
-              "text"
-            ]
-          },
-          "cost": {
-            "input": 5,
-            "output": 25,
-            "cache_read": 0.5
-          },
-          "group": "Agent API",
-          "note": null,
-          "endpoint": "/v1/agent",
-          "hidden": false,
-          "active": true,
-          "priority": 160,
-          "default": false,
-          "aliases": [],
-          "release_date": "2025-11-24",
-          "last_updated": "2025-11-24",
-          "knowledge": "2025-03-31"
-        },
-        {
-          "id": "anthropic/claude-opus-4-6",
-          "label": "Claude Opus 4.6",
-          "family": "claude-opus",
-          "context": 200000,
-          "output_limit": 128000,
-          "reasoning": true,
-          "supports_effort": true,
-          "effort": {
-            "kind": "none"
-          },
-          "tool_call": true,
-          "attachment": true,
-          "structured_output": true,
-          "temperature": true,
-          "open_weights": false,
-          "modalities": {
-            "input": [
-              "text",
-              "image",
-              "pdf"
-            ],
-            "output": [
-              "text"
-            ]
-          },
-          "cost": {
-            "input": 5,
-            "output": 25,
-            "cache_read": 0.5
-          },
-          "group": "Agent API",
-          "note": null,
-          "endpoint": "/v1/agent",
-          "hidden": false,
-          "active": true,
-          "priority": 170,
-          "default": false,
-          "aliases": [],
-          "release_date": "2026-02-05",
-          "last_updated": "2026-02-05",
-          "knowledge": "2025-05-31"
-        },
-        {
-          "id": "anthropic/claude-opus-4-7",
-          "label": "Claude Opus 4.7",
-          "family": "claude-opus",
-          "context": 1000000,
-          "output_limit": 128000,
-          "reasoning": true,
-          "supports_effort": true,
-          "effort": {
-            "kind": "none"
-          },
-          "tool_call": true,
-          "attachment": true,
-          "structured_output": true,
-          "temperature": false,
-          "open_weights": false,
-          "modalities": {
-            "input": [
-              "text",
-              "image",
-              "pdf"
-            ],
-            "output": [
-              "text"
-            ]
-          },
-          "cost": {
-            "input": 5,
-            "output": 25,
-            "cache_read": 0.5
-          },
-          "group": "Agent API",
-          "note": null,
-          "endpoint": "/v1/agent",
-          "hidden": false,
-          "active": true,
-          "priority": 180,
-          "default": false,
-          "aliases": [],
-          "release_date": "2026-04-16",
-          "last_updated": "2026-04-16",
-          "knowledge": "2026-01-31"
-        },
-        {
-          "id": "anthropic/claude-opus-4-8",
-          "label": "Claude Opus 4.8",
-          "family": "claude-opus",
-          "context": 1000000,
-          "output_limit": 128000,
-          "reasoning": true,
-          "supports_effort": true,
-          "effort": {
-            "kind": "none"
-          },
-          "tool_call": true,
-          "attachment": true,
-          "structured_output": true,
-          "temperature": false,
-          "open_weights": false,
-          "modalities": {
-            "input": [
-              "text",
-              "image",
-              "pdf"
-            ],
-            "output": [
-              "text"
-            ]
-          },
-          "cost": {
-            "input": 5,
-            "output": 25,
-            "cache_read": 0.5
-          },
-          "group": "Agent API",
-          "note": null,
-          "endpoint": "/v1/agent",
-          "hidden": false,
-          "active": true,
-          "priority": 184,
-          "default": false,
-          "aliases": [],
-          "release_date": "2026-05-28",
-          "last_updated": "2026-05-28",
-          "knowledge": "2026-01"
-        },
-        {
-          "id": "anthropic/claude-opus-5",
-          "label": "Claude Opus 5",
-          "family": "claude-opus",
-          "context": 1000000,
-          "output_limit": 128000,
-          "reasoning": true,
-          "supports_effort": true,
-          "effort": {
-            "kind": "none"
-          },
-          "tool_call": true,
-          "attachment": true,
-          "structured_output": true,
-          "temperature": false,
-          "open_weights": false,
-          "modalities": {
-            "input": [
-              "text",
-              "image",
-              "pdf"
-            ],
-            "output": [
-              "text"
-            ]
-          },
-          "cost": {
-            "input": 5,
-            "output": 25,
-            "cache_read": 0.5
-          },
-          "group": "Agent API",
-          "note": null,
-          "endpoint": "/v1/agent",
-          "hidden": false,
-          "active": true,
-          "priority": 188,
-          "default": false,
-          "aliases": [],
-          "release_date": "2026-07-24",
-          "last_updated": "2026-07-24",
-          "knowledge": "2026-05"
-        },
-        {
           "id": "anthropic/claude-opus-5-5",
           "label": "Claude Opus 5.5",
           "family": "claude-opus",
@@ -10891,135 +9213,6 @@
           "knowledge": "2026-06"
         },
         {
-          "id": "anthropic/claude-sonnet-4-5",
-          "label": "Claude Sonnet 4.5",
-          "family": "claude-sonnet",
-          "context": 200000,
-          "output_limit": 64000,
-          "reasoning": true,
-          "supports_effort": true,
-          "effort": {
-            "kind": "none"
-          },
-          "tool_call": true,
-          "attachment": true,
-          "structured_output": true,
-          "temperature": true,
-          "open_weights": false,
-          "modalities": {
-            "input": [
-              "text",
-              "image",
-              "pdf"
-            ],
-            "output": [
-              "text"
-            ]
-          },
-          "cost": {
-            "input": 3,
-            "output": 15,
-            "cache_read": 0.3
-          },
-          "group": "Agent API",
-          "note": null,
-          "endpoint": "/v1/agent",
-          "hidden": false,
-          "active": true,
-          "priority": 140,
-          "default": false,
-          "aliases": [],
-          "release_date": "2025-09-29",
-          "last_updated": "2025-09-29",
-          "knowledge": "2025-07-31"
-        },
-        {
-          "id": "anthropic/claude-sonnet-4-6",
-          "label": "Claude Sonnet 4.6",
-          "family": "claude-sonnet",
-          "context": 200000,
-          "output_limit": 64000,
-          "reasoning": true,
-          "supports_effort": true,
-          "effort": {
-            "kind": "none"
-          },
-          "tool_call": true,
-          "attachment": true,
-          "structured_output": true,
-          "temperature": true,
-          "open_weights": false,
-          "modalities": {
-            "input": [
-              "text",
-              "image",
-              "pdf"
-            ],
-            "output": [
-              "text"
-            ]
-          },
-          "cost": {
-            "input": 3,
-            "output": 15,
-            "cache_read": 0.3
-          },
-          "group": "Agent API",
-          "note": null,
-          "endpoint": "/v1/agent",
-          "hidden": false,
-          "active": true,
-          "priority": 150,
-          "default": false,
-          "aliases": [],
-          "release_date": "2026-02-17",
-          "last_updated": "2026-02-17",
-          "knowledge": "2025-08-31"
-        },
-        {
-          "id": "anthropic/claude-sonnet-5",
-          "label": "Claude Sonnet 5",
-          "family": "claude-sonnet",
-          "context": 1000000,
-          "output_limit": 128000,
-          "reasoning": true,
-          "supports_effort": true,
-          "effort": {
-            "kind": "none"
-          },
-          "tool_call": true,
-          "attachment": true,
-          "structured_output": true,
-          "temperature": false,
-          "open_weights": false,
-          "modalities": {
-            "input": [
-              "text",
-              "image",
-              "pdf"
-            ],
-            "output": [
-              "text"
-            ]
-          },
-          "cost": {
-            "input": 2,
-            "output": 10,
-            "cache_read": 0.2
-          },
-          "group": "Agent API",
-          "note": null,
-          "endpoint": "/v1/agent",
-          "hidden": false,
-          "active": true,
-          "priority": 155,
-          "default": false,
-          "aliases": [],
-          "release_date": "2026-06-30",
-          "last_updated": "2026-06-30",
-          "knowledge": "2026-01"
-        },
-        {
           "id": "anthropic/claude-sonnet-5-5",
           "label": "Claude Sonnet 5.5",
           "family": "claude-sonnet",
@@ -11061,231 +9254,6 @@
           "release_date": "2026-09-28",
           "last_updated": "2026-10-07",
           "knowledge": "2026-06"
-        },
-        {
-          "id": "google/gemini-3-flash-preview",
-          "label": "Gemini 3 Flash Preview",
-          "family": "gemini-flash",
-          "context": 1048576,
-          "output_limit": 65536,
-          "reasoning": true,
-          "supports_effort": true,
-          "effort": {
-            "kind": "none"
-          },
-          "tool_call": true,
-          "attachment": true,
-          "structured_output": true,
-          "temperature": true,
-          "open_weights": false,
-          "modalities": {
-            "input": [
-              "text",
-              "image",
-              "video",
-              "audio",
-              "pdf"
-            ],
-            "output": [
-              "text"
-            ]
-          },
-          "cost": {
-            "input": 0.5,
-            "output": 3,
-            "cache_read": 0.05
-          },
-          "group": "Agent API",
-          "note": null,
-          "endpoint": "/v1/agent",
-          "hidden": false,
-          "active": true,
-          "priority": 60,
-          "default": false,
-          "aliases": [],
-          "release_date": "2025-12-17",
-          "last_updated": "2025-12-17",
-          "knowledge": "2025-01"
-        },
-        {
-          "id": "google/gemini-3.1-pro-preview",
-          "label": "Gemini 3.1 Pro Preview",
-          "family": "gemini-pro",
-          "context": 1048576,
-          "output_limit": 65536,
-          "reasoning": true,
-          "supports_effort": true,
-          "effort": {
-            "kind": "none"
-          },
-          "tool_call": true,
-          "attachment": true,
-          "structured_output": true,
-          "temperature": true,
-          "open_weights": false,
-          "modalities": {
-            "input": [
-              "text",
-              "image",
-              "video",
-              "audio",
-              "pdf"
-            ],
-            "output": [
-              "text"
-            ]
-          },
-          "cost": {
-            "input": 2,
-            "output": 12,
-            "cache_read": 0.2
-          },
-          "group": "Agent API",
-          "note": null,
-          "endpoint": "/v1/agent",
-          "hidden": false,
-          "active": true,
-          "priority": 70,
-          "default": false,
-          "aliases": [],
-          "release_date": "2026-02-19",
-          "last_updated": "2026-02-19",
-          "knowledge": "2025-01"
-        },
-        {
-          "id": "google/gemini-3.5-flash",
-          "label": "Gemini 3.5 Flash",
-          "family": "gemini-flash",
-          "context": 1048576,
-          "output_limit": 65536,
-          "reasoning": true,
-          "supports_effort": true,
-          "effort": {
-            "kind": "none"
-          },
-          "tool_call": true,
-          "attachment": true,
-          "structured_output": true,
-          "temperature": true,
-          "open_weights": false,
-          "modalities": {
-            "input": [
-              "text",
-              "image",
-              "video",
-              "audio",
-              "pdf"
-            ],
-            "output": [
-              "text"
-            ]
-          },
-          "cost": {
-            "input": 1.5,
-            "output": 9,
-            "cache_read": 0.15
-          },
-          "group": "Agent API",
-          "note": null,
-          "endpoint": "/v1/agent",
-          "hidden": false,
-          "active": true,
-          "priority": 65,
-          "default": false,
-          "aliases": [],
-          "release_date": "2026-05-19",
-          "last_updated": "2026-05-19",
-          "knowledge": "2025-01"
-        },
-        {
-          "id": "google/gemini-3.6-flash",
-          "label": "Gemini 3.6 Flash",
-          "family": "gemini-flash",
-          "context": 1048576,
-          "output_limit": 65536,
-          "reasoning": true,
-          "supports_effort": true,
-          "effort": {
-            "kind": "none"
-          },
-          "tool_call": true,
-          "attachment": true,
-          "structured_output": true,
-          "temperature": true,
-          "open_weights": false,
-          "modalities": {
-            "input": [
-              "text",
-              "image",
-              "video",
-              "audio",
-              "pdf"
-            ],
-            "output": [
-              "text"
-            ]
-          },
-          "cost": {
-            "input": 1.5,
-            "output": 7.5,
-            "cache_read": 0.15
-          },
-          "group": "Agent API",
-          "note": null,
-          "endpoint": "/v1/agent",
-          "hidden": false,
-          "active": true,
-          "priority": 74,
-          "default": false,
-          "aliases": [],
-          "release_date": "2026-07-21",
-          "last_updated": "2026-07-21",
-          "knowledge": "2026-03"
-        },
-        {
-          "id": "google/gemini-3.8-flash",
-          "label": "Gemini 3.8 Flash",
-          "family": "gemini-flash",
-          "context": 1048576,
-          "output_limit": 65536,
-          "reasoning": true,
-          "supports_effort": true,
-          "effort": {
-            "kind": "none"
-          },
-          "tool_call": true,
-          "attachment": true,
-          "structured_output": true,
-          "temperature": true,
-          "open_weights": false,
-          "modalities": {
-            "input": [
-              "text",
-              "image",
-              "video",
-              "audio",
-              "pdf"
-            ],
-            "output": [
-              "text"
-            ]
-          },
-          "cost": {
-            "input": 0.75,
-            "output": 3.75,
-            "cache_read": 0.075
-          },
-          "group": "Agent API",
-          "note": null,
-          "endpoint": "/v1/agent",
-          "hidden": false,
-          "active": true,
-          "priority": 76,
-          "default": false,
-          "aliases": [],
-          "release_date": "2026-09-02",
-          "last_updated": "2026-09-02",
-          "knowledge": "2026-03"
         },
         {
           "id": "google/gemini-4-argon",
@@ -11421,174 +9389,6 @@
           "release_date": "2026-11-12",
           "last_updated": "2026-11-12",
           "knowledge": "2026-03"
-        },
-        {
-          "id": "openai/gpt-5-mini",
-          "label": "GPT-5 Mini",
-          "family": "gpt-mini",
-          "context": 400000,
-          "output_limit": 128000,
-          "reasoning": true,
-          "supports_effort": true,
-          "effort": {
-            "kind": "none"
-          },
-          "tool_call": true,
-          "attachment": true,
-          "structured_output": true,
-          "temperature": false,
-          "open_weights": false,
-          "modalities": {
-            "input": [
-              "text",
-              "image"
-            ],
-            "output": [
-              "text"
-            ]
-          },
-          "cost": {
-            "input": 0.25,
-            "output": 2,
-            "cache_read": 0.025
-          },
-          "group": "Agent API",
-          "note": null,
-          "endpoint": "/v1/agent",
-          "hidden": false,
-          "active": true,
-          "priority": 80,
-          "default": false,
-          "aliases": [],
-          "release_date": "2025-08-07",
-          "last_updated": "2025-08-07",
-          "knowledge": "2024-05-30"
-        },
-        {
-          "id": "openai/gpt-5.1",
-          "label": "GPT-5.1",
-          "family": "gpt",
-          "context": 400000,
-          "output_limit": 128000,
-          "reasoning": true,
-          "supports_effort": true,
-          "effort": {
-            "kind": "none"
-          },
-          "tool_call": true,
-          "attachment": true,
-          "structured_output": true,
-          "temperature": false,
-          "open_weights": false,
-          "modalities": {
-            "input": [
-              "text",
-              "image"
-            ],
-            "output": [
-              "text"
-            ]
-          },
-          "cost": {
-            "input": 1.25,
-            "output": 10,
-            "cache_read": 0.125
-          },
-          "group": "Agent API",
-          "note": null,
-          "endpoint": "/v1/agent",
-          "hidden": false,
-          "active": true,
-          "priority": 90,
-          "default": false,
-          "aliases": [],
-          "release_date": "2025-11-13",
-          "last_updated": "2025-11-13",
-          "knowledge": "2024-09-30"
-        },
-        {
-          "id": "openai/gpt-5.2",
-          "label": "GPT-5.2",
-          "family": "gpt",
-          "context": 400000,
-          "output_limit": 128000,
-          "reasoning": true,
-          "supports_effort": true,
-          "effort": {
-            "kind": "none"
-          },
-          "tool_call": true,
-          "attachment": true,
-          "structured_output": true,
-          "temperature": false,
-          "open_weights": false,
-          "modalities": {
-            "input": [
-              "text",
-              "image"
-            ],
-            "output": [
-              "text"
-            ]
-          },
-          "cost": {
-            "input": 1.75,
-            "output": 14,
-            "cache_read": 0.175
-          },
-          "group": "Agent API",
-          "note": null,
-          "endpoint": "/v1/agent",
-          "hidden": false,
-          "active": true,
-          "priority": 100,
-          "default": false,
-          "aliases": [],
-          "release_date": "2025-12-11",
-          "last_updated": "2025-12-11",
-          "knowledge": "2025-08-31"
-        },
-        {
-          "id": "openai/gpt-5.4",
-          "label": "GPT-5.4",
-          "family": "gpt",
-          "context": 1050000,
-          "output_limit": 128000,
-          "reasoning": true,
-          "supports_effort": true,
-          "effort": {
-            "kind": "none"
-          },
-          "tool_call": true,
-          "attachment": true,
-          "structured_output": true,
-          "temperature": false,
-          "open_weights": false,
-          "modalities": {
-            "input": [
-              "text",
-              "image"
-            ],
-            "output": [
-              "text"
-            ]
-          },
-          "cost": {
-            "input": 2.5,
-            "output": 15,
-            "cache_read": 0.25
-          },
-          "group": "Agent API",
-          "note": null,
-          "endpoint": "/v1/agent",
-          "hidden": false,
-          "active": true,
-          "priority": 110,
-          "default": false,
-          "aliases": [],
-          "release_date": "2026-03-05",
-          "last_updated": "2026-03-05",
-          "knowledge": "2025-08-31"
         },
         {
           "id": "openai/gpt-5.5",
@@ -12094,47 +9894,6 @@
           "aliases": [],
           "release_date": "2026-07-16",
           "last_updated": "2026-07-16",
-          "knowledge": null
-        },
-        {
-          "id": "perplexity/nemotron-3-ultra-550b-a55b",
-          "label": "Nemotron 3 Ultra",
-          "family": "nemotron",
-          "context": null,
-          "output_limit": null,
-          "reasoning": false,
-          "supports_effort": false,
-          "effort": {
-            "kind": "none"
-          },
-          "tool_call": true,
-          "attachment": false,
-          "structured_output": false,
-          "temperature": true,
-          "open_weights": true,
-          "modalities": {
-            "input": [
-              "text"
-            ],
-            "output": [
-              "text"
-            ]
-          },
-          "cost": {
-            "input": 0.25,
-            "output": 2.5,
-            "cache_read": 0.25
-          },
-          "group": "Agent API",
-          "note": null,
-          "endpoint": "/v1/agent",
-          "hidden": false,
-          "active": true,
-          "priority": 31,
-          "default": false,
-          "aliases": [],
-          "release_date": null,
-          "last_updated": null,
           "knowledge": null
         },
         {

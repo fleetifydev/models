@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-15T12:06:26.526Z",
-  "commit": "6dbcbe2",
+  "generatedAt": "2026-11-15T12:14:54.250Z",
+  "commit": "765ca56",
   "provider": {
     "id": "mistral",
     "name": "Mistral",
@@ -138,7 +138,6 @@
         "priority": 20,
         "default": true,
         "aliases": [
-          "mistral-large-latest",
           "mistral-large-2512"
         ],
         "release_date": "2025-12-02",
@@ -156,7 +155,8 @@
         "effort": {
           "kind": "levels",
           "levels": [
-            "none",
+            "low",
+            "medium",
             "high"
           ],
           "default": "high"
@@ -165,7 +165,7 @@
         "attachment": true,
         "structured_output": true,
         "temperature": true,
-        "open_weights": false,
+        "open_weights": true,
         "modalities": {
           "input": [
             "text",
@@ -176,9 +176,9 @@
           ]
         },
         "cost": {
-          "input": 1.36,
-          "output": 4.18,
-          "cache_read": 0.14
+          "input": 0.7,
+          "output": 2.1,
+          "cache_read": 0.07
         },
         "group": null,
         "note": null,
@@ -188,10 +188,11 @@
         "priority": 35,
         "default": false,
         "aliases": [
-          "mistral-large-4"
+          "mistral-large-4",
+          "mistral-large-latest"
         ],
         "release_date": "2026-10-06",
-        "last_updated": "2026-10-06",
+        "last_updated": "2026-11-05",
         "knowledge": null
       },
       {

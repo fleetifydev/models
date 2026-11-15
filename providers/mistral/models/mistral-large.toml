@@ -22,7 +22,9 @@ output = 262144
 input = ["text", "image"]
 output = ["text"]
 
+# Deprecated on 2026-10-31 (retires 2027-04-30); `mistral-large-latest` now
+# resolves to Large 4.
 [fleetify]
 priority = 20
 default = true
-aliases = ["mistral-large-latest", "mistral-large-2512"]
+aliases = ["mistral-large-2512"]

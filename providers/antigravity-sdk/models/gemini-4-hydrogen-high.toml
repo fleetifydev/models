@@ -22,7 +22,10 @@ output = 65536
 input = ["text", "image", "video", "audio", "pdf"]
 output = ["text"]
 
+# Default: Hydrogen runs on every plan and with a `GEMINI_API_KEY` (Gemini
+# 3.1 Pro is Enterprise-only now), and High is its default thinking level.
 [fleetify]
 priority = 220
+default = true
 label = "Gemini 4 Hydrogen (High)"
 supports_effort = false

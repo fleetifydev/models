@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-15T12:06:26.526Z",
-  "commit": "6dbcbe2",
+  "generatedAt": "2026-11-15T12:14:54.250Z",
+  "commit": "765ca56",
   "providers": [
     {
       "id": "anthropic",
@@ -19,7 +19,7 @@
       "id": "antigravity-sdk",
       "name": "Antigravity SDK",
       "kind": "cli",
-      "modelCount": 24
+      "modelCount": 21
     },
     {
       "id": "claude-code",
@@ -31,7 +31,7 @@
       "id": "cloudflare-workers-ai",
       "name": "Cloudflare Workers AI",
       "kind": "api",
-      "modelCount": 26
+      "modelCount": 14
     },
     {
       "id": "codex-cli",
@@ -49,13 +49,13 @@
       "id": "gemini-api",
       "name": "Google",
       "kind": "api",
-      "modelCount": 14
+      "modelCount": 12
     },
     {
       "id": "github-copilot",
       "name": "GitHub Copilot CLI",
       "kind": "cli",
-      "modelCount": 36
+      "modelCount": 27
     },
     {
       "id": "grok",
@@ -85,7 +85,7 @@
       "id": "nvidia-nim",
       "name": "NVIDIA NIM",
       "kind": "api",
-      "modelCount": 14
+      "modelCount": 10
     },
     {
       "id": "openai",
@@ -103,7 +103,7 @@
       "id": "perplexity",
       "name": "Perplexity",
       "kind": "api",
-      "modelCount": 49
+      "modelCount": 28
     }
   ]
 }
