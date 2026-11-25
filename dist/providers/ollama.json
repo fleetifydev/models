@@ -1,0 +1,479 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-11-25T19:54:46.077Z",
+  "commit": "ad3be16",
+  "provider": {
+    "id": "ollama",
+    "name": "Ollama",
+    "kind": "local_http",
+    "doc": "https://ollama.com/library",
+    "env": [],
+    "api": null,
+    "models_endpoint": null,
+    "supports_live": false,
+    "models": [
+      {
+        "id": "deepseek-r1",
+        "label": "DeepSeek-R1",
+        "family": null,
+        "context": null,
+        "output_limit": null,
+        "reasoning": true,
+        "supports_effort": true,
+        "effort": {
+          "kind": "none"
+        },
+        "tool_call": false,
+        "attachment": false,
+        "structured_output": false,
+        "temperature": true,
+        "open_weights": false,
+        "modalities": {
+          "input": [
+            "text"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "cost": null,
+        "group": null,
+        "note": "Open reasoning model",
+        "endpoint": null,
+        "hidden": false,
+        "active": true,
+        "priority": 40,
+        "default": false,
+        "aliases": [],
+        "tags": [
+          "1.5b",
+          "7b",
+          "8b",
+          "14b",
+          "32b"
+        ],
+        "release_date": null,
+        "last_updated": null,
+        "knowledge": null
+      },
+      {
+        "id": "gemma4",
+        "label": "Gemma 4",
+        "family": null,
+        "context": null,
+        "output_limit": null,
+        "reasoning": true,
+        "supports_effort": true,
+        "effort": {
+          "kind": "none"
+        },
+        "tool_call": true,
+        "attachment": false,
+        "structured_output": false,
+        "temperature": true,
+        "open_weights": false,
+        "modalities": {
+          "input": [
+            "text",
+            "image"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "cost": null,
+        "group": null,
+        "note": "Google's multimodal reasoning model",
+        "endpoint": null,
+        "hidden": false,
+        "active": true,
+        "priority": 90,
+        "default": false,
+        "aliases": [],
+        "tags": [
+          "e2b",
+          "e4b",
+          "12b",
+          "26b",
+          "31b"
+        ],
+        "release_date": null,
+        "last_updated": null,
+        "knowledge": null
+      },
+      {
+        "id": "gpt-oss",
+        "label": "GPT-OSS",
+        "family": null,
+        "context": null,
+        "output_limit": null,
+        "reasoning": true,
+        "supports_effort": true,
+        "effort": {
+          "kind": "none"
+        },
+        "tool_call": true,
+        "attachment": false,
+        "structured_output": false,
+        "temperature": true,
+        "open_weights": false,
+        "modalities": {
+          "input": [
+            "text"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "cost": null,
+        "group": null,
+        "note": "OpenAI's open-weight reasoning model",
+        "endpoint": null,
+        "hidden": false,
+        "active": true,
+        "priority": 50,
+        "default": false,
+        "aliases": [],
+        "tags": [
+          "20b",
+          "120b"
+        ],
+        "release_date": null,
+        "last_updated": null,
+        "knowledge": null
+      },
+      {
+        "id": "llama3.2",
+        "label": "Llama 3.2",
+        "family": null,
+        "context": null,
+        "output_limit": null,
+        "reasoning": false,
+        "supports_effort": false,
+        "effort": {
+          "kind": "none"
+        },
+        "tool_call": true,
+        "attachment": false,
+        "structured_output": false,
+        "temperature": true,
+        "open_weights": false,
+        "modalities": {
+          "input": [
+            "text"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "cost": null,
+        "group": null,
+        "note": "Meta's compact general-purpose model",
+        "endpoint": null,
+        "hidden": false,
+        "active": true,
+        "priority": 110,
+        "default": false,
+        "aliases": [],
+        "tags": [
+          "1b",
+          "3b"
+        ],
+        "release_date": null,
+        "last_updated": null,
+        "knowledge": null
+      },
+      {
+        "id": "ministral-3",
+        "label": "Ministral 3",
+        "family": null,
+        "context": null,
+        "output_limit": null,
+        "reasoning": false,
+        "supports_effort": false,
+        "effort": {
+          "kind": "none"
+        },
+        "tool_call": true,
+        "attachment": false,
+        "structured_output": false,
+        "temperature": true,
+        "open_weights": false,
+        "modalities": {
+          "input": [
+            "text",
+            "image"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "cost": null,
+        "group": null,
+        "note": "Mistral's compact vision-language model family",
+        "endpoint": null,
+        "hidden": false,
+        "active": true,
+        "priority": 80,
+        "default": false,
+        "aliases": [],
+        "tags": [
+          "3b",
+          "8b",
+          "14b"
+        ],
+        "release_date": null,
+        "last_updated": null,
+        "knowledge": null
+      },
+      {
+        "id": "nomic-embed-text",
+        "label": "Nomic Embed Text",
+        "family": null,
+        "context": null,
+        "output_limit": null,
+        "reasoning": false,
+        "supports_effort": false,
+        "effort": {
+          "kind": "none"
+        },
+        "tool_call": false,
+        "attachment": false,
+        "structured_output": false,
+        "temperature": true,
+        "open_weights": false,
+        "modalities": {
+          "input": [
+            "text"
+          ],
+          "output": [
+            "embedding"
+          ]
+        },
+        "cost": null,
+        "group": null,
+        "note": "Compact text embedding model",
+        "endpoint": null,
+        "hidden": false,
+        "active": true,
+        "priority": 20,
+        "default": false,
+        "aliases": [],
+        "release_date": null,
+        "last_updated": null,
+        "knowledge": null
+      },
+      {
+        "id": "qwen2.5-coder",
+        "label": "Qwen2.5-Coder",
+        "family": null,
+        "context": null,
+        "output_limit": null,
+        "reasoning": false,
+        "supports_effort": false,
+        "effort": {
+          "kind": "none"
+        },
+        "tool_call": true,
+        "attachment": false,
+        "structured_output": false,
+        "temperature": true,
+        "open_weights": false,
+        "modalities": {
+          "input": [
+            "text"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "cost": null,
+        "group": null,
+        "note": "Compact Qwen models for coding",
+        "endpoint": null,
+        "hidden": false,
+        "active": true,
+        "priority": 70,
+        "default": false,
+        "aliases": [],
+        "tags": [
+          "0.5b",
+          "1.5b"
+        ],
+        "release_date": null,
+        "last_updated": null,
+        "knowledge": null
+      },
+      {
+        "id": "qwen3-coder",
+        "label": "Qwen3-Coder",
+        "family": null,
+        "context": null,
+        "output_limit": null,
+        "reasoning": false,
+        "supports_effort": false,
+        "effort": {
+          "kind": "none"
+        },
+        "tool_call": true,
+        "attachment": false,
+        "structured_output": false,
+        "temperature": true,
+        "open_weights": false,
+        "modalities": {
+          "input": [
+            "text"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "cost": null,
+        "group": null,
+        "note": "Code-specialized Qwen with tool calling",
+        "endpoint": null,
+        "hidden": false,
+        "active": true,
+        "priority": 60,
+        "default": false,
+        "aliases": [],
+        "tags": [
+          "30b"
+        ],
+        "release_date": null,
+        "last_updated": null,
+        "knowledge": null
+      },
+      {
+        "id": "qwen3-embedding",
+        "label": "Qwen3-Embedding",
+        "family": null,
+        "context": null,
+        "output_limit": null,
+        "reasoning": false,
+        "supports_effort": false,
+        "effort": {
+          "kind": "none"
+        },
+        "tool_call": false,
+        "attachment": false,
+        "structured_output": false,
+        "temperature": true,
+        "open_weights": false,
+        "modalities": {
+          "input": [
+            "text"
+          ],
+          "output": [
+            "embedding"
+          ]
+        },
+        "cost": null,
+        "group": null,
+        "note": "Text embeddings for retrieval",
+        "endpoint": null,
+        "hidden": false,
+        "active": true,
+        "priority": 10,
+        "default": false,
+        "aliases": [],
+        "tags": [
+          "0.6b",
+          "4b",
+          "8b"
+        ],
+        "release_date": null,
+        "last_updated": null,
+        "knowledge": null
+      },
+      {
+        "id": "qwen3-vl",
+        "label": "Qwen3-VL",
+        "family": null,
+        "context": null,
+        "output_limit": null,
+        "reasoning": true,
+        "supports_effort": true,
+        "effort": {
+          "kind": "none"
+        },
+        "tool_call": true,
+        "attachment": false,
+        "structured_output": false,
+        "temperature": true,
+        "open_weights": false,
+        "modalities": {
+          "input": [
+            "text",
+            "image"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "cost": null,
+        "group": null,
+        "note": "Qwen model for understanding images and text",
+        "endpoint": null,
+        "hidden": false,
+        "active": true,
+        "priority": 30,
+        "default": false,
+        "aliases": [],
+        "tags": [
+          "2b",
+          "4b",
+          "8b"
+        ],
+        "release_date": null,
+        "last_updated": null,
+        "knowledge": null
+      },
+      {
+        "id": "qwen3.5",
+        "label": "Qwen3.5",
+        "family": null,
+        "context": null,
+        "output_limit": null,
+        "reasoning": true,
+        "supports_effort": true,
+        "effort": {
+          "kind": "none"
+        },
+        "tool_call": true,
+        "attachment": false,
+        "structured_output": false,
+        "temperature": true,
+        "open_weights": false,
+        "modalities": {
+          "input": [
+            "text",
+            "image"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "cost": null,
+        "group": null,
+        "note": "Alibaba's multimodal general-purpose model",
+        "endpoint": null,
+        "hidden": false,
+        "active": true,
+        "priority": 100,
+        "default": false,
+        "aliases": [],
+        "tags": [
+          "0.8b",
+          "2b",
+          "4b",
+          "9b",
+          "27b"
+        ],
+        "release_date": null,
+        "last_updated": null,
+        "knowledge": null
+      }
+    ]
+  }
+}
