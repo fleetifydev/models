@@ -32,6 +32,7 @@ export function toPickerModel(id: string, m: ModelToml): PickerModel {
     priority: f.priority ?? 0,
     default: f.default ?? false,
     aliases: f.aliases ?? [],
+    ...(f.tags === undefined ? {} : { tags: f.tags }),
     release_date: m.release_date ?? null,
     last_updated: m.last_updated ?? null,
     knowledge: m.knowledge ?? null,

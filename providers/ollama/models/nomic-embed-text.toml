@@ -1,0 +1,8 @@
+name = "Nomic Embed Text"
+
+[modalities]
+output = ["embedding"]
+
+[fleetify]
+note = "Compact text embedding model"
+priority = 20

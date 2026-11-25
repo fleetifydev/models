@@ -1,0 +1,11 @@
+name = "Gemma 4"
+tool_call = true
+reasoning = true
+
+[modalities]
+input = ["text", "image"]
+
+[fleetify]
+note = "Google's multimodal reasoning model"
+priority = 90
+tags = ["e2b", "e4b", "12b", "26b", "31b"]

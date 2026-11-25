@@ -53,6 +53,8 @@ export interface FleetifyModelExtras {
   priority?: number;
   default?: boolean;
   aliases?: string[];
+  /** Pullable tag suffixes in display order. Omitted uses the registry default. */
+  tags?: string[];
   effort?: EffortCapability;
 }
 
@@ -123,6 +125,7 @@ export interface PickerModel {
   priority: number;
   default: boolean;
   aliases: string[];
+  tags?: string[];
   release_date: string | null;
   last_updated: string | null;
   knowledge: string | null;

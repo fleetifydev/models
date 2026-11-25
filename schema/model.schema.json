@@ -57,6 +57,13 @@
         "priority": { "type": "integer" },
         "default": { "type": "boolean" },
         "aliases": { "type": "array", "items": { "type": "string" } },
+        "tags": {
+          "description": "Pullable tag suffixes in display order. Omit the field to use the registry default.",
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": { "type": "string", "pattern": "^[A-Za-z0-9_][A-Za-z0-9_.-]{0,127}$" }
+        },
         "effort": {
           "type": "object",
           "additionalProperties": false,

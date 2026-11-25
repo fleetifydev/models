@@ -1,1 +1,7 @@
 name = "Acme Mini"
+
+[modalities]
+output = ["embedding"]
+
+[fleetify]
+tags = ["0.5b", "1.5b"]

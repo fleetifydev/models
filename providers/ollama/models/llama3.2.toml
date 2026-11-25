@@ -1,0 +1,7 @@
+name = "Llama 3.2"
+tool_call = true
+
+[fleetify]
+note = "Meta's compact general-purpose model"
+priority = 110
+tags = ["1b", "3b"]

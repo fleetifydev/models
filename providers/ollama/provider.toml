@@ -1,0 +1,5 @@
+name = "Ollama"
+doc = "https://ollama.com/library"
+
+[fleetify]
+kind = "local_http"

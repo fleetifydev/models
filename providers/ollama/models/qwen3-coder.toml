@@ -1,0 +1,7 @@
+name = "Qwen3-Coder"
+tool_call = true
+
+[fleetify]
+note = "Code-specialized Qwen with tool calling"
+priority = 60
+tags = ["30b"]

@@ -1,0 +1,7 @@
+name = "DeepSeek-R1"
+reasoning = true
+
+[fleetify]
+note = "Open reasoning model"
+priority = 40
+tags = ["1.5b", "7b", "8b", "14b", "32b"]

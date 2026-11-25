@@ -1,0 +1,9 @@
+name = "Qwen3-Embedding"
+
+[modalities]
+output = ["embedding"]
+
+[fleetify]
+note = "Text embeddings for retrieval"
+priority = 10
+tags = ["0.6b", "4b", "8b"]
