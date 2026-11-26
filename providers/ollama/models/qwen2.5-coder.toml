@@ -1,0 +1,7 @@
+name = "Qwen2.5-Coder"
+tool_call = true
+
+[fleetify]
+note = "Compact Qwen models for coding"
+priority = 70
+tags = ["0.5b", "1.5b"]

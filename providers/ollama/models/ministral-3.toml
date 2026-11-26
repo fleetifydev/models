@@ -1,0 +1,10 @@
+name = "Ministral 3"
+tool_call = true
+
+[modalities]
+input = ["text", "image"]
+
+[fleetify]
+note = "Mistral's compact vision-language model family"
+priority = 80
+tags = ["3b", "8b", "14b"]

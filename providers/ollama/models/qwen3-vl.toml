@@ -1,0 +1,11 @@
+name = "Qwen3-VL"
+tool_call = true
+reasoning = true
+
+[modalities]
+input = ["text", "image"]
+
+[fleetify]
+note = "Qwen model for understanding images and text"
+priority = 30
+tags = ["2b", "4b", "8b"]

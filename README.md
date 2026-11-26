@@ -47,6 +47,15 @@ Smaller fetches: `dist/index.json` (provider list) and
 2. Run `bun run validate`.
 3. Run `bun run build` to regenerate `dist/`, and commit it alongside your change. Open a PR.
 
+### Ollama suggestions
+
+Each file under `providers/ollama/models/` uses the Ollama library name as
+its filename. Put explicit pull suffixes in `fleetify.tags` in display order.
+For example, `tags = ["2b", "4b"]` in `qwen3.5.toml` emits `tags` on the
+`qwen3.5` model. Omit the field for the registry's default (`latest`).
+Use `modalities.output = ["embedding"]` for an embedding model.
+Higher `fleetify.priority` values put suggestions first.
+
 ### Mirrors (`[extends]`)
 
 ```toml

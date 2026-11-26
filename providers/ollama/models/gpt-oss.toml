@@ -1,0 +1,8 @@
+name = "GPT-OSS"
+tool_call = true
+reasoning = true
+
+[fleetify]
+note = "OpenAI's open-weight reasoning model"
+priority = 50
+tags = ["20b", "120b"]

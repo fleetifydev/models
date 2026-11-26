@@ -24,3 +24,10 @@ test("rejects a bad release_date format", () => {
   const v = createValidators(SCHEMA);
   expect(v.validateModel({ name: "X", release_date: "Feb 2026" }).length).toBeGreaterThan(0);
 });
+
+test("rejects empty, duplicate, or malformed pull tags", () => {
+  const v = createValidators(SCHEMA);
+  for (const tags of [[], ["4b", "4b"], [""], ["qwen3.5:4b"], ["4b/latest"], ["4 b"]]) {
+    expect(v.validateModel({ name: "X", fleetify: { tags } }).length).toBeGreaterThan(0);
+  }
+});

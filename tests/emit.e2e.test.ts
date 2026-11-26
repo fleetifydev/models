@@ -26,3 +26,14 @@ test("assembles models.json, index.json, and per-provider files", () => {
   expect(dist.perProvider.wrap.provider.models[0].id).toBe("acme/base");
   expect(dist.perProvider.wrap.schemaVersion).toBe(1);
 });
+
+test("preserves pull tags and embedding output in both catalog forms", () => {
+  const dist = buildDist(runPipeline(OPTS), META);
+  const models = dist.models.providers.acme.models;
+  const mini = models.find((model) => model.id === "nested/mini");
+
+  expect(mini?.tags).toEqual(["0.5b", "1.5b"]);
+  expect(mini?.modalities).toEqual({ input: ["text"], output: ["embedding"] });
+  expect(dist.perProvider.acme.provider.models).toEqual(models);
+  expect(models.find((model) => model.id === "base")).not.toHaveProperty("tags");
+});
